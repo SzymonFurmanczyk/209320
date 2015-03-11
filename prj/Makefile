@@ -2,8 +2,8 @@
 #  To sa opcje dla kompilacji
 #
 APP=program1
-CPP2FLAGS= -g -Iinc -Wall -pedantic
-CPPFLAGS= -c -g -Iinc -Wall -pedantic
+CPP2FLAGS= -g -std=c++11 -Iinc -Wall -pedantic
+CPPFLAGS= -c -g -std=c++11 -Iinc -Wall -pedantic
 
 __start__:  obj ./${APP}
 	rm -f core.* core; ./${APP}
@@ -11,11 +11,14 @@ __start__:  obj ./${APP}
 obj:
 	mkdir -p obj
 
-./${APP}: obj/main.o
-	g++ ${CPP2FLAGS} -o ./${APP} obj/main.o
+./${APP}: obj/main.o obj/Benchmark.o
+	g++ ${CPP2FLAGS} -o ./${APP} obj/main.o obj/Benchmark.o
 
-obj/main.o: src/main.cpp inc/Benchmark.hh 
+obj/main.o: src/main.cpp inc/Benchmark.hh
 	g++ ${CPPFLAGS} -o obj/main.o src/main.cpp
+
+obj/Benchmark.o: src/Benchmark.cpp inc/Benchmark.hh 
+	g++ ${CPPFLAGS} -o obj/Benchmark.o src/Benchmark.cpp
 
 
 clean:

@@ -1,0 +1,425 @@
+/*!
+ *\file 
+ *\brief Metody klasy Manipulator.
+ *
+ * Plik zawiera metody klasy Manipulator.
+ */
+
+#include "Manipulator.hh"
+
+#include <cstdlib>
+#include <fstream>
+
+/*!
+ *\brief Inicjalizator manipulatora.
+ *\param
+ * polozenie- typu Punkt, punkt poczatkowy manipulatora.
+ *\param
+ * nazwa - typu string, nazwa manipulatora.
+ */
+Manipulator::Manipulator(Punkt polozenie ,string nazwa):Przeszkoda(polozenie,nazwa)
+{Polozenie=polozenie;Nazwa=nazwa;}
+
+/*!
+ *\brief Destruktor bezparametryczny.
+ */
+Manipulator::~Manipulator()
+{}
+
+/*!
+ *\brief Metoda liczaca wypadkowy kat ogniwa i-tego.
+ *\pre
+ * Parametr typu Manipulator,rozny od NULL,poprawnie zainicjowane.
+ *\param
+ * ile - typu int, numer ogniwa.
+ */
+double Manipulator::SumujKaty(int ile)
+{
+  double Suma(0);
+  for(int i=0;i<=ile;++i)
+    {
+      Suma=Suma+Cialo[i].KAT();
+    }
+  return Suma;
+}
+
+/*!
+ *\brief Wyliczenie przegubow manipulatora.
+ * Metoda wyliczajaca przeguby z dlugosci i kata wypadkowego ogniwa.
+ *\pre
+ * Parametr typu Manipulator,rozny od NULL,poprawnie zainicjowane.
+ */
+void Manipulator::WyliczPrzeguby()
+{
+  Cialo[0].WyliczPrzegubKoncowyOgniwa(Polozenie);
+
+  for(int i=1;i<Rozmiar;++i)
+    {
+      double Sumakatowa;
+      Sumakatowa=SumujKaty(i);
+
+      Cialo[i].WyliczPrzegubKoncowyOgniwa(Cialo[i-1],Sumakatowa);
+    }
+}
+
+
+/*!
+ *\brief Inicjalizator ciala manipulatora.
+ */
+void Manipulator::InicjalizujOgniwa()
+{
+  Cialo=new Ogniwo[Rozmiar];
+
+  for(int i=0;i<Rozmiar;++i)
+    {
+      if(i==0)
+	{
+
+	  Cialo[i].InicjalizujOgniwo(Polozenie,Konfiguracja[i],90.0);
+	}
+      else
+	{
+
+	  Cialo[i].InicjalizujOgniwo(Konfiguracja[i],0.0);
+	}
+    }
+}
+
+/*!
+ *\brief Metoda inicjalizujaca manipulator z konfiguracji.
+ *\pre
+ * Parametr typu Manipulator, poprawnie zainicjalizowany.
+ *\param
+ * konfiguracja - typu string, nazwa pliku konfiguracji.
+ */
+void Manipulator::ZapoczatkujGlowny(string konfiguracja)
+{
+   ifstream Config;
+  ifstream Ulozenie;
+  ostream* strumien_out = &cout;
+  
+  Config.open(konfiguracja.c_str());
+  WczytajKonfiguracje(Config);
+  Config.close();
+
+  InicjalizujOgniwa();
+  WyliczPrzeguby();
+
+  WypiszKonfiguracje(*strumien_out);
+  WypiszPosture(*strumien_out);
+  WypiszPrzeguby(*strumien_out);
+
+}
+
+
+/*!
+ *\brief Metoda inicjalizujaca manipulator z konfiguracji.
+ *\pre
+ * Parametr typu Manipulator, poprawnie zainicjalizowany.
+ *\param
+ * konfiguracja - typu string, nazwa pliku konfiguracji.
+ *\param
+ * postura - typu string, nazwa pliku postury.
+ */
+void Manipulator::Inicjalizuj(string konfiguracja,string postura)
+{
+  ifstream Config;
+  ifstream Ulozenie;
+  
+  Config.open(konfiguracja.c_str());
+  WczytajKonfiguracje(Config);
+  Config.close();
+
+  InicjalizujOgniwa();
+
+  Ulozenie.open(postura.c_str());
+  WczytajPosture(Ulozenie);
+  WyliczPrzeguby();
+  Ulozenie.close();	
+}
+
+
+/*!
+ *\brief Metoda przemieszczajaca manipulator.
+ *\pre
+ * Parametr typu Manipulator, poprawnie zainicjalizowany.
+ *\param
+ * postura - typu string, nazwa pliku postury.
+ */
+void Manipulator::WykonujPrzemieszczenia(string postura)
+{
+  ifstream Ulozenie;
+  ofstream Przejsciowy;
+  ostream* strumien_out = &cout;
+
+  cout<<endl<<endl<<"Postura wczytana z ";
+  cout<<postura.c_str()<<":"<<endl;
+
+  Ulozenie.open(postura.c_str());
+  
+  WczytajPosture(Ulozenie);
+  WyliczPrzeguby();
+  WypiszPosture(*strumien_out);
+  WypiszPrzeguby(*strumien_out);
+  
+  Ulozenie.close();
+  
+  Przejsciowy.open("Glowny");
+  WypiszPrzegubyCzysto(Przejsciowy);
+  Przejsciowy.close();
+}
+
+/*!
+ *\brief Metoda wczytujaca konfiguracje manipulatora na zadany strumien.
+ * Wczytanie konfiguracji z zadanego strumienia.
+ *\pre
+ * Parametr typu istream,rozny od NULL,poprawnie zainicjowane.
+ *\param
+ * Strm - typu istream, zadany strumien.
+ *\return
+ * Strm - typu istream.
+ */
+istream& Manipulator::WczytajKonfiguracje(istream& Strm)
+{
+  vector<double> Bufor;
+  double Tmp;
+  char znak;
+  
+  while(Strm>>Tmp)
+    {
+      Bufor.push_back(Tmp);
+    }
+
+  Strm.clear();
+
+  if(Strm>>znak)
+    {
+      cerr<<endl<<"ERROR!! Nieprawidłowy znak w pliku konfiguracji"<<endl;
+      exit(EXIT_SUCCESS);
+    }
+
+  Rozmiar=Bufor.size();
+
+  Konfiguracja=new double[Rozmiar];
+
+  for(int i=0;i<Rozmiar;++i)
+    {
+      Konfiguracja[i]=Bufor[i];
+    }
+  return Strm;
+}
+
+/*!
+ *\brief Metoda wypisujaca konfiguracje manipulatora na zadany strumien.
+ * Wypisanie konfiguracji na zadnay strumien.
+ *\pre
+ * Parametr typu ostream,rozny od NULL,poprawnie zainicjowany.
+ *\param
+ * Strm - typu istream, zadany strumien.
+ *\return
+ * Strm - typu ostream.
+ */
+ostream& Manipulator::WypiszKonfiguracje(ostream& Strm)
+{
+  cout<<endl<<"Obecna konfiguracja: "<<endl;
+  for(int i=0;i<Rozmiar;++i)
+    {
+      Strm<<"Konfiguracja_"<<i<<": "<<Konfiguracja[i]<<endl;
+    }
+  return Strm;
+}
+
+/*!
+ *\brief Metoda wczytujaca posture manipulatora z zadanego strumienia.
+ * Wczytanie postury z zadanego strumienia.
+ *\pre
+ * Parametr typu istream,rozny od NULL,poprawnie zainicjowane.
+ *\param
+ * Strm - typu istream, zadany strumien.
+ *\return
+ * Strm - typu istream.
+ */
+istream& Manipulator::WczytajPosture(istream& Strm)
+{
+  bool flaga_postury_malo=false;
+  int brakuje;
+  double tmp;
+  char znak;
+
+  for(int i=0;i<Rozmiar;++i)
+    {
+      if(Strm>>tmp)
+	{
+	  Cialo[i].KAT(tmp);
+	}
+      else
+	{
+	  Strm.clear();
+	  if(Strm>>znak)
+	    {
+	      cerr<<"ERROR!! Nieprawidlowy znak w pliku postury."<<endl;
+	      exit(EXIT_SUCCESS);
+	    }
+	  else
+	    {
+	      if(i!=Rozmiar)
+		{
+		  flaga_postury_malo=true;
+		  ++brakuje;
+		}	
+	    }
+	}
+    }
+
+  if(Strm>>tmp)
+    {
+      cerr<<endl<<"UWAGA!! Plik postury zawiera za duzo postur dla manipulatora."<<endl;
+      cerr<<"        Nie powinno to jednak wplynac na jego dzialanie"<<endl;
+    }
+  if(flaga_postury_malo)
+    {
+      cerr<<endl<<"UWAGA!! Wczytano za mala ilosc katow dla manipulatora, brakuje: "<<brakuje<<endl;
+      cerr<<"Brakujace katy pozostaly z poprzedniej postury."<<endl;
+    }
+  return Strm;
+}
+
+/*!
+ *\brief Metoda wypisujaca posture manipulatora na zadany strumien.
+ * Wypisanie postury manipulatora na zadnay strumien.
+ *\pre
+ * Parametr typu ostream,rozny od NULL,poprawnie zainicjowany.
+ *\param
+ * Strm - typu istream, zadany strumien.
+ *\return
+ * Strm - typu ostream.
+ */
+ostream& Manipulator::WypiszPosture(ostream& Strm)
+{
+  Strm<<endl<<"Obecna postura: "<<endl;
+  for(int i=0;i<Rozmiar;++i)
+    {
+      Strm<<"Postura_"<<i<<" :";
+      Cialo[i].WypiszKat(Strm);
+    }
+  return Strm;
+}
+
+
+/*!
+ *\brief Metoda wypisujaca przeguby manipulatora na zadany strumien.
+ * Wypisanie przegubow manipulatora na zadnay strumien.
+ *\pre
+ * Parametr typu ostream,rozny od NULL,poprawnie zainicjowany.
+ *\param
+ * Strm - typu istream, zadany strumien.
+ *\return
+ * Strm - typu ostream.
+ */
+ostream& Manipulator::WypiszPrzeguby(ostream& Strm)
+{
+  Strm<<endl<<"Obecne przeguby: "<<endl;
+  Strm<<"Przegub_0: "<<Polozenie<<endl;
+  for(int i=0;i<Rozmiar;++i)
+    {
+      if(i==Rozmiar-1)
+	{
+	  Strm<<"Efektor: ";
+	}
+      else
+	{
+	  Strm<<"Przegub_"<<i+1<<": ";
+	}
+      Cialo[i].WypiszPrzegub(Strm);
+    }
+  return Strm;
+}
+
+/*!
+ *\brief Metoda wypisujaca posture manipulatora na zadany strumien.
+ * Wypisanie postury manipulatora na zadnay strumien.(bez komunikatow)
+ *\pre
+ * Parametr typu ostream,rozny od NULL,poprawnie zainicjowany.
+ *\param
+ * Strm - typu istream, zadany strumien.
+ *\return
+ * Strm - typu ostream.
+ */
+ostream& Manipulator::WypiszPrzegubyCzysto(ostream& Strm)
+{
+  Strm<<Polozenie<<endl;
+  for(int i=0;i<Rozmiar;++i)
+    {
+      Cialo[i].WypiszPrzegub(Strm);
+    }
+  return Strm;
+}
+
+/*!
+ *\brief Metoda wypisujaca posture manipulatora do pliku.
+ * Wypisanie postury manipulatora do pliku.(bez komunikatow)
+ *\pre
+ * Parametr typu ostream,rozny od NULL,poprawnie zainicjowany.
+ *\param
+ * nazwapliku - typu string, nazwa zadanego pliku.
+ */
+void Manipulator::WypiszCzysto(string nazwapliku)
+{
+  ofstream plik_out;
+  plik_out.open(nazwapliku.c_str());
+
+  plik_out<<Polozenie<<endl;
+
+  for(int i=0;i<Rozmiar;++i)
+    {
+      Cialo[i].WypiszPrzegub(plik_out);
+    }
+
+  plik_out.close();
+}
+
+
+/*!
+ *\brief Metoda sprawdzajaca czy 2 manipulatory sie przecinaja.
+ * Sprawdzenie przecinania sie manipulatorow.
+ *\pre
+ * Parametr typu Manipulator,rozny od NULL,poprawnie zainicjowany.
+ *\param
+ * Drugi - typu Manipulator, drugi manipulator.
+ *\return
+ * czy_przecina - typu bool.
+ */
+bool Manipulator::SprawdzPrzecinaniePrzeszkody(Manipulator *Drugi)
+{
+  bool czy_przecina=false;
+  for(int i=0;i<Rozmiar and !czy_przecina;++i)
+    {
+      czy_przecina=Drugi->SprawdzZOdcinkiem(Cialo[i]);
+    }
+  if(czy_przecina)
+    {
+      cerr<<"KOLIZJA!! Wystapila kolizja z: "<<Nazwa<<endl;
+      exit(EXIT_FAILURE);
+    }
+  return czy_przecina;
+}
+
+/*!
+ *\brief Metoda sprawdzajaca czy 2 manipulator przecina sie z odcinkiem.
+ * Sprawdzenie przecinania sie z odcinkiem.
+ *\pre
+ * Parametr typu Manipulator,rozny od NULL,poprawnie zainicjowany.
+ *\param
+ * sprawdzany - typu Odcinek, Odcinek sprawdzany.
+ *\return
+ * czy_przecina - typu bool.
+ */
+bool Manipulator::SprawdzZOdcinkiem(Odcinek sprawdzany)
+{
+  bool czy_przecina=false;
+  for(int i=0;i<Rozmiar and !czy_przecina;++i)
+    {
+      czy_przecina = Cialo[i].SprawdzPrzec(sprawdzany);
+    }
+  return czy_przecina;
+}

@@ -10,18 +10,26 @@
 
 using namespace std;
 
+
+class Tablica
+{
+  int* element;
+public:
+  void wypelnij_tablice(int*,int);
+  void wykonaj_operacje();
+};
+
+
+
 /*!
  *\brief klasa benchmarku.
  */
 class Benchmarker
 {
   long double * czasy;
-
 public:
-  Benchmarker();
-  ~Benchmarker();
 
-  void testuj(int*,int*,int,int);
+  void Testuj(Tablica ,int* ,int,int );
   int* generuj_dane(int);
 
 };
