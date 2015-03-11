@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_manipulator.html#af28c594a8eaa400266fa4b5731d66419" title="Metoda wczytujaca posture manipulatora z zadanego strumienia. Wczytanie postury z zadanego strumienia..." alt="" coords="625,5,815,35"/>
+<area shape="rect" id="node7" href="$class_manipulator.html#af6b7bdf3110a5a8eef67d11aca19c7e3" title="Wyliczenie przegubow manipulatora. Metoda wyliczajaca przeguby z dlugosci i kata wypadkowego ogniwa..." alt="" coords="325,85,517,115"/>
+<area shape="rect" id="node16" href="$class_manipulator.html#ae08ea42664240040d13a84014bbcedae" title="Metoda wypisujaca posture manipulatora na zadany strumien. Wypisanie postury manipulatora na zadnay s..." alt="" coords="328,139,515,168"/>
+<area shape="rect" id="node20" href="$class_manipulator.html#a09c7a3ba4cf0fb7be983c9dfff13f7f8" title="Metoda wypisujaca przeguby manipulatora na zadany strumien. Wypisanie przegubow manipulatora na zadna..." alt="" coords="324,192,519,221"/>
+<area shape="rect" id="node24" href="$class_manipulator.html#ababfc485457cac121f6aa6c45e70dcee" title="Metoda wypisujaca posture manipulatora na zadany strumien. Wypisanie postury manipulatora na zadnay s..." alt="" coords="303,245,540,275"/>
+<area shape="rect" id="node5" href="$class_ogniwo.html#aaf2b179613841b507015e2a165a2f9dc" title="Ogniwo::KAT" alt="" coords="916,32,1015,61"/>
+<area shape="rect" id="node9" href="$class_ogniwo.html#acd5427a87eda1595f080c2d905ad1801" title="Wyliczenie przegubu ogniwa. Metoda wyliczajaca przegub z dlugosci i kata ogniwa." alt="" coords="591,112,849,141"/>
+<area shape="rect" id="node13" href="$class_manipulator.html#ac9db061d5424727c705204f11b1e3efb" title="Metoda liczaca wypadkowy kat ogniwa i&#45;tego." alt="" coords="640,59,800,88"/>
+<area shape="rect" id="node11" href="$class_punkt.html#a44960a691b3c4795b5112bfbffc6775d" title="Metoda obracajaca punkt o kat(wektor punktu o kat)." alt="" coords="899,112,1032,141"/>
+<area shape="rect" id="node18" href="$class_ogniwo.html#aeb089f5397b118ddc99205194e280aa4" title="Metoda wypisujaca kat ogniwa. Wypisanie kata ogniwa na zadnay strumien." alt="" coords="651,165,789,195"/>
+<area shape="rect" id="node22" href="$class_ogniwo.html#a6b82788d775bd226f74f083a35772e00" title="Metoda wypisujaca przegub koncowy ogniwa. Wypisanie przegubu koncowego ogniwa na zadnay strumien..." alt="" coords="637,232,803,261"/>
+</map>

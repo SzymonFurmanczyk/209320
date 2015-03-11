@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_manipulator.html#a0441210e7688f517cda9b80b4e24fdb3" title="Metoda dodajaca manipulator. Zainiclalizowanie Manipulatora." alt="" coords="309,59,507,88"/>
+<area shape="rect" id="node21" href="$class_manipulator.html#a45f4e6da3befce6351f0fa1c02e0769f" title="Metoda wypisujaca konfiguracje manipulatora na zadany strumien. Wypisanie konfiguracji na zadnay stru..." alt="" coords="301,112,515,141"/>
+<area shape="rect" id="node23" href="$class_manipulator.html#ae08ea42664240040d13a84014bbcedae" title="Metoda wypisujaca posture manipulatora na zadany strumien. Wypisanie postury manipulatora na zadnay s..." alt="" coords="315,165,501,195"/>
+<area shape="rect" id="node27" href="$class_manipulator.html#a09c7a3ba4cf0fb7be983c9dfff13f7f8" title="Metoda wypisujaca przeguby manipulatora na zadany strumien. Wypisanie przegubow manipulatora na zadna..." alt="" coords="311,219,505,248"/>
+<area shape="rect" id="node31" href="$class_manipulator.html#ababfc485457cac121f6aa6c45e70dcee" title="Metoda wypisujaca posture manipulatora na zadany strumien. Wypisanie postury manipulatora na zadnay s..." alt="" coords="289,272,527,301"/>
+<area shape="rect" id="node5" href="$class_manipulator.html#ab2145a6e5bdf7bf07a5675a4bf88804f" title="Metoda wczytujaca konfiguracje manipulatora na zadany strumien. Wczytanie konfiguracji z zadanego str..." alt="" coords="577,5,793,35"/>
+<area shape="rect" id="node7" href="$class_manipulator.html#a2eaa8a8b602e691fd7573f0d4aaac34c" title="Inicjalizator ciala manipulatora." alt="" coords="588,59,783,88"/>
+<area shape="rect" id="node11" href="$class_manipulator.html#af6b7bdf3110a5a8eef67d11aca19c7e3" title="Wyliczenie przegubow manipulatora. Metoda wyliczajaca przeguby z dlugosci i kata wypadkowego ogniwa..." alt="" coords="589,112,781,141"/>
+<area shape="rect" id="node9" href="$class_ogniwo.html#abc34291af835281bcc2fe4166f4a8b42" title="Inicjalizator ogniwa." alt="" coords="888,59,1059,88"/>
+<area shape="rect" id="node13" href="$class_ogniwo.html#acd5427a87eda1595f080c2d905ad1801" title="Wyliczenie przegubu ogniwa. Metoda wyliczajaca przegub z dlugosci i kata ogniwa." alt="" coords="844,112,1103,141"/>
+<area shape="rect" id="node17" href="$class_manipulator.html#ac9db061d5424727c705204f11b1e3efb" title="Destruktor bezparametryczny." alt="" coords="893,165,1053,195"/>
+<area shape="rect" id="node15" href="$class_punkt.html#a44960a691b3c4795b5112bfbffc6775d" title="Metoda obracajaca punkt o kat(wektor punktu o kat)." alt="" coords="1152,112,1285,141"/>
+<area shape="rect" id="node19" href="$class_ogniwo.html#aaf2b179613841b507015e2a165a2f9dc" title="Ogniwo::KAT" alt="" coords="1169,165,1268,195"/>
+<area shape="rect" id="node25" href="$class_ogniwo.html#aeb089f5397b118ddc99205194e280aa4" title="Metoda wypisujaca kat ogniwa. Wypisanie kata ogniwa na zadnay strumien." alt="" coords="616,165,755,195"/>
+<area shape="rect" id="node29" href="$class_ogniwo.html#a6b82788d775bd226f74f083a35772e00" title="Metoda wypisujaca przegub ogniwa. Wypisanie przegubu ogniwa na zadnay strumien." alt="" coords="603,245,768,275"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_ogniwo.html#acd5427a87eda1595f080c2d905ad1801" title="Wyliczenie przegubu ogniwa. Metoda wyliczajaca przegub z dlugosci i kata ogniwa." alt="" coords="247,5,505,35"/>
+<area shape="rect" id="node7" href="$class_manipulator.html#ac9db061d5424727c705204f11b1e3efb" title="Metoda liczaca wypadkowy kat ogniwa i&#45;tego." alt="" coords="296,59,456,88"/>
+<area shape="rect" id="node5" href="$class_punkt.html#a44960a691b3c4795b5112bfbffc6775d" title="Metoda obracajaca punkt o kat(wektor punktu o kat)." alt="" coords="555,5,688,35"/>
+<area shape="rect" id="node9" href="$class_ogniwo.html#aaf2b179613841b507015e2a165a2f9dc" title="Ogniwo::KAT" alt="" coords="572,59,671,88"/>
+</map>

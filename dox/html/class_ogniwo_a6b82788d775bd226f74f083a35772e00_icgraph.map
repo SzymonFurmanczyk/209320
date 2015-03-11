@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_manipulator.html#a09c7a3ba4cf0fb7be983c9dfff13f7f8" title="Metoda wypisujaca przeguby manipulatora na zadany strumien. Wypisanie przegubow manipulatora na zadna..." alt="" coords="244,59,439,88"/>
+<area shape="rect" id="node16" href="$class_manipulator.html#ababfc485457cac121f6aa6c45e70dcee" title="Metoda wypisujaca posture manipulatora na zadany strumien. Wypisanie postury manipulatora na zadnay s..." alt="" coords="223,112,460,141"/>
+<area shape="rect" id="node19" href="$class_manipulator.html#a86c210eda7d4c0959db0da06a29c95cd" title="Metoda wypisujaca posture manipulatora do pliku. Wypisanie postury manipulatora do pliku..." alt="" coords="543,5,724,35"/>
+<area shape="rect" id="node5" href="$class_manipulator.html#a44b10cee23d99b29dd8a343ab95b8618" title="Metoda inicjalizujaca manipulator z konfiguracji." alt="" coords="528,59,739,88"/>
+<area shape="rect" id="node11" href="$class_manipulator.html#a03d12039f367feb1e8970085eea1bdc4" title="Metoda przemieszczajaca manipulator." alt="" coords="509,112,757,141"/>
+<area shape="rect" id="node7" href="$class_scena.html#a952ec625109e29e51cbe79462c649567" title="Metoda dodajaca glowny manipulator. Metoda dodajaca manipulator glowny." alt="" coords="820,59,964,88"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Funkcja glowna programu." alt="" coords="1027,85,1077,115"/>
+<area shape="rect" id="node13" href="$class_scena.html#a2b56546f735ea22a6b89ca30f78180ac" title="Metoda ruszajaca manipulatorem glownym. Metoda przemieszczajaca przeguby manipulatora glownego..." alt="" coords="805,112,979,141"/>
+</map>

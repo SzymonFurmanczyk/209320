@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Program manipulator: Plik źródłowy Wektor.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Program manipulator
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_wektor_8hh.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Wektor.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_wektor_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef WEKTOR_HH</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define WEKTOR_HH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="_ogniwo_8hh.html" title="Definicja klasy Ogniwo.">Ogniwo.hh</a>&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="_punkt_8hh.html" title="Definicja klasy Punkt.">Punkt.hh</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;cstdio&gt;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;cassert&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;cmath&gt;</span>
+<a name="l00018"></a>00018 <span class="keyword">using namespace </span>std;
+<a name="l00019"></a>00019 
+<a name="l00025"></a>00025 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00026"></a><a class="code" href="class_wektor.html">00026</a> <span class="keyword">class </span><a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>
+<a name="l00027"></a>00027 {
+<a name="l00028"></a><a class="code" href="class_wektor.html#aab5f79bd477915b44683a30d0b348145">00028</a>   <span class="keywordtype">int</span> <a class="code" href="class_wektor.html#aab5f79bd477915b44683a30d0b348145">Rozmiar</a>;
+<a name="l00029"></a><a class="code" href="class_wektor.html#a88cabc4eef27593060cc2fa25585780e">00029</a>   TYP *<a class="code" href="class_wektor.html#a88cabc4eef27593060cc2fa25585780e">TabArg</a>;
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031   <span class="keyword">public</span>:
+<a name="l00032"></a>00032 
+<a name="l00036"></a><a class="code" href="class_wektor.html#a9e55683db9f64482e18dfc8247f808ff">00036</a>   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>():Rozmiar(0),TabArg(NULL)
+<a name="l00037"></a>00037   {}
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039   <span class="keywordtype">void</span> Inicjalizuj(<span class="keywordtype">int</span> ile);
+<a name="l00040"></a>00040 
+<a name="l00046"></a><a class="code" href="class_wektor.html#aee0649f64f5ac5f12c4aab95b8d80b66">00046</a>   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>(<span class="keywordtype">int</span> Rozmiar)
+<a name="l00047"></a>00047   { Inicjalizuj(Rozmiar); }
+<a name="l00048"></a>00048   
+<a name="l00056"></a><a class="code" href="class_wektor.html#aed701da7136b6d600cac24e6f6dc8f78">00056</a>   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>(<span class="keyword">const</span> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a>&amp; Wekt2)
+<a name="l00057"></a>00057   {
+<a name="l00058"></a>00058     Rozmiar=Wekt2.<a class="code" href="class_wektor.html#aab5f79bd477915b44683a30d0b348145">Rozmiar</a>;
+<a name="l00059"></a>00059     Inicjalizuj(Rozmiar);
+<a name="l00060"></a>00060     
+<a name="l00061"></a>00061     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;++i)
+<a name="l00062"></a>00062       {
+<a name="l00063"></a>00063         TabArg[i]=Wekt2.<a class="code" href="class_wektor.html#a88cabc4eef27593060cc2fa25585780e">TabArg</a>[i];
+<a name="l00064"></a>00064       }
+<a name="l00065"></a>00065   }
+<a name="l00066"></a>00066 
+<a name="l00070"></a><a class="code" href="class_wektor.html#a835c3f62ba02457bdc039049799bb239">00070</a>   ~<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>()
+<a name="l00071"></a>00071   {}
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073   istream&amp; WczytajWektor(istream&amp;);
+<a name="l00074"></a>00074   ostream&amp; WypiszWektor(ostream&amp;);
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> DodajWektory(<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>)<span class="keyword">const</span>;
+<a name="l00077"></a>00077   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> OdejmijWektory(<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>)<span class="keyword">const</span>;
+<a name="l00078"></a>00078   TYP MnozSkalarnieWektory(<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>)<span class="keyword">const</span>;
+<a name="l00079"></a>00079   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> MnozWektorPrzezLiczbe(TYP)<span class="keyword">const</span>;
+<a name="l00080"></a>00080   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> DzielWektorPrzezLiczbe(TYP)<span class="keyword">const</span>;
+<a name="l00081"></a>00081   <span class="keywordtype">double</span> WyliczDlugoscWektora()<span class="keyword">const</span>;
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> operator+ (<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>);
+<a name="l00084"></a>00084   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> operator- (<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>);
+<a name="l00085"></a>00085   TYP operator* (<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a>);
+<a name="l00086"></a>00086   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> operator* (TYP);
+<a name="l00087"></a>00087   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> operator/ (TYP);
+<a name="l00088"></a>00088 
+<a name="l00096"></a><a class="code" href="class_wektor.html#a3761eaff915129010c9c47d0913fbaf5">00096</a>   TYP operator[] (<span class="keywordtype">int</span> numer)<span class="keyword">const</span>
+<a name="l00097"></a>00097 <span class="keyword">  </span>{ <span class="keywordflow">return</span> TabArg[numer]; }
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099 
+<a name="l00107"></a><a class="code" href="class_wektor.html#ab2718d27255acfed57cbf1d076ad6142">00107</a>   TYP &amp; operator[] (<span class="keywordtype">int</span> numer)
+<a name="l00108"></a>00108   { <span class="keywordflow">return</span> TabArg[numer]; }
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 };
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00114"></a>00114 istream&amp; <a class="code" href="_punkt_8hh.html#a6f77b5471ee77c51f4fa5defc479daf5" title="Przeciarzenie operatora wejscia dla typu Punkt. Wywoluje metode WczytajPunkt.">operator&gt;&gt;</a>(istream &amp;, <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> &amp;);
+<a name="l00115"></a>00115 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00116"></a>00116 ostream&amp; operator&lt;&lt;(ostream &amp;, Wektor&lt;TYP&gt; );
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119 
+<a name="l00125"></a>00125 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00126"></a><a class="code" href="class_wektor.html#a519e8d8cf7a1aebda6a9865eed19740d">00126</a> <span class="keywordtype">void</span> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::Inicjalizuj</a>(<span class="keywordtype">int</span> ile)
+<a name="l00127"></a>00127 {
+<a name="l00128"></a>00128   Rozmiar=ile;
+<a name="l00129"></a>00129   assert(Rozmiar&gt;0);
+<a name="l00130"></a>00130   TabArg=<span class="keyword">new</span> TYP[Rozmiar];
+<a name="l00131"></a>00131   assert(TabArg);
+<a name="l00132"></a>00132 }
+<a name="l00133"></a>00133 
+<a name="l00144"></a>00144 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00145"></a><a class="code" href="class_wektor.html#a9c92a2ed8c81d447e9e8785d716aebc6">00145</a> istream&amp; <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::WczytajWektor</a>(istream&amp; Strm)
+<a name="l00146"></a>00146 {
+<a name="l00147"></a>00147   TYP Element;
+<a name="l00148"></a>00148   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;i++)
+<a name="l00149"></a>00149     {
+<a name="l00150"></a>00150       Strm&gt;&gt;TabArg[i];                        <span class="comment">//Wczytywanie ze strumienia na pozycje i-ta</span>
+<a name="l00151"></a>00151     }
+<a name="l00152"></a>00152   <span class="keywordflow">return</span> Strm;
+<a name="l00153"></a>00153 }
+<a name="l00154"></a>00154 
+<a name="l00165"></a>00165 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00166"></a><a class="code" href="class_wektor.html#a230ba3d71f52ea23002969669ba98694">00166</a> ostream&amp; <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::WypiszWektor</a>(ostream&amp; Strm)
+<a name="l00167"></a>00167 {
+<a name="l00168"></a>00168   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;i++)
+<a name="l00169"></a>00169     {
+<a name="l00170"></a>00170       Strm&lt;&lt;TabArg[i]&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;                   <span class="comment">//Wypisywanie do strumienia pozycji i-tej</span>
+<a name="l00171"></a>00171     }
+<a name="l00172"></a>00172   <span class="keywordflow">return</span> Strm;
+<a name="l00173"></a>00173 }
+<a name="l00174"></a>00174 
+<a name="l00175"></a>00175 
+<a name="l00185"></a>00185 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00186"></a><a class="code" href="class_wektor.html#a7e3712c70b9fc18589d5c58169e8422e">00186</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::DodajWektory</a> (<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> Wek)<span class="keyword">const</span>
+<a name="l00187"></a>00187 <span class="keyword"></span>{
+<a name="l00188"></a>00188   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> Tmp(Rozmiar);
+<a name="l00189"></a>00189 
+<a name="l00190"></a>00190   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;i++)
+<a name="l00191"></a>00191     {
+<a name="l00192"></a>00192       Tmp[i]=TabArg[i]+Wek[i];                <span class="comment">//Dodawanie pozycji i-tych 2 wektorow</span>
+<a name="l00193"></a>00193     }
+<a name="l00194"></a>00194   <span class="keywordflow">return</span> Tmp;
+<a name="l00195"></a>00195 }
+<a name="l00196"></a>00196 
+<a name="l00197"></a>00197 
+<a name="l00207"></a>00207 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00208"></a><a class="code" href="class_wektor.html#a9a828427e83151e8c4bad14098032370">00208</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::OdejmijWektory</a>(<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> Wek)<span class="keyword">const</span>
+<a name="l00209"></a>00209 <span class="keyword"></span>{
+<a name="l00210"></a>00210    <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> Tmp(Rozmiar);
+<a name="l00211"></a>00211 
+<a name="l00212"></a>00212   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;i++)
+<a name="l00213"></a>00213     {
+<a name="l00214"></a>00214       Tmp[i]=TabArg[i]-Wek[i];               <span class="comment">//Odejmowanie pozycji i-tych 2 wektorow</span>
+<a name="l00215"></a>00215     }
+<a name="l00216"></a>00216   <span class="keywordflow">return</span> Tmp;
+<a name="l00217"></a>00217 }
+<a name="l00218"></a>00218 
+<a name="l00228"></a>00228 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00229"></a><a class="code" href="class_wektor.html#a7713e01860f942b017268e13494e7cfb">00229</a> TYP <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::MnozSkalarnieWektory</a>(<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> Wek)<span class="keyword">const</span>
+<a name="l00230"></a>00230 <span class="keyword"></span>{
+<a name="l00231"></a>00231   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> Tmp(Rozmiar);
+<a name="l00232"></a>00232   TYP Wynik;
+<a name="l00233"></a>00233 
+<a name="l00234"></a>00234   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;i++)
+<a name="l00235"></a>00235     {
+<a name="l00236"></a>00236       Tmp[i]=TabArg[i]*Wek[i];               <span class="comment">//Mnozenie pozycji i-tych 2 wektorow</span>
+<a name="l00237"></a>00237       Wynik=Wynik+Tmp[i];                    <span class="comment">//Sumowanie iloczynu do wyniku</span>
+<a name="l00238"></a>00238     }
+<a name="l00239"></a>00239   <span class="keywordflow">return</span> Wynik;
+<a name="l00240"></a>00240 }
+<a name="l00241"></a>00241 
+<a name="l00242"></a>00242 
+<a name="l00252"></a>00252 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00253"></a><a class="code" href="class_wektor.html#a441614fcdcbba80004acc54d44cb1af2">00253</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::MnozWektorPrzezLiczbe</a>(TYP Liczba)<span class="keyword">const</span>
+<a name="l00254"></a>00254 <span class="keyword"></span>{
+<a name="l00255"></a>00255   <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> Tmp(Rozmiar);
+<a name="l00256"></a>00256 
+<a name="l00257"></a>00257   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;i++)
+<a name="l00258"></a>00258     {
+<a name="l00259"></a>00259       Tmp[i]=TabArg[i]*Liczba;               <span class="comment">//Mnozenie pozycji i-tej wektora i liczby</span>
+<a name="l00260"></a>00260     }
+<a name="l00261"></a>00261   <span class="keywordflow">return</span> Tmp;
+<a name="l00262"></a>00262 }
+<a name="l00263"></a>00263 
+<a name="l00264"></a>00264 
+<a name="l00274"></a>00274 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00275"></a><a class="code" href="class_wektor.html#a7edb564baeb29e463fb83ed9ae313425">00275</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::DzielWektorPrzezLiczbe</a>(TYP Liczba)<span class="keyword">const</span>
+<a name="l00276"></a>00276 <span class="keyword"></span>{
+<a name="l00277"></a>00277    <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> Tmp(Rozmiar);
+<a name="l00278"></a>00278 
+<a name="l00279"></a>00279   <span class="keywordflow">if</span>(Liczba==0)
+<a name="l00280"></a>00280     {
+<a name="l00281"></a>00281       cout&lt;&lt;<span class="stringliteral">&quot;Niemozliwe&quot;</span>;                 <span class="comment">//Gdy liczba jest zerem-niemozna dzielic</span>
+<a name="l00282"></a>00282     }
+<a name="l00283"></a>00283   <span class="keywordflow">else</span>
+<a name="l00284"></a>00284     {
+<a name="l00285"></a>00285       <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;i++)
+<a name="l00286"></a>00286         {
+<a name="l00287"></a>00287           Tmp[i]=TabArg[i]/Liczba;          <span class="comment">//Dzielenie i-tej pozycji przez liczbe</span>
+<a name="l00288"></a>00288         }
+<a name="l00289"></a>00289     }
+<a name="l00290"></a>00290   <span class="keywordflow">return</span> Tmp;
+<a name="l00291"></a>00291 }
+<a name="l00292"></a>00292 
+<a name="l00293"></a>00293 
+<a name="l00294"></a>00294 
+<a name="l00302"></a>00302 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00303"></a><a class="code" href="class_wektor.html#a402e2be1b1923b0c83c3aeb6c42f978d">00303</a> <span class="keywordtype">double</span> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::WyliczDlugoscWektora</a>()<span class="keyword">const</span>
+<a name="l00304"></a>00304 <span class="keyword"></span>{
+<a name="l00305"></a>00305   <span class="keywordtype">double</span> DlugoscWektora;
+<a name="l00306"></a>00306   <span class="keywordtype">double</span> Tmp=0;
+<a name="l00307"></a>00307 
+<a name="l00308"></a>00308   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;Rozmiar;i++)
+<a name="l00309"></a>00309     {
+<a name="l00310"></a>00310       Tmp=Tmp+(pow(TabArg[i],2)); 
+<a name="l00311"></a>00311     }
+<a name="l00312"></a>00312   DlugoscWektora=sqrt(Tmp);             <span class="comment">//Pierwiastkowanie - obliczenie dlugosci </span>
+<a name="l00313"></a>00313   <span class="keywordflow">return</span> DlugoscWektora; 
+<a name="l00314"></a>00314 }
+<a name="l00315"></a>00315 
+<a name="l00316"></a>00316 
+<a name="l00326"></a>00326 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00327"></a><a class="code" href="class_wektor.html#a7d74472477f9bf7ab630d15d2a75149f">00327</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::operator+ </a>(<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> Wek)
+<a name="l00328"></a>00328 { <span class="keywordflow">return</span> DodajWektory(Wek); }
+<a name="l00329"></a>00329 
+<a name="l00339"></a>00339 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00340"></a><a class="code" href="class_wektor.html#acf7855773af18d4df6eb1659011d2c41">00340</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::operator- </a>(<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> Wek)
+<a name="l00341"></a>00341 { <span class="keywordflow">return</span> OdejmijWektory(Wek); }
+<a name="l00342"></a>00342 
+<a name="l00352"></a>00352 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00353"></a><a class="code" href="class_wektor.html#ac0bc65524f23f74b4ac0d94fdb4ca48b">00353</a> TYP <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::operator* </a>(<a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor</a> Wek)
+<a name="l00354"></a>00354 { <span class="keywordflow">return</span> MnozSkalarnieWektory(Wek); }
+<a name="l00355"></a>00355 
+<a name="l00365"></a>00365 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00366"></a><a class="code" href="class_wektor.html#a3c7523929bd27e24078d27b1daf79439">00366</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::operator*</a>(TYP Liczba)
+<a name="l00367"></a>00367 { <span class="keywordflow">return</span> MnozWektorPrzezLiczbe(Liczba); }
+<a name="l00368"></a>00368 
+<a name="l00378"></a>00378 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00379"></a><a class="code" href="class_wektor.html#a9e042d6333ba503b9f3720e15a631d45">00379</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;::operator/</a>(TYP Liczba)
+<a name="l00380"></a>00380 { <span class="keywordflow">return</span> DzielWektorPrzezLiczbe(Liczba); }
+<a name="l00381"></a>00381 
+<a name="l00382"></a>00382 
+<a name="l00395"></a>00395 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00396"></a><a class="code" href="_wektor_8hh.html#ae09e2a6957ba4e96558d9b00222455d4">00396</a> istream&amp; <a class="code" href="_punkt_8hh.html#a6f77b5471ee77c51f4fa5defc479daf5" title="Przeciarzenie operatora wejscia dla typu Punkt. Wywoluje metode WczytajPunkt.">operator &gt;&gt; </a>(istream &amp;Strm, <a class="code" href="class_wektor.html" title="Modeluje pojecie wektora o zadanym typie i rozmiarze.">Wektor&lt;TYP&gt;</a> &amp;Wek)
+<a name="l00397"></a>00397 {
+<a name="l00398"></a>00398   Wek.<a class="code" href="class_wektor.html#a9c92a2ed8c81d447e9e8785d716aebc6" title="Metoda wczytujaca wektor. Wczytanie wektora okreslonego typu i rozmiaru.">WczytajWektor</a>(Strm);
+<a name="l00399"></a>00399   <span class="keywordflow">return</span> Strm;
+<a name="l00400"></a>00400 }
+<a name="l00401"></a>00401 
+<a name="l00402"></a>00402 
+<a name="l00415"></a>00415 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TYP&gt;
+<a name="l00416"></a><a class="code" href="_wektor_8hh.html#a4370aefb5ba16ca0c24057894846e7be">00416</a> ostream&amp; operator &lt;&lt; (ostream &amp;Strm,  Wektor&lt;TYP&gt; Wek)
+<a name="l00417"></a>00417 {
+<a name="l00418"></a>00418   Wek.WypiszWektor(Strm);
+<a name="l00419"></a>00419   <span class="keywordflow">return</span> Strm;
+<a name="l00420"></a>00420 }
+<a name="l00421"></a>00421 
+<a name="l00422"></a>00422 
+<a name="l00423"></a>00423 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="_wektor_8hh.html">Wektor.hh</a>      </li>
+
+    <li class="footer">Wygenerowano Wed Jun 4 2014 15:15:16 dla Program manipulator programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

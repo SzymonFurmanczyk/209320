@@ -1,0 +1,26 @@
+var class_manipulator =
+[
+    [ "Manipulator", "class_manipulator.html#a713ba548cde5ce479f7b64dc6532a09e", null ],
+    [ "~Manipulator", "class_manipulator.html#ab26e1b16415d3ee9d5cb7bdd42e8a708", null ],
+    [ "Inicjalizuj", "class_manipulator.html#ab364664c003d67e88e2448505992560d", null ],
+    [ "Inicjalizuj", "class_manipulator.html#ab412d9012de0b49fb681f3afbfc0efb2", null ],
+    [ "InicjalizujOgniwa", "class_manipulator.html#a2eaa8a8b602e691fd7573f0d4aaac34c", null ],
+    [ "SprawdzPrzecinaniePrzeszkody", "class_manipulator.html#aec4be49e25b0770228b08005472602a2", null ],
+    [ "SprawdzZOdcinkiem", "class_manipulator.html#aa043923862518c82b68778835940ba0b", null ],
+    [ "SumujKaty", "class_manipulator.html#ac9db061d5424727c705204f11b1e3efb", null ],
+    [ "WczytajKonfiguracje", "class_manipulator.html#ab2145a6e5bdf7bf07a5675a4bf88804f", null ],
+    [ "WczytajPosture", "class_manipulator.html#af28c594a8eaa400266fa4b5731d66419", null ],
+    [ "WykonujPrzemieszczenia", "class_manipulator.html#a03d12039f367feb1e8970085eea1bdc4", null ],
+    [ "WyliczPrzeguby", "class_manipulator.html#af6b7bdf3110a5a8eef67d11aca19c7e3", null ],
+    [ "WypiszCzysto", "class_manipulator.html#a86c210eda7d4c0959db0da06a29c95cd", null ],
+    [ "WypiszKonfiguracje", "class_manipulator.html#a45f4e6da3befce6351f0fa1c02e0769f", null ],
+    [ "WypiszPosture", "class_manipulator.html#ae08ea42664240040d13a84014bbcedae", null ],
+    [ "WypiszPrzeguby", "class_manipulator.html#a09c7a3ba4cf0fb7be983c9dfff13f7f8", null ],
+    [ "WypiszPrzegubyCzysto", "class_manipulator.html#ababfc485457cac121f6aa6c45e70dcee", null ],
+    [ "ZapoczatkujGlowny", "class_manipulator.html#a44b10cee23d99b29dd8a343ab95b8618", null ],
+    [ "Cialo", "class_manipulator.html#a2bd12438ff55bcd94f55f83a6e5384ea", null ],
+    [ "Konfiguracja", "class_manipulator.html#a1dd1c5e5af10aba8d1f1a356371e2f6d", null ],
+    [ "Nazwa", "class_manipulator.html#a505869b3dd05c33e1b0a32f52849932e", null ],
+    [ "Polozenie", "class_manipulator.html#aa987e49a6adc9abc53850151a8461596", null ],
+    [ "Rozmiar", "class_manipulator.html#a4bc4369ffad552d3b84faaf5858827cc", null ]
+];

@@ -1,0 +1,31 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_scena.html#abdf10cc15a6dde36fbdcd556301e1231" title="Wczytanie pliku sceny. Metoda wczytujaca zadany plik sceny." alt="" coords="157,5,331,35"/>
+<area shape="rect" id="node7" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwê pliku." alt="" coords="104,59,384,88"/>
+<area shape="rect" id="node11" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje po³±czenie z programem gnuplot." alt="" coords="129,112,359,141"/>
+<area shape="rect" id="node13" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania." alt="" coords="113,165,375,195"/>
+<area shape="rect" id="node15" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c" title="Ustawia zakres osi OY." alt="" coords="113,219,375,248"/>
+<area shape="rect" id="node17" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef" title="Ustawia zakres osi OX." alt="" coords="113,272,375,301"/>
+<area shape="rect" id="node19" href="$class_scena.html#a952ec625109e29e51cbe79462c649567" title="Metoda dodajaca glowny manipulator. Metoda dodajaca manipulator glowny." alt="" coords="172,325,316,355"/>
+<area shape="rect" id="node52" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota::Rysuj" alt="" coords="139,432,349,461"/>
+<area shape="rect" id="node54" href="$class_scena.html#a2b56546f735ea22a6b89ca30f78180ac" title="Metoda ruszajaca manipulatorem glownym. Metoda przemieszczajaca przeguby manipulatora glownego..." alt="" coords="157,379,331,408"/>
+<area shape="rect" id="node5" href="$class_scena.html#ad03e190bd6cb74a4e0009c38535f2d8b" title="Metoda interpertujaca linie z pliku. Metoda analizujaca linie pliku i inicjalizujaca konkretny manipu..." alt="" coords="480,5,632,35"/>
+<area shape="rect" id="node9" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title="PzG::CzyJestPlik" alt="" coords="493,59,619,88"/>
+<area shape="rect" id="node21" href="$class_manipulator.html#a44b10cee23d99b29dd8a343ab95b8618" title="Metoda inicjalizujaca manipulator z konfiguracji." alt="" coords="451,325,661,355"/>
+<area shape="rect" id="node49" href="$class_manipulator.html#a86c210eda7d4c0959db0da06a29c95cd" title="Metoda wypisujaca posture manipulatora do pliku. Wypisanie postury manipulatora do pliku..." alt="" coords="465,219,647,248"/>
+<area shape="rect" id="node23" href="$class_manipulator.html#ab2145a6e5bdf7bf07a5675a4bf88804f" title="Metoda wczytujaca konfiguracje manipulatora na zadany strumien. Wczytanie konfiguracji z zadanego str..." alt="" coords="740,299,956,328"/>
+<area shape="rect" id="node25" href="$class_manipulator.html#a2eaa8a8b602e691fd7573f0d4aaac34c" title="Inicjalizator ciala manipulatora." alt="" coords="751,192,945,221"/>
+<area shape="rect" id="node29" href="$class_manipulator.html#af6b7bdf3110a5a8eef67d11aca19c7e3" title="Wyliczenie przegubow manipulatora. Metoda wyliczajaca przeguby z dlugosci i kata wypadkowego ogniwa..." alt="" coords="752,512,944,541"/>
+<area shape="rect" id="node39" href="$class_manipulator.html#a45f4e6da3befce6351f0fa1c02e0769f" title="Metoda wypisujaca konfiguracje manipulatora na zadany strumien. Wypisanie konfiguracji na zadnay stru..." alt="" coords="741,245,955,275"/>
+<area shape="rect" id="node41" href="$class_manipulator.html#ae08ea42664240040d13a84014bbcedae" title="Metoda wypisujaca posture manipulatora na zadany strumien. Wypisanie postury manipulatora na zadnay s..." alt="" coords="755,405,941,435"/>
+<area shape="rect" id="node45" href="$class_manipulator.html#a09c7a3ba4cf0fb7be983c9dfff13f7f8" title="Metoda wypisujaca przeguby manipulatora na zadany strumien. Wypisanie przegubow manipulatora na zadna..." alt="" coords="751,352,945,381"/>
+<area shape="rect" id="node27" href="$class_ogniwo.html#abc34291af835281bcc2fe4166f4a8b42" title="Inicjalizator ogniwa." alt="" coords="1061,192,1232,221"/>
+<area shape="rect" id="node31" href="$class_ogniwo.html#acd5427a87eda1595f080c2d905ad1801" title="Wyliczenie przegubu ogniwa. Metoda wyliczajaca przegub z dlugosci i kata ogniwa." alt="" coords="1017,459,1276,488"/>
+<area shape="rect" id="node35" href="$class_manipulator.html#ac9db061d5424727c705204f11b1e3efb" title="Metoda liczaca wypadkowy kat ogniwa i&#45;tego." alt="" coords="1067,512,1227,541"/>
+<area shape="rect" id="node33" href="$class_punkt.html#a44960a691b3c4795b5112bfbffc6775d" title="Metoda obracajaca punkt o kat(wektor punktu o kat)." alt="" coords="1325,459,1459,488"/>
+<area shape="rect" id="node37" href="$class_ogniwo.html#aaf2b179613841b507015e2a165a2f9dc" title="Ogniwo::KAT" alt="" coords="1343,539,1441,568"/>
+<area shape="rect" id="node43" href="$class_ogniwo.html#aeb089f5397b118ddc99205194e280aa4" title="Metoda wypisujaca kat ogniwa. Wypisanie kata ogniwa na zadnay strumien." alt="" coords="1077,405,1216,435"/>
+<area shape="rect" id="node47" href="$class_ogniwo.html#a6b82788d775bd226f74f083a35772e00" title="Metoda wypisujaca przegub koncowy ogniwa. Wypisanie przegubu koncowego ogniwa na zadnay strumien..." alt="" coords="1064,352,1229,381"/>
+<area shape="rect" id="node56" href="$class_manipulator.html#a03d12039f367feb1e8970085eea1bdc4" title="Metoda przemieszczajaca manipulator." alt="" coords="432,432,680,461"/>
+<area shape="rect" id="node58" href="$class_manipulator.html#af28c594a8eaa400266fa4b5731d66419" title="Metoda wczytujaca posture manipulatora z zadanego strumienia. Wczytanie postury z zadanego strumienia..." alt="" coords="1052,565,1241,595"/>
+<area shape="rect" id="node64" href="$class_manipulator.html#ababfc485457cac121f6aa6c45e70dcee" title="Metoda wypisujaca posture manipulatora na zadany strumien. Wypisanie postury manipulatora na zadnay s..." alt="" coords="729,459,967,488"/>
+</map>
