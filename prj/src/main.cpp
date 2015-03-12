@@ -6,7 +6,8 @@
  */
 
 #include <cstdlib>
-#include <ctime>
+#include <iostream>
+#include <fstream>
 
 #include "Benchmark.hh"
 
@@ -17,18 +18,30 @@ using namespace std;
  */
 int main()
 {
+  int sredni_czas=0;
   int* dane;
-  Benchmarker Tst;
   int* Tab=NULL;
-  dane=new int[1000];
+  Benchmarker Tst;
+  dane=new int[100000];
   srand(time(NULL));
 
-  for(int i=1;i<=1000;i++)
+  for(int i=1;i<=100000;i++)
     {
-      dane[i]=rand() %10000;
+      dane[i]=rand() %100000;
     }
 
-  Tst.testuj(Tab,dane,10,10);
+  ofstream plik;
+  plik.open("benchmark.csv");
+
+  for(int k=1;k<=100000;k*=2)
+    {
+      sredni_czas=Tst.testuj(Tab,dane,1000,k);
+      cout<<k<<" "<<sredni_czas<<endl;    
+      plik<<k<<","<<sredni_czas<<"\n";
+
+    }
+  plik.close();
+
 
 
   return 0;

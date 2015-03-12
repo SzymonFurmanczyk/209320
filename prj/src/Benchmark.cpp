@@ -10,14 +10,9 @@
 #include <cstdlib>
 #include <iostream>
 #include <ctime>
-#include <chrono>
 
 /*!
  *\brief Inicjalizator .
- *\param
- * polozenie- typu Punkt, punkt poczatkowy manipulatora.
- *\param
- * nazwa - typu string, nazwa manipulatora.
  */
 Benchmarker::Benchmarker()
 {}
@@ -28,12 +23,13 @@ Benchmarker::Benchmarker()
 Benchmarker::~Benchmarker()
 {}
 
-void Benchmarker::testuj(int* tab,int* dane,int liczba_przejsc,int liczba_danych)
+int Benchmarker::testuj(int* tab,int* dane,int liczba_przejsc,int liczba_danych)
 {
-  long double czas_operacji;
+  int czas_operacji=0;
+  int czas_calkowity_usredniony=0; 
   struct timespec start,stop;
 
-  czasy=new long double[liczba_przejsc];
+  czasy=new int[liczba_przejsc];
 
   tab=new int[liczba_danych];
   for(int i=1;i<=liczba_danych;i++)
@@ -43,14 +39,18 @@ void Benchmarker::testuj(int* tab,int* dane,int liczba_przejsc,int liczba_danych
 
   for(int j=1;j<=liczba_przejsc;j++)
     {
-      clock_gettime(CLOCK_MONOTONIC_RAW, &start);
+      clock_gettime(CLOCK_REALTIME, &start);
       for(int i=1;i<=liczba_danych;i++)
 	{
 	  tab[i]=dane[i]*2;
 	}  
-      clock_gettime(CLOCK_MONOTONIC_RAW, &stop);
+      clock_gettime(CLOCK_REALTIME, &stop);
       
       czas_operacji = (stop.tv_nsec - start.tv_nsec);
       czasy[j]=czas_operacji;
+      czas_calkowity_usredniony+=czas_operacji;
     }
+
+  return czas_calkowity_usredniony/liczba_przejsc;
+
 }
