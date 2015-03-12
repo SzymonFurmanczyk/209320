@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_manipulator.html#af6b7bdf3110a5a8eef67d11aca19c7e3" title="Wyliczenie przegubow manipulatora. Metoda wyliczajaca przeguby z dlugosci i kata wypadkowego ogniwa..." alt="" coords="315,59,507,88"/>
-<area shape="rect" id="node5" href="$class_manipulator.html#a44b10cee23d99b29dd8a343ab95b8618" title="Metoda inicjalizujaca manipulator z konfiguracji." alt="" coords="573,5,784,35"/>
-<area shape="rect" id="node11" href="$class_manipulator.html#ab412d9012de0b49fb681f3afbfc0efb2" title="Metoda inicjalizujaca manipulator z konfiguracji." alt="" coords="604,59,753,88"/>
-<area shape="rect" id="node13" href="$class_manipulator.html#a03d12039f367feb1e8970085eea1bdc4" title="Metoda przemieszczajaca manipulator." alt="" coords="555,112,803,141"/>
-<area shape="rect" id="node7" href="$class_scena.html#a952ec625109e29e51cbe79462c649567" title="Metoda dodajaca glowny manipulator. Metoda dodajaca manipulator glowny." alt="" coords="865,19,1009,48"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Funkcja glowna programu." alt="" coords="1072,52,1123,81"/>
-<area shape="rect" id="node15" href="$class_scena.html#a2b56546f735ea22a6b89ca30f78180ac" title="Metoda ruszajaca manipulatorem glownym. Metoda przemieszczajaca przeguby manipulatora glownego..." alt="" coords="851,85,1024,115"/>
-</map>

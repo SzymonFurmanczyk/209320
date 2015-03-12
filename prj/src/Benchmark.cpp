@@ -12,7 +12,7 @@
 #include <ctime>
 
 /*!
- *\brief Inicjalizator .
+ *\brief Konstruktor bezparametryczny .
  */
 Benchmarker::Benchmarker()
 {}
@@ -23,6 +23,21 @@ Benchmarker::Benchmarker()
 Benchmarker::~Benchmarker()
 {}
 
+
+ /*!
+ *\brief Metoda przeprowadzajaca sprawdzenie czasy dzialania  funkcji.
+ * sprawdzienie czasu dzialania mnozenia kazdego elementu tablicy razy 2.
+ *\param
+ * tab - typu int*, wskaznik na tablice z wartosciami.
+ *\param
+ * dane - typu int*, wskaznik na tablice z danymi generowanymi.
+ *\param
+ * liczba_przejsc - typu int, liczba przejsc przez dane.
+ *\param
+ * liczba_danych - typu int, liczba danych w tablicy. 
+ *\return
+ * czas_calkowity_usredniony - typu int, czas sredni dzialania funkcji.
+ */
 int Benchmarker::testuj(int* tab,int* dane,int liczba_przejsc,int liczba_danych)
 {
   int czas_operacji=0;

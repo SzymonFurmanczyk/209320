@@ -11,7 +11,7 @@
 using namespace std;
 
 /*!
- *\brief klasa benchmarku.
+ *\brief Klasa benchmarku.
  */
 class Benchmarker
 {

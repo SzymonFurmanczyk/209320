@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_manipulator.html#aa043923862518c82b68778835940ba0b" title="Metoda sprawdzajaca czy 2 manipulator przecina sie z odcinkiem. Sprawdzenie przecinania sie z odcinki..." alt="" coords="216,32,435,61"/>
-<area shape="rect" id="node5" href="$class_manipulator.html#aec4be49e25b0770228b08005472602a2" title="Metoda sprawdzajaca czy 2 manipulatory sie przecinaja. Sprawdzenie przecinania sie manipulatorow..." alt="" coords="483,5,768,35"/>
-<area shape="rect" id="node11" href="$class_wielobok.html#acacbf5ab29a3feb108428786817b2343" title="Metoda sprawdzajaca czy wielobok i manipulator sie przecinaja. Sprawdzenie przecinania sie obiektow..." alt="" coords="489,59,761,88"/>
-<area shape="rect" id="node7" href="$class_scena.html#a85e4fb07f6fa0540a8827088b740d3bc" title="Metoda uruchamiajaca wykrywanie przeciec dla glownego manipulatora na scenie. Metoda wykrywajaca prze..." alt="" coords="816,5,973,35"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Funkcja glowna programu." alt="" coords="1021,5,1072,35"/>
-</map>

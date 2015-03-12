@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_manipulator.html#ab412d9012de0b49fb681f3afbfc0efb2" title="Metoda inicjalizujaca manipulator z konfiguracji." alt="" coords="295,5,444,35"/>
-<area shape="rect" id="node5" href="$class_manipulator.html#a03d12039f367feb1e8970085eea1bdc4" title="Metoda przemieszczajaca manipulator." alt="" coords="245,59,493,88"/>
-<area shape="rect" id="node7" href="$class_scena.html#a2b56546f735ea22a6b89ca30f78180ac" title="Metoda ruszajaca manipulatorem glownym. Metoda przemieszczajaca przeguby manipulatora glownego..." alt="" coords="541,59,715,88"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Funkcja glowna programu." alt="" coords="763,59,813,88"/>
-</map>

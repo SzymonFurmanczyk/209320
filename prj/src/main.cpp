@@ -33,9 +33,9 @@ int main()
   ofstream plik;
   plik.open("benchmark.csv");
 
-  for(int k=1;k<=100000;k*=2)
+  for(int k=0;k<=10000;k+=10)
     {
-      sredni_czas=Tst.testuj(Tab,dane,1000,k);
+      sredni_czas=Tst.testuj(Tab,dane,10,k);
       cout<<k<<" "<<sredni_czas<<endl;    
       plik<<k<<","<<sredni_czas<<"\n";
 

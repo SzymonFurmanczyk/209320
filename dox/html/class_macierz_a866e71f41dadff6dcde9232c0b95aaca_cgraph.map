@@ -1,4 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_macierz.html#a260bd3a46268e3438de4eefd3ba7c0f2" title="Metoda zmaieniajaca kolumny macierzy. Gdy napotka na przekatnej zero zamienia kolumny do momentu az b..." alt="" coords="228,5,444,35"/>
-<area shape="rect" id="node5" href="$class_macierz.html#acc532f8b824855b2c22478dacf5602c6" title="Metoda eliminacji Gaussa. Wylicza zmienione elementy macierzy zgodnie z obowiazujacym wzorem..." alt="" coords="245,59,427,88"/>
-</map>

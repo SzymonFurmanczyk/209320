@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$class_przeszkoda.html" title="Modeluje pojecie przeszkody &#45; czysto wirtualnie." alt="" coords="5,117,96,147"/>
-<area shape="rect" id="node4" href="$class_odcinek.html" title="Modeluje pojecie odcinka." alt="" coords="229,117,299,147"/>
-<area shape="rect" id="node6" href="$class_punkt.html" title="Modeluje pojecie punktu o wspolrzednych x,y." alt="" coords="156,5,212,35"/>
-</map>
