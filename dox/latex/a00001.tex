@@ -1,24 +1,95 @@
-\hypertarget{a00001}{\subsection{Benchmark.\-cpp File Reference}
-\label{a00001}\index{Benchmark.\-cpp@{Benchmark.\-cpp}}
+\hypertarget{a00001}{\subsection{Benchmarker Class Reference}
+\label{a00001}\index{Benchmarker@{Benchmarker}}
 }
 
 
-Metody klasy Benchmarker.  
+Klasa benchmarku.  
 
 
-{\ttfamily \#include \char`\"{}Benchmark.\-hh\char`\"{}}\\*
-{\ttfamily \#include $<$cstdlib$>$}\\*
-{\ttfamily \#include $<$iostream$>$}\\*
-{\ttfamily \#include $<$ctime$>$}\\*
-Include dependency graph for Benchmark.\-cpp\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00005}
-\end{center}
-\end{figure}
+
+
+{\ttfamily \#include $<$Benchmark.\-hh$>$}
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00001_aab7e84d7ce96b1a26eee22f9fc11a55a}{Benchmarker} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny . \end{DoxyCompactList}\item 
+\hyperlink{a00001_a2ef2105cab075e03500d057780c7694e}{$\sim$\-Benchmarker} ()
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny. \end{DoxyCompactList}\item 
+long long int \hyperlink{a00001_af0281a2fc6e1cb2e0041d548f6163fee}{testuj} (int $\ast$, int $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Metoda przeprowadzajaca sprawdzenie czasy dzialania funkcji. sprawdzienie czasu dzialania mnozenia kazdego elementu tablicy razy 2. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{a00001_a917b8efeea3b8a82882be68e490548e8}{generuj\-\_\-dane} (int)
+\end{DoxyCompactItemize}
 
 
 \subsubsection{Detailed Description}
-Metody klasy Benchmarker. Plik zawiera metody klasy Benchmarker. 
+Klasa benchmarku. 
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{a00001_aab7e84d7ce96b1a26eee22f9fc11a55a}{\index{Benchmarker@{Benchmarker}!Benchmarker@{Benchmarker}}
+\index{Benchmarker@{Benchmarker}!Benchmarker@{Benchmarker}}
+\paragraph[{Benchmarker}]{\setlength{\rightskip}{0pt plus 5cm}Benchmarker\-::\-Benchmarker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00001_aab7e84d7ce96b1a26eee22f9fc11a55a}
+
+
+Konstruktor bezparametryczny . 
+
+\hypertarget{a00001_a2ef2105cab075e03500d057780c7694e}{\index{Benchmarker@{Benchmarker}!$\sim$\-Benchmarker@{$\sim$\-Benchmarker}}
+\index{$\sim$\-Benchmarker@{$\sim$\-Benchmarker}!Benchmarker@{Benchmarker}}
+\paragraph[{$\sim$\-Benchmarker}]{\setlength{\rightskip}{0pt plus 5cm}Benchmarker\-::$\sim$\-Benchmarker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00001_a2ef2105cab075e03500d057780c7694e}
+
+
+Destruktor bezparametryczny. 
+
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{a00001_a917b8efeea3b8a82882be68e490548e8}{\index{Benchmarker@{Benchmarker}!generuj\-\_\-dane@{generuj\-\_\-dane}}
+\index{generuj\-\_\-dane@{generuj\-\_\-dane}!Benchmarker@{Benchmarker}}
+\paragraph[{generuj\-\_\-dane}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Benchmarker\-::generuj\-\_\-dane (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{a00001_a917b8efeea3b8a82882be68e490548e8}
+\hypertarget{a00001_af0281a2fc6e1cb2e0041d548f6163fee}{\index{Benchmarker@{Benchmarker}!testuj@{testuj}}
+\index{testuj@{testuj}!Benchmarker@{Benchmarker}}
+\paragraph[{testuj}]{\setlength{\rightskip}{0pt plus 5cm}long long int Benchmarker\-::testuj (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{tab, }
+\item[{int $\ast$}]{dane, }
+\item[{int}]{liczba\-\_\-przejsc, }
+\item[{int}]{liczba\-\_\-danych}
+\end{DoxyParamCaption}
+)}}\label{a00001_af0281a2fc6e1cb2e0041d548f6163fee}
+
+
+Metoda przeprowadzajaca sprawdzenie czasy dzialania funkcji. sprawdzienie czasu dzialania mnozenia kazdego elementu tablicy razy 2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & -\/ typu int$\ast$, wskaznik na tablice z wartosciami. \\
+\hline
+{\em dane} & -\/ typu int$\ast$, wskaznik na tablice z danymi generowanymi. \\
+\hline
+{\em liczba\-\_\-przejsc} & -\/ typu int, liczba przejsc przez dane. \\
+\hline
+{\em liczba\-\_\-danych} & -\/ typu int, liczba danych w tablicy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+czas\-\_\-calkowity\-\_\-usredniony -\/ typu int, czas sredni dzialania funkcji. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00003}{Benchmark.\-hh}\item 
+\hyperlink{a00002}{Benchmark.\-cpp}\end{DoxyCompactItemize}

@@ -1,12 +1,34 @@
 \begin{theindex}
 
-  \item {Benchmark.\discretionary {-}{}{}cpp}, \hyperpage{1}
+  \item {$\sim $\discretionary {-}{}{}Benchmarker}
+    \subitem {Benchmarker}, \hyperpage{2}
+
+  \indexspace
+
+  \item {Benchmark.\discretionary {-}{}{}cpp}, \hyperpage{3}
+  \item {Benchmark.\discretionary {-}{}{}hh}, \hyperpage{3}
+  \item {Benchmarker}, \hyperpage{2}
+    \subitem {$\sim $\discretionary {-}{}{}Benchmarker}, \hyperpage{2}
+    \subitem {Benchmarker}, \hyperpage{2}
+    \subitem {generuj\discretionary {-}{}{}\_\discretionary {-}{}{}dane}, 
+		\hyperpage{2}
+    \subitem {testuj}, \hyperpage{2}
+
+  \indexspace
+
+  \item {generuj\discretionary {-}{}{}\_\discretionary {-}{}{}dane}
+    \subitem {Benchmarker}, \hyperpage{2}
 
   \indexspace
 
   \item {main}
-    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{3}
-  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{2}
-    \subitem {main}, \hyperpage{3}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{5}
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{4}
+    \subitem {main}, \hyperpage{5}
+
+  \indexspace
+
+  \item {testuj}
+    \subitem {Benchmarker}, \hyperpage{2}
 
 \end{theindex}
