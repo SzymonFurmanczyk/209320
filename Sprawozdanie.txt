@@ -1,0 +1,6 @@
+Zajęcia projektowania algorytmów i metod sztucznej inteligencji 209320
+Sprawozdanie 1:
+Przeprowadzone testy wykazały że algorytm spełnia klase O(1);
+W wynikach wystepują zakłócenia które mogą byc spowodowane nierównomierną praca procesora
+w związku z uruchomieniem programu na maszynie wirtualnej.
+Na wyniki ma także wpływ działanie innych programów które uruchomione były równolegle.
