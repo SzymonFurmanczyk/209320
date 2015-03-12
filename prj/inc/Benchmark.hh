@@ -15,13 +15,13 @@ using namespace std;
  */
 class Benchmarker
 {
-  int * czasy;
+  long long int * czasy;
 
 public:
   Benchmarker();
   ~Benchmarker();
 
-  int testuj(int*,int*,int,int);
+  long long int testuj(int*,int*,int,int);
   int* generuj_dane(int);
 
 };
