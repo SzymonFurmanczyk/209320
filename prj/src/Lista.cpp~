@@ -1,0 +1,73 @@
+/*!
+ *\file 
+ *\brief Metody klasy Lista.
+ *
+ * Plik zawiera metody klasy Lista.
+ */
+
+#include "Lista.hh"
+
+#include <cstdlib>
+#include <iostream>
+
+/*!
+ *\brief Konstruktor bezparametryczny.
+ *       Konstruktor inicjalizujacy wskaznik 
+ *       glowny listy wartoscia NULL
+ */
+void Lista::Lista()
+{
+straznik=NULL;
+}
+
+/*!
+ *\brief Destruktor bezparametryczny.
+ */
+void Lista::~Lista()
+{
+while(straznik!=NULL)
+{
+element * tmp = straznik-> kolejny;
+delete straznik;
+straznik=tmp;
+}
+}
+
+/*!
+ *\brief Metoda wrzucajaca element na liste.
+ */
+void Lista::push(int wartosc)
+{
+element * nowy = new element;
+nowy->kontener = wartosc;
+nowy->nastepny = straznik;
+straznik=nowy;
+}
+
+/*!
+ *\brief Metoda zciagajaca element z listy
+ */
+int Lista::pop()
+{
+wartosc=element->kontener;
+
+
+
+
+return wartosc;
+}
+
+/*!
+ *\brief 
+ */
+int Lista::size()
+{
+
+}
+
+
+
+
+
+
+

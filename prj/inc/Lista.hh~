@@ -1,0 +1,38 @@
+#ifndef LISTA_HH
+#define LISTA_HH
+
+/*!
+ *\file 
+ *\brief Definicja klasy Lista.
+ *
+ * Plik zawiera definicje klasy Lista.
+ */
+
+using namespace std;
+
+/*!
+ *\brief Klasa Lista.
+ */
+class Lista
+{
+
+struct element
+{
+int kontener;
+element * nastepny;
+};
+	
+element * straznik;
+	
+	
+public:
+Lista();
+~Lista();
+void push(int);
+int pop();
+int size();
+
+};
+
+
+#endif

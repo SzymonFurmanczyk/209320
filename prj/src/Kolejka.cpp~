@@ -1,0 +1,39 @@
+/*!
+ *\file 
+ *\brief Metody klasy Kolejka.
+ *
+ * Plik zawiera metody klasy Kolejka.
+ */
+
+#include "Kolejka.hh"
+
+#include <cstdlib>
+#include <iostream>
+
+/*!
+ *\brief 
+ */
+Kolejka::push()
+{
+}
+
+/*!
+ *\brief 
+ */
+Kolejka::pop()
+{
+}
+
+/*!
+ *\brief 
+ */
+Kolejka::size()
+{
+}
+
+
+
+
+
+
+

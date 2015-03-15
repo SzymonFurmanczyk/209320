@@ -1,0 +1,28 @@
+#ifndef KOLEJKA_HH
+#define KOLEJKA_HH
+
+/*!
+ *\file 
+ *\brief Definicja klasy Kolejka.
+ *
+ * Plik zawiera definicje klasy Kolejka.
+ */
+
+using namespace std;
+
+/*!
+ *\brief Klasa Kolejka.
+ */
+class Kolejka
+{
+
+
+public:
+push();
+pop();
+size();
+
+};
+
+
+#endif

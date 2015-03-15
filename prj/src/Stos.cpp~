@@ -1,0 +1,39 @@
+/*!
+ *\file 
+ *\brief Metody klasy Stos.
+ *
+ * Plik zawiera metody klasy Stos.
+ */
+
+#include "Stos.hh"
+
+#include <cstdlib>
+#include <iostream>
+
+/*!
+ *\brief 
+ */
+Stos::push()
+{
+}
+
+/*!
+ *\brief 
+ */
+Stos::pop()
+{
+}
+
+/*!
+ *\brief 
+ */
+Stos::size()
+{
+}
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+#ifndef BENCHMARK_HH
+#define BENCHMARK_HH
+
+/*!
+ *\file 
+ *\brief Definicja klasy Stos.
+ *
+ * Plik zawiera definicje klasy Stos.
+ */
+
+using namespace std;
+
+/*!
+ *\brief Klasa Stos.
+ */
+class Benchmarker
+{
+
+public:
+push();
+pop();
+size();
+
+};
+
+
+#endif
