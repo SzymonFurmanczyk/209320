@@ -5,19 +5,57 @@
 \contentsline {section}{\numberline {3}Class Documentation}{2}{section.3}
 \contentsline {subsection}{\numberline {3.1}Benchmarker Class Reference}{2}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Detailed Description}{2}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{2}{subsubsection.3.1.2}
-\contentsline {paragraph}{\numberline {3.1.2.1}Benchmarker}{2}{paragraph.3.1.2.1}
-\contentsline {paragraph}{\numberline {3.1.2.2}$\sim $\discretionary {-}{}{}Benchmarker}{2}{paragraph.3.1.2.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Member Function Documentation}{2}{subsubsection.3.1.3}
-\contentsline {paragraph}{\numberline {3.1.3.1}generuj\discretionary {-}{}{}\_\discretionary {-}{}{}dane}{2}{paragraph.3.1.3.1}
-\contentsline {paragraph}{\numberline {3.1.3.2}testuj}{2}{paragraph.3.1.3.2}
-\contentsline {section}{\numberline {4}File Documentation}{3}{section.4}
-\contentsline {subsection}{\numberline {4.1}Benchmark.\discretionary {-}{}{}cpp File Reference}{3}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Detailed Description}{3}{subsubsection.4.1.1}
-\contentsline {subsection}{\numberline {4.2}Benchmark.\discretionary {-}{}{}hh File Reference}{3}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Detailed Description}{4}{subsubsection.4.2.1}
-\contentsline {subsection}{\numberline {4.3}main.\discretionary {-}{}{}cpp File Reference}{4}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Detailed Description}{5}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Function Documentation}{5}{subsubsection.4.3.2}
-\contentsline {paragraph}{\numberline {4.3.2.1}main}{5}{paragraph.4.3.2.1}
-\contentsline {section}{Index}{6}{section*.5}
+\contentsline {subsubsection}{\numberline {3.1.2}Member Function Documentation}{2}{subsubsection.3.1.2}
+\contentsline {paragraph}{\numberline {3.1.2.1}generuj\discretionary {-}{}{}\_\discretionary {-}{}{}dane}{2}{paragraph.3.1.2.1}
+\contentsline {paragraph}{\numberline {3.1.2.2}testuj}{2}{paragraph.3.1.2.2}
+\contentsline {subsection}{\numberline {3.2}Kolejka Class Reference}{2}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Detailed Description}{3}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{3}{subsubsection.3.2.2}
+\contentsline {paragraph}{\numberline {3.2.2.1}Kolejka}{3}{paragraph.3.2.2.1}
+\contentsline {paragraph}{\numberline {3.2.2.2}$\sim $\discretionary {-}{}{}Kolejka}{3}{paragraph.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Member Function Documentation}{3}{subsubsection.3.2.3}
+\contentsline {paragraph}{\numberline {3.2.3.1}pop}{3}{paragraph.3.2.3.1}
+\contentsline {paragraph}{\numberline {3.2.3.2}push}{3}{paragraph.3.2.3.2}
+\contentsline {paragraph}{\numberline {3.2.3.3}size}{3}{paragraph.3.2.3.3}
+\contentsline {subsection}{\numberline {3.3}Lista Class Reference}{3}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Detailed Description}{4}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{4}{subsubsection.3.3.2}
+\contentsline {paragraph}{\numberline {3.3.2.1}Lista}{4}{paragraph.3.3.2.1}
+\contentsline {paragraph}{\numberline {3.3.2.2}$\sim $\discretionary {-}{}{}Lista}{4}{paragraph.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Member Function Documentation}{4}{subsubsection.3.3.3}
+\contentsline {paragraph}{\numberline {3.3.3.1}pop}{4}{paragraph.3.3.3.1}
+\contentsline {paragraph}{\numberline {3.3.3.2}pop}{4}{paragraph.3.3.3.2}
+\contentsline {paragraph}{\numberline {3.3.3.3}push}{4}{paragraph.3.3.3.3}
+\contentsline {paragraph}{\numberline {3.3.3.4}push}{4}{paragraph.3.3.3.4}
+\contentsline {paragraph}{\numberline {3.3.3.5}size}{4}{paragraph.3.3.3.5}
+\contentsline {subsection}{\numberline {3.4}Stos Class Reference}{4}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Detailed Description}{5}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Constructor \& Destructor Documentation}{5}{subsubsection.3.4.2}
+\contentsline {paragraph}{\numberline {3.4.2.1}Stos}{5}{paragraph.3.4.2.1}
+\contentsline {paragraph}{\numberline {3.4.2.2}$\sim $\discretionary {-}{}{}Stos}{5}{paragraph.3.4.2.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Member Function Documentation}{5}{subsubsection.3.4.3}
+\contentsline {paragraph}{\numberline {3.4.3.1}pop}{5}{paragraph.3.4.3.1}
+\contentsline {paragraph}{\numberline {3.4.3.2}push}{5}{paragraph.3.4.3.2}
+\contentsline {paragraph}{\numberline {3.4.3.3}size}{5}{paragraph.3.4.3.3}
+\contentsline {section}{\numberline {4}File Documentation}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Benchmark.\discretionary {-}{}{}cpp File Reference}{5}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Detailed Description}{6}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Benchmark.\discretionary {-}{}{}hh File Reference}{6}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Detailed Description}{6}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.3}Kolejka.\discretionary {-}{}{}cpp File Reference}{6}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Detailed Description}{7}{subsubsection.4.3.1}
+\contentsline {subsection}{\numberline {4.4}Kolejka.\discretionary {-}{}{}hh File Reference}{7}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Detailed Description}{7}{subsubsection.4.4.1}
+\contentsline {subsection}{\numberline {4.5}Lista.\discretionary {-}{}{}cpp File Reference}{8}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Detailed Description}{8}{subsubsection.4.5.1}
+\contentsline {subsection}{\numberline {4.6}Lista.\discretionary {-}{}{}hh File Reference}{8}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Detailed Description}{9}{subsubsection.4.6.1}
+\contentsline {subsection}{\numberline {4.7}main.\discretionary {-}{}{}cpp File Reference}{9}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Detailed Description}{9}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Function Documentation}{9}{subsubsection.4.7.2}
+\contentsline {paragraph}{\numberline {4.7.2.1}main}{9}{paragraph.4.7.2.1}
+\contentsline {subsection}{\numberline {4.8}Stos.\discretionary {-}{}{}cpp File Reference}{10}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Detailed Description}{10}{subsubsection.4.8.1}
+\contentsline {subsection}{\numberline {4.9}Stos.\discretionary {-}{}{}hh File Reference}{10}{subsection.4.9}
+\contentsline {subsubsection}{\numberline {4.9.1}Detailed Description}{11}{subsubsection.4.9.1}
+\contentsline {section}{Index}{12}{section*.11}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.11)  12 MAR 2015 08:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.11)  15 MAR 2015 21:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,25 +1012,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 58.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 58.
+ [2])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
 Package hyperref Info: Option `pageanchor' set `true' on input line 125.
- (./annotated.tex
+
+(./annotated.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 1.
-)
-(./files.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 6.
- [1]) (./a00001.tex
+) (./files.tex [1]) (./a00001.tex
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
@@ -1050,87 +1049,166 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 61.
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 32.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 61.
+(Font)              scaled to size 8.99994pt on input line 32.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 78.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 49.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 78.
- [2]
-Underfull \hbox (badness 10000) detected at line 87
+(Font)              scaled to size 8.99994pt on input line 49.
+
+Underfull \hbox (badness 10000) detected at line 58
 [][][]
  []
 
-) (./a00002.tex
+) (./a00002.tex [2]) (./a00003.tex [3]
 
-pdfTeX warning: pdflatex (file ./a00007.pdf): PDF inclusion: found PDF version 
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 78.
+
+) (./a00004.tex [4]) (./a00005.tex
+
+pdfTeX warning: pdflatex (file ./a00016.pdf): PDF inclusion: found PDF version 
 <1.5>, but at most version <1.4> allowed
-<a00007.pdf, id=143, 353.32pt x 168.63pt>
-File: a00007.pdf Graphic file (type pdf)
- <use a00007.pdf>
-Package pdftex.def Info: a00007.pdf used on input line 18.
+<a00016.pdf, id=360, 353.32pt x 168.63pt>
+File: a00016.pdf Graphic file (type pdf)
+ <use a00016.pdf>
+Package pdftex.def Info: a00016.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 167.04712pt.
-) (./a00003.tex
+) (./a00006.tex
+[5 <./a00016.pdf>]
 
-pdfTeX warning: pdflatex (file ./a00008.pdf): PDF inclusion: found PDF version 
+pdfTeX warning: pdflatex (file ./a00017.pdf): PDF inclusion: found PDF version 
 <1.5>, but at most version <1.4> allowed
-<a00008.pdf, id=146, 238.8925pt x 168.63pt>
-File: a00008.pdf Graphic file (type pdf)
- <use a00008.pdf>
-Package pdftex.def Info: a00008.pdf used on input line 14.
+<a00017.pdf, id=381, 238.8925pt x 168.63pt>
+File: a00017.pdf Graphic file (type pdf)
+ <use a00017.pdf>
+Package pdftex.def Info: a00017.pdf used on input line 13.
 (pdftex.def)             Requested size: 238.0pt x 167.99916pt.
+) (./a00007.tex
 
-Underfull \vbox (badness 4266) has occurred while \output is active []
-
- [3 <./a00007.pdf>]) (./a00004.tex
-
-pdfTeX warning: pdflatex (file ./a00009.pdf): PDF inclusion: found PDF version 
+pdfTeX warning: pdflatex (file ./a00018.pdf): PDF inclusion: found PDF version 
 <1.5>, but at most version <1.4> allowed
-<a00009.pdf, id=160, 363.3575pt x 168.63pt>
-File: a00009.pdf Graphic file (type pdf)
- <use a00009.pdf>
-Package pdftex.def Info: a00009.pdf used on input line 18.
-(pdftex.def)             Requested size: 350.0pt x 162.43616pt.
- [4 <./a00008.pdf> <./a00009.pdf
+<a00018.pdf, id=384, 277.035pt x 168.63pt>
+File: a00018.pdf Graphic file (type pdf)
+ <use a00018.pdf>
+Package pdftex.def Info: a00018.pdf used on input line 16.
+(pdftex.def)             Requested size: 276.0pt x 168.00174pt.
 
-pdfTeX warning: pdflatex (file ./a00009.pdf): PDF inclusion: multiple pdfs with
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./a00017.pdf>]) (./a00008.tex
+
+pdfTeX warning: pdflatex (file ./a00019.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<a00019.pdf, id=399, 222.8325pt x 168.63pt>
+File: a00019.pdf Graphic file (type pdf)
+ <use a00019.pdf>
+Package pdftex.def Info: a00019.pdf used on input line 13.
+(pdftex.def)             Requested size: 222.0pt x 168.00174pt.
+) (./a00009.tex
+[7 <./a00018.pdf> <./a00019.pdf
+
+pdfTeX warning: pdflatex (file ./a00019.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
 >]
 
-pdfTeX warning: pdflatex (file ./a00004_ae66f6b31b5ad750f1fe042a706a4e3d4_cgrap
+pdfTeX warning: pdflatex (file ./a00020.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<a00020.pdf, id=421, 264.99pt x 168.63pt>
+File: a00020.pdf Graphic file (type pdf)
+ <use a00020.pdf>
+Package pdftex.def Info: a00020.pdf used on input line 16.
+(pdftex.def)             Requested size: 264.0pt x 168.01202pt.
+) (./a00010.tex
+
+pdfTeX warning: pdflatex (file ./a00021.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<a00021.pdf, id=425, 210.7875pt x 168.63pt>
+File: a00021.pdf Graphic file (type pdf)
+ <use a00021.pdf>
+Package pdftex.def Info: a00021.pdf used on input line 13.
+(pdftex.def)             Requested size: 210.0pt x 168.00432pt.
+) (./a00011.tex
+[8 <./a00020.pdf> <./a00021.pdf
+
+pdfTeX warning: pdflatex (file ./a00021.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+
+pdfTeX warning: pdflatex (file ./a00022.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<a00022.pdf, id=446, 580.1675pt x 168.63pt>
+File: a00022.pdf Graphic file (type pdf)
+ <use a00022.pdf>
+Package pdftex.def Info: a00022.pdf used on input line 20.
+(pdftex.def)             Requested size: 350.0pt x 101.7294pt.
+
+
+pdfTeX warning: pdflatex (file ./a00011_a0ddf1224851353fc92bfbff6f499fa97_cgrap
 h.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allow
 ed
 
-<a00004_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=180, 258.9675pt x 104.
-39pt>
-File: a00004_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf Graphic file (type pd
+<a00011_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=448, 230.8625pt x 188.
+705pt>
+File: a00011_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf Graphic file (type pd
 f)
- <use a00004_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
-Package pdftex.def Info: a00004_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf us
-ed on input line 50.
-(pdftex.def)             Requested size: 258.0pt x 104.01062pt.
-) [5 <./a00004_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>] (./refman.ind [6
+ <use a00011_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
+Package pdftex.def Info: a00011_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf us
+ed on input line 52.
+(pdftex.def)             Requested size: 230.0pt x 188.00195pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./a00022.pdf>]) (./a00012.tex
+
+pdfTeX warning: pdflatex (file ./a00023.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<a00023.pdf, id=463, 264.99pt x 168.63pt>
+File: a00023.pdf Graphic file (type pdf)
+ <use a00023.pdf>
+Package pdftex.def Info: a00023.pdf used on input line 16.
+(pdftex.def)             Requested size: 264.0pt x 168.01202pt.
+) (./a00013.tex
+
+pdfTeX warning: pdflatex (file ./a00024.pdf): PDF inclusion: found PDF version 
+<1.5>, but at most version <1.4> allowed
+<a00024.pdf, id=467, 210.7875pt x 168.63pt>
+File: a00024.pdf Graphic file (type pdf)
+ <use a00024.pdf>
+Package pdftex.def Info: a00024.pdf used on input line 13.
+(pdftex.def)             Requested size: 210.0pt x 168.00432pt.
+
+Underfull \vbox (badness 1895) has occurred while \output is active []
+
+ [10 <./a00011_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf> <./a00023.pdf
+
+pdfTeX warning: pdflatex (file ./a00023.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) [11 <./a00024.pdf>] (./refman.ind [12
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 32AA902641C0598514A78C8AE3DB79FE;2891.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
+(rerunfilecheck)             Checksum: 9512179B40BFA7172E569A83EE252D0D;7239.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
  ) 
 Here is how much of TeX's memory you used:
- 12063 strings out of 495032
- 165918 string characters out of 6181718
- 245359 words of memory out of 5000000
- 15027 multiletter control sequences out of 15000+600000
+ 12234 strings out of 495032
+ 169099 string characters out of 6181718
+ 247457 words of memory out of 5000000
+ 15100 multiletter control sequences out of 15000+600000
  55137 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,12n,43p,316b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,13n,43p,317b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/
@@ -1140,9 +1218,9 @@ public/tex-gyre/qhvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
 /texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (7 pages, 224065 bytes).
+Output written on refman.pdf (14 pages, 301895 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 605 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 
