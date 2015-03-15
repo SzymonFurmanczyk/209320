@@ -13,7 +13,7 @@
 
  /*!
  *\brief Metoda przeprowadzajaca sprawdzenie czasy dzialania  funkcji.
- * sprawdzienie czasu dzialania mnozenia kazdego elementu tablicy razy 2.
+ *
  *\param
  * tab - typu int*, wskaznik na tablice z wartosciami.
  *\param
@@ -25,7 +25,7 @@
  *\return
  * czas_calkowity_usredniony - typu long int, czas sredni dzialania funkcji.
  */
-long int Benchmarker::testuj(int* tab,int* dane,int liczba_przejsc,int liczba_danych)
+long int Benchmarker::testuj(int *tab,int *dane,int liczba_przejsc,int liczba_danych)
 {
   long int czas_operacji=0;
   long int czas_calkowity_usredniony=0; 
@@ -44,7 +44,7 @@ long int Benchmarker::testuj(int* tab,int* dane,int liczba_przejsc,int liczba_da
       
       for(int i=1;i<=liczba_danych;i++)
 	{
-	  tab[i]=dane[i]*2;
+
 	}  
       
       clock_gettime(CLOCK_REALTIME, &stop);
@@ -62,4 +62,22 @@ long int Benchmarker::testuj(int* tab,int* dane,int liczba_przejsc,int liczba_da
   
   return czas_calkowity_usredniony/liczba_przejsc;
   
+}
+
+ /*!
+ *\brief Metoda generujaca wartosci losowe z przedzialu 0 10000.
+ *\param
+ * l_danych - typu int, liczba generowanych danych.
+ *\return
+ * *dane - typu long int*, tablica z wygenerowanymi danymi.
+ */
+int *Benchmarker::generujdane(int l_danych)
+{
+  int *dane=new int[l_danych];
+  srand(time(NULL));
+  for(int i=1;i<=l_danych;i++)
+    {
+      dane[i]=rand() %100000;
+    }
+  return dane;
 }

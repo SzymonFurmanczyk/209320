@@ -16,22 +16,30 @@ using namespace std;
 class Lista
 {
 
-struct element
-{
-int kontener;
-element * nastepny;
-};
-	
-element * straznik;
-	
-	
+  struct element
+  {
+    int kontener;
+    element * nastepny;
+  };
+  
+  element * straznik;
+  int rozmiar;
+  
+  
 public:
-Lista();
-~Lista();
-void push(int);
-int pop();
-int size();
+  Lista();
+  ~Lista();
 
+  void push(int,int);
+  int pop(int);
+
+  void push(int wartosc)
+  {push(wartosc,1);};
+  int pop()
+  {return pop(1);};
+
+  int size();
+  
 };
 
 

@@ -11,7 +11,7 @@
 using namespace std;
 
 /*!
- *\brief Klasa Kolejka.
+ *\class Klasa Kolejka.
  */
 class Kolejka
 {
@@ -21,8 +21,8 @@ class Kolejka
     element *nastepny;
   };
   
-  element *straznik_glowa;
-  element *straznik_ogon;
+  element *straznik_koniec;
+  element *straznik_poczatek;
   int rozmiar;
 
 public:

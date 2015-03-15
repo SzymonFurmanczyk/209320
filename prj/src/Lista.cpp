@@ -13,7 +13,7 @@
 /*!
  *\brief Konstruktor bezparametryczny.
  *       Konstruktor inicjalizujacy straznika 
- *       listy wartoscia NULL.
+ *       listy wartoscia NULL oraz rozmiar wartoscia 0.
  */
 Lista::Lista()
 {
@@ -22,7 +22,7 @@ Lista::Lista()
 }
 
 /*!
- *\brief Destruktor bezparametryczny.
+ *\brief Destruktor bezparametryczny listy.
  */
 Lista::~Lista()
 {
@@ -35,7 +35,12 @@ Lista::~Lista()
 }
 
 /*!
- *\brief Metoda wrzucajaca element na liste.
+ *\brief Metoda umieszczajaca element okreslonej pozycji na liscie <0,rozmiar>.
+ *       Metoda inkrementuje rozmiar podczas umieszczania elementuna liscie.
+ *\param
+ * wartosc - typu int, wartosc umieszczana na liscie.
+ *\param
+ * pozycja - typu int, pozycja na ktorej jest umieszczana wartosc.
  */
 void Lista::push(int wartosc,int pozycja)
 {
@@ -77,7 +82,12 @@ void Lista::push(int wartosc,int pozycja)
 }
 
 /*!
- *\brief Metoda zciagajaca element z listy
+ *\brief Metoda zdejmujaca element z okreslonej pozycji listy <0,rozmiar>.
+ *       Metoda dekrementuje rozmiar przy zdejmowaniu elementu.
+ *\param
+ * pozycja - typu int, numer elementu ktory ma byc zdjety z listy.
+ *\return
+ * wartosc - typu int, wartosc zdejmowana z kolejki.
  */
 int Lista::pop(int pozycja)
 {
@@ -118,9 +128,10 @@ int Lista::pop(int pozycja)
 }
 
 /*!
- *\brief 
- */
-int Lista::size()
+ *\brief Metoda zwracajaca wielkosc listy.
+ *\return
+ * rozmiar - typu int,rozmiar listy.
+ */int Lista::size()
 {
   return rozmiar;
 }

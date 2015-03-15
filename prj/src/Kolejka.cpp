@@ -12,32 +12,36 @@
 
 /*!
  *\brief Konstruktor bezparametryczny.
- *       Konstruktor inicjalizujacy straznika 
- *       listy wartoscia NULL.
+ *       Konstruktor inicjalizujacy straznika_poczatek
+ *       i straznika_koniec  kolejki wartosciami NULL ,
+ *       oraz rozmiar kolejki wartoscia 0.
  */
 Kolejka::Kolejka()
 {
-  straznik_glowa=NULL;
-  straznik_ogon=NULL;
+  straznik_koniec=NULL;
+  straznik_poczatek=NULL;
   rozmiar=0;
 }
 
 /*!
- *\brief Destruktor bezparametryczny.
+ *\brief Destruktor bezparametryczny kolejki.
  */
 Kolejka::~Kolejka()
 {
-  while(straznik_ogon!=NULL)
+  while(straznik_poczatek!=NULL)
     {
-      straznik_glowa=NULL;
-      element * tmp= straznik_ogon->nastepny;
-      delete straznik_ogon;
-      straznik_ogon=tmp;
+      straznik_koniec=NULL;
+      element * tmp= straznik_poczatek->nastepny;
+      delete straznik_poczatek;
+      straznik_poczatek=tmp;
     }
 }
 
 /*!
- *\brief 
+ *\brief Metoda umieszczajaca element na koncu kolejki.
+ *       Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce.
+ *\param
+ * wartosc - typu int, wartosc umieszczana na koncu kolejki.
  */
 void Kolejka::push(int wartosc)
 {
@@ -45,33 +49,36 @@ void Kolejka::push(int wartosc)
   nowy->kontener = wartosc;
   if(rozmiar==0)
     {
-      nowy->nastepny = straznik_glowa;
-      straznik_glowa=nowy;
-      straznik_ogon=nowy;
+      nowy->nastepny = straznik_koniec;
+      straznik_koniec=nowy;
+      straznik_poczatek=nowy;
     }
   else
     {
       nowy->nastepny=NULL;
-      straznik_glowa->nastepny=nowy;
-      straznik_glowa=nowy;
+      straznik_koniec->nastepny=nowy;
+      straznik_koniec=nowy;
     }
   rozmiar++;
 }
 
 /*!
- *\brief 
+ *\brief Metoda zdejmujaca element z poczatku kolejki.
+ *       Metoda dekrementuje rozmiar przy zdejmowaniu elementu.
+ *\return
+ * wartosc - typu int, wartosc zdejmowana z kolejki.
  */
 int Kolejka::pop()
 {
   if(rozmiar!=0)
     {
       int wartosc;
-      wartosc=straznik_ogon->kontener;
-      element *tmp=straznik_ogon;
-      straznik_ogon=straznik_ogon->nastepny;
+      wartosc=straznik_poczatek->kontener;
+      element *tmp=straznik_poczatek;
+      straznik_poczatek=straznik_poczatek->nastepny;
       if(rozmiar==1)
 	{
-	  straznik_glowa=straznik_glowa->nastepny;
+	  straznik_koniec=straznik_koniec->nastepny;
 	}
       delete tmp;
       rozmiar--;
@@ -86,7 +93,9 @@ int Kolejka::pop()
 }
 
 /*!
- *\brief 
+ *\brief Metoda zwracajaca wielkosc kolejki.
+ *\return
+ * rozmiar - typu int,rozmiar kolejki.
  */
 int Kolejka::size()
 {

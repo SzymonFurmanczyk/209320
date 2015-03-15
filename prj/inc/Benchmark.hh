@@ -3,21 +3,21 @@
 
 /*!
  *\file 
- *\brief Definicja klasy Benchmark.
+ *\brief Definicja klasy Benchmarker.
  *
- * Plik zawiera definicje klasy Benchmark.
+ * Plik zawiera definicje klasy Benchmarker.
  */
 
 using namespace std;
 
 /*!
- *\brief Klasa benchmarku.
+ *\brief Klasa Benchmarker.
  */
 class Benchmarker
 {
 public:
   long int testuj(int*,int*,int,int);
-  int* generuj_dane(int);
+  int *generujdane(int);
 };
 
 

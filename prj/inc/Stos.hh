@@ -11,7 +11,7 @@
 using namespace std;
 
 /*!
- *\brief Klasa Stos.
+ *\class Klasa Stos.
  */
 class Stos
 {

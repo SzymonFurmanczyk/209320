@@ -5,13 +5,13 @@
  *\file 
  *\brief Definicja klasy Lista.
  *
- * Plik zawiera definicje klasy Lista.
+ * Plik zawiera definicje klasy modulujacej pojecie listy jednokierunkowej.
  */
 
 using namespace std;
 
 /*!
- *\brief Klasa Lista.
+ *\class Klasa Lista.
  */
 class Lista
 {

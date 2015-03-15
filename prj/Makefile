@@ -31,6 +31,10 @@ obj/Kolejka.o: src/Kolejka.cpp inc/Kolejka.hh
 
 clean:
 	rm -f obj/*.o program2
+dox:
+	cd .. && cd dox/latex && $(MAKE)
+doxclean:
+	cd .. && cd dox/latex && $(MAKE) clean
 help:
 	@echo
 	@echo " make        - tworzenie i uruchomienie aplikacji"

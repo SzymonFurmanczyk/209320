@@ -13,7 +13,7 @@
 /*!
  *\brief Konstruktor bezparametryczny.
  *       Konstruktor inicjalizujacy straznika 
- *       listy wartoscia NULL.
+ *       stosu wartoscia NULL ,oraz rozmiar wartoscia 0.
  */
 Stos::Stos()
 {
@@ -22,7 +22,7 @@ Stos::Stos()
 }
 
 /*!
- *\brief Destruktor bezparametryczny.
+ *\brief Destruktor bezparametryczny stosu.
  */
 Stos::~Stos()
 {
@@ -35,7 +35,10 @@ Stos::~Stos()
 }
 
 /*!
- *\brief 
+ *\brief Metoda umieszczajaca element na stosie
+ *       Metoda inkrementuje rozmiar podczas umieszczania elementu na stosie.
+ *\param
+ * wartosc - typu int, wartosc umieszczana na stosie.
  */
 void Stos::push(int wartosc)
 {
@@ -47,7 +50,10 @@ void Stos::push(int wartosc)
 }
 
 /*!
- *\brief 
+ *\brief Metoda zdejmujaca element ze stosu.
+ *       Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu.
+ *\return
+ * wartosc - typu int, wartosc zdejmowana ze stosu.
  */
 int Stos::pop()
 {
@@ -68,8 +74,11 @@ int Stos::pop()
     }
 }
 
+
 /*!
- *\brief 
+ *\brief Metoda zwracajaca wielkosc stosu.
+ *\return
+ * rozmiar - typu int,rozmiar stosu.
  */
 int Stos::size()
 {
