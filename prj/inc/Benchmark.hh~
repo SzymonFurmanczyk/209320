@@ -1,5 +1,5 @@
-#ifndef BENCHMARKER_HH
-#define BENCHMARKER_HH
+#ifndef BENCHMARK_HH
+#define BENCHMARK_HH
 
 /*!
  *\file 
@@ -8,43 +8,23 @@
  * Plik zawiera definicje klasy Benchmark.
  */
 
-
 using namespace std;
 
 /*!
- *\brief Modeluje pojecie manipulatora.
+ *\brief Klasa benchmarku.
  */
-class Manipulator:public Przeszkoda
+class Benchmarker
 {
-  
+  long int * czasy;
 
 public:
-  Manipulator(Punkt ,string);
-  ~Manipulator();
+  Benchmarker();
+  ~Benchmarker();
 
-  double SumujKaty(int ile);
-  void WyliczPrzeguby();
+  long int testuj(int*,int*,int,int);
+  int* generuj_dane(int);
 
-  void InicjalizujOgniwa();
-
-  void ZapoczatkujGlowny(string);
-
-  void WykonujPrzemieszczenia(string);
-
-  istream& WczytajKonfiguracje(istream&);
-  ostream& WypiszKonfiguracje(ostream&);
-
-  istream& WczytajPosture(istream&);
-  ostream& WypiszPosture(ostream&);
-
-  ostream& WypiszPrzeguby(ostream&);
-  ostream& WypiszPrzegubyCzysto(ostream&);
-
-  void Inicjalizuj(vector<Punkt>& c){};
-  void Inicjalizuj(string,string);
-  void WypiszCzysto(string);
-  bool SprawdzPrzecinaniePrzeszkody(Manipulator*);
-  bool SprawdzZOdcinkiem(Odcinek);
 };
+
 
 #endif
