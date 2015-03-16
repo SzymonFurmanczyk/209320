@@ -10,6 +10,6 @@ np.: 2 100    program inkrementuje liczbe danych wpisywanych na liste od 1 do 10
 usrednia wynik czasowy; wpisuje wyniki do odpowiednich plikow .csv
 
 lub 
-
+	
 ./program1
 uruchomienie dla podtawowych wartosci 10 1000
