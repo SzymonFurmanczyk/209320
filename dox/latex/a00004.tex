@@ -1,4 +1,4 @@
-\hypertarget{a00004}{\subsection{Stos Class Reference}
+\hypertarget{a00004}{\section{Stos Class Reference}
 \label{a00004}\index{Stos@{Stos}}
 }
 
@@ -10,71 +10,94 @@ Klasa \hyperlink{a00004}{Stos}.
 
 {\ttfamily \#include $<$Stos.\-hh$>$}
 
-\subsubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{a00004_a1de3b50386d5dfb56ddece17d0ea2389}{Stos} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika listy wartoscia N\-U\-L\-L. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika stosu wartoscia N\-U\-L\-L ,oraz rozmiar wartoscia 0. \end{DoxyCompactList}\item 
 \hyperlink{a00004_af9a198e2540e18adcc0b5259105fd78e}{$\sim$\-Stos} ()
-\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny stosu. \end{DoxyCompactList}\item 
 void \hyperlink{a00004_afe381df2afa35f3d122ca180300005dd}{push} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na stosie Metoda inkrementuje rozmiar podczas umieszczania elementu na stosie. \end{DoxyCompactList}\item 
 int \hyperlink{a00004_aabb14b8a389c55da6e2b50fbb179ed56}{pop} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element ze stosu. Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu. \end{DoxyCompactList}\item 
 int \hyperlink{a00004_a696195d5125d9bbe6b491bc5985f9461}{size} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc stosu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsubsection{Detailed Description}
+\subsection{Detailed Description}
 Klasa \hyperlink{a00004}{Stos}. 
 
-\subsubsection{Constructor \& Destructor Documentation}
+\subsection{Constructor \& Destructor Documentation}
 \hypertarget{a00004_a1de3b50386d5dfb56ddece17d0ea2389}{\index{Stos@{Stos}!Stos@{Stos}}
 \index{Stos@{Stos}!Stos@{Stos}}
-\paragraph[{Stos}]{\setlength{\rightskip}{0pt plus 5cm}Stos\-::\-Stos (
+\subsubsection[{Stos}]{\setlength{\rightskip}{0pt plus 5cm}Stos\-::\-Stos (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{a00004_a1de3b50386d5dfb56ddece17d0ea2389}
 
 
-Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika listy wartoscia N\-U\-L\-L. 
+Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika stosu wartoscia N\-U\-L\-L ,oraz rozmiar wartoscia 0. 
 
 \hypertarget{a00004_af9a198e2540e18adcc0b5259105fd78e}{\index{Stos@{Stos}!$\sim$\-Stos@{$\sim$\-Stos}}
 \index{$\sim$\-Stos@{$\sim$\-Stos}!Stos@{Stos}}
-\paragraph[{$\sim$\-Stos}]{\setlength{\rightskip}{0pt plus 5cm}Stos\-::$\sim$\-Stos (
+\subsubsection[{$\sim$\-Stos}]{\setlength{\rightskip}{0pt plus 5cm}Stos\-::$\sim$\-Stos (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{a00004_af9a198e2540e18adcc0b5259105fd78e}
 
 
-Destruktor bezparametryczny. 
+Destruktor bezparametryczny stosu. 
 
 
 
-\subsubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \hypertarget{a00004_aabb14b8a389c55da6e2b50fbb179ed56}{\index{Stos@{Stos}!pop@{pop}}
 \index{pop@{pop}!Stos@{Stos}}
-\paragraph[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Stos\-::pop (
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Stos\-::pop (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{a00004_aabb14b8a389c55da6e2b50fbb179ed56}
+
+
+Metoda zdejmujaca element ze stosu. Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu. 
+
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana ze stosu. 
+\end{DoxyReturn}
 \hypertarget{a00004_afe381df2afa35f3d122ca180300005dd}{\index{Stos@{Stos}!push@{push}}
 \index{push@{push}!Stos@{Stos}}
-\paragraph[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Stos\-::push (
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Stos\-::push (
 \begin{DoxyParamCaption}
 \item[{int}]{wartosc}
 \end{DoxyParamCaption}
 )}}\label{a00004_afe381df2afa35f3d122ca180300005dd}
+
+
+Metoda umieszczajaca element na stosie Metoda inkrementuje rozmiar podczas umieszczania elementu na stosie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu int, wartosc umieszczana na stosie. \\
+\hline
+\end{DoxyParams}
 \hypertarget{a00004_a696195d5125d9bbe6b491bc5985f9461}{\index{Stos@{Stos}!size@{size}}
 \index{size@{size}!Stos@{Stos}}
-\paragraph[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Stos\-::size (
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Stos\-::size (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{a00004_a696195d5125d9bbe6b491bc5985f9461}
+
+
+Metoda zwracajaca wielkosc stosu. 
+
+\begin{DoxyReturn}{Returns}
+rozmiar -\/ typu int,rozmiar stosu. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

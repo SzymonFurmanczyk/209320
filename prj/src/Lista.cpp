@@ -87,7 +87,7 @@ void Lista::push(int wartosc,int pozycja)
  *\param
  * pozycja - typu int, numer elementu ktory ma byc zdjety z listy.
  *\return
- * wartosc - typu int, wartosc zdejmowana z kolejki.
+ * wartosc - typu int, wartosc zdejmowana z listy.
  */
 int Lista::pop(int pozycja)
 {

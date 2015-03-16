@@ -1,3 +1,6 @@
+#ifndef BENCHMARK_CPP
+#define BENCHMARK_CPP
+
 /*!
  *\file 
  *\brief Metody klasy Benchmarker.
@@ -6,16 +9,19 @@
  */
 
 #include "Benchmark.hh"
+#include "Lista.hh"
+#include "Stos.hh"
+#include "Kolejka.hh"
 
 #include <cstdlib>
 #include <iostream>
 #include <ctime>
 
  /*!
- *\brief Metoda przeprowadzajaca sprawdzenie czasy dzialania  funkcji.
- *
+ *\brief Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji.
+ *       Typy: Lista , Stos , Kolejka.
  *\param
- * tab - typu int*, wskaznik na tablice z wartosciami.
+ * Tab - typu T*, wskaznik na zaimplementowany stos/liste/kolejke.
  *\param
  * dane - typu int*, wskaznik na tablice z danymi generowanymi.
  *\param
@@ -25,29 +31,22 @@
  *\return
  * czas_calkowity_usredniony - typu long int, czas sredni dzialania funkcji.
  */
-long int Benchmarker::testuj(int *tab,int *dane,int liczba_przejsc,int liczba_danych)
+template <class T> long int Benchmarker::testuj(T *Tab,int *dane,int liczba_przejsc,int liczba_danych)
 {
   long int czas_operacji=0;
   long int czas_calkowity_usredniony=0; 
   struct timespec start,stop;
-
-  tab=new int[liczba_danych];
-
-  for(int i=1;i<=liczba_danych;i++)
-    {
-      tab[i]=dane[i];
-    }
   
   for(int j=1;j<=liczba_przejsc;j++)
     {
-      clock_gettime(CLOCK_REALTIME, &start);
+      clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start);
       
       for(int i=1;i<=liczba_danych;i++)
 	{
-
+	  Tab->push(dane[i]);
 	}  
       
-      clock_gettime(CLOCK_REALTIME, &stop);
+      clock_gettime(CLOCK_CLOCK_PROCESS_CPUTIME_ID, &stop);
       
       czas_operacji = (stop.tv_nsec - start.tv_nsec);
       if(czas_operacji>0)
@@ -63,6 +62,12 @@ long int Benchmarker::testuj(int *tab,int *dane,int liczba_przejsc,int liczba_da
   return czas_calkowity_usredniony/liczba_przejsc;
   
 }
+
+
+template long int Benchmarker::testuj<Lista>(Lista*,int*,int,int);
+template long int Benchmarker::testuj<Stos>(Stos*,int*,int,int);
+template long int Benchmarker::testuj<Kolejka>(Kolejka*,int*,int,int);
+
 
  /*!
  *\brief Metoda generujaca wartosci losowe z przedzialu 0 10000.
@@ -81,3 +86,5 @@ int *Benchmarker::generujdane(int l_danych)
     }
   return dane;
 }
+
+#endif

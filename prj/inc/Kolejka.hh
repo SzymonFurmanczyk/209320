@@ -11,7 +11,7 @@
 using namespace std;
 
 /*!
- *\class Klasa Kolejka.
+ *\brief Klasa Kolejka.
  */
 class Kolejka
 {

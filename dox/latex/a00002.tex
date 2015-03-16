@@ -1,4 +1,4 @@
-\hypertarget{a00002}{\subsection{Kolejka Class Reference}
+\hypertarget{a00002}{\section{Kolejka Class Reference}
 \label{a00002}\index{Kolejka@{Kolejka}}
 }
 
@@ -10,71 +10,94 @@ Klasa \hyperlink{a00002}{Kolejka}.
 
 {\ttfamily \#include $<$Kolejka.\-hh$>$}
 
-\subsubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{a00002_a37c886fdc73dce62b04da0381dec5484}{Kolejka} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika listy wartoscia N\-U\-L\-L. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika\-\_\-poczatek i straznika\-\_\-koniec kolejki wartosciami N\-U\-L\-L , oraz rozmiar kolejki wartoscia 0. \end{DoxyCompactList}\item 
 \hyperlink{a00002_a352f86ff08cd47be6c35c60bb0f873a6}{$\sim$\-Kolejka} ()
-\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny kolejki. \end{DoxyCompactList}\item 
 void \hyperlink{a00002_abdd1c95eb88905167ec26658b6b76611}{push} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na koncu kolejki. Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce. \end{DoxyCompactList}\item 
 int \hyperlink{a00002_aa99d7c7459116c2331b301637b45b666}{pop} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z poczatku kolejki. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. \end{DoxyCompactList}\item 
 int \hyperlink{a00002_a82920d7b90e967a4d5e175a20fe6de68}{size} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsubsection{Detailed Description}
+\subsection{Detailed Description}
 Klasa \hyperlink{a00002}{Kolejka}. 
 
-\subsubsection{Constructor \& Destructor Documentation}
+\subsection{Constructor \& Destructor Documentation}
 \hypertarget{a00002_a37c886fdc73dce62b04da0381dec5484}{\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
 \index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
-\paragraph[{Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::\-Kolejka (
+\subsubsection[{Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::\-Kolejka (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{a00002_a37c886fdc73dce62b04da0381dec5484}
 
 
-Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika listy wartoscia N\-U\-L\-L. 
+Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika\-\_\-poczatek i straznika\-\_\-koniec kolejki wartosciami N\-U\-L\-L , oraz rozmiar kolejki wartoscia 0. 
 
 \hypertarget{a00002_a352f86ff08cd47be6c35c60bb0f873a6}{\index{Kolejka@{Kolejka}!$\sim$\-Kolejka@{$\sim$\-Kolejka}}
 \index{$\sim$\-Kolejka@{$\sim$\-Kolejka}!Kolejka@{Kolejka}}
-\paragraph[{$\sim$\-Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::$\sim$\-Kolejka (
+\subsubsection[{$\sim$\-Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::$\sim$\-Kolejka (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{a00002_a352f86ff08cd47be6c35c60bb0f873a6}
 
 
-Destruktor bezparametryczny. 
+Destruktor bezparametryczny kolejki. 
 
 
 
-\subsubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \hypertarget{a00002_aa99d7c7459116c2331b301637b45b666}{\index{Kolejka@{Kolejka}!pop@{pop}}
 \index{pop@{pop}!Kolejka@{Kolejka}}
-\paragraph[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::pop (
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::pop (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{a00002_aa99d7c7459116c2331b301637b45b666}
+
+
+Metoda zdejmujaca element z poczatku kolejki. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. 
+
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana z kolejki. 
+\end{DoxyReturn}
 \hypertarget{a00002_abdd1c95eb88905167ec26658b6b76611}{\index{Kolejka@{Kolejka}!push@{push}}
 \index{push@{push}!Kolejka@{Kolejka}}
-\paragraph[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::push (
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::push (
 \begin{DoxyParamCaption}
 \item[{int}]{wartosc}
 \end{DoxyParamCaption}
 )}}\label{a00002_abdd1c95eb88905167ec26658b6b76611}
+
+
+Metoda umieszczajaca element na koncu kolejki. Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu int, wartosc umieszczana na koncu kolejki. \\
+\hline
+\end{DoxyParams}
 \hypertarget{a00002_a82920d7b90e967a4d5e175a20fe6de68}{\index{Kolejka@{Kolejka}!size@{size}}
 \index{size@{size}!Kolejka@{Kolejka}}
-\paragraph[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::size (
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::size (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{a00002_a82920d7b90e967a4d5e175a20fe6de68}
+
+
+Metoda zwracajaca wielkosc kolejki. 
+
+\begin{DoxyReturn}{Returns}
+rozmiar -\/ typu int,rozmiar kolejki. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

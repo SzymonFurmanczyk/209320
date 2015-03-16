@@ -11,7 +11,7 @@
 using namespace std;
 
 /*!
- *\class Klasa Lista.
+ *\brief Klasa Lista.
  */
 class Lista
 {
@@ -33,8 +33,21 @@ public:
   void push(int,int);
   int pop(int);
 
+/*!
+ *\brief Przeciazenie operacji push. Umieszcza element domyslnie na pozycji 1.
+ *       Nastepuje inkrementacja rozmiar listy.
+ *\param
+ * wartosc - typu int, wartosc umieszczana na liscie.
+ */
   void push(int wartosc)
   {push(wartosc,1);};
+
+/*!
+ *\brief Przeciazenie operacji pop dla listy. Pobiera domyslnie
+ *       element listy z pozycji 1.Nastepuje dekrementacja rozmiar listy.
+ *\return
+ * wartosc - typu int, wartosc zdejmowana z listy.
+ */
   int pop()
   {return pop(1);};
 

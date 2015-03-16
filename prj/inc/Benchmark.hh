@@ -16,7 +16,8 @@ using namespace std;
 class Benchmarker
 {
 public:
-  long int testuj(int*,int*,int,int);
+
+  template <class T>  long int testuj(T*,int*,int,int);
   int *generujdane(int);
 };
 

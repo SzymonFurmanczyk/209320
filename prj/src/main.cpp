@@ -16,18 +16,21 @@
 
 using namespace std;
 
+
 /*!
  *\brief Funkcja glowna programu.
  */
 int main(int argc, char *argv[])
 {
+  ofstream plik;
   int l_przejsc;
   int l_danych;
-  long int sredni_czas=0;
+  long int sredni_czas_lista=0;
+  long int sredni_czas_stos=0;
+  long int sredni_czas_kolejka=0;
 
   int *dane;
-  int *Tab=NULL;
-  Benchmarker Tst;
+  Benchmarker Test;
 
   if(argc!=3 and argc!=1)
     {
@@ -45,21 +48,55 @@ int main(int argc, char *argv[])
       l_danych=1000;
     }
 
-  int tmp;
-  Kolejka *Test=new Kolejka;
 
-  ofstream plik;
-  plik.open("benchmark.csv");
+  Lista *impl_lista=new Lista;
+  Stos *impl_stos=new Stos;
+  Kolejka *impl_kolejka=new Kolejka;
  
-  dane=Tst.generujdane(l_danych);
+  dane=Test.generujdane(l_danych);
+
+
+  plik.open("benchmark_lista.csv");
+
   for(int k=0;k<=l_danych;k+=10)
     {
-      sredni_czas=Tst.testuj(Tab,dane,l_przejsc,k);
-      //cout<<k<<" "<<sredni_czas<<endl;    
-      //plik<<k<<","<<sredni_czas<<"\n";
+      sredni_czas_lista=Test.testuj(impl_lista,dane,l_przejsc,k);
+
+      //cout<<k<<" "<<sredni_czas_lista<<endl;    
+      plik<<k<<","<<sredni_czas_lista<<"\n";
     }
   
   plik.close();
-  delete Test;
+  delete impl_lista;
+
+
+  plik.open("benchmark_stos.csv");
+
+  for(int k=0;k<=l_danych;k+=10)
+    {
+      sredni_czas_stos=Test.testuj(impl_stos,dane,l_przejsc,k);
+
+      //cout<<k<<" "<<sredni_czas_stos<<endl;    
+      plik<<k<<","<<sredni_czas_stos<<"\n";
+    }
+  
+  plik.close();
+  delete impl_stos;
+
+
+  plik.open("benchmark_kolejka.csv");
+
+  for(int k=0;k<=l_danych;k+=10)
+    {
+      sredni_czas_kolejka=Test.testuj(impl_kolejka,dane,l_przejsc,k);
+
+      //cout<<k<<" "<<sredni_czas_kolejka<<endl;    
+      plik<<k<<","<<sredni_czas_kolejka<<"\n";
+    }
+  
+  plik.close();
+  delete impl_kolejka;
+
+
   return 0;
 }

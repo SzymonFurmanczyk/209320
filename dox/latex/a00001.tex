@@ -1,52 +1,64 @@
-\hypertarget{a00001}{\subsection{Benchmarker Class Reference}
+\hypertarget{a00001}{\section{Benchmarker Class Reference}
 \label{a00001}\index{Benchmarker@{Benchmarker}}
 }
 
 
-Klasa benchmarku.  
+Klasa \hyperlink{a00001}{Benchmarker}.  
 
 
 
 
 {\ttfamily \#include $<$Benchmark.\-hh$>$}
 
-\subsubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-long int \hyperlink{a00001_a052e2f1a6eabd447f6ffd57b6cc49f80}{testuj} (int $\ast$, int $\ast$, int, int)
-\begin{DoxyCompactList}\small\item\em Metoda przeprowadzajaca sprawdzenie czasy dzialania funkcji. sprawdzienie czasu dzialania mnozenia kazdego elementu tablicy razy 2. \end{DoxyCompactList}\item 
-int $\ast$ \hyperlink{a00001_a917b8efeea3b8a82882be68e490548e8}{generuj\-\_\-dane} (int)
-\end{DoxyCompactItemize}
+{\footnotesize template$<$class T $>$ }\\long int \hyperlink{a00001_ada193863a5d7ff62dd4fb66a02c401dd}{testuj} (T $\ast$, int $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\-: \hyperlink{a00003}{Lista} , \hyperlink{a00004}{Stos} , \hyperlink{a00002}{Kolejka}. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{a00001_aca0371e9f7cc70cf0a0c08cc04e4491c}{generujdane} (int)
+\begin{DoxyCompactList}\small\item\em Metoda generujaca wartosci losowe z przedzialu 0 10000. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsubsection{Detailed Description}
-Klasa benchmarku. 
+\subsection{Detailed Description}
+Klasa \hyperlink{a00001}{Benchmarker}. 
 
-\subsubsection{Member Function Documentation}
-\hypertarget{a00001_a917b8efeea3b8a82882be68e490548e8}{\index{Benchmarker@{Benchmarker}!generuj\-\_\-dane@{generuj\-\_\-dane}}
-\index{generuj\-\_\-dane@{generuj\-\_\-dane}!Benchmarker@{Benchmarker}}
-\paragraph[{generuj\-\_\-dane}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Benchmarker\-::generuj\-\_\-dane (
+\subsection{Member Function Documentation}
+\hypertarget{a00001_aca0371e9f7cc70cf0a0c08cc04e4491c}{\index{Benchmarker@{Benchmarker}!generujdane@{generujdane}}
+\index{generujdane@{generujdane}!Benchmarker@{Benchmarker}}
+\subsubsection[{generujdane}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ Benchmarker\-::generujdane (
 \begin{DoxyParamCaption}
-\item[{int}]{}
+\item[{int}]{l\-\_\-danych}
 \end{DoxyParamCaption}
-)}}\label{a00001_a917b8efeea3b8a82882be68e490548e8}
-\hypertarget{a00001_a052e2f1a6eabd447f6ffd57b6cc49f80}{\index{Benchmarker@{Benchmarker}!testuj@{testuj}}
-\index{testuj@{testuj}!Benchmarker@{Benchmarker}}
-\paragraph[{testuj}]{\setlength{\rightskip}{0pt plus 5cm}long int Benchmarker\-::testuj (
-\begin{DoxyParamCaption}
-\item[{int $\ast$}]{tab, }
-\item[{int $\ast$}]{dane, }
-\item[{int}]{liczba\-\_\-przejsc, }
-\item[{int}]{liczba\-\_\-danych}
-\end{DoxyParamCaption}
-)}}\label{a00001_a052e2f1a6eabd447f6ffd57b6cc49f80}
+)}}\label{a00001_aca0371e9f7cc70cf0a0c08cc04e4491c}
 
 
-Metoda przeprowadzajaca sprawdzenie czasy dzialania funkcji. sprawdzienie czasu dzialania mnozenia kazdego elementu tablicy razy 2. 
+Metoda generujaca wartosci losowe z przedzialu 0 10000. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em tab} & -\/ typu int$\ast$, wskaznik na tablice z wartosciami. \\
+{\em l\-\_\-danych} & -\/ typu int, liczba generowanych danych. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape dane -\/ typu long int}, tablica z wygenerowanymi danymi. 
+\end{DoxyReturn}
+\hypertarget{a00001_ada193863a5d7ff62dd4fb66a02c401dd}{\index{Benchmarker@{Benchmarker}!testuj@{testuj}}
+\index{testuj@{testuj}!Benchmarker@{Benchmarker}}
+\subsubsection[{testuj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template long int Benchmarker\-::testuj$<$ {\bf Kolejka} $>$ (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{, }
+\item[{int $\ast$}]{, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{a00001_ada193863a5d7ff62dd4fb66a02c401dd}
+
+
+Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\-: \hyperlink{a00003}{Lista} , \hyperlink{a00004}{Stos} , \hyperlink{a00002}{Kolejka}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tab} & -\/ typu T$\ast$, wskaznik na zaimplementowany stos/liste/kolejke. \\
 \hline
 {\em dane} & -\/ typu int$\ast$, wskaznik na tablice z danymi generowanymi. \\
 \hline
