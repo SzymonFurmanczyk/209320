@@ -47,11 +47,6 @@ int main(int argc, char *argv[])
       l_przejsc=10;
       l_danych=1000;
     }
-
-
-  Lista *impl_lista=new Lista;
-  Stos *impl_stos=new Stos;
-  Kolejka *impl_kolejka=new Kolejka;
  
   dane=Test.generujdane(l_danych);
 
@@ -60,42 +55,48 @@ int main(int argc, char *argv[])
 
   for(int k=0;k<=l_danych;k+=10)
     {
+      Lista *impl_lista=new Lista;
       sredni_czas_lista=Test.testuj(impl_lista,dane,l_przejsc,k);
-
+      delete impl_lista;
+      
       //cout<<k<<" "<<sredni_czas_lista<<endl;    
       plik<<k<<","<<sredni_czas_lista<<"\n";
     }
   
   plik.close();
-  delete impl_lista;
+
 
 
   plik.open("benchmark_stos.csv");
 
   for(int k=0;k<=l_danych;k+=10)
     {
+      Stos *impl_stos=new Stos;
       sredni_czas_stos=Test.testuj(impl_stos,dane,l_przejsc,k);
-
+      delete impl_stos;
+      
       //cout<<k<<" "<<sredni_czas_stos<<endl;    
       plik<<k<<","<<sredni_czas_stos<<"\n";
     }
   
   plik.close();
-  delete impl_stos;
+
 
 
   plik.open("benchmark_kolejka.csv");
 
   for(int k=0;k<=l_danych;k+=10)
     {
+      Kolejka *impl_kolejka=new Kolejka;
       sredni_czas_kolejka=Test.testuj(impl_kolejka,dane,l_przejsc,k);
-
+      delete impl_kolejka;
+      
       //cout<<k<<" "<<sredni_czas_kolejka<<endl;    
       plik<<k<<","<<sredni_czas_kolejka<<"\n";
     }
   
   plik.close();
-  delete impl_kolejka;
+  
 
 
   return 0;
