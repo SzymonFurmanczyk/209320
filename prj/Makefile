@@ -1,7 +1,7 @@
 #
 #  To sa opcje dla kompilacji
 #
-APP=program1
+APP=program3
 CPP2FLAGS= -g -Iinc -Wall -pedantic -lrt
 CPPFLAGS= -c -g -Iinc -Wall -pedantic -lrt
 
@@ -11,8 +11,8 @@ __start__:  obj ./${APP}
 obj:
 	mkdir -p obj
 
-./${APP}: obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o
-	g++ ${CPP2FLAGS} -o ./${APP} obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o
+./${APP}: obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o
+	g++ ${CPP2FLAGS} -o ./${APP} obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o
 
 obj/main.o: src/main.cpp
 	g++ ${CPPFLAGS} -o obj/main.o src/main.cpp
@@ -29,8 +29,11 @@ obj/Stos.o: src/Stos.cpp inc/Stos.hh
 obj/Kolejka.o: src/Kolejka.cpp inc/Kolejka.hh 
 	g++ ${CPPFLAGS} -o obj/Kolejka.o src/Kolejka.cpp
 
+obj/ArrayLista.o: src/ArrayLista.cpp inc/ArrayLista.hh 
+	g++ ${CPPFLAGS} -o obj/ArrayLista.o src/ArrayLista.cpp
+
 clean:
-	rm -f obj/*.o program2
+	rm -f obj/*.o program3
 dox:
 	cd .. && cd dox/latex && $(MAKE)
 doxclean:

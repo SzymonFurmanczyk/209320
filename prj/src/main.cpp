@@ -13,6 +13,7 @@
 #include "Lista.hh"
 #include "Stos.hh"
 #include "Kolejka.hh"
+#include "ArrayLista.hh"
 
 using namespace std;
 
@@ -26,8 +27,7 @@ int main(int argc, char *argv[])
   int l_przejsc;
   int l_danych;
   long int sredni_czas_lista=0;
-  long int sredni_czas_stos=0;
-  long int sredni_czas_kolejka=0;
+  long int sredni_czas_arraylista=0;
 
   int *dane;
   Benchmarker Test;
@@ -45,57 +45,41 @@ int main(int argc, char *argv[])
   if(argc==1)
     {
       l_przejsc=10;
-      l_danych=1000;
+      l_danych=10000;
     }
 
 
-  Lista *impl_lista=new Lista;
-  Stos *impl_stos=new Stos;
-  Kolejka *impl_kolejka=new Kolejka;
  
   dane=Test.generujdane(l_danych);
-
-
-  plik.open("benchmark_lista.csv");
+  
+  plik.open("benchmark_ll_lista.csv");
 
   for(int k=0;k<=l_danych;k+=10)
     {
-      sredni_czas_lista=Test.testuj(impl_lista,dane,l_przejsc,k);
+      Lista *implem_lista=new Lista;
+      sredni_czas_lista=Test.testuj(implem_lista,dane,l_przejsc,k);
+      delete implem_lista;
 
       //cout<<k<<" "<<sredni_czas_lista<<endl;    
       plik<<k<<","<<sredni_czas_lista<<"\n";
     }
   
   plik.close();
-  delete impl_lista;
 
 
-  plik.open("benchmark_stos.csv");
+  plik.open("benchmark_array_lista.csv");
 
   for(int k=0;k<=l_danych;k+=10)
     {
-      sredni_czas_stos=Test.testuj(impl_stos,dane,l_przejsc,k);
-
+      ArrayLista *implem_arraylista=new ArrayLista;
+      sredni_czas_arraylista=Test.testuj(implem_arraylista,dane,l_przejsc,k);
+      delete implem_arraylista;
+      
       //cout<<k<<" "<<sredni_czas_stos<<endl;    
-      plik<<k<<","<<sredni_czas_stos<<"\n";
+      plik<<k<<","<<sredni_czas_arraylista<<"\n";
     }
   
   plik.close();
-  delete impl_stos;
-
-
-  plik.open("benchmark_kolejka.csv");
-
-  for(int k=0;k<=l_danych;k+=10)
-    {
-      sredni_czas_kolejka=Test.testuj(impl_kolejka,dane,l_przejsc,k);
-
-      //cout<<k<<" "<<sredni_czas_kolejka<<endl;    
-      plik<<k<<","<<sredni_czas_kolejka<<"\n";
-    }
-  
-  plik.close();
-  delete impl_kolejka;
 
 
   return 0;

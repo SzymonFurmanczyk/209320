@@ -12,6 +12,7 @@
 #include "Lista.hh"
 #include "Stos.hh"
 #include "Kolejka.hh"
+#include "ArrayLista.hh"
 
 #include <cstdlib>
 #include <iostream>
@@ -46,7 +47,7 @@ template <class T> long int Benchmarker::testuj(T *Tab,int *dane,int liczba_prze
 	  Tab->push(dane[i]);
 	}  
       
-      clock_gettime(CLOCK_CLOCK_PROCESS_CPUTIME_ID, &stop);
+      clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &stop);
       
       czas_operacji = (stop.tv_nsec - start.tv_nsec);
       if(czas_operacji>0)
@@ -67,6 +68,7 @@ template <class T> long int Benchmarker::testuj(T *Tab,int *dane,int liczba_prze
 template long int Benchmarker::testuj<Lista>(Lista*,int*,int,int);
 template long int Benchmarker::testuj<Stos>(Stos*,int*,int,int);
 template long int Benchmarker::testuj<Kolejka>(Kolejka*,int*,int,int);
+template long int Benchmarker::testuj<ArrayLista>(ArrayLista*,int*,int,int);
 
 
  /*!
