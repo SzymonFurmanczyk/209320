@@ -5,9 +5,11 @@
  *\file 
  *\brief Definicja klasy ArrayLista.
  *
- * Plik zawiera definicje klasy modulujacej pojecie listy jednokierunkowej opartej na tablicy dynamicznej.
+ * Plik zawiera definicje klasy modulujacej pojecie listy 
+ * jednokierunkowej opartej na tablicy dynamicznej.
  */
 
+#include <iostream>
 using namespace std;
 
 /*!
@@ -23,7 +25,18 @@ public:
   ArrayLista();
   ~ArrayLista();
 
-  void push(int);
+  void push(int,int);
+
+/*!
+ *\brief Przeciazenie operacji push.
+ *       Powieksza liste podczas dodawania elementu do 200%.
+ *       Nastepuje inkrementacja rozmiar listy.
+ *\param
+ * wartosc - typu int, wartosc umieszczana na liscie.
+ */
+  void push(int wartosc)
+  {push(wartosc,rozmiar);};
+
   int pop();
   int size();
   int ile_elementow();

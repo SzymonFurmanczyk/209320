@@ -21,18 +21,18 @@
  /*!
  *\brief Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji.
  *       Typy: Lista , Stos , Kolejka.
- *\param
+ *\tparam
  * Tab - typu T*, wskaznik na zaimplementowany stos/liste/kolejke.
- *\param
+ *\tparam
  * dane - typu int*, wskaznik na tablice z danymi generowanymi.
- *\param
+ *\tparam
  * liczba_przejsc - typu int, liczba przejsc przez dane.
- *\param
+ *\tparam
  * liczba_danych - typu int, liczba danych w tablicy. 
  *\return
  * czas_calkowity_usredniony - typu long int, czas sredni dzialania funkcji.
  */
-template <class T> long int Benchmarker::testuj(T *Tab,int *dane,int liczba_przejsc,int liczba_danych)
+template <class T> long int Benchmarker::testuj(T* Tab,int* dane,int liczba_przejsc,int liczba_danych)
 {
   long int czas_operacji=0;
   long int czas_calkowity_usredniony=0; 

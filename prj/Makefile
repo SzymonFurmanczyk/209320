@@ -14,7 +14,7 @@ obj:
 ./${APP}: obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o
 	g++ ${CPP2FLAGS} -o ./${APP} obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o
 
-obj/main.o: src/main.cpp
+obj/main.o: src/main.cpp  inc/Benchmark.hh inc/Lista.hh inc/Stos.hh inc/Stos.hh inc/Kolejka.hh inc/ArrayLista.hh
 	g++ ${CPPFLAGS} -o obj/main.o src/main.cpp
 
 obj/Benchmark.o: src/Benchmark.cpp inc/Benchmark.hh 
@@ -29,7 +29,7 @@ obj/Stos.o: src/Stos.cpp inc/Stos.hh
 obj/Kolejka.o: src/Kolejka.cpp inc/Kolejka.hh 
 	g++ ${CPPFLAGS} -o obj/Kolejka.o src/Kolejka.cpp
 
-obj/ArrayLista.o: src/ArrayLista.cpp inc/ArrayLista.hh 
+obj/ArrayLista.o: src/ArrayLista.cpp inc/ArrayLista.hh
 	g++ ${CPPFLAGS} -o obj/ArrayLista.o src/ArrayLista.cpp
 
 clean:
