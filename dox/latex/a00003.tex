@@ -1,148 +1,106 @@
-\hypertarget{a00003}{\section{Lista Class Reference}
-\label{a00003}\index{Lista@{Lista}}
+\hypertarget{a00003}{\section{Kolejka Class Reference}
+\label{a00003}\index{Kolejka@{Kolejka}}
 }
 
 
-Klasa \hyperlink{a00003}{Lista}.  
+Klasa \hyperlink{a00003}{Kolejka}.  
 
 
 
 
-{\ttfamily \#include $<$Lista.\-hh$>$}
+{\ttfamily \#include $<$Kolejka.\-hh$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00003_a1f668b36909182ef1360b48503529a31}{Lista} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika listy wartoscia N\-U\-L\-L oraz rozmiar wartoscia 0. \end{DoxyCompactList}\item 
-\hyperlink{a00003_a4d7394b2728a00ad8404965b2e15d096}{$\sim$\-Lista} ()
-\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny listy. \end{DoxyCompactList}\item 
-void \hyperlink{a00003_af13f329882aeacf6dd1ad28b014f2c41}{push} (int, int)
-\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element okreslonej pozycji na liscie $<$0,rozmiar$>$. Metoda inkrementuje rozmiar podczas umieszczania elementuna liscie. \end{DoxyCompactList}\item 
-int \hyperlink{a00003_acaf8411473b2118c8f54272a58aae14d}{pop} (int)
-\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z okreslonej pozycji listy $<$0,rozmiar$>$. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. \end{DoxyCompactList}\item 
-void \hyperlink{a00003_a4e00c7aa7ab1918d4f282f610f47a164}{push} (int wartosc)
-\begin{DoxyCompactList}\small\item\em Przeciazenie operacji push. Umieszcza element domyslnie na pozycji 1. Nastepuje inkrementacja rozmiar listy. \end{DoxyCompactList}\item 
-int \hyperlink{a00003_ad4905f890e73715d783a197a51aee985}{pop} ()
-\begin{DoxyCompactList}\small\item\em Przeciazenie operacji pop dla listy. Pobiera domyslnie element listy z pozycji 1.\-Nastepuje dekrementacja rozmiar listy. \end{DoxyCompactList}\item 
-int \hyperlink{a00003_a3836382e3cf53b6ea281937d045d181c}{size} ()
-\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc listy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{a00003_a37c886fdc73dce62b04da0381dec5484}{Kolejka} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika\-\_\-poczatek i straznika\-\_\-koniec kolejki wartosciami N\-U\-L\-L , oraz rozmiar kolejki wartoscia 0. \end{DoxyCompactList}\item 
+\hyperlink{a00003_a352f86ff08cd47be6c35c60bb0f873a6}{$\sim$\-Kolejka} ()
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny kolejki. \end{DoxyCompactList}\item 
+void \hyperlink{a00003_abdd1c95eb88905167ec26658b6b76611}{push} (int)
+\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na koncu kolejki. Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce. \end{DoxyCompactList}\item 
+int \hyperlink{a00003_aa99d7c7459116c2331b301637b45b666}{pop} ()
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z poczatku kolejki. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. \end{DoxyCompactList}\item 
+int \hyperlink{a00003_a82920d7b90e967a4d5e175a20fe6de68}{size} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Klasa \hyperlink{a00003}{Lista}. 
+Klasa \hyperlink{a00003}{Kolejka}. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{a00003_a1f668b36909182ef1360b48503529a31}{\index{Lista@{Lista}!Lista@{Lista}}
-\index{Lista@{Lista}!Lista@{Lista}}
-\subsubsection[{Lista}]{\setlength{\rightskip}{0pt plus 5cm}Lista\-::\-Lista (
+\hypertarget{a00003_a37c886fdc73dce62b04da0381dec5484}{\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
+\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
+\subsubsection[{Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::\-Kolejka (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{a00003_a1f668b36909182ef1360b48503529a31}
+)}}\label{a00003_a37c886fdc73dce62b04da0381dec5484}
 
 
-Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika listy wartoscia N\-U\-L\-L oraz rozmiar wartoscia 0. 
+Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika\-\_\-poczatek i straznika\-\_\-koniec kolejki wartosciami N\-U\-L\-L , oraz rozmiar kolejki wartoscia 0. 
 
-\hypertarget{a00003_a4d7394b2728a00ad8404965b2e15d096}{\index{Lista@{Lista}!$\sim$\-Lista@{$\sim$\-Lista}}
-\index{$\sim$\-Lista@{$\sim$\-Lista}!Lista@{Lista}}
-\subsubsection[{$\sim$\-Lista}]{\setlength{\rightskip}{0pt plus 5cm}Lista\-::$\sim$\-Lista (
+\hypertarget{a00003_a352f86ff08cd47be6c35c60bb0f873a6}{\index{Kolejka@{Kolejka}!$\sim$\-Kolejka@{$\sim$\-Kolejka}}
+\index{$\sim$\-Kolejka@{$\sim$\-Kolejka}!Kolejka@{Kolejka}}
+\subsubsection[{$\sim$\-Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::$\sim$\-Kolejka (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{a00003_a4d7394b2728a00ad8404965b2e15d096}
+)}}\label{a00003_a352f86ff08cd47be6c35c60bb0f873a6}
 
 
-Destruktor bezparametryczny listy. 
+Destruktor bezparametryczny kolejki. 
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{a00003_acaf8411473b2118c8f54272a58aae14d}{\index{Lista@{Lista}!pop@{pop}}
-\index{pop@{pop}!Lista@{Lista}}
-\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Lista\-::pop (
-\begin{DoxyParamCaption}
-\item[{int}]{pozycja}
-\end{DoxyParamCaption}
-)}}\label{a00003_acaf8411473b2118c8f54272a58aae14d}
-
-
-Metoda zdejmujaca element z okreslonej pozycji listy $<$0,rozmiar$>$. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em pozycja} & -\/ typu int, numer elementu ktory ma byc zdjety z listy. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-wartosc -\/ typu int, wartosc zdejmowana z listy. 
-\end{DoxyReturn}
-\hypertarget{a00003_ad4905f890e73715d783a197a51aee985}{\index{Lista@{Lista}!pop@{pop}}
-\index{pop@{pop}!Lista@{Lista}}
-\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Lista\-::pop (
+\hypertarget{a00003_aa99d7c7459116c2331b301637b45b666}{\index{Kolejka@{Kolejka}!pop@{pop}}
+\index{pop@{pop}!Kolejka@{Kolejka}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::pop (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{a00003_ad4905f890e73715d783a197a51aee985}
+)}}\label{a00003_aa99d7c7459116c2331b301637b45b666}
 
 
-Przeciazenie operacji pop dla listy. Pobiera domyslnie element listy z pozycji 1.\-Nastepuje dekrementacja rozmiar listy. 
+Metoda zdejmujaca element z poczatku kolejki. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. 
 
 \begin{DoxyReturn}{Returns}
-wartosc -\/ typu int, wartosc zdejmowana z listy. 
+wartosc -\/ typu int, wartosc zdejmowana z kolejki. 
 \end{DoxyReturn}
-\hypertarget{a00003_af13f329882aeacf6dd1ad28b014f2c41}{\index{Lista@{Lista}!push@{push}}
-\index{push@{push}!Lista@{Lista}}
-\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Lista\-::push (
-\begin{DoxyParamCaption}
-\item[{int}]{wartosc, }
-\item[{int}]{pozycja}
-\end{DoxyParamCaption}
-)}}\label{a00003_af13f329882aeacf6dd1ad28b014f2c41}
-
-
-Metoda umieszczajaca element okreslonej pozycji na liscie $<$0,rozmiar$>$. Metoda inkrementuje rozmiar podczas umieszczania elementuna liscie. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em wartosc} & -\/ typu int, wartosc umieszczana na liscie. \\
-\hline
-{\em pozycja} & -\/ typu int, pozycja na ktorej jest umieszczana wartosc. \\
-\hline
-\end{DoxyParams}
-\hypertarget{a00003_a4e00c7aa7ab1918d4f282f610f47a164}{\index{Lista@{Lista}!push@{push}}
-\index{push@{push}!Lista@{Lista}}
-\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Lista\-::push (
+\hypertarget{a00003_abdd1c95eb88905167ec26658b6b76611}{\index{Kolejka@{Kolejka}!push@{push}}
+\index{push@{push}!Kolejka@{Kolejka}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::push (
 \begin{DoxyParamCaption}
 \item[{int}]{wartosc}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{a00003_a4e00c7aa7ab1918d4f282f610f47a164}
+)}}\label{a00003_abdd1c95eb88905167ec26658b6b76611}
 
 
-Przeciazenie operacji push. Umieszcza element domyslnie na pozycji 1. Nastepuje inkrementacja rozmiar listy. 
+Metoda umieszczajaca element na koncu kolejki. Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em wartosc} & -\/ typu int, wartosc umieszczana na liscie. \\
+{\em wartosc} & -\/ typu int, wartosc umieszczana na koncu kolejki. \\
 \hline
 \end{DoxyParams}
-\hypertarget{a00003_a3836382e3cf53b6ea281937d045d181c}{\index{Lista@{Lista}!size@{size}}
-\index{size@{size}!Lista@{Lista}}
-\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Lista\-::size (
+\hypertarget{a00003_a82920d7b90e967a4d5e175a20fe6de68}{\index{Kolejka@{Kolejka}!size@{size}}
+\index{size@{size}!Kolejka@{Kolejka}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::size (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{a00003_a3836382e3cf53b6ea281937d045d181c}
+)}}\label{a00003_a82920d7b90e967a4d5e175a20fe6de68}
 
 
-Metoda zwracajaca wielkosc listy. 
+Metoda zwracajaca wielkosc kolejki. 
 
 \begin{DoxyReturn}{Returns}
-rozmiar -\/ typu int,rozmiar listy. 
+rozmiar -\/ typu int,rozmiar kolejki. 
 \end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00010}{Lista.\-hh}\item 
-\hyperlink{a00009}{Lista.\-cpp}\end{DoxyCompactItemize}
+\hyperlink{a00011}{Kolejka.\-hh}\item 
+\hyperlink{a00010}{Kolejka.\-cpp}\end{DoxyCompactItemize}

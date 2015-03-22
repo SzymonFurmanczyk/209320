@@ -1,106 +1,78 @@
-\hypertarget{a00002}{\section{Kolejka Class Reference}
-\label{a00002}\index{Kolejka@{Kolejka}}
+\hypertarget{a00002}{\section{Benchmarker Class Reference}
+\label{a00002}\index{Benchmarker@{Benchmarker}}
 }
 
 
-Klasa \hyperlink{a00002}{Kolejka}.  
+Klasa \hyperlink{a00002}{Benchmarker}.  
 
 
 
 
-{\ttfamily \#include $<$Kolejka.\-hh$>$}
+{\ttfamily \#include $<$Benchmark.\-hh$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00002_a37c886fdc73dce62b04da0381dec5484}{Kolejka} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika\-\_\-poczatek i straznika\-\_\-koniec kolejki wartosciami N\-U\-L\-L , oraz rozmiar kolejki wartoscia 0. \end{DoxyCompactList}\item 
-\hyperlink{a00002_a352f86ff08cd47be6c35c60bb0f873a6}{$\sim$\-Kolejka} ()
-\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny kolejki. \end{DoxyCompactList}\item 
-void \hyperlink{a00002_abdd1c95eb88905167ec26658b6b76611}{push} (int)
-\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na koncu kolejki. Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce. \end{DoxyCompactList}\item 
-int \hyperlink{a00002_aa99d7c7459116c2331b301637b45b666}{pop} ()
-\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z poczatku kolejki. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. \end{DoxyCompactList}\item 
-int \hyperlink{a00002_a82920d7b90e967a4d5e175a20fe6de68}{size} ()
-\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\footnotesize template$<$class T $>$ }\\long int \hyperlink{a00002_a7b0f34744ffe3f91bbd3553b469a7883}{testuj} (T $\ast$, int $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\-: \hyperlink{a00004}{Lista} , \hyperlink{a00005}{Stos} , \hyperlink{a00003}{Kolejka}. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{a00002_aca0371e9f7cc70cf0a0c08cc04e4491c}{generujdane} (int)
+\begin{DoxyCompactList}\small\item\em Metoda generujaca wartosci losowe z przedzialu 0 10000. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Klasa \hyperlink{a00002}{Kolejka}. 
-
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{a00002_a37c886fdc73dce62b04da0381dec5484}{\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
-\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
-\subsubsection[{Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::\-Kolejka (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{a00002_a37c886fdc73dce62b04da0381dec5484}
-
-
-Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika\-\_\-poczatek i straznika\-\_\-koniec kolejki wartosciami N\-U\-L\-L , oraz rozmiar kolejki wartoscia 0. 
-
-\hypertarget{a00002_a352f86ff08cd47be6c35c60bb0f873a6}{\index{Kolejka@{Kolejka}!$\sim$\-Kolejka@{$\sim$\-Kolejka}}
-\index{$\sim$\-Kolejka@{$\sim$\-Kolejka}!Kolejka@{Kolejka}}
-\subsubsection[{$\sim$\-Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::$\sim$\-Kolejka (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{a00002_a352f86ff08cd47be6c35c60bb0f873a6}
-
-
-Destruktor bezparametryczny kolejki. 
-
-
+Klasa \hyperlink{a00002}{Benchmarker}. 
 
 \subsection{Member Function Documentation}
-\hypertarget{a00002_aa99d7c7459116c2331b301637b45b666}{\index{Kolejka@{Kolejka}!pop@{pop}}
-\index{pop@{pop}!Kolejka@{Kolejka}}
-\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::pop (
+\hypertarget{a00002_aca0371e9f7cc70cf0a0c08cc04e4491c}{\index{Benchmarker@{Benchmarker}!generujdane@{generujdane}}
+\index{generujdane@{generujdane}!Benchmarker@{Benchmarker}}
+\subsubsection[{generujdane}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ Benchmarker\-::generujdane (
 \begin{DoxyParamCaption}
-{}
+\item[{int}]{l\-\_\-danych}
 \end{DoxyParamCaption}
-)}}\label{a00002_aa99d7c7459116c2331b301637b45b666}
+)}}\label{a00002_aca0371e9f7cc70cf0a0c08cc04e4491c}
 
 
-Metoda zdejmujaca element z poczatku kolejki. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. 
-
-\begin{DoxyReturn}{Returns}
-wartosc -\/ typu int, wartosc zdejmowana z kolejki. 
-\end{DoxyReturn}
-\hypertarget{a00002_abdd1c95eb88905167ec26658b6b76611}{\index{Kolejka@{Kolejka}!push@{push}}
-\index{push@{push}!Kolejka@{Kolejka}}
-\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::push (
-\begin{DoxyParamCaption}
-\item[{int}]{wartosc}
-\end{DoxyParamCaption}
-)}}\label{a00002_abdd1c95eb88905167ec26658b6b76611}
-
-
-Metoda umieszczajaca element na koncu kolejki. Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce. 
+Metoda generujaca wartosci losowe z przedzialu 0 10000. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em wartosc} & -\/ typu int, wartosc umieszczana na koncu kolejki. \\
+{\em l\-\_\-danych} & -\/ typu int, liczba generowanych danych. \\
 \hline
 \end{DoxyParams}
-\hypertarget{a00002_a82920d7b90e967a4d5e175a20fe6de68}{\index{Kolejka@{Kolejka}!size@{size}}
-\index{size@{size}!Kolejka@{Kolejka}}
-\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::size (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{a00002_a82920d7b90e967a4d5e175a20fe6de68}
-
-
-Metoda zwracajaca wielkosc kolejki. 
-
 \begin{DoxyReturn}{Returns}
-rozmiar -\/ typu int,rozmiar kolejki. 
+{\itshape dane -\/ typu long int}, tablica z wygenerowanymi danymi. 
+\end{DoxyReturn}
+\hypertarget{a00002_a7b0f34744ffe3f91bbd3553b469a7883}{\index{Benchmarker@{Benchmarker}!testuj@{testuj}}
+\index{testuj@{testuj}!Benchmarker@{Benchmarker}}
+\subsubsection[{testuj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template long int Benchmarker\-::testuj$<$ {\bf Array\-Lista} $>$ (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{, }
+\item[{int $\ast$}]{, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{a00002_a7b0f34744ffe3f91bbd3553b469a7883}
+
+
+Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\-: \hyperlink{a00004}{Lista} , \hyperlink{a00005}{Stos} , \hyperlink{a00003}{Kolejka}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Tab} & -\/ typu T$\ast$, wskaznik na zaimplementowany stos/liste/kolejke. \\
+\hline
+{\em dane} & -\/ typu int$\ast$, wskaznik na tablice z danymi generowanymi. \\
+\hline
+{\em liczba\-\_\-przejsc} & -\/ typu int, liczba przejsc przez dane. \\
+\hline
+{\em liczba\-\_\-danych} & -\/ typu int, liczba danych w tablicy. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+czas\-\_\-calkowity\-\_\-usredniony -\/ typu long int, czas sredni dzialania funkcji. 
 \end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00008}{Kolejka.\-hh}\item 
-\hyperlink{a00007}{Kolejka.\-cpp}\end{DoxyCompactItemize}
+\hyperlink{a00009}{Benchmark.\-hh}\item 
+\hyperlink{a00008}{Benchmark.\-cpp}\end{DoxyCompactItemize}

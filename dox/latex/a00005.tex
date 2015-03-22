@@ -1,36 +1,106 @@
-\hypertarget{a00005}{\section{Benchmark.\-cpp File Reference}
-\label{a00005}\index{Benchmark.\-cpp@{Benchmark.\-cpp}}
+\hypertarget{a00005}{\section{Stos Class Reference}
+\label{a00005}\index{Stos@{Stos}}
 }
 
 
-Metody klasy \hyperlink{a00001}{Benchmarker}.  
+Klasa \hyperlink{a00005}{Stos}.  
 
 
-{\ttfamily \#include \char`\"{}Benchmark.\-hh\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Lista.\-hh\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Stos.\-hh\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Kolejka.\-hh\char`\"{}}\\*
-{\ttfamily \#include $<$cstdlib$>$}\\*
-{\ttfamily \#include $<$iostream$>$}\\*
-{\ttfamily \#include $<$ctime$>$}\\*
-Include dependency graph for Benchmark.\-cpp\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{a00016}
-\end{center}
-\end{figure}
-\subsection*{Macros}
+
+
+{\ttfamily \#include $<$Stos.\-hh$>$}
+
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{a00005_af899221e0ac3b868dd9a8298bd9b1f12}{B\-E\-N\-C\-H\-M\-A\-R\-K\-\_\-\-C\-P\-P}
-\end{DoxyCompactItemize}
+\hyperlink{a00005_a1de3b50386d5dfb56ddece17d0ea2389}{Stos} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika stosu wartoscia N\-U\-L\-L ,oraz rozmiar wartoscia 0. \end{DoxyCompactList}\item 
+\hyperlink{a00005_af9a198e2540e18adcc0b5259105fd78e}{$\sim$\-Stos} ()
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny stosu. \end{DoxyCompactList}\item 
+void \hyperlink{a00005_afe381df2afa35f3d122ca180300005dd}{push} (int)
+\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na stosie Metoda inkrementuje rozmiar podczas umieszczania elementu na stosie. \end{DoxyCompactList}\item 
+int \hyperlink{a00005_aabb14b8a389c55da6e2b50fbb179ed56}{pop} ()
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element ze stosu. Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu. \end{DoxyCompactList}\item 
+int \hyperlink{a00005_a696195d5125d9bbe6b491bc5985f9461}{size} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc stosu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Metody klasy \hyperlink{a00001}{Benchmarker}. Plik zawiera metody klasy \hyperlink{a00001}{Benchmarker}. 
+Klasa \hyperlink{a00005}{Stos}. 
 
-\subsection{Macro Definition Documentation}
-\hypertarget{a00005_af899221e0ac3b868dd9a8298bd9b1f12}{\index{Benchmark.\-cpp@{Benchmark.\-cpp}!B\-E\-N\-C\-H\-M\-A\-R\-K\-\_\-\-C\-P\-P@{B\-E\-N\-C\-H\-M\-A\-R\-K\-\_\-\-C\-P\-P}}
-\index{B\-E\-N\-C\-H\-M\-A\-R\-K\-\_\-\-C\-P\-P@{B\-E\-N\-C\-H\-M\-A\-R\-K\-\_\-\-C\-P\-P}!Benchmark.cpp@{Benchmark.\-cpp}}
-\subsubsection[{B\-E\-N\-C\-H\-M\-A\-R\-K\-\_\-\-C\-P\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-E\-N\-C\-H\-M\-A\-R\-K\-\_\-\-C\-P\-P}}\label{a00005_af899221e0ac3b868dd9a8298bd9b1f12}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00005_a1de3b50386d5dfb56ddece17d0ea2389}{\index{Stos@{Stos}!Stos@{Stos}}
+\index{Stos@{Stos}!Stos@{Stos}}
+\subsubsection[{Stos}]{\setlength{\rightskip}{0pt plus 5cm}Stos\-::\-Stos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00005_a1de3b50386d5dfb56ddece17d0ea2389}
+
+
+Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika stosu wartoscia N\-U\-L\-L ,oraz rozmiar wartoscia 0. 
+
+\hypertarget{a00005_af9a198e2540e18adcc0b5259105fd78e}{\index{Stos@{Stos}!$\sim$\-Stos@{$\sim$\-Stos}}
+\index{$\sim$\-Stos@{$\sim$\-Stos}!Stos@{Stos}}
+\subsubsection[{$\sim$\-Stos}]{\setlength{\rightskip}{0pt plus 5cm}Stos\-::$\sim$\-Stos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00005_af9a198e2540e18adcc0b5259105fd78e}
+
+
+Destruktor bezparametryczny stosu. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00005_aabb14b8a389c55da6e2b50fbb179ed56}{\index{Stos@{Stos}!pop@{pop}}
+\index{pop@{pop}!Stos@{Stos}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Stos\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00005_aabb14b8a389c55da6e2b50fbb179ed56}
+
+
+Metoda zdejmujaca element ze stosu. Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu. 
+
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana ze stosu. 
+\end{DoxyReturn}
+\hypertarget{a00005_afe381df2afa35f3d122ca180300005dd}{\index{Stos@{Stos}!push@{push}}
+\index{push@{push}!Stos@{Stos}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Stos\-::push (
+\begin{DoxyParamCaption}
+\item[{int}]{wartosc}
+\end{DoxyParamCaption}
+)}}\label{a00005_afe381df2afa35f3d122ca180300005dd}
+
+
+Metoda umieszczajaca element na stosie Metoda inkrementuje rozmiar podczas umieszczania elementu na stosie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu int, wartosc umieszczana na stosie. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00005_a696195d5125d9bbe6b491bc5985f9461}{\index{Stos@{Stos}!size@{size}}
+\index{size@{size}!Stos@{Stos}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Stos\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00005_a696195d5125d9bbe6b491bc5985f9461}
+
+
+Metoda zwracajaca wielkosc stosu. 
+
+\begin{DoxyReturn}{Returns}
+rozmiar -\/ typu int,rozmiar stosu. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00016}{Stos.\-hh}\item 
+\hyperlink{a00015}{Stos.\-cpp}\end{DoxyCompactItemize}

@@ -1,78 +1,143 @@
-\hypertarget{a00001}{\section{Benchmarker Class Reference}
-\label{a00001}\index{Benchmarker@{Benchmarker}}
+\hypertarget{a00001}{\section{Array\-Lista Class Reference}
+\label{a00001}\index{Array\-Lista@{Array\-Lista}}
 }
 
 
-Klasa \hyperlink{a00001}{Benchmarker}.  
+Klasa \hyperlink{a00001}{Array\-Lista}.  
 
 
 
 
-{\ttfamily \#include $<$Benchmark.\-hh$>$}
+{\ttfamily \#include $<$Array\-Lista.\-hh$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class T $>$ }\\long int \hyperlink{a00001_ada193863a5d7ff62dd4fb66a02c401dd}{testuj} (T $\ast$, int $\ast$, int, int)
-\begin{DoxyCompactList}\small\item\em Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\-: \hyperlink{a00003}{Lista} , \hyperlink{a00004}{Stos} , \hyperlink{a00002}{Kolejka}. \end{DoxyCompactList}\item 
-int $\ast$ \hyperlink{a00001_aca0371e9f7cc70cf0a0c08cc04e4491c}{generujdane} (int)
-\begin{DoxyCompactList}\small\item\em Metoda generujaca wartosci losowe z przedzialu 0 10000. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{a00001_a645d18dcf43d2f3397d0ba90f5d8d0b4}{Array\-Lista} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy tablice listy. rozmiar -\/ rozmiar tablicy dla listy, inicjalizowane wartoscia 1. ilosc\-\_\-elementow -\/ ilosc elementow listy,inicjalizowane wartoscia 0. Tworzona jest tablica dynamiczna o jednym elemencie. \end{DoxyCompactList}\item 
+\hyperlink{a00001_ab502f9c0ea71ec66954ebe675100b9ce}{$\sim$\-Array\-Lista} ()
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny stosu. \end{DoxyCompactList}\item 
+void \hyperlink{a00001_a473a71ed888097c7b14bb70cbf7eecd6}{push} (int, int)
+\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na liscie Metoda inkrementuje rozmiar podczas umieszczania elementu na liscie. \end{DoxyCompactList}\item 
+void \hyperlink{a00001_a1d194e2d2e54114ef939d7fe64508840}{push} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operacji push. Powieksza liste podczas dodawania elementu do 200\%. Nastepuje inkrementacja rozmiar listy. \end{DoxyCompactList}\item 
+int \hyperlink{a00001_ae76ea59ccac91abd264cf108489d3105}{pop} ()
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z listy. Metoda dekrementuje ilosc\-\_\-elementow przy zdejmowaniu z listy. Tablica listy jest zmniejszana podczas zdejmowania elementu o polowe gdy ilosc elementow znajdujacych sie na niej jest rowna polowie jej rozmiaru. \end{DoxyCompactList}\item 
+int \hyperlink{a00001_abd7b74aa6ee7e7c1a454ec32b3aed86e}{size} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca rozmiar tablicy na ktorej oparta jest lista. \end{DoxyCompactList}\item 
+int \hyperlink{a00001_a84f223e112fafe7c4d9abfc04609445a}{ile\-\_\-elementow} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca ilosc elementow jaka znajduje sie na liscie. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Klasa \hyperlink{a00001}{Benchmarker}. 
+Klasa \hyperlink{a00001}{Array\-Lista}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00001_a645d18dcf43d2f3397d0ba90f5d8d0b4}{\index{Array\-Lista@{Array\-Lista}!Array\-Lista@{Array\-Lista}}
+\index{Array\-Lista@{Array\-Lista}!ArrayLista@{Array\-Lista}}
+\subsubsection[{Array\-Lista}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Lista\-::\-Array\-Lista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00001_a645d18dcf43d2f3397d0ba90f5d8d0b4}
+
+
+Konstruktor bezparametryczny. Konstruktor inicjalizujacy tablice listy. rozmiar -\/ rozmiar tablicy dla listy, inicjalizowane wartoscia 1. ilosc\-\_\-elementow -\/ ilosc elementow listy,inicjalizowane wartoscia 0. Tworzona jest tablica dynamiczna o jednym elemencie. 
+
+\hypertarget{a00001_ab502f9c0ea71ec66954ebe675100b9ce}{\index{Array\-Lista@{Array\-Lista}!$\sim$\-Array\-Lista@{$\sim$\-Array\-Lista}}
+\index{$\sim$\-Array\-Lista@{$\sim$\-Array\-Lista}!ArrayLista@{Array\-Lista}}
+\subsubsection[{$\sim$\-Array\-Lista}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Lista\-::$\sim$\-Array\-Lista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00001_ab502f9c0ea71ec66954ebe675100b9ce}
+
+
+Destruktor bezparametryczny stosu. 
+
+
 
 \subsection{Member Function Documentation}
-\hypertarget{a00001_aca0371e9f7cc70cf0a0c08cc04e4491c}{\index{Benchmarker@{Benchmarker}!generujdane@{generujdane}}
-\index{generujdane@{generujdane}!Benchmarker@{Benchmarker}}
-\subsubsection[{generujdane}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ Benchmarker\-::generujdane (
+\hypertarget{a00001_a84f223e112fafe7c4d9abfc04609445a}{\index{Array\-Lista@{Array\-Lista}!ile\-\_\-elementow@{ile\-\_\-elementow}}
+\index{ile\-\_\-elementow@{ile\-\_\-elementow}!ArrayLista@{Array\-Lista}}
+\subsubsection[{ile\-\_\-elementow}]{\setlength{\rightskip}{0pt plus 5cm}int Array\-Lista\-::ile\-\_\-elementow (
 \begin{DoxyParamCaption}
-\item[{int}]{l\-\_\-danych}
+{}
 \end{DoxyParamCaption}
-)}}\label{a00001_aca0371e9f7cc70cf0a0c08cc04e4491c}
+)}}\label{a00001_a84f223e112fafe7c4d9abfc04609445a}
 
 
-Metoda generujaca wartosci losowe z przedzialu 0 10000. 
+Metoda zwracajaca ilosc elementow jaka znajduje sie na liscie. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em l\-\_\-danych} & -\/ typu int, liczba generowanych danych. \\
-\hline
-\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\itshape dane -\/ typu long int}, tablica z wygenerowanymi danymi. 
+ilosc\-\_\-elementow -\/ typu int,ilosc elementow jaka znajduje sie na liscie. 
 \end{DoxyReturn}
-\hypertarget{a00001_ada193863a5d7ff62dd4fb66a02c401dd}{\index{Benchmarker@{Benchmarker}!testuj@{testuj}}
-\index{testuj@{testuj}!Benchmarker@{Benchmarker}}
-\subsubsection[{testuj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template long int Benchmarker\-::testuj$<$ {\bf Kolejka} $>$ (
+\hypertarget{a00001_ae76ea59ccac91abd264cf108489d3105}{\index{Array\-Lista@{Array\-Lista}!pop@{pop}}
+\index{pop@{pop}!ArrayLista@{Array\-Lista}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Array\-Lista\-::pop (
 \begin{DoxyParamCaption}
-\item[{T $\ast$}]{, }
-\item[{int $\ast$}]{, }
-\item[{int}]{, }
-\item[{int}]{}
+{}
 \end{DoxyParamCaption}
-)}}\label{a00001_ada193863a5d7ff62dd4fb66a02c401dd}
+)}}\label{a00001_ae76ea59ccac91abd264cf108489d3105}
 
 
-Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\-: \hyperlink{a00003}{Lista} , \hyperlink{a00004}{Stos} , \hyperlink{a00002}{Kolejka}. 
+Metoda zdejmujaca element z listy. Metoda dekrementuje ilosc\-\_\-elementow przy zdejmowaniu z listy. Tablica listy jest zmniejszana podczas zdejmowania elementu o polowe gdy ilosc elementow znajdujacych sie na niej jest rowna polowie jej rozmiaru. 
+
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana ze stosu. 
+\end{DoxyReturn}
+\hypertarget{a00001_a473a71ed888097c7b14bb70cbf7eecd6}{\index{Array\-Lista@{Array\-Lista}!push@{push}}
+\index{push@{push}!ArrayLista@{Array\-Lista}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Array\-Lista\-::push (
+\begin{DoxyParamCaption}
+\item[{int}]{wartosc, }
+\item[{int}]{zwiekszanie}
+\end{DoxyParamCaption}
+)}}\label{a00001_a473a71ed888097c7b14bb70cbf7eecd6}
+
+
+Metoda umieszczajaca element na liscie Metoda inkrementuje rozmiar podczas umieszczania elementu na liscie. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em Tab} & -\/ typu T$\ast$, wskaznik na zaimplementowany stos/liste/kolejke. \\
+{\em zwiekszanie} & -\/ typu int, mnoznik rozszerzania tablicy podczas dodawania elementow listy . \\
 \hline
-{\em dane} & -\/ typu int$\ast$, wskaznik na tablice z danymi generowanymi. \\
-\hline
-{\em liczba\-\_\-przejsc} & -\/ typu int, liczba przejsc przez dane. \\
-\hline
-{\em liczba\-\_\-danych} & -\/ typu int, liczba danych w tablicy. \\
+{\em wartosc} & -\/ typu int, wartosc umieszczana na stosie. \\
 \hline
 \end{DoxyParams}
+\hypertarget{a00001_a1d194e2d2e54114ef939d7fe64508840}{\index{Array\-Lista@{Array\-Lista}!push@{push}}
+\index{push@{push}!ArrayLista@{Array\-Lista}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Array\-Lista\-::push (
+\begin{DoxyParamCaption}
+\item[{int}]{wartosc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{a00001_a1d194e2d2e54114ef939d7fe64508840}
+
+
+Przeciazenie operacji push. Powieksza liste podczas dodawania elementu do 200\%. Nastepuje inkrementacja rozmiar listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu int, wartosc umieszczana na liscie. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00001_abd7b74aa6ee7e7c1a454ec32b3aed86e}{\index{Array\-Lista@{Array\-Lista}!size@{size}}
+\index{size@{size}!ArrayLista@{Array\-Lista}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Array\-Lista\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{a00001_abd7b74aa6ee7e7c1a454ec32b3aed86e}
+
+
+Metoda zwracajaca rozmiar tablicy na ktorej oparta jest lista. 
+
 \begin{DoxyReturn}{Returns}
-czas\-\_\-calkowity\-\_\-usredniony -\/ typu long int, czas sredni dzialania funkcji. 
+rozmiar -\/ typu int,rozmiar tablicy listy. 
 \end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00006}{Benchmark.\-hh}\item 
-\hyperlink{a00005}{Benchmark.\-cpp}\end{DoxyCompactItemize}
+\hyperlink{a00007}{Array\-Lista.\-hh}\item 
+\hyperlink{a00006}{Array\-Lista.\-cpp}\end{DoxyCompactItemize}
