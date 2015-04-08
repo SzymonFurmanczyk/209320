@@ -46,7 +46,7 @@ template <class T> long int Benchmarker::testuj(T *Tab,int *dane,int liczba_prze
 	  Tab->push(dane[i]);
 	}  
       
-      clock_gettime(CLOCK_CLOCK_PROCESS_CPUTIME_ID, &stop);
+      clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &stop);
       
       czas_operacji = (stop.tv_nsec - start.tv_nsec);
       if(czas_operacji>0)
