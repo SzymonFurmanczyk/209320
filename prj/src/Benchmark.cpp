@@ -18,20 +18,7 @@
 #include <iostream>
 #include <ctime>
 
- /*!
- *\brief Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji.
- *       Typy: Lista , Stos , Kolejka.
- *\tparam
- * Tab - typu T*, wskaznik na zaimplementowany stos/liste/kolejke.
- *\tparam
- * dane - typu int*, wskaznik na tablice z danymi generowanymi.
- *\tparam
- * liczba_przejsc - typu int, liczba przejsc przez dane.
- *\tparam
- * liczba_danych - typu int, liczba danych w tablicy. 
- *\return
- * czas_calkowity_usredniony - typu long int, czas sredni dzialania funkcji.
- */
+
 template <class T> long int Benchmarker::testuj(T* Tab,int* dane,int liczba_przejsc,int liczba_danych)
 {
   long int czas_operacji=0;
@@ -42,13 +29,13 @@ template <class T> long int Benchmarker::testuj(T* Tab,int* dane,int liczba_prze
     {
       clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start);
       
-      for(int i=1;i<=liczba_danych;i++)
+      for(int i=0;i<=liczba_danych;i++)
 	{
 	  Tab->push(dane[i]);
 	}  
       
       clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &stop);
-      
+
       czas_operacji = (stop.tv_nsec - start.tv_nsec);
       if(czas_operacji>0)
 	{
@@ -70,14 +57,6 @@ template long int Benchmarker::testuj<Stos>(Stos*,int*,int,int);
 template long int Benchmarker::testuj<Kolejka>(Kolejka*,int*,int,int);
 template long int Benchmarker::testuj<ArrayLista>(ArrayLista*,int*,int,int);
 
-
- /*!
- *\brief Metoda generujaca wartosci losowe z przedzialu 0 10000.
- *\param
- * l_danych - typu int, liczba generowanych danych.
- *\return
- * *dane - typu long int*, tablica z wygenerowanymi danymi.
- */
 int *Benchmarker::generujdane(int l_danych)
 {
   int *dane=new int[l_danych];

@@ -10,20 +10,14 @@
 #include <cstdlib>
 #include <iostream>
 
-/*!
- *\brief Konstruktor bezparametryczny.
- *       Konstruktor inicjalizujacy straznika 
- *       listy wartoscia NULL oraz rozmiar wartoscia 0.
- */
+
 Lista::Lista()
 {
   straznik=NULL;
   rozmiar=0;
 }
 
-/*!
- *\brief Destruktor bezparametryczny listy.
- */
+
 Lista::~Lista()
 {
   while(straznik!=NULL)
@@ -34,14 +28,7 @@ Lista::~Lista()
     }
 }
 
-/*!
- *\brief Metoda umieszczajaca element okreslonej pozycji na liscie <0,rozmiar>.
- *       Metoda inkrementuje rozmiar podczas umieszczania elementuna liscie.
- *\param
- * wartosc - typu int, wartosc umieszczana na liscie.
- *\param
- * pozycja - typu int, pozycja na ktorej jest umieszczana wartosc.
- */
+
 void Lista::push(int wartosc,int pozycja)
 {
   
@@ -81,14 +68,7 @@ void Lista::push(int wartosc,int pozycja)
     }
 }
 
-/*!
- *\brief Metoda zdejmujaca element z okreslonej pozycji listy <0,rozmiar>.
- *       Metoda dekrementuje rozmiar przy zdejmowaniu elementu.
- *\param
- * pozycja - typu int, numer elementu ktory ma byc zdjety z listy.
- *\return
- * wartosc - typu int, wartosc zdejmowana z listy.
- */
+
 int Lista::pop(int pozycja)
 {
   int wartosc;
@@ -127,11 +107,8 @@ int Lista::pop(int pozycja)
   return wartosc;
 }
 
-/*!
- *\brief Metoda zwracajaca wielkosc listy.
- *\return
- * rozmiar - typu int,rozmiar listy.
- */int Lista::size()
+
+int Lista::size()
 {
   return rozmiar;
 }

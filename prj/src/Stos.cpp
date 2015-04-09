@@ -10,20 +10,13 @@
 #include <cstdlib>
 #include <iostream>
 
-/*!
- *\brief Konstruktor bezparametryczny.
- *       Konstruktor inicjalizujacy straznika 
- *       stosu wartoscia NULL ,oraz rozmiar wartoscia 0.
- */
 Stos::Stos()
 {
   straznik=NULL;
   rozmiar=0;
 }
 
-/*!
- *\brief Destruktor bezparametryczny stosu.
- */
+
 Stos::~Stos()
 {
   while(straznik!=NULL)
@@ -34,12 +27,6 @@ Stos::~Stos()
     }
 }
 
-/*!
- *\brief Metoda umieszczajaca element na stosie
- *       Metoda inkrementuje rozmiar podczas umieszczania elementu na stosie.
- *\param
- * wartosc - typu int, wartosc umieszczana na stosie.
- */
 void Stos::push(int wartosc)
 {
   element * nowy = new element;
@@ -49,12 +36,7 @@ void Stos::push(int wartosc)
   straznik=nowy;
 }
 
-/*!
- *\brief Metoda zdejmujaca element ze stosu.
- *       Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu.
- *\return
- * wartosc - typu int, wartosc zdejmowana ze stosu.
- */
+
 int Stos::pop()
 {
   if(rozmiar!=0)
@@ -75,11 +57,7 @@ int Stos::pop()
 }
 
 
-/*!
- *\brief Metoda zwracajaca wielkosc stosu.
- *\return
- * rozmiar - typu int,rozmiar stosu.
- */
+
 int Stos::size()
 {
   return rozmiar;

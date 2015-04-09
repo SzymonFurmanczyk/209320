@@ -10,12 +10,7 @@
 #include <cstdlib>
 #include <iostream>
 
-/*!
- *\brief Konstruktor bezparametryczny.
- *       Konstruktor inicjalizujacy straznika_poczatek
- *       i straznika_koniec  kolejki wartosciami NULL ,
- *       oraz rozmiar kolejki wartoscia 0.
- */
+
 Kolejka::Kolejka()
 {
   straznik_koniec=NULL;
@@ -23,9 +18,7 @@ Kolejka::Kolejka()
   rozmiar=0;
 }
 
-/*!
- *\brief Destruktor bezparametryczny kolejki.
- */
+
 Kolejka::~Kolejka()
 {
   while(straznik_poczatek!=NULL)
@@ -37,12 +30,7 @@ Kolejka::~Kolejka()
     }
 }
 
-/*!
- *\brief Metoda umieszczajaca element na koncu kolejki.
- *       Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce.
- *\param
- * wartosc - typu int, wartosc umieszczana na koncu kolejki.
- */
+
 void Kolejka::push(int wartosc)
 {
   element * nowy = new element;
@@ -62,12 +50,7 @@ void Kolejka::push(int wartosc)
   rozmiar++;
 }
 
-/*!
- *\brief Metoda zdejmujaca element z poczatku kolejki.
- *       Metoda dekrementuje rozmiar przy zdejmowaniu elementu.
- *\return
- * wartosc - typu int, wartosc zdejmowana z kolejki.
- */
+
 int Kolejka::pop()
 {
   if(rozmiar!=0)
@@ -92,11 +75,7 @@ int Kolejka::pop()
 
 }
 
-/*!
- *\brief Metoda zwracajaca wielkosc kolejki.
- *\return
- * rozmiar - typu int,rozmiar kolejki.
- */
+
 int Kolejka::size()
 {
   return rozmiar;
