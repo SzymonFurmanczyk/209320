@@ -33,7 +33,7 @@ public:
   ArrayLista();
   
   /*!
-   *\brief Destruktor bezparametryczny stosu.
+   *\brief Destruktor bezparametryczny listy.
    */
   ~ArrayLista();
   

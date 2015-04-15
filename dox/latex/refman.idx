@@ -1,18 +1,18 @@
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}|hyperpage}{5}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}|hyperpage}{5}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{5}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista@{$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista@{$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow@{ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow}|hyperpage}{6}
-\indexentry{ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow@{ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!pop@{pop}|hyperpage}{6}
-\indexentry{pop@{pop}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!push@{push}|hyperpage}{6}
-\indexentry{push@{push}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!push@{push}|hyperpage}{6}
-\indexentry{push@{push}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!size@{size}|hyperpage}{6}
-\indexentry{size@{size}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
+\indexentry{Array\+Lista@{Array\+Lista}|hyperpage}{5}
+\indexentry{Array\+Lista@{Array\+Lista}!Array\+Lista@{Array\+Lista}|hyperpage}{5}
+\indexentry{Array\+Lista@{Array\+Lista}!Array\+Lista@{Array\+Lista}|hyperpage}{5}
+\indexentry{Array\+Lista@{Array\+Lista}!````~Array\+Lista@{$\sim$\+Array\+Lista}|hyperpage}{6}
+\indexentry{````~Array\+Lista@{$\sim$\+Array\+Lista}!Array\+Lista@{Array\+Lista}|hyperpage}{6}
+\indexentry{Array\+Lista@{Array\+Lista}!ile\+\_\+elementow@{ile\+\_\+elementow}|hyperpage}{6}
+\indexentry{ile\+\_\+elementow@{ile\+\_\+elementow}!Array\+Lista@{Array\+Lista}|hyperpage}{6}
+\indexentry{Array\+Lista@{Array\+Lista}!pop@{pop}|hyperpage}{6}
+\indexentry{pop@{pop}!Array\+Lista@{Array\+Lista}|hyperpage}{6}
+\indexentry{Array\+Lista@{Array\+Lista}!push@{push}|hyperpage}{6}
+\indexentry{push@{push}!Array\+Lista@{Array\+Lista}|hyperpage}{6}
+\indexentry{Array\+Lista@{Array\+Lista}!push@{push}|hyperpage}{6}
+\indexentry{push@{push}!Array\+Lista@{Array\+Lista}|hyperpage}{6}
+\indexentry{Array\+Lista@{Array\+Lista}!size@{size}|hyperpage}{6}
+\indexentry{size@{size}!Array\+Lista@{Array\+Lista}|hyperpage}{6}
 \indexentry{Benchmarker@{Benchmarker}|hyperpage}{7}
 \indexentry{Benchmarker@{Benchmarker}!generujdane@{generujdane}|hyperpage}{7}
 \indexentry{generujdane@{generujdane}!Benchmarker@{Benchmarker}|hyperpage}{7}
@@ -21,8 +21,8 @@
 \indexentry{Kolejka@{Kolejka}|hyperpage}{8}
 \indexentry{Kolejka@{Kolejka}!Kolejka@{Kolejka}|hyperpage}{8}
 \indexentry{Kolejka@{Kolejka}!Kolejka@{Kolejka}|hyperpage}{8}
-\indexentry{Kolejka@{Kolejka}!$\sim $\discretionary {-}{}{}Kolejka@{$\sim $\discretionary {-}{}{}Kolejka}|hyperpage}{8}
-\indexentry{$\sim $\discretionary {-}{}{}Kolejka@{$\sim $\discretionary {-}{}{}Kolejka}!Kolejka@{Kolejka}|hyperpage}{8}
+\indexentry{Kolejka@{Kolejka}!````~Kolejka@{$\sim$\+Kolejka}|hyperpage}{8}
+\indexentry{````~Kolejka@{$\sim$\+Kolejka}!Kolejka@{Kolejka}|hyperpage}{8}
 \indexentry{Kolejka@{Kolejka}!pop@{pop}|hyperpage}{9}
 \indexentry{pop@{pop}!Kolejka@{Kolejka}|hyperpage}{9}
 \indexentry{Kolejka@{Kolejka}!push@{push}|hyperpage}{9}
@@ -32,8 +32,8 @@
 \indexentry{Lista@{Lista}|hyperpage}{9}
 \indexentry{Lista@{Lista}!Lista@{Lista}|hyperpage}{10}
 \indexentry{Lista@{Lista}!Lista@{Lista}|hyperpage}{10}
-\indexentry{Lista@{Lista}!$\sim $\discretionary {-}{}{}Lista@{$\sim $\discretionary {-}{}{}Lista}|hyperpage}{10}
-\indexentry{$\sim $\discretionary {-}{}{}Lista@{$\sim $\discretionary {-}{}{}Lista}!Lista@{Lista}|hyperpage}{10}
+\indexentry{Lista@{Lista}!````~Lista@{$\sim$\+Lista}|hyperpage}{10}
+\indexentry{````~Lista@{$\sim$\+Lista}!Lista@{Lista}|hyperpage}{10}
 \indexentry{Lista@{Lista}!pop@{pop}|hyperpage}{10}
 \indexentry{pop@{pop}!Lista@{Lista}|hyperpage}{10}
 \indexentry{Lista@{Lista}!pop@{pop}|hyperpage}{10}
@@ -47,26 +47,26 @@
 \indexentry{Stos@{Stos}|hyperpage}{11}
 \indexentry{Stos@{Stos}!Stos@{Stos}|hyperpage}{11}
 \indexentry{Stos@{Stos}!Stos@{Stos}|hyperpage}{11}
-\indexentry{Stos@{Stos}!$\sim $\discretionary {-}{}{}Stos@{$\sim $\discretionary {-}{}{}Stos}|hyperpage}{11}
-\indexentry{$\sim $\discretionary {-}{}{}Stos@{$\sim $\discretionary {-}{}{}Stos}!Stos@{Stos}|hyperpage}{11}
+\indexentry{Stos@{Stos}!````~Stos@{$\sim$\+Stos}|hyperpage}{11}
+\indexentry{````~Stos@{$\sim$\+Stos}!Stos@{Stos}|hyperpage}{11}
 \indexentry{Stos@{Stos}!pop@{pop}|hyperpage}{12}
 \indexentry{pop@{pop}!Stos@{Stos}|hyperpage}{12}
 \indexentry{Stos@{Stos}!push@{push}|hyperpage}{12}
 \indexentry{push@{push}!Stos@{Stos}|hyperpage}{12}
 \indexentry{Stos@{Stos}!size@{size}|hyperpage}{12}
 \indexentry{size@{size}!Stos@{Stos}|hyperpage}{12}
-\indexentry{Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}cpp@{Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}cpp}|hyperpage}{13}
-\indexentry{Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}hh@{Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}hh}|hyperpage}{13}
-\indexentry{Benchmark.\discretionary {-}{}{}cpp@{Benchmark.\discretionary {-}{}{}cpp}|hyperpage}{14}
-\indexentry{Benchmark.\discretionary {-}{}{}cpp@{Benchmark.\discretionary {-}{}{}cpp}!B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P@{B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P}|hyperpage}{15}
-\indexentry{B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P@{B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P}!Benchmark.cpp@{Benchmark.\discretionary {-}{}{}cpp}|hyperpage}{15}
-\indexentry{Benchmark.\discretionary {-}{}{}hh@{Benchmark.\discretionary {-}{}{}hh}|hyperpage}{15}
-\indexentry{Kolejka.\discretionary {-}{}{}cpp@{Kolejka.\discretionary {-}{}{}cpp}|hyperpage}{16}
-\indexentry{Kolejka.\discretionary {-}{}{}hh@{Kolejka.\discretionary {-}{}{}hh}|hyperpage}{16}
-\indexentry{Lista.\discretionary {-}{}{}cpp@{Lista.\discretionary {-}{}{}cpp}|hyperpage}{17}
-\indexentry{Lista.\discretionary {-}{}{}hh@{Lista.\discretionary {-}{}{}hh}|hyperpage}{18}
-\indexentry{main.\discretionary {-}{}{}cpp@{main.\discretionary {-}{}{}cpp}|hyperpage}{18}
-\indexentry{main.\discretionary {-}{}{}cpp@{main.\discretionary {-}{}{}cpp}!main@{main}|hyperpage}{19}
-\indexentry{main@{main}!main.cpp@{main.\discretionary {-}{}{}cpp}|hyperpage}{19}
-\indexentry{Stos.\discretionary {-}{}{}cpp@{Stos.\discretionary {-}{}{}cpp}|hyperpage}{19}
-\indexentry{Stos.\discretionary {-}{}{}hh@{Stos.\discretionary {-}{}{}hh}|hyperpage}{20}
+\indexentry{Array\+Lista.\+cpp@{Array\+Lista.\+cpp}|hyperpage}{13}
+\indexentry{Array\+Lista.\+hh@{Array\+Lista.\+hh}|hyperpage}{13}
+\indexentry{Benchmark.\+cpp@{Benchmark.\+cpp}|hyperpage}{14}
+\indexentry{Benchmark.\+cpp@{Benchmark.\+cpp}!B\+E\+N\+C\+H\+M\+A\+R\+K\+\_\+\+C\+P\+P@{B\+E\+N\+C\+H\+M\+A\+R\+K\+\_\+\+C\+P\+P}|hyperpage}{15}
+\indexentry{B\+E\+N\+C\+H\+M\+A\+R\+K\+\_\+\+C\+P\+P@{B\+E\+N\+C\+H\+M\+A\+R\+K\+\_\+\+C\+P\+P}!Benchmark.\+cpp@{Benchmark.\+cpp}|hyperpage}{15}
+\indexentry{Benchmark.\+hh@{Benchmark.\+hh}|hyperpage}{15}
+\indexentry{Kolejka.\+cpp@{Kolejka.\+cpp}|hyperpage}{16}
+\indexentry{Kolejka.\+hh@{Kolejka.\+hh}|hyperpage}{16}
+\indexentry{Lista.\+cpp@{Lista.\+cpp}|hyperpage}{17}
+\indexentry{Lista.\+hh@{Lista.\+hh}|hyperpage}{18}
+\indexentry{main.\+cpp@{main.\+cpp}|hyperpage}{18}
+\indexentry{main.\+cpp@{main.\+cpp}!main@{main}|hyperpage}{19}
+\indexentry{main@{main}!main.\+cpp@{main.\+cpp}|hyperpage}{19}
+\indexentry{Stos.\+cpp@{Stos.\+cpp}|hyperpage}{19}
+\indexentry{Stos.\+hh@{Stos.\+hh}|hyperpage}{20}
