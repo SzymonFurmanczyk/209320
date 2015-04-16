@@ -27,12 +27,14 @@ template <class T> long int Benchmarker::testuj(T* Tab,int* dane,int liczba_prze
   
   for(int j=1;j<=liczba_przejsc;j++)
     {
-      clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start);
-      
-      for(int i=0;i<=liczba_danych;i++)
+	for(int i=0;i<=liczba_danych;i++)
 	{
 	  Tab->push(dane[i]);
-	}  
+	} 
+	
+      clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start);
+       
+	Tab->mergesort(Tab);
       
       clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &stop);
 
@@ -52,9 +54,9 @@ template <class T> long int Benchmarker::testuj(T* Tab,int* dane,int liczba_prze
 }
 
 
-template long int Benchmarker::testuj<Lista>(Lista*,int*,int,int);
-template long int Benchmarker::testuj<Stos>(Stos*,int*,int,int);
-template long int Benchmarker::testuj<Kolejka>(Kolejka*,int*,int,int);
+//template long int Benchmarker::testuj<Lista>(Lista*,int*,int,int);
+//template long int Benchmarker::testuj<Stos>(Stos*,int*,int,int);
+//template long int Benchmarker::testuj<Kolejka>(Kolejka*,int*,int,int);
 template long int Benchmarker::testuj<ArrayLista>(ArrayLista*,int*,int,int);
 
 int *Benchmarker::generujdane(int l_danych)

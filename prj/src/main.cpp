@@ -44,28 +44,13 @@ int main(int argc, char *argv[])
     }
   if(argc==1)
     {
-      l_przejsc=10;
+      l_przejsc=1;
       l_danych=1000;
     }
 
 
  
   dane=Test.generujdane(l_danych);
-  
-  plik.open("benchmark_ll_lista2.csv");
-
-  for(int k=0;k<=l_danych;k+=10)
-    {
-      Lista *implem_lista=new Lista;
-      sredni_czas_lista=Test.testuj(implem_lista,dane,l_przejsc,k);
-      delete implem_lista;
-
-      //cout<<k<<" "<<sredni_czas_lista<<endl;    
-      plik<<k<<","<<sredni_czas_lista<<"\n";
-    }
-  
-  plik.close();
-
 
   plik.open("benchmark_array_lista2.csv");
 
@@ -75,7 +60,7 @@ int main(int argc, char *argv[])
       sredni_czas_arraylista=Test.testuj(implem_arraylista,dane,l_przejsc,k);
       delete implem_arraylista;
       
-      //cout<<k<<" "<<sredni_czas_arraylista<<endl;    
+      cout<<k<<" "<<sredni_czas_arraylista<<endl;    
       plik<<k<<","<<sredni_czas_arraylista<<"\n";
     }
   
