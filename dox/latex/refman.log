@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.11)  9 APR 2015 08:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.15)  21 APR 2015 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,10 @@ File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
@@ -70,7 +74,7 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -135,31 +139,76 @@ Package: xtab 2011/07/31 v2.3f Extended supertabular package
 \xreflength=\skip52
 \tmplength=\skip53
 )
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+\XKV@depth=\count101
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks20
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box30
+)
+\tc@llx=\dimen124
+\tc@lly=\dimen125
+\tc@urx=\dimen126
+\tc@ury=\dimen127
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen128
+\adjbox@Height=\dimen129
+\adjbox@Depth=\dimen130
+\adjbox@Totalheight=\dimen131
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box31
+\sift@deathcycles=\count103
+\@vwid@loff=\dimen132
+\@vwid@roff=\dimen133
+))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -378,28 +427,26 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count101
-\mult@box=\box30
-\multicol@leftmargin=\dimen124
-\c@unbalance=\count102
-\c@collectmore=\count103
-\doublecol@number=\count104
-\multicoltolerance=\count105
-\multicolpretolerance=\count106
-\full@width=\dimen125
-\page@free=\dimen126
-\premulticols=\dimen127
-\postmulticols=\dimen128
+\c@tracingmulticols=\count104
+\mult@box=\box32
+\multicol@leftmargin=\dimen134
+\c@unbalance=\count105
+\c@collectmore=\count106
+\doublecol@number=\count107
+\multicoltolerance=\count108
+\multicolpretolerance=\count109
+\full@width=\dimen135
+\page@free=\dimen136
+\premulticols=\dimen137
+\postmulticols=\dimen138
 \multicolsep=\skip54
 \multicolbaselineskip=\skip55
-\partial@page=\box31
-\last@line=\box32
-\mult@rightbox=\box33
-\mult@grightbox=\box34
-\mult@gfirstbox=\box35
-\mult@firstbox=\box36
-\@tempa=\box37
-\@tempa=\box38
+\partial@page=\box33
+\last@line=\box34
+\mult@rightbox=\box35
+\mult@grightbox=\box36
+\mult@gfirstbox=\box37
+\mult@firstbox=\box38
 \@tempa=\box39
 \@tempa=\box40
 \@tempa=\box41
@@ -415,17 +462,19 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count107
-\c@finalcolumnbadness=\count108
-\last@try=\dimen129
-\multicolovershoot=\dimen130
-\multicolundershoot=\dimen131
-\mult@nat@firstbox=\box54
-\colbreak@box=\box55
-\multicol@sort@counter=\count109
+\@tempa=\box54
+\@tempa=\box55
+\c@columnbadness=\count110
+\c@finalcolumnbadness=\count111
+\last@try=\dimen139
+\multicolovershoot=\dimen140
+\multicolundershoot=\dimen141
+\mult@nat@firstbox=\box56
+\colbreak@box=\box57
+\multicol@sort@counter=\count112
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen132
+\bigstrutjot=\dimen142
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -582,6 +631,12 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -589,42 +644,6 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup4
-\symitalic=\mathgroup5
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
-LaTeX Info: Redefining \hbar on input line 50.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
@@ -636,9 +655,9 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks23
-\symAMSa=\mathgroup6
-\symAMSb=\mathgroup7
+\@emptytoks=\toks24
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
@@ -660,18 +679,18 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count110
-\Gm@cntv=\count111
-\c@Gm@tempcnt=\count112
-\Gm@bindingoffset=\dimen133
-\Gm@wd@mp=\dimen134
-\Gm@odd@mp=\dimen135
-\Gm@even@mp=\dimen136
-\Gm@layoutwidth=\dimen137
-\Gm@layoutheight=\dimen138
-\Gm@layouthoffset=\dimen139
-\Gm@layoutvoffset=\dimen140
-\Gm@dimlist=\toks24
+\Gm@cnth=\count113
+\Gm@cntv=\count114
+\c@Gm@tempcnt=\count115
+\Gm@bindingoffset=\dimen143
+\Gm@wd@mp=\dimen144
+\Gm@odd@mp=\dimen145
+\Gm@even@mp=\dimen146
+\Gm@layoutwidth=\dimen147
+\Gm@layoutheight=\dimen148
+\Gm@layouthoffset=\dimen149
+\Gm@layoutvoffset=\dimen150
+\Gm@dimlist=\toks25
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip56
@@ -689,7 +708,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip65
 \bibsep=\skip66
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count113
+\c@NAT@ctr=\count116
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
@@ -723,8 +742,8 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cftbeforefigskip=\skip93
 \cftfigindent=\skip94
 \cftfignumwidth=\skip95
-\c@lofdepth=\count114
-\c@lotdepth=\count115
+\c@lofdepth=\count117
+\c@lotdepth=\count118
 \cftbeforelottitleskip=\skip96
 \cftafterlottitleskip=\skip97
 \cftbeforetabskip=\skip98
@@ -788,16 +807,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen141
-\Hy@linkcounter=\count116
-\Hy@pagecounter=\count117
+\@linkdim=\dimen151
+\Hy@linkcounter=\count119
+\Hy@pagecounter=\count120
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count118
+\Hy@SavedSpaceFactor=\count121
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -818,17 +837,17 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count119
+\c@Hy@tempcnt=\count122
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen142
-\Fld@menulength=\count120
-\Field@Width=\dimen143
-\Fld@charsize=\dimen144
+\XeTeXLinkMargin=\dimen152
+\Fld@menulength=\count123
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -838,21 +857,21 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count121
-\c@Item=\count122
-\c@Hfootnote=\count123
+\Hy@abspage=\count124
+\c@Item=\count125
+\c@Hfootnote=\count126
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count124
-\c@bookmark@seq@number=\count125
+\Fld@listcount=\count127
+\c@bookmark@seq@number=\count128
 \Hy@SectionHShift=\skip101
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 101.
-Package hyperref Info: Option `unicode' set `true' on input line 101.
+Package hyperref Info: Option `colorlinks' set `true' on input line 105.
+Package hyperref Info: Option `unicode' set `true' on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
@@ -861,54 +880,66 @@ Now handling font encoding PU ...
 ) (./refman.aux)
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 115.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 111.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 111.
+(Font)              scaled to size 8.99994pt on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen145
-\scratchbox=\box56
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen146
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks26
-)
-\big@size=\dimen147
+\scratchcounter=\count129
+\scratchdimen=\dimen155
+\scratchbox=\box58
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen156
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -943,86 +974,76 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box57
-Package backref Info: ** backref set up for natbib ** on input line 111.
-Package hyperref Info: Link coloring ON on input line 111.
+\AtBeginShipoutBox=\box59
+Package backref Info: ** backref set up for natbib ** on input line 115.
+Package hyperref Info: Link coloring ON on input line 115.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count132
+\c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 111.
-LaTeX Info: Redefining \pageref on input line 111.
-LaTeX Info: Redefining \nameref on input line 111.
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
 
 (./refman.out) (./refman.out)
 \@outlinefile=\write4
 \openout4 = `refman.out'.
 
-Package hyperref Info: Option `pageanchor' set `false' on input line 114.
+Package hyperref Info: Option `pageanchor' set `false' on input line 122.
+
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 122.
+
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 122.
+
+Package hyperref Info: Option `unicode' set `true' on input line 122.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 119.
+(Font)              scaled to size 12.9599pt on input line 127.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 121.
+(Font)              scaled to size 10.79993pt on input line 129.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 123.
- [1
+(Font)              scaled to size 8.09995pt on input line 131.
+[1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 127.
+(Font)              scaled to size 22.39185pt on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 127.
+(Font)              scaled to size 22.39185pt on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 127.
+(Font)              scaled to size 22.39185pt on input line 135.
  (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 1.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 1.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 1.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 1.
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 1.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 6.
  [3
 
 ]
@@ -1038,17 +1059,17 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 [6
 
 ]
-Package hyperref Info: Option `pageanchor' set `true' on input line 130.
+Package hyperref Info: Option `pageanchor' set `true' on input line 138.
 
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 133.
+(Font)              scaled to size 18.66588pt on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 133.
+(Font)              scaled to size 18.66588pt on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 133.
+(Font)              scaled to size 18.66588pt on input line 141.
 (./annotated.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1067,101 +1088,112 @@ Chapter 2.
 ]
 Chapter 3.
 (./a00001.tex
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 1.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 13.
+(Font)              scaled to size 10.79993pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 13.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 16.
+(Font)              scaled to size 10.79993pt on input line 12.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 16.
+(Font)              scaled to size 8.99994pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 17.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 17.
+(Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 42.
+(Font)              scaled to size 8.99994pt on input line 41.
  [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 53.
+(hyperref)                removing `\sim' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 52.
 
 
-Underfull \hbox (badness 10000) detected at line 72
+Underfull \hbox (badness 10000) detected at line 71
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 86
+Underfull \hbox (badness 10000) detected at line 85
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 96.
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 95.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 96.
+(Font)              scaled to size 8.99994pt on input line 95.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 103.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 102.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 103.
+(Font)              scaled to size 8.99994pt on input line 102.
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 114.
+(Font)              using `T1/pcr/m/n' instead on input line 113.
 
 
-Underfull \hbox (badness 10000) detected at line 135
+Underfull \hbox (badness 10000) detected at line 134
 [][][]
  []
 
 [6]) (./a00002.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 16.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              scaled to size 7.19995pt on input line 15.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 33.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 6.29996pt on input line 33.
 
-Underfull \hbox (badness 10000) detected at line 42
+Underfull \hbox (badness 10000) detected at line 43
 [][][]
  []
 
 [7]
-Underfull \hbox (badness 10000) detected at line 70
+Underfull \hbox (badness 10000) detected at line 62
 [][][]
  []
 
-) (./a00003.tex
+
+Underfull \hbox (badness 10000) detected at line 90
+[][][]
+ []
+
+) (./a00003.tex [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 49.
+(hyperref)                removing `\sim' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 52.
 
-[8]
-Underfull \hbox (badness 10000) detected at line 68
+
+Underfull \hbox (badness 10000) detected at line 79
 [][][]
  []
 
@@ -1170,251 +1202,300 @@ Underfull \hbox (badness 10000) detected at line 98
 [][][]
  []
 
-) (./a00004.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
- [9]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+<a00003_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf, id=669, 313.17pt x 100.37
+5pt>
+File: a00003_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf Graphic file (type pd
+f)
+ <use a00003_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf>
+Package pdftex.def Info: a00003_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf us
+ed on input line 107.
+(pdftex.def)             Requested size: 312.0pt x 100.00409pt.
+ [9 <./a00003_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf>]
+<a00003_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf, id=684, 297.11pt x 100.37
+5pt>
+File: a00003_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf Graphic file (type pd
+f)
+ <use a00003_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf>
+Package pdftex.def Info: a00003_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf us
+ed on input line 137.
+(pdftex.def)             Requested size: 296.0pt x 100.00409pt.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Underfull \hbox (badness 10000) detected at line 77
+Underfull \hbox (badness 10000) detected at line 153
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 91
+Underfull \hbox (badness 10000) detected at line 167
 [][][]
  []
 
-[10]
-Underfull \hbox (badness 10000) detected at line 140
+) (./a00004.tex [10 <./a00003_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 48.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 48.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 48.
+
+
+Underfull \hbox (badness 10000) detected at line 67
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 97
 [][][]
  []
 
 ) (./a00005.tex [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 49.
+(hyperref)                removing `\sim' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 52.
 
 
-Underfull \hbox (badness 10000) detected at line 68
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+[12]
+Underfull \hbox (badness 10000) detected at line 90
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 98
+Underfull \hbox (badness 10000) detected at line 139
 [][][]
  []
 
-) [12]
+) (./a00006.tex [13]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 48.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 48.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 48.
+
+
+Underfull \hbox (badness 10000) detected at line 67
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 97
+[][][]
+ []
+
+) [14]
 Chapter 4.
-(./a00006.tex
-
-pdfTeX warning: pdflatex (file ./a00019.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00019.pdf, id=618, 254.9525pt x 230.8625pt>
-File: a00019.pdf Graphic file (type pdf)
- <use a00019.pdf>
-Package pdftex.def Info: a00019.pdf used on input line 16.
-(pdftex.def)             Requested size: 254.0pt x 230.00943pt.
-) (./a00007.tex
-
-pdfTeX warning: pdflatex (file ./a00020.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00020.pdf, id=622, 154.5775pt x 168.63pt>
-File: a00020.pdf Graphic file (type pdf)
- <use a00020.pdf>
-Package pdftex.def Info: a00020.pdf used on input line 14.
-(pdftex.def)             Requested size: 154.0pt x 168.0146pt.
- [13
-
- <./a00019.pdf>]
-
-pdfTeX warning: pdflatex (file ./a00021.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00021.pdf, id=636, 337.26pt x 168.63pt>
-File: a00021.pdf Graphic file (type pdf)
- <use a00021.pdf>
-Package pdftex.def Info: a00021.pdf used on input line 21.
-(pdftex.def)             Requested size: 336.0pt x 168.00432pt.
-) (./a00008.tex
-
-pdfTeX warning: pdflatex (file ./a00022.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00022.pdf, id=641, 628.3475pt x 230.8625pt>
+(./a00007.tex <a00022.pdf, id=766, 255.95625pt x 212.795pt>
 File: a00022.pdf Graphic file (type pdf)
  <use a00022.pdf>
-Package pdftex.def Info: a00022.pdf used on input line 21.
-(pdftex.def)             Requested size: 350.0pt x 128.59166pt.
- [14 <./a00020.pdf> <./a00021.pdf
-
-pdfTeX warning: pdflatex (file ./a00021.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
->]) (./a00009.tex
-
-pdfTeX warning: pdflatex (file ./a00023.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00023.pdf, id=662, 238.8925pt x 168.63pt>
+Package pdftex.def Info: a00022.pdf used on input line 15.
+(pdftex.def)             Requested size: 255.0pt x 211.99895pt.
+)
+(./a00008.tex <a00023.pdf, id=770, 154.5775pt x 156.585pt>
 File: a00023.pdf Graphic file (type pdf)
  <use a00023.pdf>
 Package pdftex.def Info: a00023.pdf used on input line 13.
-(pdftex.def)             Requested size: 238.0pt x 167.99916pt.
- [15 <./a00022.pdf> <./a00023.pdf
+(pdftex.def)             Requested size: 154.0pt x 156.01357pt.
 
-pdfTeX warning: pdflatex (file ./a00023.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
->]) (./a00010.tex
+[15
 
-pdfTeX warning: pdflatex (file ./a00024.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00024.pdf, id=685, 277.035pt x 168.63pt>
+ <./a00022.pdf>] <a00024.pdf, id=781, 339.2675pt x 156.585pt>
 File: a00024.pdf Graphic file (type pdf)
- <use a00024.pdf>
-Package pdftex.def Info: a00024.pdf used on input line 16.
-(pdftex.def)             Requested size: 276.0pt x 168.00174pt.
-) (./a00011.tex
 
-pdfTeX warning: pdflatex (file ./a00025.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00025.pdf, id=689, 325.215pt x 168.63pt>
+<use a00024.pdf>
+Package pdftex.def Info: a00024.pdf used on input line 20.
+(pdftex.def)             Requested size: 338.0pt x 156.0064pt.
+) (./a00009.tex <a00025.pdf, id=786, 830.10126pt x 212.795pt>
 File: a00025.pdf Graphic file (type pdf)
- <use a00025.pdf>
-Package pdftex.def Info: a00025.pdf used on input line 13.
-(pdftex.def)             Requested size: 324.0pt x 168.01202pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use a00025.pdf>
+Package pdftex.def Info: a00025.pdf used on input line 23.
+(pdftex.def)             Requested size: 350.0pt x 89.7207pt.
 
- [16 <./a00024.pdf>]) (./a00012.tex
+Underfull \vbox (badness 1742) has occurred while \output is active []
 
-pdfTeX warning: pdflatex (file ./a00026.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00026.pdf, id=706, 264.99pt x 168.63pt>
+ [16 <./a00023.pdf> <./a00024.pdf
+
+pdfTeX warning: pdflatex (file ./a00024.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00010.tex <a00026.pdf, id=808, 160.6pt x 156.585pt>
 File: a00026.pdf Graphic file (type pdf)
  <use a00026.pdf>
-Package pdftex.def Info: a00026.pdf used on input line 16.
-(pdftex.def)             Requested size: 264.0pt x 168.01202pt.
-) (./a00013.tex
-[17 <./a00025.pdf> <./a00026.pdf
-
-pdfTeX warning: pdflatex (file ./a00026.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
->]
-
-pdfTeX warning: pdflatex (file ./a00027.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00027.pdf, id=726, 313.17pt x 168.63pt>
-File: a00027.pdf Graphic file (type pdf)
- <use a00027.pdf>
-Package pdftex.def Info: a00027.pdf used on input line 13.
-(pdftex.def)             Requested size: 312.0pt x 168.00688pt.
-) (./a00014.tex
-
-pdfTeX warning: pdflatex (file ./a00028.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00028.pdf, id=730, 638.385pt x 230.8625pt>
-File: a00028.pdf Graphic file (type pdf)
- <use a00028.pdf>
-Package pdftex.def Info: a00028.pdf used on input line 21.
-(pdftex.def)             Requested size: 350.0pt x 126.57317pt.
+Package pdftex.def Info: a00026.pdf used on input line 13.
+(pdftex.def)             Requested size: 160.0pt x 156.004pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./a00027.pdf>]
+ [17 <./a00025.pdf>] <a00027.pdf, id=821, 239.89626pt x 156.585pt>
+File: a00027.pdf Graphic file (type pdf)
+ <use a00027.pdf>
+Package pdftex.def Info: a00027.pdf used on input line 20.
+(pdftex.def)             Requested size: 239.0pt x 156.00162pt.
+)
+(./a00011.tex <a00028.pdf, id=827, 269.005pt x 212.795pt>
+File: a00028.pdf Graphic file (type pdf)
+ <use a00028.pdf>
+Package pdftex.def Info: a00028.pdf used on input line 15.
+(pdftex.def)             Requested size: 268.0pt x 212.0022pt.
 
-pdfTeX warning: pdflatex (file ./a00014_a0ddf1224851353fc92bfbff6f499fa97_cgrap
-h.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allow
-ed
+[18 <./a00026.pdf> <./a00027.pdf
 
-<a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=743, 289.08pt x 146.54
-75pt>
-File: a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf Graphic file (type pd
-f)
- <use a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
-Package pdftex.def Info: a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf us
-ed on input line 53.
-(pdftex.def)             Requested size: 288.0pt x 146.00821pt.
-) (./a00015.tex
-
-pdfTeX warning: pdflatex (file ./a00029.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00029.pdf, id=745, 264.99pt x 168.63pt>
-File: a00029.pdf Graphic file (type pdf)
- <use a00029.pdf>
-Package pdftex.def Info: a00029.pdf used on input line 16.
-(pdftex.def)             Requested size: 264.0pt x 168.01202pt.
- [19 <./a00028.pdf> <./a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf
-
-pdfTeX warning: pdflatex (file ./a00014_a0ddf1224851353fc92bfbff6f499fa97_cgrap
-h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]) (./a00016.tex
-
-pdfTeX warning: pdflatex (file ./a00030.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00030.pdf, id=767, 313.17pt x 168.63pt>
-File: a00030.pdf Graphic file (type pdf)
- <use a00030.pdf>
-Package pdftex.def Info: a00030.pdf used on input line 13.
-(pdftex.def)             Requested size: 312.0pt x 168.00688pt.
-) [20 <./a00029.pdf> <./a00030.pdf
-
-pdfTeX warning: pdflatex (file ./a00030.pdf): PDF inclusion: multiple pdfs with
+pdfTeX warning: pdflatex (file ./a00027.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
->] (./refman.ind [21
+>]) (./a00012.tex <a00029.pdf, id=847, 193.72375pt x 156.585pt>
+File: a00029.pdf Graphic file (type pdf)
+
+<use a00029.pdf>
+Package pdftex.def Info: a00029.pdf used on input line 14.
+(pdftex.def)             Requested size: 193.0pt x 156.00162pt.
+ <a00030.pdf, id=848, 332.24126pt x 156.585pt>
+File: a00030.pdf Graphic file (type pdf)
+
+<use a00030.pdf>
+Package pdftex.def Info: a00030.pdf used on input line 21.
+(pdftex.def)             Requested size: 331.0pt x 156.00879pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./a00028.pdf> <./a00029.pdf
+
+pdfTeX warning: pdflatex (file ./a00029.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00013.tex <a00031.pdf, id=869, 279.0425pt x 156.585pt>
+File: a00031.pdf Graphic file (type pdf)
+
+<use a00031.pdf>
+Package pdftex.def Info: a00031.pdf used on input line 15.
+(pdftex.def)             Requested size: 278.0pt x 156.004pt.
+) (./a00014.tex [20 <./a00030.pdf> <./a00031.pdf
+
+pdfTeX warning: pdflatex (file ./a00031.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] <a00032.pdf, id=889, 326.21875pt x 156.585pt>
+File: a00032.pdf Graphic file (type pdf)
+ <use a00032.pdf>
+Package pdftex.def Info: a00032.pdf used on input line 12.
+(pdftex.def)             Requested size: 325.0pt x 156.01357pt.
+)
+(./a00015.tex <a00033.pdf, id=895, 266.9975pt x 156.585pt>
+File: a00033.pdf Graphic file (type pdf)
+ <use a00033.pdf>
+Package pdftex.def Info: a00033.pdf used on input line 15.
+(pdftex.def)             Requested size: 266.0pt x 156.01595pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./a00032.pdf>]) (./a00016.tex <a00034.pdf, id=911, 314.17375pt x 156.585p
+t>
+File: a00034.pdf Graphic file (type pdf)
+
+<use a00034.pdf>
+Package pdftex.def Info: a00034.pdf used on input line 12.
+(pdftex.def)             Requested size: 313.0pt x 156.0064pt.
+) (./a00017.tex [22 <./a00033.pdf> <./a00034.pdf
+
+pdfTeX warning: pdflatex (file ./a00034.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] <a00035.pdf, id=931, 705.63625pt x 212.795pt>
+File: a00035.pdf Graphic file (type pdf)
+ <use a00035.pdf>
+Package pdftex.def Info: a00035.pdf used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 105.54651pt.
+
+<a00017_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=933, 289.08pt x 187.70
+125pt>
+File: a00017_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf Graphic file (type pd
+f)
+ <use a00017_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
+Package pdftex.def Info: a00017_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf us
+ed on input line 56.
+(pdftex.def)             Requested size: 288.0pt x 187.01054pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./a00035.pdf>]) (./a00018.tex <a00036.pdf, id=947, 266.9975pt x 156.585pt
+>
+File: a00036.pdf Graphic file (type pdf)
+
+<use a00036.pdf>
+Package pdftex.def Info: a00036.pdf used on input line 15.
+(pdftex.def)             Requested size: 266.0pt x 156.01595pt.
+) (./a00019.tex <a00037.pdf, id=951, 314.17375pt x 156.585pt>
+File: a00037.pdf Graphic file (type pdf)
+
+<use a00037.pdf>
+Package pdftex.def Info: a00037.pdf used on input line 12.
+(pdftex.def)             Requested size: 313.0pt x 156.0064pt.
+ [24 <./a00017_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf> <./a00036.pdf
+
+pdfTeX warning: pdflatex (file ./a00036.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) [25 <./a00037.pdf>] [26
+
+] (./refman.ind [27
+
+
+] [28
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: E34AC4F1BAD0359CF71076ECAF9E6EBC;11654.
+(rerunfilecheck)             Checksum: FE6E0B17C9FF1DECC1454DDA98804DF5;17288.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 12426 strings out of 495032
- 172126 string characters out of 6181718
- 249682 words of memory out of 5000000
- 15235 multiletter control sequences out of 15000+600000
- 86427 words of font info for 121 fonts, out of 8000000 for 9000
+ 13460 strings out of 495028
+ 188438 string characters out of 6181497
+ 271927 words of memory out of 5000000
+ 16177 multiletter control sequences out of 15000+600000
+ 72610 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,13n,43p,428b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,16n,43p,1611b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/
-public/tex-gyre/qhvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
-/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (27 pages, 366038 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucr
+r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (34 pages, 228802 bytes).
 PDF statistics:
- 920 PDF objects out of 1000 (max. 8388607)
- 157 named destinations out of 1000 (max. 500000)
- 690 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1159 PDF objects out of 1200 (max. 8388607)
+ 1062 compressed objects within 11 object streams
+ 193 named destinations out of 1000 (max. 500000)
+ 848 words of extra memory for PDF output out of 10000 (max. 10000000)
 

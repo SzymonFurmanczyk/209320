@@ -14,6 +14,7 @@
 #include "Stos.hh"
 #include "Kolejka.hh"
 #include "ArrayLista.hh"
+#include "HaszTab.hh"
 
 using namespace std;
 
@@ -24,12 +25,14 @@ using namespace std;
 int main(int argc, char *argv[])
 {
   ofstream plik;
+
   int l_przejsc;
   int l_danych;
-  long int sredni_czas_lista=0;
-  long int sredni_czas_arraylista=0;
 
-  int *dane;
+  long int sredni_czas_hasztab=0;
+
+  string *dane;
+
   Benchmarker Test;
 
   if(argc!=3 and argc!=1)
@@ -45,40 +48,30 @@ int main(int argc, char *argv[])
   if(argc==1)
     {
       l_przejsc=10;
-      l_danych=1000;
+      l_danych=5000;
     }
 
 
  
-  dane=Test.generujdane(l_danych);
-  
-  plik.open("benchmark_ll_lista2.csv");
+  //dane=Test.generujdane(l_danych);
+  dane=Test.generujdane_string(l_danych);
 
-  for(int k=0;k<=l_danych;k+=10)
+  plik.open("benchmark_hasz_tab.csv");
+
+
+  for(int k=0;k<=l_danych;k+=50)
     {
-      Lista *implem_lista=new Lista;
-      sredni_czas_lista=Test.testuj(implem_lista,dane,l_przejsc,k);
-      delete implem_lista;
+      HaszTab *implem_hasztab=new HaszTab;
 
-      //cout<<k<<" "<<sredni_czas_lista<<endl;    
-      plik<<k<<","<<sredni_czas_lista<<"\n";
+      sredni_czas_hasztab=Test.testuj(implem_hasztab,dane,l_przejsc,k);
+
+      implem_hasztab->~HaszTab();
+     
+      //cout<<k<<" "<<sredni_czas_hasztab<<endl;    
+      plik<<k<<","<<sredni_czas_hasztab<<"\n";
     }
-  
-  plik.close();
+ 
 
-
-  plik.open("benchmark_array_lista2.csv");
-
-  for(int k=0;k<=l_danych;k+=10)
-    {
-      ArrayLista *implem_arraylista=new ArrayLista;
-      sredni_czas_arraylista=Test.testuj(implem_arraylista,dane,l_przejsc,k);
-      delete implem_arraylista;
-      
-      //cout<<k<<" "<<sredni_czas_arraylista<<endl;    
-      plik<<k<<","<<sredni_czas_arraylista<<"\n";
-    }
-  
   plik.close();
 
 

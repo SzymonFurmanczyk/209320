@@ -1,106 +1,175 @@
-\hypertarget{a00003}{\section{Kolejka Class Reference}
-\label{a00003}\index{Kolejka@{Kolejka}}
-}
+\hypertarget{a00003}{}\section{Hasz\+Tab Class Reference}
+\label{a00003}\index{Hasz\+Tab@{Hasz\+Tab}}
 
 
-Klasa \hyperlink{a00003}{Kolejka}.  
+Klasa \hyperlink{a00003}{Hasz\+Tab}.  
 
 
 
 
-{\ttfamily \#include $<$Kolejka.\-hh$>$}
+{\ttfamily \#include $<$Hasz\+Tab.\+hh$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00003_a37c886fdc73dce62b04da0381dec5484}{Kolejka} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika\-\_\-poczatek i straznika\-\_\-koniec kolejki wartosciami N\-U\-L\-L , oraz rozmiar kolejki wartoscia 0. \end{DoxyCompactList}\item 
-\hyperlink{a00003_a352f86ff08cd47be6c35c60bb0f873a6}{$\sim$\-Kolejka} ()
-\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny kolejki. \end{DoxyCompactList}\item 
-void \hyperlink{a00003_abdd1c95eb88905167ec26658b6b76611}{push} (int)
-\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na koncu kolejki. Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce. \end{DoxyCompactList}\item 
-int \hyperlink{a00003_aa99d7c7459116c2331b301637b45b666}{pop} ()
-\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z poczatku kolejki. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. \end{DoxyCompactList}\item 
-int \hyperlink{a00003_a82920d7b90e967a4d5e175a20fe6de68}{size} ()
-\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{a00003_a8c439035d939ca124f6bfdcec24d31a6}{Hasz\+Tab} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy tablice haszującą. rozmiar\+\_\+k1 -\/ wielkosc tablicy pierwszej. rozmiar\+\_\+k2 -\/ wielkosc tablicy drugiej. Tworzona jest maciecz elementow (string wartosc,string klucz) o zadanej wielkości. \end{DoxyCompactList}\item 
+\hyperlink{a00003_ad2ec227290ea1e25bc5fa8a7bd6d67fa}{$\sim$\+Hasz\+Tab} ()
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny tablicy haszującej. \end{DoxyCompactList}\item 
+void \hyperlink{a00003_a6c09fe064d3e5dfe99a075ed5db2b33f}{push} (string wartosc, string klucz)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operacji push. Metoda umieszczająca element o zadanej wartości i kluczu na tablicy haszującej. \end{DoxyCompactList}\item 
+int \hyperlink{a00003_ac30b238a4bc46128a4810f4c10d383ff}{mieszaj} (string klucz\+\_\+umieszczany, int modulacja)
+\begin{DoxyCompactList}\small\item\em Metoda mieszająca klucz tablicy haszującej. Metoda zmienia zadany klucz na indeksy tablic. \end{DoxyCompactList}\item 
+string \hyperlink{a00003_aad9c9ea4c22ff9c8908d85529dc2ed69}{odczytaj} (string klucz\+\_\+szukany)
+\begin{DoxyCompactList}\small\item\em Metoda zczytująca element z tablicy haszującej. Metoda zczytuje element o określonym kluczu. Wartości oraz klucze nie są usuwane podczas zczytywania. \end{DoxyCompactList}\item 
+int \hyperlink{a00003_ac1403ccf95523b24d42d02ff70105799}{size\+\_\+k1} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca rozmiar tablicy pierwszej na ktorej oparta jest tablica haszująca. \end{DoxyCompactList}\item 
+int \hyperlink{a00003_ab3d50811a19340d3ec0b94edfce7ae49}{size\+\_\+k2} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca rozmiar tablicy drugiej na ktorej oparta jest tablica haszująca. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Klasa \hyperlink{a00003}{Kolejka}. 
+Klasa \hyperlink{a00003}{Hasz\+Tab}. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{a00003_a37c886fdc73dce62b04da0381dec5484}{\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
-\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
-\subsubsection[{Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::\-Kolejka (
+\hypertarget{a00003_a8c439035d939ca124f6bfdcec24d31a6}{}\index{Hasz\+Tab@{Hasz\+Tab}!Hasz\+Tab@{Hasz\+Tab}}
+\index{Hasz\+Tab@{Hasz\+Tab}!Hasz\+Tab@{Hasz\+Tab}}
+\subsubsection[{Hasz\+Tab}]{\setlength{\rightskip}{0pt plus 5cm}Hasz\+Tab\+::\+Hasz\+Tab (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{a00003_a37c886fdc73dce62b04da0381dec5484}
+)}\label{a00003_a8c439035d939ca124f6bfdcec24d31a6}
 
 
-Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika\-\_\-poczatek i straznika\-\_\-koniec kolejki wartosciami N\-U\-L\-L , oraz rozmiar kolejki wartoscia 0. 
+Konstruktor bezparametryczny. Konstruktor inicjalizujacy tablice haszującą. rozmiar\+\_\+k1 -\/ wielkosc tablicy pierwszej. rozmiar\+\_\+k2 -\/ wielkosc tablicy drugiej. Tworzona jest maciecz elementow (string wartosc,string klucz) o zadanej wielkości. 
 
-\hypertarget{a00003_a352f86ff08cd47be6c35c60bb0f873a6}{\index{Kolejka@{Kolejka}!$\sim$\-Kolejka@{$\sim$\-Kolejka}}
-\index{$\sim$\-Kolejka@{$\sim$\-Kolejka}!Kolejka@{Kolejka}}
-\subsubsection[{$\sim$\-Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::$\sim$\-Kolejka (
+\hypertarget{a00003_ad2ec227290ea1e25bc5fa8a7bd6d67fa}{}\index{Hasz\+Tab@{Hasz\+Tab}!````~Hasz\+Tab@{$\sim$\+Hasz\+Tab}}
+\index{````~Hasz\+Tab@{$\sim$\+Hasz\+Tab}!Hasz\+Tab@{Hasz\+Tab}}
+\subsubsection[{$\sim$\+Hasz\+Tab}]{\setlength{\rightskip}{0pt plus 5cm}Hasz\+Tab\+::$\sim$\+Hasz\+Tab (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{a00003_a352f86ff08cd47be6c35c60bb0f873a6}
+)}\label{a00003_ad2ec227290ea1e25bc5fa8a7bd6d67fa}
 
 
-Destruktor bezparametryczny kolejki. 
+Destruktor bezparametryczny tablicy haszującej. 
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{a00003_aa99d7c7459116c2331b301637b45b666}{\index{Kolejka@{Kolejka}!pop@{pop}}
-\index{pop@{pop}!Kolejka@{Kolejka}}
-\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::pop (
+\hypertarget{a00003_ac30b238a4bc46128a4810f4c10d383ff}{}\index{Hasz\+Tab@{Hasz\+Tab}!mieszaj@{mieszaj}}
+\index{mieszaj@{mieszaj}!Hasz\+Tab@{Hasz\+Tab}}
+\subsubsection[{mieszaj}]{\setlength{\rightskip}{0pt plus 5cm}int Hasz\+Tab\+::mieszaj (
 \begin{DoxyParamCaption}
-{}
+\item[{string}]{klucz\+\_\+umieszczany, }
+\item[{int}]{modulacja}
 \end{DoxyParamCaption}
-)}}\label{a00003_aa99d7c7459116c2331b301637b45b666}
+)}\label{a00003_ac30b238a4bc46128a4810f4c10d383ff}
 
 
-Metoda zdejmujaca element z poczatku kolejki. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. 
-
-\begin{DoxyReturn}{Returns}
-wartosc -\/ typu int, wartosc zdejmowana z kolejki. 
-\end{DoxyReturn}
-\hypertarget{a00003_abdd1c95eb88905167ec26658b6b76611}{\index{Kolejka@{Kolejka}!push@{push}}
-\index{push@{push}!Kolejka@{Kolejka}}
-\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::push (
-\begin{DoxyParamCaption}
-\item[{int}]{wartosc}
-\end{DoxyParamCaption}
-)}}\label{a00003_abdd1c95eb88905167ec26658b6b76611}
-
-
-Metoda umieszczajaca element na koncu kolejki. Metoda inkrementuje rozmiar podczas umieszczania elementu w kolejce. 
+Metoda mieszająca klucz tablicy haszującej. Metoda zmienia zadany klucz na indeksy tablic. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em wartosc} & -\/ typu int, wartosc umieszczana na koncu kolejki. \\
+{\em klucz\+\_\+umieszczany} & -\/ typu string, zadany klucz. \\
+\hline
+{\em modulacja} & -\/ typu int, wielkość tablicy która moduluje klucz. \\
 \hline
 \end{DoxyParams}
-\hypertarget{a00003_a82920d7b90e967a4d5e175a20fe6de68}{\index{Kolejka@{Kolejka}!size@{size}}
-\index{size@{size}!Kolejka@{Kolejka}}
-\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::size (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{a00003_a82920d7b90e967a4d5e175a20fe6de68}
-
-
-Metoda zwracajaca wielkosc kolejki. 
-
 \begin{DoxyReturn}{Returns}
-rozmiar -\/ typu int,rozmiar kolejki. 
+indeks -\/ typu int, zmodulowany indeks elementu. 
+\end{DoxyReturn}
+\hypertarget{a00003_aad9c9ea4c22ff9c8908d85529dc2ed69}{}\index{Hasz\+Tab@{Hasz\+Tab}!odczytaj@{odczytaj}}
+\index{odczytaj@{odczytaj}!Hasz\+Tab@{Hasz\+Tab}}
+\subsubsection[{odczytaj}]{\setlength{\rightskip}{0pt plus 5cm}string Hasz\+Tab\+::odczytaj (
+\begin{DoxyParamCaption}
+\item[{string}]{klucz\+\_\+szukany}
+\end{DoxyParamCaption}
+)}\label{a00003_aad9c9ea4c22ff9c8908d85529dc2ed69}
+
+
+Metoda zczytująca element z tablicy haszującej. Metoda zczytuje element o określonym kluczu. Wartości oraz klucze nie są usuwane podczas zczytywania. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em klucz\+\_\+szukany} & -\/ typu string, szukany klucz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana ze stosu. 
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{a00003_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00003_a6c09fe064d3e5dfe99a075ed5db2b33f}{}\index{Hasz\+Tab@{Hasz\+Tab}!push@{push}}
+\index{push@{push}!Hasz\+Tab@{Hasz\+Tab}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Hasz\+Tab\+::push (
+\begin{DoxyParamCaption}
+\item[{string}]{wartosc, }
+\item[{string}]{klucz}
+\end{DoxyParamCaption}
+)}\label{a00003_a6c09fe064d3e5dfe99a075ed5db2b33f}
+
+
+Przeciazenie operacji push. Metoda umieszczająca element o zadanej wartości i kluczu na tablicy haszującej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu string,zadana wartość. \\
+\hline
+{\em klucz} & -\/ typu string, zadany klucz. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{a00003_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00003_ac1403ccf95523b24d42d02ff70105799}{}\index{Hasz\+Tab@{Hasz\+Tab}!size\+\_\+k1@{size\+\_\+k1}}
+\index{size\+\_\+k1@{size\+\_\+k1}!Hasz\+Tab@{Hasz\+Tab}}
+\subsubsection[{size\+\_\+k1}]{\setlength{\rightskip}{0pt plus 5cm}int Hasz\+Tab\+::size\+\_\+k1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{a00003_ac1403ccf95523b24d42d02ff70105799}
+
+
+Metoda zwracajaca rozmiar tablicy pierwszej na ktorej oparta jest tablica haszująca. 
+
+\begin{DoxyReturn}{Returns}
+rozmiar -\/ typu int,rozmiar tablicy pierwszej. 
+\end{DoxyReturn}
+\hypertarget{a00003_ab3d50811a19340d3ec0b94edfce7ae49}{}\index{Hasz\+Tab@{Hasz\+Tab}!size\+\_\+k2@{size\+\_\+k2}}
+\index{size\+\_\+k2@{size\+\_\+k2}!Hasz\+Tab@{Hasz\+Tab}}
+\subsubsection[{size\+\_\+k2}]{\setlength{\rightskip}{0pt plus 5cm}int Hasz\+Tab\+::size\+\_\+k2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{a00003_ab3d50811a19340d3ec0b94edfce7ae49}
+
+
+Metoda zwracajaca rozmiar tablicy drugiej na ktorej oparta jest tablica haszująca. 
+
+\begin{DoxyReturn}{Returns}
+rozmiar -\/ typu int,rozmiar tablicy drugiej. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00011}{Kolejka.\-hh}\item 
-\hyperlink{a00010}{Kolejka.\-cpp}\end{DoxyCompactItemize}
+\hyperlink{a00012}{Hasz\+Tab.\+hh}\item 
+\hyperlink{a00011}{Hasz\+Tab.\+cpp}\end{DoxyCompactItemize}
