@@ -1,7 +1,7 @@
 #
 #  To sa opcje dla kompilacji
 #
-APP=program3
+APP=program5
 CPP2FLAGS= -g -Iinc -Wall -pedantic -lrt
 CPPFLAGS= -c -g -Iinc -Wall -pedantic -lrt
 
@@ -11,10 +11,10 @@ __start__:  obj ./${APP}
 obj:
 	mkdir -p obj
 
-./${APP}: obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o
-	g++ ${CPP2FLAGS} -o ./${APP} obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o
+./${APP}: obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o obj/HaszTab.o
+	g++ ${CPP2FLAGS} -o ./${APP} obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o obj/HaszTab.o
 
-obj/main.o: src/main.cpp  inc/Benchmark.hh inc/Lista.hh inc/Stos.hh inc/Stos.hh inc/Kolejka.hh inc/ArrayLista.hh
+obj/main.o: src/main.cpp  inc/Benchmark.hh inc/Lista.hh inc/Stos.hh inc/Stos.hh inc/Kolejka.hh inc/ArrayLista.hh inc/HaszTab.hh
 	g++ ${CPPFLAGS} -o obj/main.o src/main.cpp
 
 obj/Benchmark.o: src/Benchmark.cpp inc/Benchmark.hh 
@@ -31,6 +31,9 @@ obj/Kolejka.o: src/Kolejka.cpp inc/Kolejka.hh
 
 obj/ArrayLista.o: src/ArrayLista.cpp inc/ArrayLista.hh
 	g++ ${CPPFLAGS} -o obj/ArrayLista.o src/ArrayLista.cpp
+
+obj/HaszTab.o: src/HaszTab.cpp inc/HaszTab.hh
+	g++ ${CPPFLAGS} -o obj/HaszTab.o src/HaszTab.cpp
 
 clean:
 	rm -f obj/*.o program3

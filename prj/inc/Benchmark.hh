@@ -8,6 +8,10 @@
  * Plik zawiera definicje klasy Benchmarker.
  */
 
+#include "Observer.hh"
+
+#include <string>
+
 using namespace std;
 
 /*!
@@ -15,13 +19,14 @@ using namespace std;
  */
 class Benchmarker
 {
+  Observer *obs;
 public:
   
   /*!
    *\brief Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji.
-   *       Typy: Lista , Stos , Kolejka.
+   *       Typy: Lista , Stos , Kolejka, Tablica haszująca.
    *\tparam
-   * Tab - typu T*, wskaznik na zaimplementowany stos/liste/kolejke.
+   * Tab - typu T*, wskaznik na zaimplementowany stos/liste/kolejke/tablice haszującą.
    *\tparam
    * dane - typu int*, wskaznik na tablice z danymi generowanymi.
    *\tparam
@@ -31,7 +36,7 @@ public:
    *\return
    * czas_calkowity_usredniony - typu long int, czas sredni dzialania funkcji.
    */
-  template <class T>  long int testuj(T*,int*,int,int);
+  template <class T,typename T2>  long int testuj(T*,T2*,int,int);
   
   /*!
    *\brief Metoda generujaca wartosci losowe z przedzialu 0 10000.
@@ -40,7 +45,22 @@ public:
    *\return
    * *dane - typu long int*, tablica z wygenerowanymi danymi.
    */
-  int *generujdane(int);
+  int* generujdane(int l_danych);
+  
+  /*!
+   *\brief Metoda generujaca wartosci losowe z przedzialu A-Z + a-z.
+   *\param
+   * l_danych - typu int, liczba generowanych danych.
+   *\return
+   * *dane - typu string*, tablica z wygenerowanymi danymi(np.: Axb CtQ).
+   */
+  string* generujdane_string(int l_danych);
+
+
+  podlacz_obs() //dodanie obserwatora do benchmarku
+  odlacz_obs()  //usuniecie obsevatora z benchmarku
+  powiadom_obs() //powiadomienie obserwatora o zdarzeniu
+
 };
 
 

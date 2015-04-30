@@ -32,9 +32,6 @@ public:
    */
   ArrayLista();
   
-ArrayLista(int);
-
-
   /*!
    *\brief Destruktor bezparametryczny stosu.
    */
@@ -85,10 +82,7 @@ ArrayLista(int);
    * ilosc_elementow - typu int,ilosc elementow jaka znajduje sie na liscie.
    */
   int ile_elementow();
-
-ArrayLista* mergesort(ArrayLista*);
-ArrayLista* dziel(ArrayLista*);
-ArrayLista* scal(ArrayLista*,ArrayLista*);  
+  
 };
 
 
