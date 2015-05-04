@@ -1,114 +1,144 @@
 \begin{theindex}
 
-  \item {$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista}
-    \subitem {Array\discretionary {-}{}{}Lista}, \hyperpage{6}
-  \item {$\sim $\discretionary {-}{}{}Kolejka}
-    \subitem {Kolejka}, \hyperpage{8}
-  \item {$\sim $\discretionary {-}{}{}Lista}
-    \subitem {Lista}, \hyperpage{10}
-  \item {$\sim $\discretionary {-}{}{}Stos}
-    \subitem {Stos}, \hyperpage{11}
+  \item {$\sim$\+Array\+Lista}
+    \subitem {Array\+Lista}, \hyperpage{6}
+  \item {$\sim$\+Hasz\+Tab}
+    \subitem {Hasz\+Tab}, \hyperpage{9}
+  \item {$\sim$\+Kolejka}
+    \subitem {Kolejka}, \hyperpage{12}
+  \item {$\sim$\+Lista}
+    \subitem {Lista}, \hyperpage{13}
+  \item {$\sim$\+Stos}
+    \subitem {Stos}, \hyperpage{15}
 
   \indexspace
 
-  \item {Array\discretionary {-}{}{}Lista}, \hyperpage{5}
-    \subitem {$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista}, 
-		\hyperpage{6}
-    \subitem {Array\discretionary {-}{}{}Lista}, \hyperpage{5}
-    \subitem {Array\discretionary {-}{}{}Lista}, \hyperpage{5}
-    \subitem {ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow}, 
-		\hyperpage{6}
+  \item {Array\+Lista}, \hyperpage{5}
+    \subitem {$\sim$\+Array\+Lista}, \hyperpage{6}
+    \subitem {Array\+Lista}, \hyperpage{6}
+    \subitem {ile\+\_\+elementow}, \hyperpage{6}
+    \subitem {mergesort}, \hyperpage{6}
     \subitem {pop}, \hyperpage{6}
-    \subitem {push}, \hyperpage{6}
-    \subitem {size}, \hyperpage{6}
-  \item {Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}cpp}, 
-		\hyperpage{13}
-  \item {Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}hh}, 
-		\hyperpage{13}
+    \subitem {push}, \hyperpage{7}
+    \subitem {scal}, \hyperpage{7}
+    \subitem {size}, \hyperpage{7}
+  \item {Array\+Lista.\+cpp}, \hyperpage{17}
+  \item {Array\+Lista.\+hh}, \hyperpage{17}
 
   \indexspace
 
-  \item {B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P}
-    \subitem {Benchmark.\discretionary {-}{}{}cpp}, \hyperpage{15}
-  \item {Benchmark.\discretionary {-}{}{}cpp}, \hyperpage{14}
-    \subitem {B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P}, 
-		\hyperpage{15}
-  \item {Benchmark.\discretionary {-}{}{}hh}, \hyperpage{15}
+  \item {B\+E\+N\+C\+H\+M\+A\+R\+K\+\_\+\+C\+P\+P}
+    \subitem {Benchmark.\+cpp}, \hyperpage{19}
+  \item {Benchmark.\+cpp}, \hyperpage{18}
+    \subitem {B\+E\+N\+C\+H\+M\+A\+R\+K\+\_\+\+C\+P\+P}, \hyperpage{19}
+  \item {Benchmark.\+hh}, \hyperpage{19}
   \item {Benchmarker}, \hyperpage{7}
-    \subitem {generujdane}, \hyperpage{7}
-    \subitem {testuj}, \hyperpage{7}
+    \subitem {generujdane}, \hyperpage{8}
+    \subitem {generujdane\+\_\+string}, \hyperpage{8}
+    \subitem {testuj}, \hyperpage{8}
 
   \indexspace
 
   \item {generujdane}
-    \subitem {Benchmarker}, \hyperpage{7}
+    \subitem {Benchmarker}, \hyperpage{8}
+  \item {generujdane\+\_\+string}
+    \subitem {Benchmarker}, \hyperpage{8}
 
   \indexspace
 
-  \item {ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow}
-    \subitem {Array\discretionary {-}{}{}Lista}, \hyperpage{6}
+  \item {Hasz\+Tab}, \hyperpage{9}
+    \subitem {$\sim$\+Hasz\+Tab}, \hyperpage{9}
+    \subitem {Hasz\+Tab}, \hyperpage{9}
+    \subitem {mieszaj}, \hyperpage{10}
+    \subitem {odczytaj}, \hyperpage{10}
+    \subitem {push}, \hyperpage{10}
+    \subitem {size\+\_\+k1}, \hyperpage{11}
+    \subitem {size\+\_\+k2}, \hyperpage{11}
+  \item {Hasz\+Tab.\+cpp}, \hyperpage{20}
+  \item {Hasz\+Tab.\+hh}, \hyperpage{21}
 
   \indexspace
 
-  \item {Kolejka}, \hyperpage{8}
-    \subitem {$\sim $\discretionary {-}{}{}Kolejka}, \hyperpage{8}
-    \subitem {Kolejka}, \hyperpage{8}
-    \subitem {pop}, \hyperpage{9}
-    \subitem {push}, \hyperpage{9}
-    \subitem {size}, \hyperpage{9}
-  \item {Kolejka.\discretionary {-}{}{}cpp}, \hyperpage{16}
-  \item {Kolejka.\discretionary {-}{}{}hh}, \hyperpage{16}
+  \item {ile\+\_\+elementow}
+    \subitem {Array\+Lista}, \hyperpage{6}
 
   \indexspace
 
-  \item {Lista}, \hyperpage{9}
-    \subitem {$\sim $\discretionary {-}{}{}Lista}, \hyperpage{10}
-    \subitem {Lista}, \hyperpage{10}
-    \subitem {pop}, \hyperpage{10}
-    \subitem {push}, \hyperpage{10, 11}
-    \subitem {size}, \hyperpage{11}
-  \item {Lista.\discretionary {-}{}{}cpp}, \hyperpage{17}
-  \item {Lista.\discretionary {-}{}{}hh}, \hyperpage{18}
+  \item {Kolejka}, \hyperpage{11}
+    \subitem {$\sim$\+Kolejka}, \hyperpage{12}
+    \subitem {Kolejka}, \hyperpage{12}
+    \subitem {pop}, \hyperpage{12}
+    \subitem {push}, \hyperpage{12}
+    \subitem {size}, \hyperpage{12}
+  \item {Kolejka.\+cpp}, \hyperpage{22}
+  \item {Kolejka.\+hh}, \hyperpage{23}
+
+  \indexspace
+
+  \item {Lista}, \hyperpage{12}
+    \subitem {$\sim$\+Lista}, \hyperpage{13}
+    \subitem {Lista}, \hyperpage{13}
+    \subitem {pop}, \hyperpage{13}
+    \subitem {push}, \hyperpage{14}
+    \subitem {size}, \hyperpage{14}
+  \item {Lista.\+cpp}, \hyperpage{23}
+  \item {Lista.\+hh}, \hyperpage{24}
 
   \indexspace
 
   \item {main}
-    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{19}
-  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{18}
-    \subitem {main}, \hyperpage{19}
+    \subitem {main.\+cpp}, \hyperpage{25}
+  \item {main.\+cpp}, \hyperpage{25}
+    \subitem {main}, \hyperpage{25}
+  \item {mergesort}
+    \subitem {Array\+Lista}, \hyperpage{6}
+  \item {mieszaj}
+    \subitem {Hasz\+Tab}, \hyperpage{10}
+
+  \indexspace
+
+  \item {odczytaj}
+    \subitem {Hasz\+Tab}, \hyperpage{10}
 
   \indexspace
 
   \item {pop}
-    \subitem {Array\discretionary {-}{}{}Lista}, \hyperpage{6}
-    \subitem {Kolejka}, \hyperpage{9}
-    \subitem {Lista}, \hyperpage{10}
-    \subitem {Stos}, \hyperpage{12}
+    \subitem {Array\+Lista}, \hyperpage{6}
+    \subitem {Kolejka}, \hyperpage{12}
+    \subitem {Lista}, \hyperpage{13}
+    \subitem {Stos}, \hyperpage{15}
   \item {push}
-    \subitem {Array\discretionary {-}{}{}Lista}, \hyperpage{6}
-    \subitem {Kolejka}, \hyperpage{9}
-    \subitem {Lista}, \hyperpage{10, 11}
-    \subitem {Stos}, \hyperpage{12}
+    \subitem {Array\+Lista}, \hyperpage{7}
+    \subitem {Hasz\+Tab}, \hyperpage{10}
+    \subitem {Kolejka}, \hyperpage{12}
+    \subitem {Lista}, \hyperpage{14}
+    \subitem {Stos}, \hyperpage{15}
 
   \indexspace
 
+  \item {scal}
+    \subitem {Array\+Lista}, \hyperpage{7}
   \item {size}
-    \subitem {Array\discretionary {-}{}{}Lista}, \hyperpage{6}
-    \subitem {Kolejka}, \hyperpage{9}
-    \subitem {Lista}, \hyperpage{11}
-    \subitem {Stos}, \hyperpage{12}
-  \item {Stos}, \hyperpage{11}
-    \subitem {$\sim $\discretionary {-}{}{}Stos}, \hyperpage{11}
-    \subitem {pop}, \hyperpage{12}
-    \subitem {push}, \hyperpage{12}
-    \subitem {size}, \hyperpage{12}
-    \subitem {Stos}, \hyperpage{11}
-  \item {Stos.\discretionary {-}{}{}cpp}, \hyperpage{19}
-  \item {Stos.\discretionary {-}{}{}hh}, \hyperpage{20}
+    \subitem {Array\+Lista}, \hyperpage{7}
+    \subitem {Kolejka}, \hyperpage{12}
+    \subitem {Lista}, \hyperpage{14}
+    \subitem {Stos}, \hyperpage{15}
+  \item {size\+\_\+k1}
+    \subitem {Hasz\+Tab}, \hyperpage{11}
+  \item {size\+\_\+k2}
+    \subitem {Hasz\+Tab}, \hyperpage{11}
+  \item {Stos}, \hyperpage{14}
+    \subitem {$\sim$\+Stos}, \hyperpage{15}
+    \subitem {pop}, \hyperpage{15}
+    \subitem {push}, \hyperpage{15}
+    \subitem {size}, \hyperpage{15}
+    \subitem {Stos}, \hyperpage{15}
+  \item {Stos.\+cpp}, \hyperpage{26}
+  \item {Stos.\+hh}, \hyperpage{26}
 
   \indexspace
 
   \item {testuj}
-    \subitem {Benchmarker}, \hyperpage{7}
+    \subitem {Benchmarker}, \hyperpage{8}
 
 \end{theindex}

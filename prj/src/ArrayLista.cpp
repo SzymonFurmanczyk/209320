@@ -26,7 +26,6 @@ ArrayLista::ArrayLista(int wielkosc)
   array=new int[wielkosc]; 
 }
 
-
 ArrayLista::~ArrayLista()
 {
   delete array;
@@ -101,87 +100,80 @@ int ArrayLista::ile_elementow()
 
 
 
-ArrayLista* ArrayLista::mergesort(ArrayLista* sortowana)
+void ArrayLista::mergesort()
 {
+  int srodek=ile_elementow()/2;
 
-	ArrayLista *po_sortowana=new ArrayLista(size());
+  if(srodek>0)
+    {
+      ArrayLista* tab_l=new ArrayLista(srodek);
+      ArrayLista* tab_p=new ArrayLista(ilosc_elementow-srodek);
+      
+      tab_l->rozmiar=srodek;
+      tab_l->ilosc_elementow=srodek;
+      for(int k=0;k<srodek;k++)
+	{
+	  tab_l->array[k]=array[k];
+	}
+      
+      tab_p->rozmiar=ilosc_elementow-srodek;
+      tab_p->ilosc_elementow=ilosc_elementow-srodek;
+      int g=0;
+      for(int j=srodek;j<ilosc_elementow;j++)
+	{
+	  tab_p->array[g]=array[j];
+	  g++;
+	}
 
-	dziel(this);
-
-	return po_sortowana;
+      tab_l->mergesort();
+      tab_p->mergesort();
+      scal(tab_l,tab_p);
+      delete tab_l;
+      delete tab_p;
+    }
 }
 
 
-
-ArrayLista* ArrayLista::dziel(ArrayLista* dzielona)
+void ArrayLista::scal(ArrayLista* tab_l,ArrayLista* tab_p)
 {
-cout<<"lol";
-	int srodek=dzielona->ilosc_elementow/2;
-	
-	ArrayLista *tablica_l=new ArrayLista(srodek+1);
-	for(int j=0;j<srodek+1;j++)
-	{
-	tablica_l->array[j]=dzielona->array[j];
-	}
-	//memcpy(tablica_l->array,dzielona->array,srodek-1);
+  int l=0;
+  int p=0;
+  int i=0;
 
-	ArrayLista *tablica_p=new  ArrayLista(ile_elementow()-srodek+1);
-	for(int j=0;j<srodek+1;j++)
+  while(i<ilosc_elementow)
+    {
+      if(l!=tab_l->ilosc_elementow && p!=tab_p->ilosc_elementow)
 	{
-	tablica_p->array[j]=dzielona->array[j];
+	  if(tab_l->array[l]<=tab_p->array[p])
+	    {
+	      array[i]=tab_l->array[l];
+	      l++;
+	      i++;
+	    }
+	  else
+	    {
+	      array[i]=tab_p->array[p];
+	      p++;
+	      i++;
+	    }	  
 	}
-	//memcpy(dzielona->array,tablica_p->array,ile_elementow()-srodek+1);
-	
-	if(srodek!=1)
+      else
 	{
-	dziel(tablica_l);
+	  if(l!=tab_l->ilosc_elementow)
+	    {
+	      array[i]=tab_l->array[l];
+	      l++;
+	      i++;
+	    }
+	  else
+	    {
+	      array[i]=tab_p->array[p];
+	      p++;
+	      i++;
+	    }  
 	}
-	dziel(tablica_p);
-
-	
-	return tablica_l;
+    }
 }
-
-
-ArrayLista* scal(ArrayLista* scalana1 , ArrayLista* scalana2)
-{
-	ArrayLista* scalona=new ArrayLista(scalana1->ile_elementow()+scalana2->ile_elementow()+1);
-	
-	
-	//układanie danych
-
-	int i=0;
-	while(i < scalona->ile_elementow())
-	{
-	}
-
-	//memcpy(scalana1->array,scalona,1);
-	
-	return scalona;
-}
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

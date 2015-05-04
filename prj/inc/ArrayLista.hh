@@ -31,10 +31,9 @@ public:
    * Tworzona jest tablica dynamiczna o jednym elemencie.
    */
   ArrayLista();
+
+  ArrayLista(int);
   
-ArrayLista(int);
-
-
   /*!
    *\brief Destruktor bezparametryczny stosu.
    */
@@ -85,10 +84,25 @@ ArrayLista(int);
    * ilosc_elementow - typu int,ilosc elementow jaka znajduje sie na liscie.
    */
   int ile_elementow();
+  
+  /*!
+   *\brief Metoda sortująca elementy tablicy algorytmem "mergesort".
+   * Metoda dzieli główną tablicę.
+   * Jest wywoływana w rekurencji.
+   * Wywołuje scalanie podtablicy lewej i prawej.
+   */
+  void mergesort();
 
-ArrayLista* mergesort(ArrayLista*);
-ArrayLista* dziel(ArrayLista*);
-ArrayLista* scal(ArrayLista*,ArrayLista*);  
+  /*!
+   *\brief Metoda scalająca i sortująca, od najmniejszej do
+   *  największej, liczby w scalanych tablicach.
+   *  Sortuje te liczby do tablicy głównej.
+   *\param
+   * tab_l - typu ArrayLista , lewa podtablica.
+   *\param
+   * tab_p - typu ArrayLista , prawa podtablica.
+   */
+  void scal(ArrayLista* tab_l,ArrayLista* tab_p); 
 };
 
 
