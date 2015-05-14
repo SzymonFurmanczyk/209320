@@ -9,13 +9,15 @@
  * jednokierunkowej opartej na tablicy dynamicznej.
  */
 
+#include "Interfaces/Zasobnik.hh"
+
 #include <iostream>
 using namespace std;
 
 /*!
  *\brief Klasa ArrayLista.
  */
-class ArrayLista
+class ArrayLista : public Zasobnik<int>
 {
   int rozmiar;
   int ilosc_elementow;
@@ -31,6 +33,8 @@ public:
    * Tworzona jest tablica dynamiczna o jednym elemencie.
    */
   ArrayLista();
+
+  ArrayLista(int);
   
   /*!
    *\brief Destruktor bezparametryczny stosu.
@@ -83,6 +87,24 @@ public:
    */
   int ile_elementow();
   
+  /*!
+   *\brief Metoda sortująca elementy tablicy algorytmem "mergesort".
+   * Metoda dzieli główną tablicę.
+   * Jest wywoływana w rekurencji.
+   * Wywołuje scalanie podtablicy lewej i prawej.
+   */
+  void mergesort();
+
+  /*!
+   *\brief Metoda scalająca i sortująca, od najmniejszej do
+   *  największej, liczby w scalanych tablicach.
+   *  Sortuje te liczby do tablicy głównej.
+   *\param
+   * tab_l - typu ArrayLista , lewa podtablica.
+   *\param
+   * tab_p - typu ArrayLista , prawa podtablica.
+   */
+  void scal(ArrayLista* tab_l,ArrayLista* tab_p); 
 };
 
 

@@ -13,7 +13,7 @@ using namespace std;
 /*!
  *\brief Klasa Kolejka.
  */
-class Kolejka
+class Kolejka : public Zasobnik<int>
 {
   struct element
   {

@@ -1,6 +1,8 @@
 #ifndef LISTA_HH
 #define LISTA_HH
 
+#include "Interfaces/Zasobnik.hh"
+
 /*!
  *\file 
  *\brief Definicja klasy Lista.
@@ -13,7 +15,7 @@ using namespace std;
 /*!
  *\brief Klasa Lista.
  */
-class Lista
+class Lista : public Zasobnik<int>
 {
   
   struct element

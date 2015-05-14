@@ -16,7 +16,7 @@ using namespace std;
 /*!
  *\brief Klasa HaszTab.
  */
-class HaszTab
+class HaszTab : public Zasobnik<string>
 {
   
   struct element
@@ -64,8 +64,15 @@ public:
    * klucz - typu string, zadany klucz.
    */
   void push(string wartosc,string klucz);
+
+  void push();  
+
+  string pop(string klucz_szukany);
+
+  string pop();	  
+
+  int size();
   
-    
   /*!
    *\brief Metoda mieszająca klucz tablicy haszującej.
    *       Metoda zmienia zadany klucz na indeksy tablic.

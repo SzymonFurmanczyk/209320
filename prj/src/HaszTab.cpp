@@ -38,6 +38,9 @@ HaszTab::~HaszTab()
     }
 }
 
+void HaszTab::push()
+{
+}
 
 void HaszTab::push(string wartosc,string klucz)
 {
@@ -67,20 +70,6 @@ void HaszTab::push(string wartosc,string klucz)
     {
       cout<<"Tablica jest pełna na pozycji"<<indeks<<endl;
     }
-
-  /*
-  //Sprawdzanie tablicy haszującej
-  cout<<"---------------------------"<<endl;
-  for(int s=0;s<rozmiar_k1;s++)
-    {
-      for(int p=0;p<rozmiar_k2;p++)
-      {
-	cout<<array[s][p]->klucz<<" ";
-      }
-      cout<<endl<<endl;
-    }
-  */
-
 }
 
 
@@ -117,6 +106,13 @@ string HaszTab::odczytaj(string klucz_szukany)
   return odczyt;
 }
 
+string HaszTab::pop()
+{
+}
+
+int HaszTab::size()
+{
+}
 
 int HaszTab::mieszaj(string klucz_umieszczany,int modulacja)
 {
