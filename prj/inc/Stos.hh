@@ -1,6 +1,8 @@
 #ifndef STOS_HH
 #define STOS_HH
 
+#include "Interfaces/Zasobnik.hh"
+
 /*!
  *\file 
  *\brief Definicja klasy Stos.
@@ -13,7 +15,7 @@ using namespace std;
 /*!
  *\brief Klasa Stos.
  */
-class Stos
+class Stos : public Zasobnik<int>
 {
   struct element
   {

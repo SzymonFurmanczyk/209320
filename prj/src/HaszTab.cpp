@@ -7,10 +7,6 @@
 
 #include "HaszTab.hh"
 
-#include <cstdlib>
-#include <iostream>
-
-
 HaszTab::HaszTab()
 {
   rozmiar_k1=100;
@@ -38,6 +34,9 @@ HaszTab::~HaszTab()
     }
 }
 
+void HaszTab::push(string wartosc)
+{
+}
 
 void HaszTab::push(string wartosc,string klucz)
 {
@@ -67,20 +66,6 @@ void HaszTab::push(string wartosc,string klucz)
     {
       cout<<"Tablica jest pełna na pozycji"<<indeks<<endl;
     }
-
-  /*
-  //Sprawdzanie tablicy haszującej
-  cout<<"---------------------------"<<endl;
-  for(int s=0;s<rozmiar_k1;s++)
-    {
-      for(int p=0;p<rozmiar_k2;p++)
-      {
-	cout<<array[s][p]->klucz<<" ";
-      }
-      cout<<endl<<endl;
-    }
-  */
-
 }
 
 
@@ -117,6 +102,16 @@ string HaszTab::odczytaj(string klucz_szukany)
   return odczyt;
 }
 
+string HaszTab::pop()
+{
+  string dana;
+  return dana;
+}
+
+int HaszTab::size()
+{
+  return rozmiar_k1*rozmiar_k2;
+}
 
 int HaszTab::mieszaj(string klucz_umieszczany,int modulacja)
 {

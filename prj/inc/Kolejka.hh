@@ -1,6 +1,8 @@
 #ifndef KOLEJKA_HH
 #define KOLEJKA_HH
 
+#include "Interfaces/Zasobnik.hh"
+
 /*!
  *\file 
  *\brief Definicja klasy Kolejka.
@@ -13,7 +15,7 @@ using namespace std;
 /*!
  *\brief Klasa Kolejka.
  */
-class Kolejka
+class Kolejka : public Zasobnik<int>
 {
   struct element
   {

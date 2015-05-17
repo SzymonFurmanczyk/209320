@@ -8,18 +8,25 @@
  * Plik zawiera definicje klasy Benchmarker.
  */
 
-#include "Observer.hh"
+#include "Algorytm1.hh"
+#include "Algorytm2.hh"
+#include "Algorytm3.hh"
+#include "Algorytm4.hh"
+#include "Algorytm5.hh"
+#include "Algorytm6.hh"
+//#include "Interfaces/AlgorytmAbs.hh"
+#include "ObserwatorZapisujacy.hh"
+#include "Interfaces/Obserwowany.hh"
 
-#include <string>
 
 using namespace std;
 
 /*!
  *\brief Klasa Benchmarker.
  */
-class Benchmarker
+template<typename T>
+class Benchmarker : public Obserwowany
 {
-  Observer *obs;
 public:
   
   /*!
@@ -36,31 +43,9 @@ public:
    *\return
    * czas_calkowity_usredniony - typu long int, czas sredni dzialania funkcji.
    */
-  template <class T,typename T2>  long int testuj(T*,T2*,int,int);
-  
-  /*!
-   *\brief Metoda generujaca wartosci losowe z przedzialu 0 10000.
-   *\param
-   * l_danych - typu int, liczba generowanych danych.
-   *\return
-   * *dane - typu long int*, tablica z wygenerowanymi danymi.
-   */
-  int* generujdane(int l_danych);
-  
-  /*!
-   *\brief Metoda generujaca wartosci losowe z przedzialu A-Z + a-z.
-   *\param
-   * l_danych - typu int, liczba generowanych danych.
-   *\return
-   * *dane - typu string*, tablica z wygenerowanymi danymi(np.: Axb CtQ).
-   */
-  string* generujdane_string(int l_danych);
+  void testuj(Zasobnik<T>*,Algorytm<T>*,T*,int,int);
 
-
-  podlacz_obs() //dodanie obserwatora do benchmarku
-  odlacz_obs()  //usuniecie obsevatora z benchmarku
-  powiadom_obs() //powiadomienie obserwatora o zdarzeniu
-
+  void podaj_wynik(long int);
 };
 
 

@@ -7,10 +7,6 @@
 
 #include "Lista.hh"
 
-#include <cstdlib>
-#include <iostream>
-
-
 Lista::Lista()
 {
   straznik=NULL;

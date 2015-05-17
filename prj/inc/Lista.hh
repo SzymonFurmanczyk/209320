@@ -8,12 +8,14 @@
  * Plik zawiera definicje klasy modulujacej pojecie listy jednokierunkowej.
  */
 
+#include "Interfaces/Zasobnik.hh"
+
 using namespace std;
 
 /*!
  *\brief Klasa Lista.
  */
-class Lista
+class Lista : public Zasobnik<int>
 {
   
   struct element
@@ -85,6 +87,7 @@ public:
    */
   int size();
   
+
 };
 
 

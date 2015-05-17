@@ -7,10 +7,6 @@
 
 #include "Kolejka.hh"
 
-#include <cstdlib>
-#include <iostream>
-
-
 Kolejka::Kolejka()
 {
   straznik_koniec=NULL;

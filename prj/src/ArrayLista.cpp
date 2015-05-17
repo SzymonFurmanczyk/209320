@@ -7,9 +7,6 @@
 
 #include "ArrayLista.hh"
 
-#include <cstdlib>
-#include <iostream>
-
 
 ArrayLista::ArrayLista()
 {
@@ -18,6 +15,12 @@ ArrayLista::ArrayLista()
   array=new int[1]; 
 }
 
+ArrayLista::ArrayLista(int wielkosc)
+{
+  rozmiar=wielkosc;
+  ilosc_elementow=0;
+  array=new int[wielkosc]; 
+}
 
 ArrayLista::~ArrayLista()
 {
@@ -90,9 +93,6 @@ int ArrayLista::ile_elementow()
 {
   return ilosc_elementow;
 }
-
-
-
 
 
 
