@@ -27,6 +27,8 @@ using namespace std;
 template<typename T>
 class Benchmarker : public Obserwowany
 {
+  int iteracja;
+  long int czas_sekcji;
 public:
   
   /*!
@@ -45,7 +47,7 @@ public:
    */
   void testuj(Zasobnik<T>*,Algorytm<T>*,T*,int,int);
 
-  void podaj_wynik(long int);
+  void powiadom(int, long int);
 };
 
 

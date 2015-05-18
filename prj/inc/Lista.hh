@@ -69,7 +69,7 @@ public:
    * wartosc - typu int, wartosc umieszczana na liscie.
    */
   void push(int wartosc)
-  {push(wartosc,1);};
+  {push(wartosc,0);};
   
   /*!
    *\brief Przeciazenie operacji pop dla listy. Pobiera domyslnie
@@ -78,7 +78,7 @@ public:
    * wartosc - typu int, wartosc zdejmowana z listy.
    */
   int pop()
-  {return pop(1);};
+  {return pop(0);};
   
   /*!
    *\brief Metoda zwracajaca wielkosc listy.

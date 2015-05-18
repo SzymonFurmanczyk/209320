@@ -11,8 +11,8 @@ public:
   ~Algorytm4(){};
   void alokujdane(Zasobnik<int>*,int*,int);
   void wykonajalgorytm(Zasobnik<int>*,int*,int);
-  //void mergesort(Zasobnik<int>*);
-  //void scal(ArrayLista* tab_l,ArrayLista* tab_p);
+  int* mergesort(int*,int);
+  int* scal(int*,int*,int,int*,int);
 };
 
 

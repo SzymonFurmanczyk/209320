@@ -14,85 +14,114 @@ void Algorytm4::alokujdane(Zasobnik<int>* Tab,int* dane,int liczba_danych)
       Tab->push(dane[i]);
     } 
 }
+
 void Algorytm4::wykonajalgorytm(Zasobnik<int>* Tab,int* dane,int liczba_danych)
 {
-  //mergesort(Tab);
-}
+  int wielkosc=Tab->size();
+  int srodek=Tab->size()/2;
+  int size_l=wielkosc-srodek;
+  int size_p=srodek;
 
-/*
-void Algorytm4::mergesort(Zasobnik<int> Tab*)
-{
-  int srodek=ile_elementow()/2;
 
   if(srodek>0)
     {
-      ArrayLista* tab_l=new ArrayLista(srodek);
-      ArrayLista* tab_p=new ArrayLista(ilosc_elementow-srodek);
+      int* tab_p=new int[size_p];
+      int* tab_l=new int[size_l];
       
-      tab_l->rozmiar=srodek;
-      tab_l->ilosc_elementow=srodek;
-      for(int k=0;k<srodek;k++)
+      for(int k=size_p-1;k>=0;k--)
 	{
-	  tab_l->array[k]=array[k];
+	  tab_p[k]=Tab->pop();
 	}
       
-      tab_p->rozmiar=ilosc_elementow-srodek;
-      tab_p->ilosc_elementow=ilosc_elementow-srodek;
-      int g=0;
-      for(int j=srodek;j<ilosc_elementow;j++)
+      for(int j=size_l-1;j>=0;j--)
 	{
-	  tab_p->array[g]=array[j];
-	  g++;
+	  tab_l[j]=Tab->pop();
 	}
+      
+      tab_p=mergesort(tab_p,size_p);
+      tab_l=mergesort(tab_l,size_l);
 
-      tab_l->mergesort();
-      tab_p->mergesort();
-      scal(tab_l,tab_p);
-      delete tab_l;
-      delete tab_p;
+      int* koncowa=new int[wielkosc];
+      scal(koncowa,tab_l,size_l,tab_p,size_p);
+      
+      for(int i=0;i<wielkosc;i++)
+	{
+	  Tab->push(koncowa[i]);
+	}     
     }
 }
 
+int* Algorytm4::mergesort(int *Tab,int wielkosc)
+{
+  int srodek=wielkosc/2;
+  int size_l=wielkosc-srodek;
+  int size_p=srodek;
 
-void Algorytm4::scal(ArrayLista* tab_l,ArrayLista* tab_p)
+  if(srodek>0)
+    {
+      int* tab_p=new int[size_p];
+      int* tab_l=new int[size_l];
+
+      int i=0;
+
+      for(int k=0;k<size_l;k++)
+	{
+	  tab_l[k]=Tab[i];
+	  i++;
+	}
+      for(int j=0;j<size_p;j++)
+	{
+	  tab_p[j]=Tab[i];
+	  i++;
+	}
+
+      tab_l=mergesort(tab_l,size_l);
+      tab_p=mergesort(tab_p,size_p);
+      scal(Tab,tab_l,size_l,tab_p,size_p);
+    }
+  return Tab;
+}
+
+
+int* Algorytm4::scal(int* Tab,int* tab_l,int size_l,int* tab_p,int size_p)
 {
   int l=0;
   int p=0;
   int i=0;
 
-  while(i<ilosc_elementow)
+  while(l<size_l || p<size_p)
     {
-      if(l!=tab_l->ilosc_elementow && p!=tab_p->ilosc_elementow)
+      if(l<size_l && p<size_p)
 	{
-	  if(tab_l->array[l]<=tab_p->array[p])
+	  if(tab_l[l]<=tab_p[p])
 	    {
-	      array[i]=tab_l->array[l];
+	      Tab[i]=tab_l[l];
 	      l++;
 	      i++;
 	    }
 	  else
 	    {
-	      array[i]=tab_p->array[p];
+	      Tab[i]=tab_p[p];
 	      p++;
 	      i++;
 	    }	  
 	}
       else
 	{
-	  if(l!=tab_l->ilosc_elementow)
+	  if(l<size_l)
 	    {
-	      array[i]=tab_l->array[l];
+	      Tab[i]=tab_l[l];
 	      l++;
 	      i++;
 	    }
 	  else
 	    {
-	      array[i]=tab_p->array[p];
+	      Tab[i]=tab_p[p];
 	      p++;
 	      i++;
 	    }  
 	}
     }
+  return Tab;
 }
-*/
-//Alokacja na kolejce n danych
+

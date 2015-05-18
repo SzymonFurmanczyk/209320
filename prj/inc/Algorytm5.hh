@@ -10,8 +10,8 @@ class Algorytm5 : public Algorytm<int>
 { 
 public:
 
-  void alokujdane(ArrayLista);
-  void wykonajalgorytm(ArrayLista);
+  void alokujdane(Zasobnik<int>*,int*,int);
+  void wykonajalgorytm(Zasobnik<int>*,int*,int);
 };
 
 

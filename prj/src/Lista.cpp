@@ -28,15 +28,15 @@ Lista::~Lista()
 void Lista::push(int wartosc,int pozycja)
 {
   
-  if(pozycja>=1)
+  if(pozycja>=0)
     {
       element *nowy= new element;
       element *iter= straznik;
       nowy->kontener = wartosc;
       
-      if(pozycja<=rozmiar+1)
+      if(pozycja<=rozmiar)
 	{
-	  if(pozycja!=1)
+	  if(pozycja!=0)
 	    {
 	      for(int i=2;i<pozycja;i++)
 		{
@@ -70,19 +70,19 @@ int Lista::pop(int pozycja)
   int wartosc;
 
 
-  if(pozycja>=1 and 0<rozmiar and pozycja<=rozmiar)
+  if(pozycja>=0 and rozmiar>0 and pozycja<=rozmiar)
     {
       element *iter= straznik;
       element *temp= straznik;
       
       
-      if(pozycja==1)
+      if(pozycja==0)
 	{
 	  straznik=straznik->nastepny;
 	}
       else
 	{
-	  for(int i=1;i<pozycja;i++)
+	  for(int i=0;i<pozycja;i++)
 	    {
 	      temp=iter;
 	      iter=iter->nastepny;

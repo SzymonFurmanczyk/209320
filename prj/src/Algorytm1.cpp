@@ -11,7 +11,7 @@ void Algorytm1::alokujdane(Zasobnik<int>* Tab,int* dane,int liczba_danych)
 {
 
 }
-void Algorytm1::wykonajalgorytm(Zasobnik<int>* Tab,int* dane,int liczba_danych )
+inline void Algorytm1::wykonajalgorytm(Zasobnik<int>* Tab,int* dane,int liczba_danych )
 {
   for(int i=0;i<=liczba_danych;i++)
     {

@@ -79,14 +79,7 @@ public:
    * rozmiar - typu int,rozmiar tablicy listy.
    */
   int size();
-  
-  /*!
-   *\brief Metoda zwracajaca ilosc elementow jaka znajduje sie na liscie.
-   *\return
-   * ilosc_elementow - typu int,ilosc elementow jaka znajduje sie na liscie.
-   */
-  int ile_elementow();
-  
+    
   /*!
    *\brief Metoda sortująca elementy tablicy algorytmem "mergesort".
    * Metoda dzieli główną tablicę.

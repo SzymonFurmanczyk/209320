@@ -15,8 +15,9 @@ using namespace std;
  */
 class Obserwator
 { 
+
 public:
-  virtual ~Obserwator(){};
+  //virtual ~Obserwator(){};
   virtual void odswiez(int,long int)=0;
 };
 

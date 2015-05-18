@@ -30,11 +30,7 @@ ArrayLista::~ArrayLista()
 
 void ArrayLista::push(int wartosc,int zwiekszanie)
 {
-  if(zwiekszanie<=0)
-    {
-      cout<<"Nieprawidlowa wartosc zwiekszania"<<endl;
-    }
-  else
+  if(zwiekszanie>0)
     {
       if(ilosc_elementow<rozmiar)
 	{
@@ -57,6 +53,10 @@ void ArrayLista::push(int wartosc,int zwiekszanie)
 	  array=tmp;
 	}
     }
+  else
+    {
+      cout<<"Nieprawidlowa wartosc zwiekszania"<<endl;
+    }
 
 }
 
@@ -64,8 +64,8 @@ void ArrayLista::push(int wartosc,int zwiekszanie)
 int ArrayLista::pop()
 {
   int wartosc;
-  wartosc=array[ilosc_elementow];
   ilosc_elementow--;
+  wartosc=array[ilosc_elementow];
 
   if(ilosc_elementow*2==rozmiar)
     {
@@ -78,22 +78,14 @@ int ArrayLista::pop()
       delete array;
       array=tmp;
     }
-
   return wartosc;
 }
 
 
 int ArrayLista::size()
 {
-  return rozmiar;
-}
-
-
-int ArrayLista::ile_elementow()
-{
   return ilosc_elementow;
 }
-
 
 
 

@@ -16,12 +16,27 @@ using namespace std;
  *\brief Klasa .
  */
 class Obserwowany
-{ 
+{
+protected:
+Obserwator *obserwatorzy; 
 public:
-  virtual ~Obserwowany(){};
-  void dodaj(Obserwator *Obs){};
-  void usun(Obserwator *Obs){};
-  void powiadom(){};
+  //virtual ~Obserwowany(){};
+
+  void dodaj(Obserwator *Obs)
+  {
+    obserwatorzy=Obs;
+  };
+
+  void usun(Obserwator *Obs)
+  {
+    obserwatorzy=NULL;
+  };
+
+  //void powiadom(int iteracja,long int czas_sredni)
+  //{
+  //obserwatorzy->odswiez(iteracja,czas_sredni);
+  //};
+
 };
 
 

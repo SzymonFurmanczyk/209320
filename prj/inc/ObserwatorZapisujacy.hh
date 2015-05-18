@@ -18,8 +18,8 @@ using namespace std;
 class ObserwatorZapisujacy : public Obserwator
 { 
 public:
-  ~ObserwatorZapisujacy();
-  void odswiez(int,long int);
+  //~ObserwatorZapisujacy(){};
+  void odswiez(int, long int);
 };
 
 

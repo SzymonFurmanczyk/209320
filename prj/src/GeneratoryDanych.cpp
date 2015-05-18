@@ -20,7 +20,7 @@ int* generujdane(int l_danych)
   srand(time(NULL));
   for(int i=0;i<=l_danych;i++)
     {
-      dane[i]=rand() %10000;
+      dane[i]=rand() %10;
     }
   return dane;
 }
