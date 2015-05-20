@@ -1,8 +1,8 @@
 /*!
  *\file 
- *\brief Metody klasy .
+ *\brief Funkcje generacji danych.
  *
- * Plik zawiera metody klasy .
+ * Plik zawiera funkcje generacji danych .
  */
 
 #include <cstdlib>

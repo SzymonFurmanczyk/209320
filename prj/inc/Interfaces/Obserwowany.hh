@@ -3,9 +3,9 @@
 
 /*!
  *\file 
- *\brief Definicja klasy .
+ *\brief Definicja szablonu klasy abstrakcyjnej Obserwowany.
  *
- * Plik zawiera definicje klasy .
+ * Plik zawiera definicje szablonu klasy abstrakcyjnej Obserwowany.
  */
 
 #include "Obserwator.hh"
@@ -13,7 +13,7 @@
 using namespace std;
 
 /*!
- *\brief Klasa .
+ *\brief Szablon klasy Obserwowany.
  */
 class Obserwowany
 {

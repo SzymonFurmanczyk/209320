@@ -3,15 +3,15 @@
 
 /*!
  *\file 
- *\brief Definicja klasy .
+ *\brief Definicja klasy Obserwator.
  *
- * Plik zawiera definicje klasy .
+ * Plik zawiera definicje klasy Obserwator.
  */
 
 using namespace std;
 
 /*!
- *\brief Klasa .
+ *\brief Klasa Obserwator.
  */
 class Obserwator
 { 

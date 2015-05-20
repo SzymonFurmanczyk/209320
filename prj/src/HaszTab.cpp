@@ -104,13 +104,9 @@ string HaszTab::odczytaj(string klucz_szukany)
 
 string HaszTab::pop()
 {
-  string dana;
-  return dana;
-}
-
-int HaszTab::size()
-{
-  return rozmiar_k1*rozmiar_k2;
+  srand(time(NULL));
+  string klucz=array[rand()%rozmiar_k1][rand()%rozmiar_k2]->klucz;
+  return odczytaj(klucz);
 }
 
 int HaszTab::mieszaj(string klucz_umieszczany,int modulacja)
@@ -129,6 +125,11 @@ int HaszTab::mieszaj(string klucz_umieszczany,int modulacja)
   return indeks;
 }
 
+
+int HaszTab::size()
+{
+  return rozmiar_k1*rozmiar_k2;
+}
 
 int HaszTab::size_k1()
 {

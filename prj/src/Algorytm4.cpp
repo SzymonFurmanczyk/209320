@@ -1,8 +1,8 @@
 /*!
  *\file 
- *\brief Metody klasy .
+ *\brief Metody klasy Algorytm4.
  *
- * Plik zawiera metody klasy .
+ * Plik zawiera metody klasy Algorytm4.
  */
 
 #include "Algorytm4.hh"

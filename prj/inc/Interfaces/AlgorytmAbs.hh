@@ -1,7 +1,12 @@
 #ifndef ALGORYTMABS_HH
 #define ALGORYTMABS_HH
 
-using namespace std;
+/*!
+ *\file 
+ *\brief Definicja szablonu klasy abstrakcyjnej Algorytm.
+ *
+ * Plik zawiera definicje szablonu klasy abstrakcyjnej Algorytm.
+ */
 
 #include "Lista.hh"
 #include "Stos.hh"
@@ -9,6 +14,11 @@ using namespace std;
 #include "ArrayLista.hh"
 #include "HaszTab.hh"
 
+using namespace std;
+
+/*!
+ *\brief Szablon klasy Algorytm.
+ */
 template <typename T>
 class Algorytm
 { 

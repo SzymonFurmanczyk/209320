@@ -1,11 +1,20 @@
 #ifndef ALGORYTM5_HH
 #define ALGORYTM5_HH
 
-#include "Interfaces/AlgorytmAbs.hh"
+/*!
+ *\file 
+ *\brief Definicja klasy Algorytm5.
+ *
+ * Plik zawiera definicje klasy Algorytm5.
+ */
 
+#include "Interfaces/AlgorytmAbs.hh"
 
 using namespace std;
 
+/*!
+ *\brief Klasa Algorytm5.
+ */
 class Algorytm5 : public Algorytm<int>
 { 
 public:

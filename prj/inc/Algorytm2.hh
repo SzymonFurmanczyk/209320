@@ -1,11 +1,20 @@
 #ifndef ALGORYTM2_HH
 #define ALGORYTM2_HH
 
-#include "Interfaces/AlgorytmAbs.hh"
+/*!
+ *\file 
+ *\brief Definicja klasy Algorytm2.
+ *
+ * Plik zawiera definicje klasy Algorytm2.
+ */
 
+#include "Interfaces/AlgorytmAbs.hh"
 
 using namespace std;
 
+/*!
+ *\brief Klasa Algorytm2.
+ */
 class Algorytm2 : public Algorytm<int>
 { 
 public:

@@ -1,11 +1,9 @@
 /*!
  *\file 
- *\brief Metody klasy .
+ *\brief Metody klasy ObserwatorZapisujacy.
  *
- * Plik zawiera metody klasy .
+ * Plik zawiera metody klasy ObserwatorZapisujacy.
  */
-
-#include "ObserwatorZapisujacy.hh"
 
 #include <cstdlib>
 #include <iostream>
@@ -13,6 +11,8 @@
 #include <string>
 #include <ctime>
 #include <fstream>
+
+#include "ObserwatorZapisujacy.hh"
 
 void ObserwatorZapisujacy::odswiez(int k, long int sredni_czas)
 {

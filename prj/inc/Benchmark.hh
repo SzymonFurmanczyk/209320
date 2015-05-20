@@ -3,9 +3,9 @@
 
 /*!
  *\file 
- *\brief Definicja klasy Benchmarker.
+ *\brief Definicja szablonu klasy Benchmarker.
  *
- * Plik zawiera definicje klasy Benchmarker.
+ * Plik zawiera definicje szablonu klasy Benchmarker.
  */
 
 #include "Algorytm1.hh"
@@ -22,7 +22,7 @@
 using namespace std;
 
 /*!
- *\brief Klasa Benchmarker.
+ *\brief Szablon klasy Benchmarker.
  */
 template<typename T>
 class Benchmarker : public Obserwowany

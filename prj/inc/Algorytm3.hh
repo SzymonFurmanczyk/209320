@@ -1,12 +1,20 @@
 #ifndef ALGORYTM3_HH
 #define ALGORYTM3_HH
 
-#include "Interfaces/AlgorytmAbs.hh"
+/*!
+ *\file 
+ *\brief Definicja klasy Algorytm3.
+ *
+ * Plik zawiera definicje klasy Algorytm3.
+ */
 
+#include "Interfaces/AlgorytmAbs.hh"
 
 using namespace std;
 
-
+/*!
+ *\brief Klasa Algorytm3.
+ */
 class Algorytm3 : public Algorytm<string>
 { 
 public:
