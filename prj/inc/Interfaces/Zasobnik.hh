@@ -23,9 +23,31 @@ template<typename T>
 class Zasobnik
 { 
 public:
+
+  /*!
+   *\brief Destruktor wirtualny.
+   */
   virtual ~Zasobnik(){};
-  virtual void push(T)=0;
+
+  /*!
+   *\brief Metoda umieszczajaca element na zasobniku.
+   *\param
+   * wartosc - typu T, wartosc umieszczana na zasobniku.
+   */
+  virtual void push(T wartosc)=0;
+
+  /*!
+   *\brief Metoda zdejmujaca element z zasobnika.
+   *\return
+   * wartosc - typu T, wartosc zdejmowana z zasobnika.
+   */
   virtual T pop()=0;
+
+  /*!
+   *\brief Metoda zwracajaca rozmiar zasobnika.
+   *\return
+   * rozmiar - typu int,rozmiar zasobnika.
+   */
   virtual int size()=0;
 };
 

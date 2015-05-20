@@ -1,78 +1,114 @@
-\hypertarget{a00002}{\section{Benchmarker Class Reference}
-\label{a00002}\index{Benchmarker@{Benchmarker}}
-}
+\hypertarget{a00002}{}\section{Algorytm1 Class Reference}
+\label{a00002}\index{Algorytm1@{Algorytm1}}
 
 
-Klasa \hyperlink{a00002}{Benchmarker}.  
+Klasa \hyperlink{a00002}{Algorytm1}.  
 
 
 
 
-{\ttfamily \#include $<$Benchmark.\-hh$>$}
+{\ttfamily \#include $<$Algorytm1.\+hh$>$}
 
+
+
+Inheritance diagram for Algorytm1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{a00104}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Algorytm1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{a00105}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class T $>$ }\\long int \hyperlink{a00002_a7b0f34744ffe3f91bbd3553b469a7883}{testuj} (T $\ast$, int $\ast$, int, int)
-\begin{DoxyCompactList}\small\item\em Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\-: \hyperlink{a00004}{Lista} , \hyperlink{a00005}{Stos} , \hyperlink{a00003}{Kolejka}. \end{DoxyCompactList}\item 
-int $\ast$ \hyperlink{a00002_aca0371e9f7cc70cf0a0c08cc04e4491c}{generujdane} (int)
-\begin{DoxyCompactList}\small\item\em Metoda generujaca wartosci losowe z przedzialu 0 10000. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{a00002_abb461ae4b741a82619039d789e0d2b0e}{$\sim$\+Algorytm1} ()
+\item 
+void \hyperlink{a00002_a0a9f86a1cf3b22e273042010d3a7d00f}{alokujdane} (\hyperlink{a00017}{Zasobnik}$<$ int $>$ $\ast$, int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Metoda alokujaca na zasobniku dane. \end{DoxyCompactList}\item 
+void \hyperlink{a00002_aca10f2c6923337e0ab928338e8989417}{wykonajalgorytm} (\hyperlink{a00017}{Zasobnik}$<$ int $>$ $\ast$, int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Metoda wykonujaca konkretny algorytm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Klasa \hyperlink{a00002}{Benchmarker}. 
+Klasa \hyperlink{a00002}{Algorytm1}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00002_abb461ae4b741a82619039d789e0d2b0e}{}\index{Algorytm1@{Algorytm1}!````~Algorytm1@{$\sim$\+Algorytm1}}
+\index{````~Algorytm1@{$\sim$\+Algorytm1}!Algorytm1@{Algorytm1}}
+\subsubsection[{$\sim$\+Algorytm1}]{\setlength{\rightskip}{0pt plus 5cm}Algorytm1\+::$\sim$\+Algorytm1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{a00002_abb461ae4b741a82619039d789e0d2b0e}
+
 
 \subsection{Member Function Documentation}
-\hypertarget{a00002_aca0371e9f7cc70cf0a0c08cc04e4491c}{\index{Benchmarker@{Benchmarker}!generujdane@{generujdane}}
-\index{generujdane@{generujdane}!Benchmarker@{Benchmarker}}
-\subsubsection[{generujdane}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ Benchmarker\-::generujdane (
+\hypertarget{a00002_a0a9f86a1cf3b22e273042010d3a7d00f}{}\index{Algorytm1@{Algorytm1}!alokujdane@{alokujdane}}
+\index{alokujdane@{alokujdane}!Algorytm1@{Algorytm1}}
+\subsubsection[{alokujdane}]{\setlength{\rightskip}{0pt plus 5cm}void Algorytm1\+::alokujdane (
 \begin{DoxyParamCaption}
-\item[{int}]{l\-\_\-danych}
+\item[{{\bf Zasobnik}$<$ int $>$ $\ast$}]{Tab, }
+\item[{int $\ast$}]{dane, }
+\item[{int}]{liczba\+\_\+danych}
 \end{DoxyParamCaption}
-)}}\label{a00002_aca0371e9f7cc70cf0a0c08cc04e4491c}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00002_a0a9f86a1cf3b22e273042010d3a7d00f}
 
 
-Metoda generujaca wartosci losowe z przedzialu 0 10000. 
+Metoda alokujaca na zasobniku dane. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em l\-\_\-danych} & -\/ typu int, liczba generowanych danych. \\
+{\em Tab} & -\/ typu Zasobnik$<$\+T$>$$\ast$, implementacja zasobnika \\
+\hline
+{\em dane} & -\/ typu T$\ast$, dane wygenerowane dla implementacji \\
+\hline
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych dla zasobnika \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\itshape dane -\/ typu long int}, tablica z wygenerowanymi danymi. 
-\end{DoxyReturn}
-\hypertarget{a00002_a7b0f34744ffe3f91bbd3553b469a7883}{\index{Benchmarker@{Benchmarker}!testuj@{testuj}}
-\index{testuj@{testuj}!Benchmarker@{Benchmarker}}
-\subsubsection[{testuj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template long int Benchmarker\-::testuj$<$ {\bf Array\-Lista} $>$ (
+
+
+Implements \hyperlink{a00001_a1e83fd87a20fd0a13ebbf1c81e457b61}{Algorytm$<$ int $>$}.
+
+\hypertarget{a00002_aca10f2c6923337e0ab928338e8989417}{}\index{Algorytm1@{Algorytm1}!wykonajalgorytm@{wykonajalgorytm}}
+\index{wykonajalgorytm@{wykonajalgorytm}!Algorytm1@{Algorytm1}}
+\subsubsection[{wykonajalgorytm}]{\setlength{\rightskip}{0pt plus 5cm}void Algorytm1\+::wykonajalgorytm (
 \begin{DoxyParamCaption}
-\item[{T $\ast$}]{, }
-\item[{int $\ast$}]{, }
-\item[{int}]{, }
-\item[{int}]{}
+\item[{{\bf Zasobnik}$<$ int $>$ $\ast$}]{Tab, }
+\item[{int $\ast$}]{dane, }
+\item[{int}]{liczba\+\_\+danych}
 \end{DoxyParamCaption}
-)}}\label{a00002_a7b0f34744ffe3f91bbd3553b469a7883}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00002_aca10f2c6923337e0ab928338e8989417}
 
 
-Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\-: \hyperlink{a00004}{Lista} , \hyperlink{a00005}{Stos} , \hyperlink{a00003}{Kolejka}. 
+Metoda wykonujaca konkretny algorytm. 
 
 
-\begin{DoxyTemplParams}{Template Parameters}
-{\em Tab} & -\/ typu T$\ast$, wskaznik na zaimplementowany stos/liste/kolejke. \\
+\begin{DoxyParams}{Parameters}
+{\em Tab} & -\/ typu Zasobnik$<$\+T$>$$\ast$, implementacja zasobnika \\
 \hline
-{\em dane} & -\/ typu int$\ast$, wskaznik na tablice z danymi generowanymi. \\
+{\em dane} & -\/ typu T$\ast$, dane wygenerowane dla implementacji \\
 \hline
-{\em liczba\-\_\-przejsc} & -\/ typu int, liczba przejsc przez dane. \\
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych dla zasobnika \\
 \hline
-{\em liczba\-\_\-danych} & -\/ typu int, liczba danych w tablicy. \\
-\hline
-\end{DoxyTemplParams}
-\begin{DoxyReturn}{Returns}
-czas\-\_\-calkowity\-\_\-usredniony -\/ typu long int, czas sredni dzialania funkcji. 
-\end{DoxyReturn}
+\end{DoxyParams}
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+Implements \hyperlink{a00001_ae97a52b1a728be1a819c9e9815f424e7}{Algorytm$<$ int $>$}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00009}{Benchmark.\-hh}\item 
-\hyperlink{a00008}{Benchmark.\-cpp}\end{DoxyCompactItemize}
+\hyperlink{a00019}{Algorytm1.\+hh}\item 
+\hyperlink{a00018}{Algorytm1.\+cpp}\end{DoxyCompactItemize}

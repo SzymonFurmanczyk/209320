@@ -66,7 +66,7 @@ public:
 
   string pop(string klucz_szukany);
 
-  void push(string);
+  void push(string wartosc);
   string pop();	  
   int size();
   

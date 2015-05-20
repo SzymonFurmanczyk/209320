@@ -23,10 +23,32 @@ template <typename T>
 class Algorytm
 { 
 public:
+  /*!
+   *\brief Destruktor wirtualny algorytmu.
+   */
   virtual ~Algorytm(){};
 
-  virtual void alokujdane(Zasobnik<T>*,T*,int)=0;
-  virtual void wykonajalgorytm(Zasobnik<T>*,T*,int)=0;
+  /*!
+   *\brief Metoda alokujaca na zasobniku dane.
+   *\param
+   * Tab - typu Zasobnik<T>*, implementacja zasobnika
+   *\param
+   * dane - typu T*, dane wygenerowane dla implementacji
+   *\param
+   * liczba_danych - typu int, liczba danych dla zasobnika
+   */
+  virtual void alokujdane(Zasobnik<T>* Tab,T* dane,int liczba_danych)=0;
+
+  /*!
+   *\brief Metoda wykonujaca konkretny algorytm.
+   *\param
+   * Tab - typu Zasobnik<T>*, implementacja zasobnika
+   *\param
+   * dane - typu T*, dane wygenerowane dla implementacji
+   *\param
+   * liczba_danych - typu int, liczba danych dla zasobnika
+   */
+  virtual void wykonajalgorytm(Zasobnik<T>* Tab,T* dane,int liczba_danych)=0;
 };
 
 

@@ -1,143 +1,99 @@
-\hypertarget{a00001}{\section{Array\-Lista Class Reference}
-\label{a00001}\index{Array\-Lista@{Array\-Lista}}
-}
+\hypertarget{a00001}{}\section{Algorytm$<$ T $>$ Class Template Reference}
+\label{a00001}\index{Algorytm$<$ T $>$@{Algorytm$<$ T $>$}}
 
 
-Klasa \hyperlink{a00001}{Array\-Lista}.  
+Szablon klasy \hyperlink{a00001}{Algorytm}.  
 
 
 
 
-{\ttfamily \#include $<$Array\-Lista.\-hh$>$}
+{\ttfamily \#include $<$Algorytm\+Abs.\+hh$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00001_a645d18dcf43d2f3397d0ba90f5d8d0b4}{Array\-Lista} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy tablice listy. rozmiar -\/ rozmiar tablicy dla listy, inicjalizowane wartoscia 1. ilosc\-\_\-elementow -\/ ilosc elementow listy,inicjalizowane wartoscia 0. Tworzona jest tablica dynamiczna o jednym elemencie. \end{DoxyCompactList}\item 
-\hyperlink{a00001_ab502f9c0ea71ec66954ebe675100b9ce}{$\sim$\-Array\-Lista} ()
-\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny stosu. \end{DoxyCompactList}\item 
-void \hyperlink{a00001_a473a71ed888097c7b14bb70cbf7eecd6}{push} (int, int)
-\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na liscie Metoda inkrementuje rozmiar podczas umieszczania elementu na liscie. \end{DoxyCompactList}\item 
-void \hyperlink{a00001_a1d194e2d2e54114ef939d7fe64508840}{push} (int wartosc)
-\begin{DoxyCompactList}\small\item\em Przeciazenie operacji push. Powieksza liste podczas dodawania elementu do 200\%. Nastepuje inkrementacja rozmiar listy. \end{DoxyCompactList}\item 
-int \hyperlink{a00001_ae76ea59ccac91abd264cf108489d3105}{pop} ()
-\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z listy. Metoda dekrementuje ilosc\-\_\-elementow przy zdejmowaniu z listy. Tablica listy jest zmniejszana podczas zdejmowania elementu o polowe gdy ilosc elementow znajdujacych sie na niej jest rowna polowie jej rozmiaru. \end{DoxyCompactList}\item 
-int \hyperlink{a00001_abd7b74aa6ee7e7c1a454ec32b3aed86e}{size} ()
-\begin{DoxyCompactList}\small\item\em Metoda zwracajaca rozmiar tablicy na ktorej oparta jest lista. \end{DoxyCompactList}\item 
-int \hyperlink{a00001_a84f223e112fafe7c4d9abfc04609445a}{ile\-\_\-elementow} ()
-\begin{DoxyCompactList}\small\item\em Metoda zwracajaca ilosc elementow jaka znajduje sie na liscie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual \hyperlink{a00001_a03e656bf3d65ffb3428bd153c9faaadb}{$\sim$\+Algorytm} ()
+\begin{DoxyCompactList}\small\item\em Destruktor wirtualny algorytmu. \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00001_a1e83fd87a20fd0a13ebbf1c81e457b61}{alokujdane} (\hyperlink{a00017}{Zasobnik}$<$ T $>$ $\ast$Tab, T $\ast$dane, int liczba\+\_\+danych)=0
+\begin{DoxyCompactList}\small\item\em Metoda alokujaca na zasobniku dane. \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00001_ae97a52b1a728be1a819c9e9815f424e7}{wykonajalgorytm} (\hyperlink{a00017}{Zasobnik}$<$ T $>$ $\ast$Tab, T $\ast$dane, int liczba\+\_\+danych)=0
+\begin{DoxyCompactList}\small\item\em Metoda wykonujaca konkretny algorytm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Klasa \hyperlink{a00001}{Array\-Lista}. 
+\subsubsection*{template$<$typename T$>$class Algorytm$<$ T $>$}
+
+Szablon klasy \hyperlink{a00001}{Algorytm}. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{a00001_a645d18dcf43d2f3397d0ba90f5d8d0b4}{\index{Array\-Lista@{Array\-Lista}!Array\-Lista@{Array\-Lista}}
-\index{Array\-Lista@{Array\-Lista}!ArrayLista@{Array\-Lista}}
-\subsubsection[{Array\-Lista}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Lista\-::\-Array\-Lista (
+\hypertarget{a00001_a03e656bf3d65ffb3428bd153c9faaadb}{}\index{Algorytm@{Algorytm}!````~Algorytm@{$\sim$\+Algorytm}}
+\index{````~Algorytm@{$\sim$\+Algorytm}!Algorytm@{Algorytm}}
+\subsubsection[{$\sim$\+Algorytm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual {\bf Algorytm}$<$ T $>$\+::$\sim${\bf Algorytm} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{a00001_a645d18dcf43d2f3397d0ba90f5d8d0b4}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{a00001_a03e656bf3d65ffb3428bd153c9faaadb}
 
 
-Konstruktor bezparametryczny. Konstruktor inicjalizujacy tablice listy. rozmiar -\/ rozmiar tablicy dla listy, inicjalizowane wartoscia 1. ilosc\-\_\-elementow -\/ ilosc elementow listy,inicjalizowane wartoscia 0. Tworzona jest tablica dynamiczna o jednym elemencie. 
-
-\hypertarget{a00001_ab502f9c0ea71ec66954ebe675100b9ce}{\index{Array\-Lista@{Array\-Lista}!$\sim$\-Array\-Lista@{$\sim$\-Array\-Lista}}
-\index{$\sim$\-Array\-Lista@{$\sim$\-Array\-Lista}!ArrayLista@{Array\-Lista}}
-\subsubsection[{$\sim$\-Array\-Lista}]{\setlength{\rightskip}{0pt plus 5cm}Array\-Lista\-::$\sim$\-Array\-Lista (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{a00001_ab502f9c0ea71ec66954ebe675100b9ce}
-
-
-Destruktor bezparametryczny stosu. 
+Destruktor wirtualny algorytmu. 
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{a00001_a84f223e112fafe7c4d9abfc04609445a}{\index{Array\-Lista@{Array\-Lista}!ile\-\_\-elementow@{ile\-\_\-elementow}}
-\index{ile\-\_\-elementow@{ile\-\_\-elementow}!ArrayLista@{Array\-Lista}}
-\subsubsection[{ile\-\_\-elementow}]{\setlength{\rightskip}{0pt plus 5cm}int Array\-Lista\-::ile\-\_\-elementow (
+\hypertarget{a00001_a1e83fd87a20fd0a13ebbf1c81e457b61}{}\index{Algorytm@{Algorytm}!alokujdane@{alokujdane}}
+\index{alokujdane@{alokujdane}!Algorytm@{Algorytm}}
+\subsubsection[{alokujdane}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf Algorytm}$<$ T $>$\+::alokujdane (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf Zasobnik}$<$ T $>$ $\ast$}]{Tab, }
+\item[{T $\ast$}]{dane, }
+\item[{int}]{liczba\+\_\+danych}
 \end{DoxyParamCaption}
-)}}\label{a00001_a84f223e112fafe7c4d9abfc04609445a}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{a00001_a1e83fd87a20fd0a13ebbf1c81e457b61}
 
 
-Metoda zwracajaca ilosc elementow jaka znajduje sie na liscie. 
-
-\begin{DoxyReturn}{Returns}
-ilosc\-\_\-elementow -\/ typu int,ilosc elementow jaka znajduje sie na liscie. 
-\end{DoxyReturn}
-\hypertarget{a00001_ae76ea59ccac91abd264cf108489d3105}{\index{Array\-Lista@{Array\-Lista}!pop@{pop}}
-\index{pop@{pop}!ArrayLista@{Array\-Lista}}
-\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Array\-Lista\-::pop (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{a00001_ae76ea59ccac91abd264cf108489d3105}
-
-
-Metoda zdejmujaca element z listy. Metoda dekrementuje ilosc\-\_\-elementow przy zdejmowaniu z listy. Tablica listy jest zmniejszana podczas zdejmowania elementu o polowe gdy ilosc elementow znajdujacych sie na niej jest rowna polowie jej rozmiaru. 
-
-\begin{DoxyReturn}{Returns}
-wartosc -\/ typu int, wartosc zdejmowana ze stosu. 
-\end{DoxyReturn}
-\hypertarget{a00001_a473a71ed888097c7b14bb70cbf7eecd6}{\index{Array\-Lista@{Array\-Lista}!push@{push}}
-\index{push@{push}!ArrayLista@{Array\-Lista}}
-\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Array\-Lista\-::push (
-\begin{DoxyParamCaption}
-\item[{int}]{wartosc, }
-\item[{int}]{zwiekszanie}
-\end{DoxyParamCaption}
-)}}\label{a00001_a473a71ed888097c7b14bb70cbf7eecd6}
-
-
-Metoda umieszczajaca element na liscie Metoda inkrementuje rozmiar podczas umieszczania elementu na liscie. 
+Metoda alokujaca na zasobniku dane. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em zwiekszanie} & -\/ typu int, mnoznik rozszerzania tablicy podczas dodawania elementow listy . \\
+{\em Tab} & -\/ typu Zasobnik$<$\+T$>$$\ast$, implementacja zasobnika \\
 \hline
-{\em wartosc} & -\/ typu int, wartosc umieszczana na stosie. \\
+{\em dane} & -\/ typu T$\ast$, dane wygenerowane dla implementacji \\
+\hline
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych dla zasobnika \\
 \hline
 \end{DoxyParams}
-\hypertarget{a00001_a1d194e2d2e54114ef939d7fe64508840}{\index{Array\-Lista@{Array\-Lista}!push@{push}}
-\index{push@{push}!ArrayLista@{Array\-Lista}}
-\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Array\-Lista\-::push (
+
+
+Implemented in \hyperlink{a00002_a0a9f86a1cf3b22e273042010d3a7d00f}{Algorytm1}, \hyperlink{a00003_a244358b0e823d5d267a1c7fd54b9492a}{Algorytm2}, \hyperlink{a00004_a0c74c2813e5cad73d2d2fed70621f121}{Algorytm3}, \hyperlink{a00005_ae31683c8ce000d190e47c1d34321693f}{Algorytm4}, \hyperlink{a00006_a9e0b784c6d35486bd95ad063dd40a9b1}{Algorytm5}, and \hyperlink{a00007_a0d8ce20c600b7d245fa08da5d70b9f21}{Algorytm6}.
+
+\hypertarget{a00001_ae97a52b1a728be1a819c9e9815f424e7}{}\index{Algorytm@{Algorytm}!wykonajalgorytm@{wykonajalgorytm}}
+\index{wykonajalgorytm@{wykonajalgorytm}!Algorytm@{Algorytm}}
+\subsubsection[{wykonajalgorytm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf Algorytm}$<$ T $>$\+::wykonajalgorytm (
 \begin{DoxyParamCaption}
-\item[{int}]{wartosc}
+\item[{{\bf Zasobnik}$<$ T $>$ $\ast$}]{Tab, }
+\item[{T $\ast$}]{dane, }
+\item[{int}]{liczba\+\_\+danych}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{a00001_a1d194e2d2e54114ef939d7fe64508840}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{a00001_ae97a52b1a728be1a819c9e9815f424e7}
 
 
-Przeciazenie operacji push. Powieksza liste podczas dodawania elementu do 200\%. Nastepuje inkrementacja rozmiar listy. 
+Metoda wykonujaca konkretny algorytm. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em wartosc} & -\/ typu int, wartosc umieszczana na liscie. \\
+{\em Tab} & -\/ typu Zasobnik$<$\+T$>$$\ast$, implementacja zasobnika \\
+\hline
+{\em dane} & -\/ typu T$\ast$, dane wygenerowane dla implementacji \\
+\hline
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych dla zasobnika \\
 \hline
 \end{DoxyParams}
-\hypertarget{a00001_abd7b74aa6ee7e7c1a454ec32b3aed86e}{\index{Array\-Lista@{Array\-Lista}!size@{size}}
-\index{size@{size}!ArrayLista@{Array\-Lista}}
-\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Array\-Lista\-::size (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{a00001_abd7b74aa6ee7e7c1a454ec32b3aed86e}
 
 
-Metoda zwracajaca rozmiar tablicy na ktorej oparta jest lista. 
-
-\begin{DoxyReturn}{Returns}
-rozmiar -\/ typu int,rozmiar tablicy listy. 
-\end{DoxyReturn}
+Implemented in \hyperlink{a00002_aca10f2c6923337e0ab928338e8989417}{Algorytm1}, \hyperlink{a00003_ae6c49412309b413bf587dd4bb0f3a03e}{Algorytm2}, \hyperlink{a00004_a841f6420f974fbf6ce5c5250b452b1f2}{Algorytm3}, \hyperlink{a00005_a199e6229de14ef39f945b253419ab410}{Algorytm4}, \hyperlink{a00006_ae6b796569be801a1f5816b7bbd700fa3}{Algorytm5}, and \hyperlink{a00007_a67d5aaaf379dc7500f8d6bc919fce98a}{Algorytm6}.
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00007}{Array\-Lista.\-hh}\item 
-\hyperlink{a00006}{Array\-Lista.\-cpp}\end{DoxyCompactItemize}
+\hyperlink{a00030}{Algorytm\+Abs.\+hh}\end{DoxyCompactItemize}

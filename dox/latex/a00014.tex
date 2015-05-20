@@ -1,57 +1,71 @@
-\hypertarget{a00014}{\section{main.\-cpp File Reference}
-\label{a00014}\index{main.\-cpp@{main.\-cpp}}
-}
+\hypertarget{a00014}{}\section{Obserwator\+Zapisujacy Class Reference}
+\label{a00014}\index{Obserwator\+Zapisujacy@{Obserwator\+Zapisujacy}}
 
 
-Modul glowny.  
+Klasa \hyperlink{a00014}{Obserwator\+Zapisujacy}.  
 
 
-{\ttfamily \#include $<$cstdlib$>$}\\*
-{\ttfamily \#include $<$iostream$>$}\\*
-{\ttfamily \#include $<$fstream$>$}\\*
-{\ttfamily \#include \char`\"{}Benchmark.\-hh\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Lista.\-hh\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Stos.\-hh\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Kolejka.\-hh\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}Array\-Lista.\-hh\char`\"{}}\\*
-Include dependency graph for main.\-cpp\-:\nopagebreak
+
+
+{\ttfamily \#include $<$Obserwator\+Zapisujacy.\+hh$>$}
+
+
+
+Inheritance diagram for Obserwator\+Zapisujacy\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{a00028}
+\includegraphics[width=194pt]{a00139}
 \end{center}
 \end{figure}
-\subsection*{Functions}
+
+
+Collaboration diagram for Obserwator\+Zapisujacy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{a00140}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{a00014_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
-\begin{DoxyCompactList}\small\item\em Funkcja glowna programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{a00014_ace7d819c70329e85b06a5450f6f7c92f}{odswiez} (int, long int)
+\begin{DoxyCompactList}\small\item\em Metoda odswiezajaca obserwatora. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Modul glowny. Plik zawiera funkcje main. 
+Klasa \hyperlink{a00014}{Obserwator\+Zapisujacy}. 
 
-\subsection{Function Documentation}
-\hypertarget{a00014_a0ddf1224851353fc92bfbff6f499fa97}{\index{main.\-cpp@{main.\-cpp}!main@{main}}
-\index{main@{main}!main.cpp@{main.\-cpp}}
-\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\subsection{Member Function Documentation}
+\hypertarget{a00014_ace7d819c70329e85b06a5450f6f7c92f}{}\index{Obserwator\+Zapisujacy@{Obserwator\+Zapisujacy}!odswiez@{odswiez}}
+\index{odswiez@{odswiez}!Obserwator\+Zapisujacy@{Obserwator\+Zapisujacy}}
+\subsubsection[{odswiez}]{\setlength{\rightskip}{0pt plus 5cm}void Obserwator\+Zapisujacy\+::odswiez (
 \begin{DoxyParamCaption}
-\item[{int}]{argc, }
-\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\item[{int}]{k, }
+\item[{long}]{sredni\+\_\+czas}
 \end{DoxyParamCaption}
-)}}\label{a00014_a0ddf1224851353fc92bfbff6f499fa97}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00014_ace7d819c70329e85b06a5450f6f7c92f}
 
 
-Funkcja glowna programu. 
+Metoda odswiezajaca obserwatora. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & -\/typu int, ilosc danych na obserwowany obiekcie \\
+\hline
+{\em sredni\+\_\+czas} & -\/ typu long int, sredni czas wykonania operacji \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00013_a35f475b38bb63eac2a4d08a8d27aff7a}{Obserwator}.
 
 
 
-Here is the call graph for this function\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=288pt]{a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
-\end{center}
-\end{figure}
-
-
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00046}{Obserwator\+Zapisujacy.\+hh}\item 
+\hyperlink{a00045}{Obserwator\+Zapisujacy.\+cpp}\end{DoxyCompactItemize}

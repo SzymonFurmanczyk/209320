@@ -18,7 +18,15 @@ class Obserwator
 
 public:
   //virtual ~Obserwator(){};
-  virtual void odswiez(int,long int)=0;
+
+  /*!
+   *\brief Metoda odswiezajaca obserwatora.
+   *\param
+   * k -typu int, ilosc danych na obserwowany obiekcie
+   *\param
+   * sredni_czas - typu long int, sredni czas wykonania operacji  
+   */
+  virtual void odswiez(int k,long int sredni_czas)=0;
 };
 
 

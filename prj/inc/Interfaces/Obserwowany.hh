@@ -22,20 +22,25 @@ Obserwator *obserwatorzy;
 public:
   //virtual ~Obserwowany(){};
 
+  /*!
+   *\brief Metoda dodajaca obserwatora do obiektu
+   *\param
+   * Obs - typu Obserwator*, wskaznik na danego obserwatora
+   */
   void dodaj(Obserwator *Obs)
   {
     obserwatorzy=Obs;
   };
 
+  /*!
+   *\brief Metoda usuwajaca obserwatora z obiektu
+   *\param
+   * Obs - typu Obserwator*, wskaznik na danego obserwatora
+   */
   void usun(Obserwator *Obs)
   {
     obserwatorzy=NULL;
   };
-
-  //void powiadom(int iteracja,long int czas_sredni)
-  //{
-  //obserwatorzy->odswiez(iteracja,czas_sredni);
-  //};
 
 };
 

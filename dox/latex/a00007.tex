@@ -1,32 +1,114 @@
-\hypertarget{a00007}{\section{Array\-Lista.\-hh File Reference}
-\label{a00007}\index{Array\-Lista.\-hh@{Array\-Lista.\-hh}}
-}
+\hypertarget{a00007}{}\section{Algorytm6 Class Reference}
+\label{a00007}\index{Algorytm6@{Algorytm6}}
 
 
-Definicja klasy \hyperlink{a00001}{Array\-Lista}.  
+Klasa \hyperlink{a00007}{Algorytm6}.  
 
 
-{\ttfamily \#include $<$iostream$>$}\\*
-Include dependency graph for Array\-Lista.\-hh\-:\nopagebreak
+
+
+{\ttfamily \#include $<$Algorytm6.\+hh$>$}
+
+
+
+Inheritance diagram for Algorytm6\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=154pt]{a00020}
+\includegraphics[width=176pt]{a00119}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+
+
+Collaboration diagram for Algorytm6\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=336pt]{a00021}
+\includegraphics[width=176pt]{a00120}
 \end{center}
 \end{figure}
-\subsection*{Classes}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{a00001}{Array\-Lista}
-\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{a00001}{Array\-Lista}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{a00007_a7b3c905b3b07a0fb8d75b16b64d3246a}{$\sim$\+Algorytm6} ()
+\item 
+void \hyperlink{a00007_a0d8ce20c600b7d245fa08da5d70b9f21}{alokujdane} (\hyperlink{a00017}{Zasobnik}$<$ string $>$ $\ast$, string $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Metoda alokujaca na zasobniku dane. \end{DoxyCompactList}\item 
+void \hyperlink{a00007_a67d5aaaf379dc7500f8d6bc919fce98a}{wykonajalgorytm} (\hyperlink{a00017}{Zasobnik}$<$ string $>$ $\ast$, string $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Metoda wykonujaca konkretny algorytm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Definicja klasy \hyperlink{a00001}{Array\-Lista}. Plik zawiera definicje klasy modulujacej pojecie listy jednokierunkowej opartej na tablicy dynamicznej. 
+Klasa \hyperlink{a00007}{Algorytm6}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00007_a7b3c905b3b07a0fb8d75b16b64d3246a}{}\index{Algorytm6@{Algorytm6}!````~Algorytm6@{$\sim$\+Algorytm6}}
+\index{````~Algorytm6@{$\sim$\+Algorytm6}!Algorytm6@{Algorytm6}}
+\subsubsection[{$\sim$\+Algorytm6}]{\setlength{\rightskip}{0pt plus 5cm}Algorytm6\+::$\sim$\+Algorytm6 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{a00007_a7b3c905b3b07a0fb8d75b16b64d3246a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00007_a0d8ce20c600b7d245fa08da5d70b9f21}{}\index{Algorytm6@{Algorytm6}!alokujdane@{alokujdane}}
+\index{alokujdane@{alokujdane}!Algorytm6@{Algorytm6}}
+\subsubsection[{alokujdane}]{\setlength{\rightskip}{0pt plus 5cm}void Algorytm6\+::alokujdane (
+\begin{DoxyParamCaption}
+\item[{{\bf Zasobnik}$<$ string $>$ $\ast$}]{Tab, }
+\item[{string $\ast$}]{dane, }
+\item[{int}]{liczba\+\_\+danych}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00007_a0d8ce20c600b7d245fa08da5d70b9f21}
+
+
+Metoda alokujaca na zasobniku dane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tab} & -\/ typu Zasobnik$<$\+T$>$$\ast$, implementacja zasobnika \\
+\hline
+{\em dane} & -\/ typu T$\ast$, dane wygenerowane dla implementacji \\
+\hline
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych dla zasobnika \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00001_a1e83fd87a20fd0a13ebbf1c81e457b61}{Algorytm$<$ string $>$}.
+
+\hypertarget{a00007_a67d5aaaf379dc7500f8d6bc919fce98a}{}\index{Algorytm6@{Algorytm6}!wykonajalgorytm@{wykonajalgorytm}}
+\index{wykonajalgorytm@{wykonajalgorytm}!Algorytm6@{Algorytm6}}
+\subsubsection[{wykonajalgorytm}]{\setlength{\rightskip}{0pt plus 5cm}void Algorytm6\+::wykonajalgorytm (
+\begin{DoxyParamCaption}
+\item[{{\bf Zasobnik}$<$ string $>$ $\ast$}]{Tab, }
+\item[{string $\ast$}]{dane, }
+\item[{int}]{liczba\+\_\+danych}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00007_a67d5aaaf379dc7500f8d6bc919fce98a}
+
+
+Metoda wykonujaca konkretny algorytm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tab} & -\/ typu Zasobnik$<$\+T$>$$\ast$, implementacja zasobnika \\
+\hline
+{\em dane} & -\/ typu T$\ast$, dane wygenerowane dla implementacji \\
+\hline
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych dla zasobnika \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00001_ae97a52b1a728be1a819c9e9815f424e7}{Algorytm$<$ string $>$}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00029}{Algorytm6.\+hh}\item 
+\hyperlink{a00028}{Algorytm6.\+cpp}\end{DoxyCompactItemize}

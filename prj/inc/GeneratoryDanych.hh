@@ -21,11 +21,3 @@ template<typename T>
 T* generujdane(int l_danych);
 
 #endif
-
-/*!
- *\brief Metoda generujaca wartosci losowe danego typu.
- *\param
- * l_danych - typu int, liczba generowanych danych.
- *\return
- * *dane - typu string*, tablica z wygenerowanymi danymi(np.: Axb CtQ).
- */

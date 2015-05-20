@@ -33,7 +33,7 @@ public:
   
   /*!
    *\brief Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji.
-   *       Typy: Lista , Stos , Kolejka, Tablica haszująca.
+   *       Typy: Lista , Stos , Kolejka, HaszTab.
    *\tparam
    * Tab - typu T*, wskaznik na zaimplementowany stos/liste/kolejke/tablice haszującą.
    *\tparam
@@ -47,6 +47,13 @@ public:
    */
   void testuj(Zasobnik<T>*,Algorytm<T>*,T*,int,int);
 
+  /*!
+   *\brief Metoda powiadamiajaca obserwatora o czasie wykonania.
+   *\param
+   * iteracja - typu int, liczba danych - identyfikator iteracji
+   *\param
+   * czas_sredni - typu long int, czas wykonania operacji
+   */
   void powiadom(int, long int);
 };
 

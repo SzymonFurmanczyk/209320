@@ -1,22 +1,179 @@
-\hypertarget{a00012}{\section{Lista.\-cpp File Reference}
-\label{a00012}\index{Lista.\-cpp@{Lista.\-cpp}}
-}
+\hypertarget{a00012}{}\section{Lista Class Reference}
+\label{a00012}\index{Lista@{Lista}}
 
 
-Metody klasy \hyperlink{a00004}{Lista}.  
+Klasa \hyperlink{a00012}{Lista}.  
 
 
-{\ttfamily \#include \char`\"{}Lista.\-hh\char`\"{}}\\*
-{\ttfamily \#include $<$cstdlib$>$}\\*
-{\ttfamily \#include $<$iostream$>$}\\*
-Include dependency graph for Lista.\-cpp\-:\nopagebreak
+
+
+{\ttfamily \#include $<$Lista.\+hh$>$}
+
+
+
+Inheritance diagram for Lista\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=264pt]{a00026}
+\includegraphics[width=164pt]{a00134}
 \end{center}
 \end{figure}
 
 
+Collaboration diagram for Lista\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{a00135}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00012_a1f668b36909182ef1360b48503529a31}{Lista} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika listy wartoscia N\+U\+L\+L oraz rozmiar wartoscia 0. \end{DoxyCompactList}\item 
+\hyperlink{a00012_a4d7394b2728a00ad8404965b2e15d096}{$\sim$\+Lista} ()
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny listy. \end{DoxyCompactList}\item 
+void \hyperlink{a00012_af13f329882aeacf6dd1ad28b014f2c41}{push} (int, int)
+\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element okreslonej pozycji na liscie $<$0,rozmiar$>$. Metoda inkrementuje rozmiar podczas umieszczania elementuna liscie. \end{DoxyCompactList}\item 
+int \hyperlink{a00012_acaf8411473b2118c8f54272a58aae14d}{pop} (int)
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z okreslonej pozycji listy $<$0,rozmiar$>$. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. \end{DoxyCompactList}\item 
+void \hyperlink{a00012_a4e00c7aa7ab1918d4f282f610f47a164}{push} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operacji push. Umieszcza element domyslnie na pozycji 1. Nastepuje inkrementacja rozmiar listy. \end{DoxyCompactList}\item 
+int \hyperlink{a00012_ad4905f890e73715d783a197a51aee985}{pop} ()
+\begin{DoxyCompactList}\small\item\em Przeciazenie operacji pop dla listy. Pobiera domyslnie element listy z pozycji 1.\+Nastepuje dekrementacja rozmiar listy. \end{DoxyCompactList}\item 
+int \hyperlink{a00012_a3836382e3cf53b6ea281937d045d181c}{size} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc listy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
 \subsection{Detailed Description}
-Metody klasy \hyperlink{a00004}{Lista}. Plik zawiera metody klasy \hyperlink{a00004}{Lista}. 
+Klasa \hyperlink{a00012}{Lista}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00012_a1f668b36909182ef1360b48503529a31}{}\index{Lista@{Lista}!Lista@{Lista}}
+\index{Lista@{Lista}!Lista@{Lista}}
+\subsubsection[{Lista}]{\setlength{\rightskip}{0pt plus 5cm}Lista\+::\+Lista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{a00012_a1f668b36909182ef1360b48503529a31}
+
+
+Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika listy wartoscia N\+U\+L\+L oraz rozmiar wartoscia 0. 
+
+\hypertarget{a00012_a4d7394b2728a00ad8404965b2e15d096}{}\index{Lista@{Lista}!````~Lista@{$\sim$\+Lista}}
+\index{````~Lista@{$\sim$\+Lista}!Lista@{Lista}}
+\subsubsection[{$\sim$\+Lista}]{\setlength{\rightskip}{0pt plus 5cm}Lista\+::$\sim$\+Lista (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{a00012_a4d7394b2728a00ad8404965b2e15d096}
+
+
+Destruktor bezparametryczny listy. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00012_acaf8411473b2118c8f54272a58aae14d}{}\index{Lista@{Lista}!pop@{pop}}
+\index{pop@{pop}!Lista@{Lista}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Lista\+::pop (
+\begin{DoxyParamCaption}
+\item[{int}]{pozycja}
+\end{DoxyParamCaption}
+)}\label{a00012_acaf8411473b2118c8f54272a58aae14d}
+
+
+Metoda zdejmujaca element z okreslonej pozycji listy $<$0,rozmiar$>$. Metoda dekrementuje rozmiar przy zdejmowaniu elementu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pozycja} & -\/ typu int, numer elementu ktory ma byc zdjety z listy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana z listy. 
+\end{DoxyReturn}
+\hypertarget{a00012_ad4905f890e73715d783a197a51aee985}{}\index{Lista@{Lista}!pop@{pop}}
+\index{pop@{pop}!Lista@{Lista}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Lista\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{a00012_ad4905f890e73715d783a197a51aee985}
+
+
+Przeciazenie operacji pop dla listy. Pobiera domyslnie element listy z pozycji 1.\+Nastepuje dekrementacja rozmiar listy. 
+
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana z listy. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00017_a6c4f8b78dd20289be7d1625bcd48e899}{Zasobnik$<$ int $>$}.
+
+\hypertarget{a00012_af13f329882aeacf6dd1ad28b014f2c41}{}\index{Lista@{Lista}!push@{push}}
+\index{push@{push}!Lista@{Lista}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Lista\+::push (
+\begin{DoxyParamCaption}
+\item[{int}]{wartosc, }
+\item[{int}]{pozycja}
+\end{DoxyParamCaption}
+)}\label{a00012_af13f329882aeacf6dd1ad28b014f2c41}
+
+
+Metoda umieszczajaca element okreslonej pozycji na liscie $<$0,rozmiar$>$. Metoda inkrementuje rozmiar podczas umieszczania elementuna liscie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu int, wartosc umieszczana na liscie. \\
+\hline
+{\em pozycja} & -\/ typu int, pozycja na ktorej jest umieszczana wartosc. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00012_a4e00c7aa7ab1918d4f282f610f47a164}{}\index{Lista@{Lista}!push@{push}}
+\index{push@{push}!Lista@{Lista}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Lista\+::push (
+\begin{DoxyParamCaption}
+\item[{int}]{wartosc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{a00012_a4e00c7aa7ab1918d4f282f610f47a164}
+
+
+Przeciazenie operacji push. Umieszcza element domyslnie na pozycji 1. Nastepuje inkrementacja rozmiar listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu int, wartosc umieszczana na liscie. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00017_a2d4e12285da6c0772a56d70cd90ca436}{Zasobnik$<$ int $>$}.
+
+\hypertarget{a00012_a3836382e3cf53b6ea281937d045d181c}{}\index{Lista@{Lista}!size@{size}}
+\index{size@{size}!Lista@{Lista}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Lista\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00012_a3836382e3cf53b6ea281937d045d181c}
+
+
+Metoda zwracajaca wielkosc listy. 
+
+\begin{DoxyReturn}{Returns}
+rozmiar -\/ typu int,rozmiar listy. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00017_aeddc93b1e43aab6f59a60612bf42ed50}{Zasobnik$<$ int $>$}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00042}{Lista.\+hh}\item 
+\hyperlink{a00041}{Lista.\+cpp}\end{DoxyCompactItemize}

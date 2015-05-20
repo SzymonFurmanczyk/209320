@@ -25,6 +25,7 @@ int* generujdane(int l_danych)
   return dane;
 }
 
+
 template<>
 string* generujdane(int l_danych)
 {

@@ -1,24 +1,60 @@
-\hypertarget{a00013}{\section{Lista.\-hh File Reference}
-\label{a00013}\index{Lista.\-hh@{Lista.\-hh}}
-}
+\hypertarget{a00013}{}\section{Obserwator Class Reference}
+\label{a00013}\index{Obserwator@{Obserwator}}
 
 
-Definicja klasy \hyperlink{a00004}{Lista}.  
+Klasa \hyperlink{a00013}{Obserwator}.  
 
 
-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+
+
+{\ttfamily \#include $<$Obserwator.\+hh$>$}
+
+
+
+Inheritance diagram for Obserwator\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=312pt]{a00027}
+\includegraphics[width=194pt]{a00137}
 \end{center}
 \end{figure}
-\subsection*{Classes}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{a00004}{Lista}
-\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{a00004}{Lista}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual void \hyperlink{a00013_a35f475b38bb63eac2a4d08a8d27aff7a}{odswiez} (int k, long int sredni\+\_\+czas)=0
+\begin{DoxyCompactList}\small\item\em Metoda odswiezajaca obserwatora. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Definicja klasy \hyperlink{a00004}{Lista}. Plik zawiera definicje klasy modulujacej pojecie listy jednokierunkowej. 
+Klasa \hyperlink{a00013}{Obserwator}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00013_a35f475b38bb63eac2a4d08a8d27aff7a}{}\index{Obserwator@{Obserwator}!odswiez@{odswiez}}
+\index{odswiez@{odswiez}!Obserwator@{Obserwator}}
+\subsubsection[{odswiez}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Obserwator\+::odswiez (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{long int}]{sredni\+\_\+czas}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{a00013_a35f475b38bb63eac2a4d08a8d27aff7a}
+
+
+Metoda odswiezajaca obserwatora. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & -\/typu int, ilosc danych na obserwowany obiekcie \\
+\hline
+{\em sredni\+\_\+czas} & -\/ typu long int, sredni czas wykonania operacji \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00014_ace7d819c70329e85b06a5450f6f7c92f}{Obserwator\+Zapisujacy}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00044}{Obserwator.\+hh}\end{DoxyCompactItemize}
