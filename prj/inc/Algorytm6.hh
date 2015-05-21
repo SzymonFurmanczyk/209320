@@ -1,21 +1,26 @@
 #ifndef ALGORYTM6_HH
 #define ALGORYTM6_HH
 
+/*!
+ *\file 
+ *\brief Definicja klasy Algorytm6.
+ *
+ * Plik zawiera definicje klasy Algorytm6.
+ */
+
 #include "Interfaces/AlgorytmAbs.hh"
-#include "HaszTab.hh"
-#include <cstdlib>
-#include <iostream>
-#include <sstream>
-#include <string>
 
 using namespace std;
 
-class Algorytm6 : public Algorytm<string>
+/*!
+ *\brief Klasa Algorytm6.
+ */
+class Algorytm6 : public Algorytm<int>
 { 
 public:
-
-  void alokujdane(HaszTab);
-  void wykonajalgorytm(HaszTab);
+  ~Algorytm6(){};
+  void alokujdane(Zasobnik<int>*,int*,int);
+  void wykonajalgorytm(Zasobnik<int>*,int*,int);
 };
 
 

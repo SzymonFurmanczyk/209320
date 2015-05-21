@@ -7,10 +7,6 @@
 
 #include "HaszTab.hh"
 
-#include <cstdlib>
-#include <iostream>
-
-
 HaszTab::HaszTab()
 {
   rozmiar_k1=100;
@@ -38,7 +34,7 @@ HaszTab::~HaszTab()
     }
 }
 
-void HaszTab::push()
+void HaszTab::push(string wartosc)
 {
 }
 
@@ -108,10 +104,9 @@ string HaszTab::odczytaj(string klucz_szukany)
 
 string HaszTab::pop()
 {
-}
-
-int HaszTab::size()
-{
+  srand(time(NULL));
+  string klucz=array[rand()%rozmiar_k1][rand()%rozmiar_k2]->klucz;
+  return odczytaj(klucz);
 }
 
 int HaszTab::mieszaj(string klucz_umieszczany,int modulacja)
@@ -130,6 +125,11 @@ int HaszTab::mieszaj(string klucz_umieszczany,int modulacja)
   return indeks;
 }
 
+
+int HaszTab::size()
+{
+  return rozmiar_k1*rozmiar_k2;
+}
 
 int HaszTab::size_k1()
 {

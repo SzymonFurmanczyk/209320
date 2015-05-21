@@ -1,6 +1,8 @@
 #ifndef STOS_HH
 #define STOS_HH
 
+#include "Interfaces/Zasobnik.hh"
+
 /*!
  *\file 
  *\brief Definicja klasy Stos.

@@ -1,18 +1,25 @@
 /*!
  *\file 
- *\brief Metody klasy .
+ *\brief Metody klasy ObserwatorZapisujacy.
  *
- * Plik zawiera metody klasy .
+ * Plik zawiera metody klasy ObserwatorZapisujacy.
  */
 
-#include "Obserwator.hh"
+#include <cstdlib>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <ctime>
+#include <fstream>
 
-void odswiez()
+#include "ObserwatorZapisujacy.hh"
+
+void ObserwatorZapisujacy::odswiez(int k, long int sredni_czas)
 {
   ofstream plik;
-  plik.open("benchmark.csv" , ios::out , ios::app);
-  //cout<<k<<" "<<sredni_czas_arraylista_mergesort<<endl;    
-  plik<<k<<","<<sredni_czas_arraylista_mergesort<<"\n";
+  plik.open("benchmark.csv",ios::app);
+  //cout<<k<<" "<<sredni_czas<<endl;    
+  plik<<k<<","<<sredni_czas<<"\n";
   plik.close();
 }
 

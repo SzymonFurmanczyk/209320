@@ -3,30 +3,37 @@
 
 /*!
  *\file 
- *\brief Definicja klasy Benchmarker.
+ *\brief Definicja szablonu klasy Benchmarker.
  *
- * Plik zawiera definicje klasy Benchmarker.
+ * Plik zawiera definicje szablonu klasy Benchmarker.
  */
-#include "Interfaces/Zasobnik.hh"
-#include "Interfaces/AlgorytmAbs.hh"
-#include "Interfaces/ObserwatorAbs.hh"
-#include "Interfaces/ObserwowanyAbs.hh"
 
-#include <string>
+#include "Algorytm1.hh"
+#include "Algorytm2.hh"
+#include "Algorytm3.hh"
+#include "Algorytm4.hh"
+#include "Algorytm5.hh"
+#include "Algorytm6.hh"
+//#include "Interfaces/AlgorytmAbs.hh"
+#include "ObserwatorZapisujacy.hh"
+#include "Interfaces/Obserwowany.hh"
+
 
 using namespace std;
 
 /*!
- *\brief Klasa Benchmarker.
+ *\brief Szablon klasy Benchmarker.
  */
 template<typename T>
 class Benchmarker : public Obserwowany
 {
+  int iteracja;
+  long int czas_sekcji;
 public:
   
   /*!
    *\brief Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji.
-   *       Typy: Lista , Stos , Kolejka, Tablica haszująca.
+   *       Typy: Lista , Stos , Kolejka, HaszTab.
    *\tparam
    * Tab - typu T*, wskaznik na zaimplementowany stos/liste/kolejke/tablice haszującą.
    *\tparam
@@ -38,11 +45,16 @@ public:
    *\return
    * czas_calkowity_usredniony - typu long int, czas sredni dzialania funkcji.
    */
-void testuj(Zasobnik<T>*,Algorytm<T>*,T*,int,int);
+  void testuj(Zasobnik<T>*,Algorytm<T>*,T*,int,int);
 
-  void dodaj(Obserwator *Obs);
-  void usun(Obserwator *Obs);
-  void powiadom();
+  /*!
+   *\brief Metoda powiadamiajaca obserwatora o czasie wykonania.
+   *\param
+   * iteracja - typu int, liczba danych - identyfikator iteracji
+   *\param
+   * czas_sredni - typu long int, czas wykonania operacji
+   */
+  void powiadom(int, long int);
 };
 
 

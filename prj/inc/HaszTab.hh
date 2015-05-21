@@ -8,8 +8,7 @@
  * Plik zawiera definicje klasy modulujacej pojecie tablicy haszującej. 
  */
 
-#include <iostream>
-#include <string>
+#include "Interfaces/Zasobnik.hh"
 
 using namespace std;
 
@@ -65,12 +64,10 @@ public:
    */
   void push(string wartosc,string klucz);
 
-  void push();  
-
   string pop(string klucz_szukany);
 
+  void push(string wartosc);
   string pop();	  
-
   int size();
   
   /*!
