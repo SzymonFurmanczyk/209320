@@ -1,72 +1,249 @@
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}|hyperpage}{5}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}|hyperpage}{5}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{5}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista@{$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista@{$\sim $\discretionary {-}{}{}Array\discretionary {-}{}{}Lista}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow@{ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow}|hyperpage}{6}
-\indexentry{ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow@{ile\discretionary {-}{}{}\_\discretionary {-}{}{}elementow}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!pop@{pop}|hyperpage}{6}
-\indexentry{pop@{pop}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!push@{push}|hyperpage}{6}
-\indexentry{push@{push}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!push@{push}|hyperpage}{6}
-\indexentry{push@{push}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Array\discretionary {-}{}{}Lista@{Array\discretionary {-}{}{}Lista}!size@{size}|hyperpage}{6}
-\indexentry{size@{size}!ArrayLista@{Array\discretionary {-}{}{}Lista}|hyperpage}{6}
-\indexentry{Benchmarker@{Benchmarker}|hyperpage}{7}
-\indexentry{Benchmarker@{Benchmarker}!generujdane@{generujdane}|hyperpage}{7}
-\indexentry{generujdane@{generujdane}!Benchmarker@{Benchmarker}|hyperpage}{7}
-\indexentry{Benchmarker@{Benchmarker}!testuj@{testuj}|hyperpage}{7}
-\indexentry{testuj@{testuj}!Benchmarker@{Benchmarker}|hyperpage}{7}
-\indexentry{Kolejka@{Kolejka}|hyperpage}{8}
-\indexentry{Kolejka@{Kolejka}!Kolejka@{Kolejka}|hyperpage}{8}
-\indexentry{Kolejka@{Kolejka}!Kolejka@{Kolejka}|hyperpage}{8}
-\indexentry{Kolejka@{Kolejka}!$\sim $\discretionary {-}{}{}Kolejka@{$\sim $\discretionary {-}{}{}Kolejka}|hyperpage}{8}
-\indexentry{$\sim $\discretionary {-}{}{}Kolejka@{$\sim $\discretionary {-}{}{}Kolejka}!Kolejka@{Kolejka}|hyperpage}{8}
-\indexentry{Kolejka@{Kolejka}!pop@{pop}|hyperpage}{9}
-\indexentry{pop@{pop}!Kolejka@{Kolejka}|hyperpage}{9}
-\indexentry{Kolejka@{Kolejka}!push@{push}|hyperpage}{9}
-\indexentry{push@{push}!Kolejka@{Kolejka}|hyperpage}{9}
-\indexentry{Kolejka@{Kolejka}!size@{size}|hyperpage}{9}
-\indexentry{size@{size}!Kolejka@{Kolejka}|hyperpage}{9}
-\indexentry{Lista@{Lista}|hyperpage}{9}
-\indexentry{Lista@{Lista}!Lista@{Lista}|hyperpage}{10}
-\indexentry{Lista@{Lista}!Lista@{Lista}|hyperpage}{10}
-\indexentry{Lista@{Lista}!$\sim $\discretionary {-}{}{}Lista@{$\sim $\discretionary {-}{}{}Lista}|hyperpage}{10}
-\indexentry{$\sim $\discretionary {-}{}{}Lista@{$\sim $\discretionary {-}{}{}Lista}!Lista@{Lista}|hyperpage}{10}
-\indexentry{Lista@{Lista}!pop@{pop}|hyperpage}{10}
-\indexentry{pop@{pop}!Lista@{Lista}|hyperpage}{10}
-\indexentry{Lista@{Lista}!pop@{pop}|hyperpage}{10}
-\indexentry{pop@{pop}!Lista@{Lista}|hyperpage}{10}
-\indexentry{Lista@{Lista}!push@{push}|hyperpage}{10}
-\indexentry{push@{push}!Lista@{Lista}|hyperpage}{10}
-\indexentry{Lista@{Lista}!push@{push}|hyperpage}{11}
-\indexentry{push@{push}!Lista@{Lista}|hyperpage}{11}
-\indexentry{Lista@{Lista}!size@{size}|hyperpage}{11}
-\indexentry{size@{size}!Lista@{Lista}|hyperpage}{11}
-\indexentry{Stos@{Stos}|hyperpage}{11}
-\indexentry{Stos@{Stos}!Stos@{Stos}|hyperpage}{11}
-\indexentry{Stos@{Stos}!Stos@{Stos}|hyperpage}{11}
-\indexentry{Stos@{Stos}!$\sim $\discretionary {-}{}{}Stos@{$\sim $\discretionary {-}{}{}Stos}|hyperpage}{11}
-\indexentry{$\sim $\discretionary {-}{}{}Stos@{$\sim $\discretionary {-}{}{}Stos}!Stos@{Stos}|hyperpage}{11}
-\indexentry{Stos@{Stos}!pop@{pop}|hyperpage}{12}
-\indexentry{pop@{pop}!Stos@{Stos}|hyperpage}{12}
-\indexentry{Stos@{Stos}!push@{push}|hyperpage}{12}
-\indexentry{push@{push}!Stos@{Stos}|hyperpage}{12}
-\indexentry{Stos@{Stos}!size@{size}|hyperpage}{12}
-\indexentry{size@{size}!Stos@{Stos}|hyperpage}{12}
-\indexentry{Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}cpp@{Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}cpp}|hyperpage}{13}
-\indexentry{Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}hh@{Array\discretionary {-}{}{}Lista.\discretionary {-}{}{}hh}|hyperpage}{13}
-\indexentry{Benchmark.\discretionary {-}{}{}cpp@{Benchmark.\discretionary {-}{}{}cpp}|hyperpage}{14}
-\indexentry{Benchmark.\discretionary {-}{}{}cpp@{Benchmark.\discretionary {-}{}{}cpp}!B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P@{B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P}|hyperpage}{15}
-\indexentry{B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P@{B\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}M\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}P}!Benchmark.cpp@{Benchmark.\discretionary {-}{}{}cpp}|hyperpage}{15}
-\indexentry{Benchmark.\discretionary {-}{}{}hh@{Benchmark.\discretionary {-}{}{}hh}|hyperpage}{15}
-\indexentry{Kolejka.\discretionary {-}{}{}cpp@{Kolejka.\discretionary {-}{}{}cpp}|hyperpage}{16}
-\indexentry{Kolejka.\discretionary {-}{}{}hh@{Kolejka.\discretionary {-}{}{}hh}|hyperpage}{16}
-\indexentry{Lista.\discretionary {-}{}{}cpp@{Lista.\discretionary {-}{}{}cpp}|hyperpage}{17}
-\indexentry{Lista.\discretionary {-}{}{}hh@{Lista.\discretionary {-}{}{}hh}|hyperpage}{18}
-\indexentry{main.\discretionary {-}{}{}cpp@{main.\discretionary {-}{}{}cpp}|hyperpage}{18}
-\indexentry{main.\discretionary {-}{}{}cpp@{main.\discretionary {-}{}{}cpp}!main@{main}|hyperpage}{19}
-\indexentry{main@{main}!main.cpp@{main.\discretionary {-}{}{}cpp}|hyperpage}{19}
-\indexentry{Stos.\discretionary {-}{}{}cpp@{Stos.\discretionary {-}{}{}cpp}|hyperpage}{19}
-\indexentry{Stos.\discretionary {-}{}{}hh@{Stos.\discretionary {-}{}{}hh}|hyperpage}{20}
+\indexentry{Algorytm$<$ T $>$@{Algorytm$<$ T $>$}|hyperpage}{7}
+\indexentry{Algorytm@{Algorytm}!````~Algorytm@{$\sim$\+Algorytm}|hyperpage}{7}
+\indexentry{````~Algorytm@{$\sim$\+Algorytm}!Algorytm@{Algorytm}|hyperpage}{7}
+\indexentry{Algorytm@{Algorytm}!alokujdane@{alokujdane}|hyperpage}{7}
+\indexentry{alokujdane@{alokujdane}!Algorytm@{Algorytm}|hyperpage}{7}
+\indexentry{Algorytm@{Algorytm}!wykonajalgorytm@{wykonajalgorytm}|hyperpage}{8}
+\indexentry{wykonajalgorytm@{wykonajalgorytm}!Algorytm@{Algorytm}|hyperpage}{8}
+\indexentry{Algorytm1@{Algorytm1}|hyperpage}{8}
+\indexentry{Algorytm1@{Algorytm1}!````~Algorytm1@{$\sim$\+Algorytm1}|hyperpage}{9}
+\indexentry{````~Algorytm1@{$\sim$\+Algorytm1}!Algorytm1@{Algorytm1}|hyperpage}{9}
+\indexentry{Algorytm1@{Algorytm1}!alokujdane@{alokujdane}|hyperpage}{9}
+\indexentry{alokujdane@{alokujdane}!Algorytm1@{Algorytm1}|hyperpage}{9}
+\indexentry{Algorytm1@{Algorytm1}!wykonajalgorytm@{wykonajalgorytm}|hyperpage}{9}
+\indexentry{wykonajalgorytm@{wykonajalgorytm}!Algorytm1@{Algorytm1}|hyperpage}{9}
+\indexentry{Algorytm2@{Algorytm2}|hyperpage}{10}
+\indexentry{Algorytm2@{Algorytm2}!alokujdane@{alokujdane}|hyperpage}{11}
+\indexentry{alokujdane@{alokujdane}!Algorytm2@{Algorytm2}|hyperpage}{11}
+\indexentry{Algorytm2@{Algorytm2}!wykonajalgorytm@{wykonajalgorytm}|hyperpage}{11}
+\indexentry{wykonajalgorytm@{wykonajalgorytm}!Algorytm2@{Algorytm2}|hyperpage}{11}
+\indexentry{Algorytm3@{Algorytm3}|hyperpage}{11}
+\indexentry{Algorytm3@{Algorytm3}!alokujdane@{alokujdane}|hyperpage}{12}
+\indexentry{alokujdane@{alokujdane}!Algorytm3@{Algorytm3}|hyperpage}{12}
+\indexentry{Algorytm3@{Algorytm3}!wykonajalgorytm@{wykonajalgorytm}|hyperpage}{13}
+\indexentry{wykonajalgorytm@{wykonajalgorytm}!Algorytm3@{Algorytm3}|hyperpage}{13}
+\indexentry{Algorytm4@{Algorytm4}|hyperpage}{13}
+\indexentry{Algorytm4@{Algorytm4}!````~Algorytm4@{$\sim$\+Algorytm4}|hyperpage}{14}
+\indexentry{````~Algorytm4@{$\sim$\+Algorytm4}!Algorytm4@{Algorytm4}|hyperpage}{14}
+\indexentry{Algorytm4@{Algorytm4}!alokujdane@{alokujdane}|hyperpage}{14}
+\indexentry{alokujdane@{alokujdane}!Algorytm4@{Algorytm4}|hyperpage}{14}
+\indexentry{Algorytm4@{Algorytm4}!mergesort@{mergesort}|hyperpage}{16}
+\indexentry{mergesort@{mergesort}!Algorytm4@{Algorytm4}|hyperpage}{16}
+\indexentry{Algorytm4@{Algorytm4}!scal@{scal}|hyperpage}{16}
+\indexentry{scal@{scal}!Algorytm4@{Algorytm4}|hyperpage}{16}
+\indexentry{Algorytm4@{Algorytm4}!wykonajalgorytm@{wykonajalgorytm}|hyperpage}{16}
+\indexentry{wykonajalgorytm@{wykonajalgorytm}!Algorytm4@{Algorytm4}|hyperpage}{16}
+\indexentry{Algorytm5@{Algorytm5}|hyperpage}{17}
+\indexentry{Algorytm5@{Algorytm5}!alokujdane@{alokujdane}|hyperpage}{18}
+\indexentry{alokujdane@{alokujdane}!Algorytm5@{Algorytm5}|hyperpage}{18}
+\indexentry{Algorytm5@{Algorytm5}!wykonajalgorytm@{wykonajalgorytm}|hyperpage}{18}
+\indexentry{wykonajalgorytm@{wykonajalgorytm}!Algorytm5@{Algorytm5}|hyperpage}{18}
+\indexentry{Algorytm6@{Algorytm6}|hyperpage}{20}
+\indexentry{Algorytm6@{Algorytm6}!````~Algorytm6@{$\sim$\+Algorytm6}|hyperpage}{21}
+\indexentry{````~Algorytm6@{$\sim$\+Algorytm6}!Algorytm6@{Algorytm6}|hyperpage}{21}
+\indexentry{Algorytm6@{Algorytm6}!alokujdane@{alokujdane}|hyperpage}{21}
+\indexentry{alokujdane@{alokujdane}!Algorytm6@{Algorytm6}|hyperpage}{21}
+\indexentry{Algorytm6@{Algorytm6}!wykonajalgorytm@{wykonajalgorytm}|hyperpage}{22}
+\indexentry{wykonajalgorytm@{wykonajalgorytm}!Algorytm6@{Algorytm6}|hyperpage}{22}
+\indexentry{Array\+Lista@{Array\+Lista}|hyperpage}{22}
+\indexentry{Array\+Lista@{Array\+Lista}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Array\+Lista@{Array\+Lista}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Array\+Lista@{Array\+Lista}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Array\+Lista@{Array\+Lista}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Array\+Lista@{Array\+Lista}!````~Array\+Lista@{$\sim$\+Array\+Lista}|hyperpage}{24}
+\indexentry{````~Array\+Lista@{$\sim$\+Array\+Lista}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Array\+Lista@{Array\+Lista}!pop@{pop}|hyperpage}{24}
+\indexentry{pop@{pop}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Array\+Lista@{Array\+Lista}!push@{push}|hyperpage}{24}
+\indexentry{push@{push}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Array\+Lista@{Array\+Lista}!push@{push}|hyperpage}{24}
+\indexentry{push@{push}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Array\+Lista@{Array\+Lista}!size@{size}|hyperpage}{24}
+\indexentry{size@{size}!Array\+Lista@{Array\+Lista}|hyperpage}{24}
+\indexentry{Benchmarker$<$ T $>$@{Benchmarker$<$ T $>$}|hyperpage}{25}
+\indexentry{Benchmarker@{Benchmarker}!powiadom@{powiadom}|hyperpage}{26}
+\indexentry{powiadom@{powiadom}!Benchmarker@{Benchmarker}|hyperpage}{26}
+\indexentry{Benchmarker@{Benchmarker}!testuj@{testuj}|hyperpage}{26}
+\indexentry{testuj@{testuj}!Benchmarker@{Benchmarker}|hyperpage}{26}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{27}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{28}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{28}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!````~Drzewo\+Binarne@{$\sim$\+Drzewo\+Binarne}|hyperpage}{28}
+\indexentry{````~Drzewo\+Binarne@{$\sim$\+Drzewo\+Binarne}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{28}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!obroc\+\_\+l@{obroc\+\_\+l}|hyperpage}{28}
+\indexentry{obroc\+\_\+l@{obroc\+\_\+l}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{28}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!obroc\+\_\+p@{obroc\+\_\+p}|hyperpage}{29}
+\indexentry{obroc\+\_\+p@{obroc\+\_\+p}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{29}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!pop@{pop}|hyperpage}{29}
+\indexentry{pop@{pop}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{29}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!pop@{pop}|hyperpage}{29}
+\indexentry{pop@{pop}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{29}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!push@{push}|hyperpage}{29}
+\indexentry{push@{push}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{29}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!rownowaz@{rownowaz}|hyperpage}{30}
+\indexentry{rownowaz@{rownowaz}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{30}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!size@{size}|hyperpage}{30}
+\indexentry{size@{size}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{30}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!wypisz@{wypisz}|hyperpage}{30}
+\indexentry{wypisz@{wypisz}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{30}
+\indexentry{Drzewo\+Binarne@{Drzewo\+Binarne}!wypisz\+\_\+pelne@{wypisz\+\_\+pelne}|hyperpage}{31}
+\indexentry{wypisz\+\_\+pelne@{wypisz\+\_\+pelne}!Drzewo\+Binarne@{Drzewo\+Binarne}|hyperpage}{31}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{31}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{32}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{32}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!````~Drzewo\+R\+B@{$\sim$\+Drzewo\+R\+B}|hyperpage}{32}
+\indexentry{````~Drzewo\+R\+B@{$\sim$\+Drzewo\+R\+B}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{32}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!obroc\+\_\+l@{obroc\+\_\+l}|hyperpage}{33}
+\indexentry{obroc\+\_\+l@{obroc\+\_\+l}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{33}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!obroc\+\_\+p@{obroc\+\_\+p}|hyperpage}{33}
+\indexentry{obroc\+\_\+p@{obroc\+\_\+p}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{33}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!pop@{pop}|hyperpage}{33}
+\indexentry{pop@{pop}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{33}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!pop@{pop}|hyperpage}{33}
+\indexentry{pop@{pop}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{33}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!push@{push}|hyperpage}{34}
+\indexentry{push@{push}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{34}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!size@{size}|hyperpage}{34}
+\indexentry{size@{size}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{34}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!ukladaj@{ukladaj}|hyperpage}{34}
+\indexentry{ukladaj@{ukladaj}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{34}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!wypisz@{wypisz}|hyperpage}{35}
+\indexentry{wypisz@{wypisz}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{35}
+\indexentry{Drzewo\+R\+B@{Drzewo\+R\+B}!wypisz\+\_\+pelne@{wypisz\+\_\+pelne}|hyperpage}{35}
+\indexentry{wypisz\+\_\+pelne@{wypisz\+\_\+pelne}!Drzewo\+R\+B@{Drzewo\+R\+B}|hyperpage}{35}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}|hyperpage}{35}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{37}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{37}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!````~Hasz\+Tab@{$\sim$\+Hasz\+Tab}|hyperpage}{37}
+\indexentry{````~Hasz\+Tab@{$\sim$\+Hasz\+Tab}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{37}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!mieszaj@{mieszaj}|hyperpage}{37}
+\indexentry{mieszaj@{mieszaj}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{37}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!odczytaj@{odczytaj}|hyperpage}{37}
+\indexentry{odczytaj@{odczytaj}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{37}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!pop@{pop}|hyperpage}{38}
+\indexentry{pop@{pop}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{38}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!pop@{pop}|hyperpage}{38}
+\indexentry{pop@{pop}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{38}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!push@{push}|hyperpage}{38}
+\indexentry{push@{push}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{38}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!push@{push}|hyperpage}{39}
+\indexentry{push@{push}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{39}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!size@{size}|hyperpage}{39}
+\indexentry{size@{size}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{39}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!size\+\_\+k1@{size\+\_\+k1}|hyperpage}{39}
+\indexentry{size\+\_\+k1@{size\+\_\+k1}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{39}
+\indexentry{Hasz\+Tab@{Hasz\+Tab}!size\+\_\+k2@{size\+\_\+k2}|hyperpage}{39}
+\indexentry{size\+\_\+k2@{size\+\_\+k2}!Hasz\+Tab@{Hasz\+Tab}|hyperpage}{39}
+\indexentry{Kolejka@{Kolejka}|hyperpage}{40}
+\indexentry{Kolejka@{Kolejka}!Kolejka@{Kolejka}|hyperpage}{41}
+\indexentry{Kolejka@{Kolejka}!Kolejka@{Kolejka}|hyperpage}{41}
+\indexentry{Kolejka@{Kolejka}!````~Kolejka@{$\sim$\+Kolejka}|hyperpage}{41}
+\indexentry{````~Kolejka@{$\sim$\+Kolejka}!Kolejka@{Kolejka}|hyperpage}{41}
+\indexentry{Kolejka@{Kolejka}!pop@{pop}|hyperpage}{41}
+\indexentry{pop@{pop}!Kolejka@{Kolejka}|hyperpage}{41}
+\indexentry{Kolejka@{Kolejka}!pop@{pop}|hyperpage}{41}
+\indexentry{pop@{pop}!Kolejka@{Kolejka}|hyperpage}{41}
+\indexentry{Kolejka@{Kolejka}!push@{push}|hyperpage}{41}
+\indexentry{push@{push}!Kolejka@{Kolejka}|hyperpage}{41}
+\indexentry{Kolejka@{Kolejka}!size@{size}|hyperpage}{41}
+\indexentry{size@{size}!Kolejka@{Kolejka}|hyperpage}{41}
+\indexentry{Lista@{Lista}|hyperpage}{42}
+\indexentry{Lista@{Lista}!Lista@{Lista}|hyperpage}{43}
+\indexentry{Lista@{Lista}!Lista@{Lista}|hyperpage}{43}
+\indexentry{Lista@{Lista}!````~Lista@{$\sim$\+Lista}|hyperpage}{43}
+\indexentry{````~Lista@{$\sim$\+Lista}!Lista@{Lista}|hyperpage}{43}
+\indexentry{Lista@{Lista}!pop@{pop}|hyperpage}{43}
+\indexentry{pop@{pop}!Lista@{Lista}|hyperpage}{43}
+\indexentry{Lista@{Lista}!pop@{pop}|hyperpage}{43}
+\indexentry{pop@{pop}!Lista@{Lista}|hyperpage}{43}
+\indexentry{Lista@{Lista}!push@{push}|hyperpage}{43}
+\indexentry{push@{push}!Lista@{Lista}|hyperpage}{43}
+\indexentry{Lista@{Lista}!push@{push}|hyperpage}{45}
+\indexentry{push@{push}!Lista@{Lista}|hyperpage}{45}
+\indexentry{Lista@{Lista}!size@{size}|hyperpage}{45}
+\indexentry{size@{size}!Lista@{Lista}|hyperpage}{45}
+\indexentry{Obserwator@{Obserwator}|hyperpage}{45}
+\indexentry{Obserwator@{Obserwator}!odswiez@{odswiez}|hyperpage}{46}
+\indexentry{odswiez@{odswiez}!Obserwator@{Obserwator}|hyperpage}{46}
+\indexentry{Obserwator\+Zapisujacy@{Obserwator\+Zapisujacy}|hyperpage}{46}
+\indexentry{Obserwator\+Zapisujacy@{Obserwator\+Zapisujacy}!odswiez@{odswiez}|hyperpage}{47}
+\indexentry{odswiez@{odswiez}!Obserwator\+Zapisujacy@{Obserwator\+Zapisujacy}|hyperpage}{47}
+\indexentry{Obserwowany@{Obserwowany}|hyperpage}{47}
+\indexentry{Obserwowany@{Obserwowany}!dodaj@{dodaj}|hyperpage}{48}
+\indexentry{dodaj@{dodaj}!Obserwowany@{Obserwowany}|hyperpage}{48}
+\indexentry{Obserwowany@{Obserwowany}!usun@{usun}|hyperpage}{50}
+\indexentry{usun@{usun}!Obserwowany@{Obserwowany}|hyperpage}{50}
+\indexentry{Obserwowany@{Obserwowany}!obserwatorzy@{obserwatorzy}|hyperpage}{50}
+\indexentry{obserwatorzy@{obserwatorzy}!Obserwowany@{Obserwowany}|hyperpage}{50}
+\indexentry{Stos@{Stos}|hyperpage}{50}
+\indexentry{Stos@{Stos}!Stos@{Stos}|hyperpage}{51}
+\indexentry{Stos@{Stos}!Stos@{Stos}|hyperpage}{51}
+\indexentry{Stos@{Stos}!````~Stos@{$\sim$\+Stos}|hyperpage}{51}
+\indexentry{````~Stos@{$\sim$\+Stos}!Stos@{Stos}|hyperpage}{51}
+\indexentry{Stos@{Stos}!pop@{pop}|hyperpage}{51}
+\indexentry{pop@{pop}!Stos@{Stos}|hyperpage}{51}
+\indexentry{Stos@{Stos}!pop@{pop}|hyperpage}{52}
+\indexentry{pop@{pop}!Stos@{Stos}|hyperpage}{52}
+\indexentry{Stos@{Stos}!push@{push}|hyperpage}{52}
+\indexentry{push@{push}!Stos@{Stos}|hyperpage}{52}
+\indexentry{Stos@{Stos}!size@{size}|hyperpage}{52}
+\indexentry{size@{size}!Stos@{Stos}|hyperpage}{52}
+\indexentry{Zasobnik$<$ T $>$@{Zasobnik$<$ T $>$}|hyperpage}{52}
+\indexentry{Zasobnik@{Zasobnik}!````~Zasobnik@{$\sim$\+Zasobnik}|hyperpage}{53}
+\indexentry{````~Zasobnik@{$\sim$\+Zasobnik}!Zasobnik@{Zasobnik}|hyperpage}{53}
+\indexentry{Zasobnik@{Zasobnik}!pop@{pop}|hyperpage}{53}
+\indexentry{pop@{pop}!Zasobnik@{Zasobnik}|hyperpage}{53}
+\indexentry{Zasobnik@{Zasobnik}!pop@{pop}|hyperpage}{53}
+\indexentry{pop@{pop}!Zasobnik@{Zasobnik}|hyperpage}{53}
+\indexentry{Zasobnik@{Zasobnik}!push@{push}|hyperpage}{53}
+\indexentry{push@{push}!Zasobnik@{Zasobnik}|hyperpage}{53}
+\indexentry{Zasobnik@{Zasobnik}!size@{size}|hyperpage}{53}
+\indexentry{size@{size}!Zasobnik@{Zasobnik}|hyperpage}{53}
+\indexentry{Algorytm1.\+cpp@{Algorytm1.\+cpp}|hyperpage}{55}
+\indexentry{Algorytm1.\+hh@{Algorytm1.\+hh}|hyperpage}{55}
+\indexentry{Algorytm2.\+cpp@{Algorytm2.\+cpp}|hyperpage}{56}
+\indexentry{Algorytm2.\+hh@{Algorytm2.\+hh}|hyperpage}{57}
+\indexentry{Algorytm3.\+cpp@{Algorytm3.\+cpp}|hyperpage}{58}
+\indexentry{Algorytm3.\+hh@{Algorytm3.\+hh}|hyperpage}{59}
+\indexentry{Algorytm4.\+cpp@{Algorytm4.\+cpp}|hyperpage}{60}
+\indexentry{Algorytm4.\+hh@{Algorytm4.\+hh}|hyperpage}{61}
+\indexentry{Algorytm5.\+cpp@{Algorytm5.\+cpp}|hyperpage}{62}
+\indexentry{Algorytm5.\+hh@{Algorytm5.\+hh}|hyperpage}{63}
+\indexentry{Algorytm6.\+cpp@{Algorytm6.\+cpp}|hyperpage}{64}
+\indexentry{Algorytm6.\+hh@{Algorytm6.\+hh}|hyperpage}{65}
+\indexentry{Algorytm\+Abs.\+hh@{Algorytm\+Abs.\+hh}|hyperpage}{66}
+\indexentry{Array\+Lista.\+cpp@{Array\+Lista.\+cpp}|hyperpage}{67}
+\indexentry{Array\+Lista.\+hh@{Array\+Lista.\+hh}|hyperpage}{68}
+\indexentry{Benchmark.\+cpp@{Benchmark.\+cpp}|hyperpage}{69}
+\indexentry{Benchmark.\+hh@{Benchmark.\+hh}|hyperpage}{70}
+\indexentry{Drzewo\+Binarne.\+cpp@{Drzewo\+Binarne.\+cpp}|hyperpage}{71}
+\indexentry{Drzewo\+Binarne.\+hh@{Drzewo\+Binarne.\+hh}|hyperpage}{71}
+\indexentry{Drzewo\+R\+B.\+cpp@{Drzewo\+R\+B.\+cpp}|hyperpage}{72}
+\indexentry{Drzewo\+R\+B.\+hh@{Drzewo\+R\+B.\+hh}|hyperpage}{73}
+\indexentry{Generatory\+Danych.\+cpp@{Generatory\+Danych.\+cpp}|hyperpage}{74}
+\indexentry{Generatory\+Danych.\+cpp@{Generatory\+Danych.\+cpp}!generujdane@{generujdane}|hyperpage}{75}
+\indexentry{generujdane@{generujdane}!Generatory\+Danych.\+cpp@{Generatory\+Danych.\+cpp}|hyperpage}{75}
+\indexentry{Generatory\+Danych.\+cpp@{Generatory\+Danych.\+cpp}!generujdane@{generujdane}|hyperpage}{75}
+\indexentry{generujdane@{generujdane}!Generatory\+Danych.\+cpp@{Generatory\+Danych.\+cpp}|hyperpage}{75}
+\indexentry{Generatory\+Danych.\+hh@{Generatory\+Danych.\+hh}|hyperpage}{75}
+\indexentry{Generatory\+Danych.\+hh@{Generatory\+Danych.\+hh}!generujdane@{generujdane}|hyperpage}{76}
+\indexentry{generujdane@{generujdane}!Generatory\+Danych.\+hh@{Generatory\+Danych.\+hh}|hyperpage}{76}
+\indexentry{Hasz\+Tab.\+cpp@{Hasz\+Tab.\+cpp}|hyperpage}{76}
+\indexentry{Hasz\+Tab.\+hh@{Hasz\+Tab.\+hh}|hyperpage}{77}
+\indexentry{Kolejka.\+cpp@{Kolejka.\+cpp}|hyperpage}{78}
+\indexentry{Kolejka.\+hh@{Kolejka.\+hh}|hyperpage}{78}
+\indexentry{Lista.\+cpp@{Lista.\+cpp}|hyperpage}{79}
+\indexentry{Lista.\+hh@{Lista.\+hh}|hyperpage}{80}
+\indexentry{main.\+cpp@{main.\+cpp}|hyperpage}{81}
+\indexentry{main.\+cpp@{main.\+cpp}!main@{main}|hyperpage}{82}
+\indexentry{main@{main}!main.\+cpp@{main.\+cpp}|hyperpage}{82}
+\indexentry{Obserwator.\+cpp@{Obserwator.\+cpp}|hyperpage}{82}
+\indexentry{Obserwator.\+cpp@{Obserwator.\+cpp}!odswiez@{odswiez}|hyperpage}{82}
+\indexentry{odswiez@{odswiez}!Obserwator.\+cpp@{Obserwator.\+cpp}|hyperpage}{82}
+\indexentry{Obserwator.\+hh@{Obserwator.\+hh}|hyperpage}{82}
+\indexentry{Obserwator\+Zapisujacy.\+cpp@{Obserwator\+Zapisujacy.\+cpp}|hyperpage}{83}
+\indexentry{Obserwator\+Zapisujacy.\+hh@{Obserwator\+Zapisujacy.\+hh}|hyperpage}{84}
+\indexentry{Obserwowany.\+hh@{Obserwowany.\+hh}|hyperpage}{85}
+\indexentry{Stos.\+cpp@{Stos.\+cpp}|hyperpage}{86}
+\indexentry{Stos.\+hh@{Stos.\+hh}|hyperpage}{87}
+\indexentry{Zasobnik.\+hh@{Zasobnik.\+hh}|hyperpage}{88}

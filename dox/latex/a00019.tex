@@ -1,0 +1,130 @@
+\hypertarget{a00019}{}\section{Zasobnik$<$ T $>$ Class Template Reference}
+\label{a00019}\index{Zasobnik$<$ T $>$@{Zasobnik$<$ T $>$}}
+
+
+Szablon klasy \hyperlink{a00019}{Zasobnik}.  
+
+
+
+
+{\ttfamily \#include $<$Zasobnik.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{a00019_ab8d4ec71166fd24d7e717cc35808fe5d}{$\sim$\+Zasobnik} ()
+\begin{DoxyCompactList}\small\item\em Destruktor wirtualny. \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00019_a2d4e12285da6c0772a56d70cd90ca436}{push} (T wartosc)=0
+\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na zasobniku. \end{DoxyCompactList}\item 
+virtual T \hyperlink{a00019_a6c4f8b78dd20289be7d1625bcd48e899}{pop} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z zasobnika. \end{DoxyCompactList}\item 
+virtual T \hyperlink{a00019_a13b917f6298d941d147e974ffd94f7d0}{pop} (T szukana)=0
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca dany element z zasobnika. \end{DoxyCompactList}\item 
+virtual int \hyperlink{a00019_aeddc93b1e43aab6f59a60612bf42ed50}{size} ()=0
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca rozmiar zasobnika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Zasobnik$<$ T $>$}
+
+Szablon klasy \hyperlink{a00019}{Zasobnik}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00019_ab8d4ec71166fd24d7e717cc35808fe5d}{}\index{Zasobnik@{Zasobnik}!````~Zasobnik@{$\sim$\+Zasobnik}}
+\index{````~Zasobnik@{$\sim$\+Zasobnik}!Zasobnik@{Zasobnik}}
+\subsubsection[{$\sim$\+Zasobnik}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual {\bf Zasobnik}$<$ T $>$\+::$\sim${\bf Zasobnik} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{a00019_ab8d4ec71166fd24d7e717cc35808fe5d}
+
+
+Destruktor wirtualny. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00019_a6c4f8b78dd20289be7d1625bcd48e899}{}\index{Zasobnik@{Zasobnik}!pop@{pop}}
+\index{pop@{pop}!Zasobnik@{Zasobnik}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual T {\bf Zasobnik}$<$ T $>$\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{a00019_a6c4f8b78dd20289be7d1625bcd48e899}
+
+
+Metoda zdejmujaca element z zasobnika. 
+
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu T, wartosc zdejmowana z zasobnika. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00012_a179ed12fcf0f5b5d0ad98f5e9d1eff61}{Hasz\+Tab}, \hyperlink{a00014_ad4905f890e73715d783a197a51aee985}{Lista}, \hyperlink{a00008_ae76ea59ccac91abd264cf108489d3105}{Array\+Lista}, \hyperlink{a00011_af9d1c3f60b757b58077c650856574bac}{Drzewo\+R\+B}, \hyperlink{a00010_acb33dc2ed364228201775243115b6775}{Drzewo\+Binarne}, \hyperlink{a00013_aa99d7c7459116c2331b301637b45b666}{Kolejka}, and \hyperlink{a00018_aabb14b8a389c55da6e2b50fbb179ed56}{Stos}.
+
+\hypertarget{a00019_a13b917f6298d941d147e974ffd94f7d0}{}\index{Zasobnik@{Zasobnik}!pop@{pop}}
+\index{pop@{pop}!Zasobnik@{Zasobnik}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual T {\bf Zasobnik}$<$ T $>$\+::pop (
+\begin{DoxyParamCaption}
+\item[{T}]{szukana}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{a00019_a13b917f6298d941d147e974ffd94f7d0}
+
+
+Metoda zdejmujaca dany element z zasobnika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em szukana} & -\/ typu T, wartosc szukana w zasobniku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu T, wartosc zdejmowana z zasobnika. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00011_ac7f83ae4239bfc9f4f9fee2d8aa9ef04}{Drzewo\+R\+B}, \hyperlink{a00012_a7eedb12f1f29e243b7cc7616999a93de}{Hasz\+Tab}, \hyperlink{a00010_a0ea25934177dc7e7b3f106e3c99cdc45}{Drzewo\+Binarne}, \hyperlink{a00013_adadba6a864612c187a85a5ee7eed653f}{Kolejka}, \hyperlink{a00018_ad4af9fd54413ffc548df01a9d4244350}{Stos}, and \hyperlink{a00014_acaf8411473b2118c8f54272a58aae14d}{Lista}.
+
+\hypertarget{a00019_a2d4e12285da6c0772a56d70cd90ca436}{}\index{Zasobnik@{Zasobnik}!push@{push}}
+\index{push@{push}!Zasobnik@{Zasobnik}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf Zasobnik}$<$ T $>$\+::push (
+\begin{DoxyParamCaption}
+\item[{T}]{wartosc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{a00019_a2d4e12285da6c0772a56d70cd90ca436}
+
+
+Metoda umieszczajaca element na zasobniku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu T, wartosc umieszczana na zasobniku. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{a00012_a91805f33da69af9e86c7e366f3d5bb05}{Hasz\+Tab}, \hyperlink{a00014_a4e00c7aa7ab1918d4f282f610f47a164}{Lista}, \hyperlink{a00008_a1d194e2d2e54114ef939d7fe64508840}{Array\+Lista}, \hyperlink{a00011_adcc6a12645ded929e467c7feff5574c9}{Drzewo\+R\+B}, \hyperlink{a00010_a27e1ad6ea3bc41fd20ea4872eda9c0c8}{Drzewo\+Binarne}, \hyperlink{a00013_a694333b4323d9b6d2aa84297610ef56c}{Kolejka}, and \hyperlink{a00018_afe381df2afa35f3d122ca180300005dd}{Stos}.
+
+\hypertarget{a00019_aeddc93b1e43aab6f59a60612bf42ed50}{}\index{Zasobnik@{Zasobnik}!size@{size}}
+\index{size@{size}!Zasobnik@{Zasobnik}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual int {\bf Zasobnik}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{a00019_aeddc93b1e43aab6f59a60612bf42ed50}
+
+
+Metoda zwracajaca rozmiar zasobnika. 
+
+\begin{DoxyReturn}{Returns}
+rozmiar -\/ typu int,rozmiar zasobnika. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{a00012_a301a4903312b6c6633da230107e30963}{Hasz\+Tab}, \hyperlink{a00014_a3836382e3cf53b6ea281937d045d181c}{Lista}, \hyperlink{a00008_abd7b74aa6ee7e7c1a454ec32b3aed86e}{Array\+Lista}, \hyperlink{a00011_a71abda671520f9ea42c1fb0a80888f79}{Drzewo\+R\+B}, \hyperlink{a00010_ad78ae72a8c225221bee6c59973424676}{Drzewo\+Binarne}, \hyperlink{a00013_a82920d7b90e967a4d5e175a20fe6de68}{Kolejka}, and \hyperlink{a00018_a696195d5125d9bbe6b491bc5985f9461}{Stos}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00057}{Zasobnik.\+hh}\end{DoxyCompactItemize}

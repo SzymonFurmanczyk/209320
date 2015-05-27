@@ -1,24 +1,113 @@
-\hypertarget{a00009}{\section{Benchmark.\-hh File Reference}
-\label{a00009}\index{Benchmark.\-hh@{Benchmark.\-hh}}
-}
+\hypertarget{a00009}{}\section{Benchmarker$<$ T $>$ Class Template Reference}
+\label{a00009}\index{Benchmarker$<$ T $>$@{Benchmarker$<$ T $>$}}
 
 
-Definicja klasy \hyperlink{a00002}{Benchmarker}.  
+Szablon klasy \hyperlink{a00009}{Benchmarker}.  
 
 
-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+
+
+{\ttfamily \#include $<$Benchmark.\+hh$>$}
+
+
+
+Inheritance diagram for Benchmarker$<$ T $>$\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=238pt]{a00023}
+\includegraphics[width=176pt]{a00139}
 \end{center}
 \end{figure}
-\subsection*{Classes}
+
+
+Collaboration diagram for Benchmarker$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{a00140}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{a00002}{Benchmarker}
-\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{a00002}{Benchmarker}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{a00009_aeecfb553991fc29bbf58420d0c019c1e}{testuj} (\hyperlink{a00019}{Zasobnik}$<$ T $>$ $\ast$, \hyperlink{a00001}{Algorytm}$<$ T $>$ $\ast$, T $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\+: \hyperlink{a00014}{Lista} , \hyperlink{a00018}{Stos} , \hyperlink{a00013}{Kolejka}, \hyperlink{a00012}{Hasz\+Tab}. \end{DoxyCompactList}\item 
+void \hyperlink{a00009_a6d9c92477ce398fc8ec38b24f49fa9a1}{powiadom} (int, long int)
+\begin{DoxyCompactList}\small\item\em Metoda powiadamiajaca obserwatora o czasie wykonania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-Definicja klasy \hyperlink{a00002}{Benchmarker}. Plik zawiera definicje klasy \hyperlink{a00002}{Benchmarker}. 
+\subsubsection*{template$<$typename T$>$class Benchmarker$<$ T $>$}
+
+Szablon klasy \hyperlink{a00009}{Benchmarker}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00009_a6d9c92477ce398fc8ec38b24f49fa9a1}{}\index{Benchmarker@{Benchmarker}!powiadom@{powiadom}}
+\index{powiadom@{powiadom}!Benchmarker@{Benchmarker}}
+\subsubsection[{powiadom}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Benchmarker}$<$ T $>$\+::powiadom (
+\begin{DoxyParamCaption}
+\item[{int}]{iteracja, }
+\item[{long int}]{czas\+\_\+sredni}
+\end{DoxyParamCaption}
+)}\label{a00009_a6d9c92477ce398fc8ec38b24f49fa9a1}
+
+
+Metoda powiadamiajaca obserwatora o czasie wykonania. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iteracja} & -\/ typu int, liczba danych -\/ identyfikator iteracji \\
+\hline
+{\em czas\+\_\+sredni} & -\/ typu long int, czas wykonania operacji \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00009_aeecfb553991fc29bbf58420d0c019c1e}{}\index{Benchmarker@{Benchmarker}!testuj@{testuj}}
+\index{testuj@{testuj}!Benchmarker@{Benchmarker}}
+\subsubsection[{testuj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template void {\bf Benchmarker}$<$ T $>$\+::testuj (
+\begin{DoxyParamCaption}
+\item[{{\bf Zasobnik}$<$ T $>$ $\ast$}]{, }
+\item[{{\bf Algorytm}$<$ T $>$ $\ast$}]{, }
+\item[{T $\ast$}]{, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\label{a00009_aeecfb553991fc29bbf58420d0c019c1e}
+
+
+Szablon metody przeprowadzajaca sprawdzenie czasu dzialania funkcji. Typy\+: \hyperlink{a00014}{Lista} , \hyperlink{a00018}{Stos} , \hyperlink{a00013}{Kolejka}, \hyperlink{a00012}{Hasz\+Tab}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Tab} & -\/ typu T$\ast$, wskaznik na zaimplementowany stos/liste/kolejke/tablice haszującą. \\
+\hline
+{\em dane} & -\/ typu int$\ast$, wskaznik na tablice z danymi generowanymi. \\
+\hline
+{\em liczba\+\_\+przejsc} & -\/ typu int, liczba przejsc przez dane. \\
+\hline
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych w tablicy. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+czas\+\_\+calkowity\+\_\+usredniony -\/ typu long int, czas sredni dzialania funkcji. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00009_aeecfb553991fc29bbf58420d0c019c1e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00036}{Benchmark.\+hh}\item 
+\hyperlink{a00035}{Benchmark.\+cpp}\end{DoxyCompactItemize}

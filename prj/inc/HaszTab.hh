@@ -8,8 +8,7 @@
  * Plik zawiera definicje klasy modulujacej pojecie tablicy haszującej. 
  */
 
-#include <iostream>
-#include <string>
+#include "Interfaces/Zasobnik.hh"
 
 using namespace std;
 
@@ -65,12 +64,32 @@ public:
    */
   void push(string wartosc,string klucz);
 
-  void push();  
-
+  /*!
+   *\brief Metoda zdejmujaca element z tablicy haszujacej.
+   *\return
+   * klucz_szukany - typu string, klucz wartosci zdejmowanej z tablicy haszujacej.
+   */
   string pop(string klucz_szukany);
 
-  string pop();	  
+  /*!
+   *\brief Metoda umieszczajaca element na tablicy haszujacej.
+   *\param
+   * wartosc - typu string, wartosc umieszczana na tablicy haszujacej.
+   */
+  void push(string wartosc);
 
+  /*!
+   *\brief Metoda zdejmujaca element z tablicy haszujacej.
+   *\return
+   * wartosc - typu string, wartosc zdejmowana z tablicy haszujacej.
+   */
+  string pop();
+
+  /*!
+   *\brief Metoda zwracajaca rozmiar Tablicy Haszujacej.
+   *\return
+   * rozmiar - typu int,rozmiar Tablicy Haszujacej.
+   */	  
   int size();
   
   /*!

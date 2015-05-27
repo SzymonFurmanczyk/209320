@@ -11,7 +11,7 @@
 
 #include "Interfaces/Zasobnik.hh"
 
-#include <iostream>
+//#include <iostream>
 using namespace std;
 
 /*!
@@ -37,7 +37,7 @@ public:
   ArrayLista(int);
   
   /*!
-   *\brief Destruktor bezparametryczny stosu.
+   *\brief Destruktor bezparametryczny Listy.
    */
   ~ArrayLista();
   
@@ -79,21 +79,14 @@ public:
    * rozmiar - typu int,rozmiar tablicy listy.
    */
   int size();
-  
-  /*!
-   *\brief Metoda zwracajaca ilosc elementow jaka znajduje sie na liscie.
-   *\return
-   * ilosc_elementow - typu int,ilosc elementow jaka znajduje sie na liscie.
-   */
-  int ile_elementow();
-  
+    
   /*!
    *\brief Metoda sortująca elementy tablicy algorytmem "mergesort".
    * Metoda dzieli główną tablicę.
    * Jest wywoływana w rekurencji.
    * Wywołuje scalanie podtablicy lewej i prawej.
    */
-  void mergesort();
+  //void mergesort();
 
   /*!
    *\brief Metoda scalająca i sortująca, od najmniejszej do
@@ -104,7 +97,7 @@ public:
    *\param
    * tab_p - typu ArrayLista , prawa podtablica.
    */
-  void scal(ArrayLista* tab_l,ArrayLista* tab_p); 
+  //void scal(ArrayLista* tab_l,ArrayLista* tab_p); 
 };
 
 

@@ -1,6 +1,8 @@
 #ifndef STOS_HH
 #define STOS_HH
 
+#include "Interfaces/Zasobnik.hh"
+
 /*!
  *\file 
  *\brief Definicja klasy Stos.
@@ -55,6 +57,15 @@ public:
    */
   int pop();
   
+  /*!
+   *\brief Metoda zdejmujaca element ze stosu.
+   *       Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu.
+   *\return
+   * wartosc - typu int, wartosc zdejmowana ze stosu.
+   */
+  int pop(int a)
+  {return pop();}
+
   /*!
    *\brief Metoda zwracajaca wielkosc stosu.
    *\return

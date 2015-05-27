@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.11)  22 MAR 2015 23:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.15)  27 MAY 2015 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,10 @@ File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
@@ -70,7 +74,7 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -135,31 +139,76 @@ Package: xtab 2011/07/31 v2.3f Extended supertabular package
 \xreflength=\skip52
 \tmplength=\skip53
 )
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+\XKV@depth=\count101
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks20
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box30
+)
+\tc@llx=\dimen124
+\tc@lly=\dimen125
+\tc@urx=\dimen126
+\tc@ury=\dimen127
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen128
+\adjbox@Height=\dimen129
+\adjbox@Depth=\dimen130
+\adjbox@Totalheight=\dimen131
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box31
+\sift@deathcycles=\count103
+\@vwid@loff=\dimen132
+\@vwid@roff=\dimen133
+))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -378,28 +427,26 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count101
-\mult@box=\box30
-\multicol@leftmargin=\dimen124
-\c@unbalance=\count102
-\c@collectmore=\count103
-\doublecol@number=\count104
-\multicoltolerance=\count105
-\multicolpretolerance=\count106
-\full@width=\dimen125
-\page@free=\dimen126
-\premulticols=\dimen127
-\postmulticols=\dimen128
+\c@tracingmulticols=\count104
+\mult@box=\box32
+\multicol@leftmargin=\dimen134
+\c@unbalance=\count105
+\c@collectmore=\count106
+\doublecol@number=\count107
+\multicoltolerance=\count108
+\multicolpretolerance=\count109
+\full@width=\dimen135
+\page@free=\dimen136
+\premulticols=\dimen137
+\postmulticols=\dimen138
 \multicolsep=\skip54
 \multicolbaselineskip=\skip55
-\partial@page=\box31
-\last@line=\box32
-\mult@rightbox=\box33
-\mult@grightbox=\box34
-\mult@gfirstbox=\box35
-\mult@firstbox=\box36
-\@tempa=\box37
-\@tempa=\box38
+\partial@page=\box33
+\last@line=\box34
+\mult@rightbox=\box35
+\mult@grightbox=\box36
+\mult@gfirstbox=\box37
+\mult@firstbox=\box38
 \@tempa=\box39
 \@tempa=\box40
 \@tempa=\box41
@@ -415,17 +462,19 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count107
-\c@finalcolumnbadness=\count108
-\last@try=\dimen129
-\multicolovershoot=\dimen130
-\multicolundershoot=\dimen131
-\mult@nat@firstbox=\box54
-\colbreak@box=\box55
-\multicol@sort@counter=\count109
+\@tempa=\box54
+\@tempa=\box55
+\c@columnbadness=\count110
+\c@finalcolumnbadness=\count111
+\last@try=\dimen139
+\multicolovershoot=\dimen140
+\multicolundershoot=\dimen141
+\mult@nat@firstbox=\box56
+\colbreak@box=\box57
+\multicol@sort@counter=\count112
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen132
+\bigstrutjot=\dimen142
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -582,6 +631,12 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -589,42 +644,6 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup4
-\symitalic=\mathgroup5
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
-LaTeX Info: Redefining \hbar on input line 50.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
@@ -636,9 +655,9 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks23
-\symAMSa=\mathgroup6
-\symAMSb=\mathgroup7
+\@emptytoks=\toks24
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
@@ -660,18 +679,18 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count110
-\Gm@cntv=\count111
-\c@Gm@tempcnt=\count112
-\Gm@bindingoffset=\dimen133
-\Gm@wd@mp=\dimen134
-\Gm@odd@mp=\dimen135
-\Gm@even@mp=\dimen136
-\Gm@layoutwidth=\dimen137
-\Gm@layoutheight=\dimen138
-\Gm@layouthoffset=\dimen139
-\Gm@layoutvoffset=\dimen140
-\Gm@dimlist=\toks24
+\Gm@cnth=\count113
+\Gm@cntv=\count114
+\c@Gm@tempcnt=\count115
+\Gm@bindingoffset=\dimen143
+\Gm@wd@mp=\dimen144
+\Gm@odd@mp=\dimen145
+\Gm@even@mp=\dimen146
+\Gm@layoutwidth=\dimen147
+\Gm@layoutheight=\dimen148
+\Gm@layouthoffset=\dimen149
+\Gm@layoutvoffset=\dimen150
+\Gm@dimlist=\toks25
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip56
@@ -689,7 +708,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip65
 \bibsep=\skip66
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count113
+\c@NAT@ctr=\count116
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
@@ -723,8 +742,8 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cftbeforefigskip=\skip93
 \cftfigindent=\skip94
 \cftfignumwidth=\skip95
-\c@lofdepth=\count114
-\c@lotdepth=\count115
+\c@lofdepth=\count117
+\c@lotdepth=\count118
 \cftbeforelottitleskip=\skip96
 \cftafterlottitleskip=\skip97
 \cftbeforetabskip=\skip98
@@ -788,16 +807,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen141
-\Hy@linkcounter=\count116
-\Hy@pagecounter=\count117
+\@linkdim=\dimen151
+\Hy@linkcounter=\count119
+\Hy@pagecounter=\count120
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count118
+\Hy@SavedSpaceFactor=\count121
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -818,17 +837,17 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count119
+\c@Hy@tempcnt=\count122
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen142
-\Fld@menulength=\count120
-\Field@Width=\dimen143
-\Fld@charsize=\dimen144
+\XeTeXLinkMargin=\dimen152
+\Fld@menulength=\count123
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -838,21 +857,21 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count121
-\c@Item=\count122
-\c@Hfootnote=\count123
+\Hy@abspage=\count124
+\c@Item=\count125
+\c@Hfootnote=\count126
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count124
-\c@bookmark@seq@number=\count125
+\Fld@listcount=\count127
+\c@bookmark@seq@number=\count128
 \Hy@SectionHShift=\skip101
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 101.
-Package hyperref Info: Option `unicode' set `true' on input line 101.
+Package hyperref Info: Option `colorlinks' set `true' on input line 105.
+Package hyperref Info: Option `unicode' set `true' on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
@@ -861,54 +880,66 @@ Now handling font encoding PU ...
 ) (./refman.aux)
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 115.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 111.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 111.
+(Font)              scaled to size 8.99994pt on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen145
-\scratchbox=\box56
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen146
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks26
-)
-\big@size=\dimen147
+\scratchcounter=\count129
+\scratchdimen=\dimen155
+\scratchbox=\box58
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen156
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -943,86 +974,76 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box57
-Package backref Info: ** backref set up for natbib ** on input line 111.
-Package hyperref Info: Link coloring ON on input line 111.
+\AtBeginShipoutBox=\box59
+Package backref Info: ** backref set up for natbib ** on input line 115.
+Package hyperref Info: Link coloring ON on input line 115.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count132
+\c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 111.
-LaTeX Info: Redefining \pageref on input line 111.
-LaTeX Info: Redefining \nameref on input line 111.
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
 
 (./refman.out) (./refman.out)
 \@outlinefile=\write4
 \openout4 = `refman.out'.
 
-Package hyperref Info: Option `pageanchor' set `false' on input line 114.
+Package hyperref Info: Option `pageanchor' set `false' on input line 122.
+
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 122.
+
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 122.
+
+Package hyperref Info: Option `unicode' set `true' on input line 122.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 119.
+(Font)              scaled to size 12.9599pt on input line 127.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 121.
+(Font)              scaled to size 10.79993pt on input line 129.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 123.
- [1
+(Font)              scaled to size 8.09995pt on input line 131.
+[1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 127.
+(Font)              scaled to size 22.39185pt on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 127.
+(Font)              scaled to size 22.39185pt on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 127.
+(Font)              scaled to size 22.39185pt on input line 135.
  (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 1.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 1.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 1.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 1.
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 1.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 11.
  [3
 
 ]
@@ -1030,26 +1051,26 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 71.
- [4])
+ [4] [5] [6]
+[7] [8])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [5]
-[6
+ [9] [10
 
 ]
-Package hyperref Info: Option `pageanchor' set `true' on input line 130.
+Package hyperref Info: Option `pageanchor' set `true' on input line 138.
 
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 133.
+(Font)              scaled to size 18.66588pt on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 133.
+(Font)              scaled to size 18.66588pt on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 133.
-(./annotated.tex
+(Font)              scaled to size 18.66588pt on input line 141.
+(./hierarchy.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1062,35 +1083,306 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 
 ]
 Chapter 2.
-(./files.tex) [3] [4
+(./annotated.tex) [3] [4
 
 ]
 Chapter 3.
+(./files.tex [5]) [6]
+Chapter 4.
 (./a00001.tex
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 10.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 13.
+(Font)              scaled to size 10.79993pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 13.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 16.
+(Font)              scaled to size 10.79993pt on input line 12.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 16.
+(Font)              scaled to size 8.99994pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 17.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 17.
+(Font)              scaled to size 8.09995pt on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 42.
- [5]
+(Font)              scaled to size 8.99994pt on input line 24.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 35.
+
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 35.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 35.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 35.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 35.
+
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 51.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 51.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 51.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 6.29996pt on input line 51.
+[7
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 58.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 58.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 62.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 62.
+) (./a00002.tex <a00118.pdf, id=1634, 162.6075pt x 156.585pt>
+File: a00118.pdf Graphic file (type pdf)
+
+<use a00118.pdf>
+Package pdftex.def Info: a00118.pdf used on input line 19.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+ <a00119.pdf, id=1635, 162.6075pt x 156.585pt>
+File: a00119.pdf Graphic file (type pdf)
+
+<use a00119.pdf>
+Package pdftex.def Info: a00119.pdf used on input line 29.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./a00118.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 53.
+
+[9 <./a00119.pdf>]) (./a00003.tex
+<a00121.pdf, id=1684, 162.6075pt x 156.585pt>
+File: a00121.pdf Graphic file (type pdf)
+ <use a00121.pdf>
+Package pdftex.def Info: a00121.pdf used on input line 19.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+
+<a00122.pdf, id=1685, 162.6075pt x 156.585pt>
+File: a00122.pdf Graphic file (type pdf)
+ <use a00122.pdf>
+Package pdftex.def Info: a00122.pdf used on input line 29.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+ [10 <./a00121.pdf> <./a00122.pdf
+
+pdfTeX warning: pdflatex (file ./a00122.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+<a00003_ae6c49412309b413bf587dd4bb0f3a03e_cgraph.pdf, id=1709, 341.275pt x 100.
+375pt>
+File: a00003_ae6c49412309b413bf587dd4bb0f3a03e_cgraph.pdf Graphic file (type pd
+f)
+ <use a00003_ae6c49412309b413bf587dd4bb0f3a03e_cgraph.pdf>
+Package pdftex.def Info: a00003_ae6c49412309b413bf587dd4bb0f3a03e_cgraph.pdf us
+ed on input line 104.
+(pdftex.def)             Requested size: 340.0pt x 100.00562pt.
+) (./a00004.tex <a00124.pdf, id=1713, 176.66pt x 156.585pt>
+File: a00124.pdf Graphic file (type pdf)
+ <use a00124.pdf>
+Package pdftex.def Info: a00124.pdf used on input line 19.
+(pdftex.def)             Requested size: 176.0pt x 156.00162pt.
+ [11 <./a00003_ae6c49412309b413bf587dd4bb0f3a03e_cgraph.pdf>]
+<a00125.pdf, id=1725, 176.66pt x 156.585pt>
+File: a00125.pdf Graphic file (type pdf)
+ <use a00125.pdf>
+Package pdftex.def Info: a00125.pdf used on input line 29.
+(pdftex.def)             Requested size: 176.0pt x 156.00162pt.
+ [12 <./a00124.pdf> <./a00125.pdf
+
+pdfTeX warning: pdflatex (file ./a00125.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+<a00004_a0c74c2813e5cad73d2d2fed70621f121_cgraph.pdf, id=1748, 315.1775pt x 100
+.375pt>
+File: a00004_a0c74c2813e5cad73d2d2fed70621f121_cgraph.pdf Graphic file (type pd
+f)
+ <use a00004_a0c74c2813e5cad73d2d2fed70621f121_cgraph.pdf>
+Package pdftex.def Info: a00004_a0c74c2813e5cad73d2d2fed70621f121_cgraph.pdf us
+ed on input line 78.
+(pdftex.def)             Requested size: 314.0pt x 100.00562pt.
+
+<a00004_a841f6420f974fbf6ce5c5250b452b1f2_cgraph.pdf, id=1750, 335.2525pt x 100
+.375pt>
+File: a00004_a841f6420f974fbf6ce5c5250b452b1f2_cgraph.pdf Graphic file (type pd
+f)
+ <use a00004_a841f6420f974fbf6ce5c5250b452b1f2_cgraph.pdf>
+Package pdftex.def Info: a00004_a841f6420f974fbf6ce5c5250b452b1f2_cgraph.pdf us
+ed on input line 116.
+(pdftex.def)             Requested size: 334.0pt x 99.9995pt.
+)
+(./a00005.tex <a00127.pdf, id=1754, 162.6075pt x 156.585pt>
+File: a00127.pdf Graphic file (type pdf)
+ <use a00127.pdf>
+Package pdftex.def Info: a00127.pdf used on input line 19.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+
+[13 <./a00004_a0c74c2813e5cad73d2d2fed70621f121_cgraph.pdf> <./a00004_a841f6420
+f974fbf6ce5c5250b452b1f2_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./a00004_a841f6420f974fbf6ce5c5250b452b1f2_cgrap
+h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] <a00128.pdf, id=1770, 162.6075pt x 156.585pt>
+File: a00128.pdf Graphic file (type pdf)
+ <use a00128.pdf>
+Package pdftex.def Info: a00128.pdf used on input line 29.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 57.
+
+[14 <./a00127.pdf> <./a00128.pdf
+
+pdfTeX warning: pdflatex (file ./a00128.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] [15]
+<a00005_ae31683c8ce000d190e47c1d34321693f_cgraph.pdf, id=1804, 315.1775pt x 100
+.375pt>
+File: a00005_ae31683c8ce000d190e47c1d34321693f_cgraph.pdf Graphic file (type pd
+f)
+ <use a00005_ae31683c8ce000d190e47c1d34321693f_cgraph.pdf>
+Package pdftex.def Info: a00005_ae31683c8ce000d190e47c1d34321693f_cgraph.pdf us
+ed on input line 94.
+(pdftex.def)             Requested size: 314.0pt x 100.00562pt.
+
+<a00005_a5bf9477014686079e304cd2740fe1a70_cgraph.pdf, id=1805, 313.17pt x 100.3
+75pt>
+File: a00005_a5bf9477014686079e304cd2740fe1a70_cgraph.pdf Graphic file (type pd
+f)
+ <use a00005_a5bf9477014686079e304cd2740fe1a70_cgraph.pdf>
+Package pdftex.def Info: a00005_a5bf9477014686079e304cd2740fe1a70_cgraph.pdf us
+ed on input line 114.
+(pdftex.def)             Requested size: 312.0pt x 100.00409pt.
+
+<a00005_a199e6229de14ef39f945b253419ab410_cgraph.pdf, id=1807, 489.83pt x 252.9
+45pt>
+File: a00005_a199e6229de14ef39f945b253419ab410_cgraph.pdf Graphic file (type pd
+f)
+ <use a00005_a199e6229de14ef39f945b253419ab410_cgraph.pdf>
+Package pdftex.def Info: a00005_a199e6229de14ef39f945b253419ab410_cgraph.pdf us
+ed on input line 163.
+(pdftex.def)             Requested size: 350.0pt x 180.74237pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./a00005_ae31683c8ce000d190e47c1d34321693f_cgraph.pdf> <./a00005_a5bf9477
+014686079e304cd2740fe1a70_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./a00005_a5bf9477014686079e304cd2740fe1a70_cgrap
+h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]) (./a00006.tex <a00130.pdf, id=1827, 162.6075pt x 156.585pt>
+File: a00130.pdf Graphic file (type pdf)
+
+<use a00130.pdf>
+Package pdftex.def Info: a00130.pdf used on input line 19.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+ <a00131.pdf, id=1828, 162.6075pt x 156.585pt>
+File: a00131.pdf Graphic file (type pdf)
+
+<use a00131.pdf>
+Package pdftex.def Info: a00131.pdf used on input line 29.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./a00005_a199e6229de14ef39f945b253419ab410_cgraph.pdf> <./a00130.pdf
+
+pdfTeX warning: pdflatex (file ./a00130.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+<a00006_a9e0b784c6d35486bd95ad063dd40a9b1_cgraph.pdf, id=1850, 315.1775pt x 100
+.375pt>
+File: a00006_a9e0b784c6d35486bd95ad063dd40a9b1_cgraph.pdf Graphic file (type pd
+f)
+ <use a00006_a9e0b784c6d35486bd95ad063dd40a9b1_cgraph.pdf>
+Package pdftex.def Info: a00006_a9e0b784c6d35486bd95ad063dd40a9b1_cgraph.pdf us
+ed on input line 78.
+(pdftex.def)             Requested size: 314.0pt x 100.00562pt.
+ [18 <./a00131.pdf> <./a00006_a9e0b784c6d35486bd95ad063dd40a9b1_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./a00006_a9e0b784c6d35486bd95ad063dd40a9b1_cgrap
+h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [19]
+<a00006_ae6b796569be801a1f5816b7bbd700fa3_cgraph.pdf, id=1872, 335.2525pt x 100
+.375pt>
+File: a00006_ae6b796569be801a1f5816b7bbd700fa3_cgraph.pdf Graphic file (type pd
+f)
+ <use a00006_ae6b796569be801a1f5816b7bbd700fa3_cgraph.pdf>
+Package pdftex.def Info: a00006_ae6b796569be801a1f5816b7bbd700fa3_cgraph.pdf us
+ed on input line 116.
+(pdftex.def)             Requested size: 334.0pt x 99.9995pt.
+)
+(./a00007.tex <a00133.pdf, id=1876, 162.6075pt x 156.585pt>
+File: a00133.pdf Graphic file (type pdf)
+ <use a00133.pdf>
+Package pdftex.def Info: a00133.pdf used on input line 19.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+
+<a00134.pdf, id=1877, 162.6075pt x 156.585pt>
+File: a00134.pdf Graphic file (type pdf)
+ <use a00134.pdf>
+Package pdftex.def Info: a00134.pdf used on input line 29.
+(pdftex.def)             Requested size: 162.0pt x 156.01117pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./a00006_ae6b796569be801a1f5816b7bbd700fa3_cgraph.pdf> <./a00133.pdf
+
+pdfTeX warning: pdflatex (file ./a00133.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 53.
@@ -1104,317 +1396,1170 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 53.
 
 
-Underfull \hbox (badness 10000) detected at line 72
+<a00007_aa655b50c332496def9903e3bd01874d5_cgraph.pdf, id=1900, 315.1775pt x 100
+.375pt>
+File: a00007_aa655b50c332496def9903e3bd01874d5_cgraph.pdf Graphic file (type pd
+f)
+ <use a00007_aa655b50c332496def9903e3bd01874d5_cgraph.pdf>
+Package pdftex.def Info: a00007_aa655b50c332496def9903e3bd01874d5_cgraph.pdf us
+ed on input line 90.
+(pdftex.def)             Requested size: 314.0pt x 100.00562pt.
+
+Underfull \vbox (badness 5331) has occurred while \output is active []
+
+ [21 <./a00134.pdf>]
+<a00007_afb0db254f1ecc88e80f3e7f19739539c_cgraph.pdf, id=1916, 335.2525pt x 100
+.375pt>
+File: a00007_afb0db254f1ecc88e80f3e7f19739539c_cgraph.pdf Graphic file (type pd
+f)
+ <use a00007_afb0db254f1ecc88e80f3e7f19739539c_cgraph.pdf>
+Package pdftex.def Info: a00007_afb0db254f1ecc88e80f3e7f19739539c_cgraph.pdf us
+ed on input line 128.
+(pdftex.def)             Requested size: 334.0pt x 99.9995pt.
+)
+(./a00008.tex <a00136.pdf, id=1920, 164.615pt x 156.585pt>
+File: a00136.pdf Graphic file (type pdf)
+ <use a00136.pdf>
+Package pdftex.def Info: a00136.pdf used on input line 19.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./a00007_aa655b50c332496def9903e3bd01874d5_cgraph.pdf> <./a00007_afb0db25
+4f1ecc88e80f3e7f19739539c_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./a00007_afb0db254f1ecc88e80f3e7f19739539c_cgrap
+h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] <a00137.pdf, id=1936, 164.615pt x 156.585pt>
+File: a00137.pdf Graphic file (type pdf)
+ <use a00137.pdf>
+Package pdftex.def Info: a00137.pdf used on input line 29.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+ [23 <./a00136.pdf> <./a00137.pdf
+
+pdfTeX warning: pdflatex (file ./a00137.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
+
+[24]
+Underfull \hbox (badness 10000) detected at line 155
+[][][]
+ []
+
+) (./a00009.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+<a00139.pdf, id=1980, 176.66pt x 156.585pt>
+File: a00139.pdf Graphic file (type pdf)
+ <use a00139.pdf>
+Package pdftex.def Info: a00139.pdf used on input line 19.
+(pdftex.def)             Requested size: 176.0pt x 156.00162pt.
+
+<a00140.pdf, id=1981, 190.7125pt x 226.8475pt>
+File: a00140.pdf Graphic file (type pdf)
+ <use a00140.pdf>
+Package pdftex.def Info: a00140.pdf used on input line 29.
+(pdftex.def)             Requested size: 190.0pt x 226.00928pt.
+ [25 <./a00139.pdf> <./a00140.pdf
+
+pdfTeX warning: pdflatex (file ./a00140.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 93
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 86
+<a00009_aeecfb553991fc29bbf58420d0c019c1e_cgraph.pdf, id=2011, 357.335pt x 138.
+5175pt>
+File: a00009_aeecfb553991fc29bbf58420d0c019c1e_cgraph.pdf Graphic file (type pd
+f)
+ <use a00009_aeecfb553991fc29bbf58420d0c019c1e_cgraph.pdf>
+Package pdftex.def Info: a00009_aeecfb553991fc29bbf58420d0c019c1e_cgraph.pdf us
+ed on input line 103.
+(pdftex.def)             Requested size: 350.0pt x 135.68068pt.
+ [26 <./a00009_aeecfb553991fc29bbf58420d0c019c1e_cgraph.pdf>]) (./a00010.tex
+<a00142.pdf, id=2031, 164.615pt x 156.585pt>
+File: a00142.pdf Graphic file (type pdf)
+ <use a00142.pdf>
+Package pdftex.def Info: a00142.pdf used on input line 19.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+
+<a00143.pdf, id=2032, 164.615pt x 156.585pt>
+File: a00143.pdf Graphic file (type pdf)
+ <use a00143.pdf>
+Package pdftex.def Info: a00143.pdf used on input line 29.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+ [27 <./a00142.pdf> <./a00143.pdf
+
+pdfTeX warning: pdflatex (file ./a00143.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 80.
+
+
+<a00010_a96837c0047f031752358a8fac5d382c8_cgraph.pdf, id=2066, 403.5075pt x 100
+.375pt>
+File: a00010_a96837c0047f031752358a8fac5d382c8_cgraph.pdf Graphic file (type pd
+f)
+ <use a00010_a96837c0047f031752358a8fac5d382c8_cgraph.pdf>
+Package pdftex.def Info: a00010_a96837c0047f031752358a8fac5d382c8_cgraph.pdf us
+ed on input line 92.
+(pdftex.def)             Requested size: 350.0pt x 87.06516pt.
+ [28 <./a00010_a96837c0047f031752358a8fac5d382c8_cgraph.pdf>]
+Underfull \hbox (badness 10000) detected at line 116
 [][][]
  []
-
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 96.
-LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 96.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 103.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 103.
-
-LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 114.
 
 
 Underfull \hbox (badness 10000) detected at line 135
 [][][]
  []
 
-[6]) (./a00002.tex
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 16.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
 
-Underfull \hbox (badness 10000) detected at line 42
-[][][]
- []
-
-[7]
-Underfull \hbox (badness 10000) detected at line 70
-[][][]
- []
-
-) (./a00003.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-[8]
-Underfull \hbox (badness 10000) detected at line 68
+Underfull \hbox (badness 10000) detected at line 149
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 98
-[][][]
- []
-
-) (./a00004.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
- [9]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Underfull \hbox (badness 10000) detected at line 77
+Underfull \hbox (badness 10000) detected at line 172
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 91
-[][][]
- []
-
-[10]
-Underfull \hbox (badness 10000) detected at line 140
-[][][]
- []
-
-) (./a00005.tex [11]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Underfull \hbox (badness 10000) detected at line 68
+<a00010_a27e1ad6ea3bc41fd20ea4872eda9c0c8_cgraph.pdf, id=2087, 521.95pt x 138.5
+175pt>
+File: a00010_a27e1ad6ea3bc41fd20ea4872eda9c0c8_cgraph.pdf Graphic file (type pd
+f)
+ <use a00010_a27e1ad6ea3bc41fd20ea4872eda9c0c8_cgraph.pdf>
+Package pdftex.def Info: a00010_a27e1ad6ea3bc41fd20ea4872eda9c0c8_cgraph.pdf us
+ed on input line 206.
+(pdftex.def)             Requested size: 350.0pt x 92.88655pt.
+ [29]
+Underfull \hbox (badness 10000) detected at line 227
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 98
+<a00010_a70e4523666757007a5deb12f7146f795_cgraph.pdf, id=2093, 375.4025pt x 138
+.5175pt>
+File: a00010_a70e4523666757007a5deb12f7146f795_cgraph.pdf Graphic file (type pd
+f)
+ <use a00010_a70e4523666757007a5deb12f7146f795_cgraph.pdf>
+Package pdftex.def Info: a00010_a70e4523666757007a5deb12f7146f795_cgraph.pdf us
+ed on input line 237.
+(pdftex.def)             Requested size: 350.0pt x 129.15176pt.
+
+Underfull \hbox (badness 10000) detected at line 253
 [][][]
  []
 
-) [12]
-Chapter 4.
-(./a00006.tex
+[30 <./a00010_a27e1ad6ea3bc41fd20ea4872eda9c0c8_cgraph.pdf> <./a00010_a70e45236
+66757007a5deb12f7146f795_cgraph.pdf
 
-pdfTeX warning: pdflatex (file ./a00019.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00019.pdf, id=618, 254.9525pt x 230.8625pt>
-File: a00019.pdf Graphic file (type pdf)
- <use a00019.pdf>
-Package pdftex.def Info: a00019.pdf used on input line 16.
-(pdftex.def)             Requested size: 254.0pt x 230.00943pt.
-) (./a00007.tex
+pdfTeX warning: pdflatex (file ./a00010_a70e4523666757007a5deb12f7146f795_cgrap
+h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<a00010_a1693745e223f9e3f69d3fb166380b68a_cgraph.pdf, id=2110, 357.335pt x 110.
+4125pt>
+File: a00010_a1693745e223f9e3f69d3fb166380b68a_cgraph.pdf Graphic file (type pd
+f)
+ <use a00010_a1693745e223f9e3f69d3fb166380b68a_cgraph.pdf>
+Package pdftex.def Info: a00010_a1693745e223f9e3f69d3fb166380b68a_cgraph.pdf us
+ed on input line 297.
+(pdftex.def)             Requested size: 350.0pt x 108.15126pt.
+)
+(./a00011.tex <a00145.pdf, id=2114, 164.615pt x 156.585pt>
+File: a00145.pdf Graphic file (type pdf)
+ <use a00145.pdf>
+Package pdftex.def Info: a00145.pdf used on input line 19.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
 
-pdfTeX warning: pdflatex (file ./a00020.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00020.pdf, id=622, 154.5775pt x 168.63pt>
-File: a00020.pdf Graphic file (type pdf)
- <use a00020.pdf>
-Package pdftex.def Info: a00020.pdf used on input line 14.
-(pdftex.def)             Requested size: 154.0pt x 168.0146pt.
- [13
+<a00146.pdf, id=2115, 164.615pt x 156.585pt>
+File: a00146.pdf Graphic file (type pdf)
+ <use a00146.pdf>
+Package pdftex.def Info: a00146.pdf used on input line 29.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
 
- <./a00019.pdf>]
+Underfull \vbox (badness 7907) has occurred while \output is active []
 
-pdfTeX warning: pdflatex (file ./a00021.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00021.pdf, id=636, 337.26pt x 168.63pt>
-File: a00021.pdf Graphic file (type pdf)
- <use a00021.pdf>
-Package pdftex.def Info: a00021.pdf used on input line 21.
-(pdftex.def)             Requested size: 336.0pt x 168.00432pt.
-) (./a00008.tex
+ [31 <./a00010_a1693745e223f9e3f69d3fb166380b68a_cgraph.pdf> <./a00145.pdf
 
-pdfTeX warning: pdflatex (file ./a00022.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00022.pdf, id=641, 628.3475pt x 230.8625pt>
-File: a00022.pdf Graphic file (type pdf)
- <use a00022.pdf>
-Package pdftex.def Info: a00022.pdf used on input line 21.
-(pdftex.def)             Requested size: 350.0pt x 128.59166pt.
- [14 <./a00020.pdf> <./a00021.pdf
-
-pdfTeX warning: pdflatex (file ./a00021.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
->]) (./a00009.tex
-
-pdfTeX warning: pdflatex (file ./a00023.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00023.pdf, id=662, 238.8925pt x 168.63pt>
-File: a00023.pdf Graphic file (type pdf)
- <use a00023.pdf>
-Package pdftex.def Info: a00023.pdf used on input line 13.
-(pdftex.def)             Requested size: 238.0pt x 167.99916pt.
- [15 <./a00022.pdf> <./a00023.pdf
-
-pdfTeX warning: pdflatex (file ./a00023.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
->]) (./a00010.tex
-
-pdfTeX warning: pdflatex (file ./a00024.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00024.pdf, id=685, 277.035pt x 168.63pt>
-File: a00024.pdf Graphic file (type pdf)
- <use a00024.pdf>
-Package pdftex.def Info: a00024.pdf used on input line 16.
-(pdftex.def)             Requested size: 276.0pt x 168.00174pt.
-) (./a00011.tex
-
-pdfTeX warning: pdflatex (file ./a00025.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00025.pdf, id=689, 325.215pt x 168.63pt>
-File: a00025.pdf Graphic file (type pdf)
- <use a00025.pdf>
-Package pdftex.def Info: a00025.pdf used on input line 13.
-(pdftex.def)             Requested size: 324.0pt x 168.01202pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./a00024.pdf>]) (./a00012.tex
-
-pdfTeX warning: pdflatex (file ./a00026.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00026.pdf, id=706, 264.99pt x 168.63pt>
-File: a00026.pdf Graphic file (type pdf)
- <use a00026.pdf>
-Package pdftex.def Info: a00026.pdf used on input line 16.
-(pdftex.def)             Requested size: 264.0pt x 168.01202pt.
-) (./a00013.tex
-[17 <./a00025.pdf> <./a00026.pdf
-
-pdfTeX warning: pdflatex (file ./a00026.pdf): PDF inclusion: multiple pdfs with
+pdfTeX warning: pdflatex (file ./a00145.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
 >]
 
-pdfTeX warning: pdflatex (file ./a00027.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00027.pdf, id=726, 313.17pt x 168.63pt>
-File: a00027.pdf Graphic file (type pdf)
- <use a00027.pdf>
-Package pdftex.def Info: a00027.pdf used on input line 13.
-(pdftex.def)             Requested size: 312.0pt x 168.00688pt.
-) (./a00014.tex
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 80.
 
-pdfTeX warning: pdflatex (file ./a00028.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00028.pdf, id=730, 638.385pt x 230.8625pt>
-File: a00028.pdf Graphic file (type pdf)
- <use a00028.pdf>
-Package pdftex.def Info: a00028.pdf used on input line 21.
-(pdftex.def)             Requested size: 350.0pt x 126.57317pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 80.
+
+[32 <./a00146.pdf>]
+<a00011_a082ad9993da4e5049017fe3b1b6c365f_cgraph.pdf, id=2166, 349.305pt x 100.
+375pt>
+File: a00011_a082ad9993da4e5049017fe3b1b6c365f_cgraph.pdf Graphic file (type pd
+f)
+ <use a00011_a082ad9993da4e5049017fe3b1b6c365f_cgraph.pdf>
+Package pdftex.def Info: a00011_a082ad9993da4e5049017fe3b1b6c365f_cgraph.pdf us
+ed on input line 92.
+(pdftex.def)             Requested size: 348.0pt x 100.00562pt.
+
+Underfull \hbox (badness 10000) detected at line 116
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 135
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 149
+[][][]
+ []
+
+[33 <./a00011_a082ad9993da4e5049017fe3b1b6c365f_cgraph.pdf>]
+Underfull \hbox (badness 10000) detected at line 172
+[][][]
+ []
+
+
+<a00011_adcc6a12645ded929e467c7feff5574c9_cgraph.pdf, id=2181, 453.695pt x 138.
+5175pt>
+File: a00011_adcc6a12645ded929e467c7feff5574c9_cgraph.pdf Graphic file (type pd
+f)
+ <use a00011_adcc6a12645ded929e467c7feff5574c9_cgraph.pdf>
+Package pdftex.def Info: a00011_adcc6a12645ded929e467c7feff5574c9_cgraph.pdf us
+ed on input line 206.
+(pdftex.def)             Requested size: 350.0pt x 106.85959pt.
+
+Underfull \hbox (badness 10000) detected at line 222
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 245
+[][][]
+ []
+
+
+<a00011_aebe3db802b40e9cf6b056748d73164dd_cgraph.pdf, id=2183, 325.215pt x 138.
+5175pt>
+File: a00011_aebe3db802b40e9cf6b056748d73164dd_cgraph.pdf Graphic file (type pd
+f)
+ <use a00011_aebe3db802b40e9cf6b056748d73164dd_cgraph.pdf>
+Package pdftex.def Info: a00011_aebe3db802b40e9cf6b056748d73164dd_cgraph.pdf us
+ed on input line 255.
+(pdftex.def)             Requested size: 324.0pt x 138.00987pt.
+ [34 <./a00011_adcc6a12645ded929e467c7feff5574c9_cgraph.pdf>]
+<a00011_ac3374725a7a70d8bae28b7114c570563_cgraph.pdf, id=2194, 349.305pt x 100.
+375pt>
+File: a00011_ac3374725a7a70d8bae28b7114c570563_cgraph.pdf Graphic file (type pd
+f)
+ <use a00011_ac3374725a7a70d8bae28b7114c570563_cgraph.pdf>
+Package pdftex.def Info: a00011_ac3374725a7a70d8bae28b7114c570563_cgraph.pdf us
+ed on input line 297.
+(pdftex.def)             Requested size: 348.0pt x 100.00562pt.
+) (./a00012.tex <a00148.pdf, id=2198, 176.66pt x 156.585pt>
+File: a00148.pdf Graphic file (type pdf)
+ <use a00148.pdf>
+Package pdftex.def Info: a00148.pdf used on input line 19.
+(pdftex.def)             Requested size: 176.0pt x 156.00162pt.
+ [35 <./a00011_aebe3db802b40e9cf6b056748d73164dd_cgraph.pdf> <./a00011_ac337472
+5a7a70d8bae28b7114c570563_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./a00011_ac3374725a7a70d8bae28b7114c570563_cgrap
+h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] <a00149.pdf, id=2214, 176.66pt x 156.585pt>
+File: a00149.pdf Graphic file (type pdf)
+ <use a00149.pdf>
+Package pdftex.def Info: a00149.pdf used on input line 29.
+(pdftex.def)             Requested size: 176.0pt x 156.00162pt.
+ [36 <./a00148.pdf> <./a00149.pdf
+
+pdfTeX warning: pdflatex (file ./a00149.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 80.
+
+
+Underfull \hbox (badness 10000) detected at line 107
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 126
+[][][]
+ []
+
+
+<a00012_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf, id=2253, 313.17pt x 100.3
+75pt>
+File: a00012_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf Graphic file (type pd
+f)
+ <use a00012_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf>
+Package pdftex.def Info: a00012_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf us
+ed on input line 136.
+(pdftex.def)             Requested size: 312.0pt x 100.00409pt.
+ [37]
+Underfull \hbox (badness 10000) detected at line 152
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 170
+[][][]
+ []
+
+
+<a00012_a179ed12fcf0f5b5d0ad98f5e9d1eff61_cgraph.pdf, id=2264, 427.5975pt x 100
+.375pt>
+File: a00012_a179ed12fcf0f5b5d0ad98f5e9d1eff61_cgraph.pdf Graphic file (type pd
+f)
+ <use a00012_a179ed12fcf0f5b5d0ad98f5e9d1eff61_cgraph.pdf>
+Package pdftex.def Info: a00012_a179ed12fcf0f5b5d0ad98f5e9d1eff61_cgraph.pdf us
+ed on input line 184.
+(pdftex.def)             Requested size: 350.0pt x 82.15945pt.
+ [38 <./a00012_aad9c9ea4c22ff9c8908d85529dc2ed69_cgraph.pdf> <./a00012_a179ed12
+fcf0f5b5d0ad98f5e9d1eff61_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./a00012_a179ed12fcf0f5b5d0ad98f5e9d1eff61_cgrap
+h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<a00012_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf, id=2280, 297.11pt x 100.3
+75pt>
+File: a00012_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf Graphic file (type pd
+f)
+ <use a00012_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf>
+Package pdftex.def Info: a00012_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf us
+ed on input line 215.
+(pdftex.def)             Requested size: 296.0pt x 100.00409pt.
+
+Underfull \hbox (badness 10000) detected at line 251
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 269
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 283
+[][][]
+ []
+
+) (./a00013.tex [39 <./a00012_a6c09fe064d3e5dfe99a075ed5db2b33f_cgraph.pdf>]
+<a00151.pdf, id=2297, 164.615pt x 156.585pt>
+File: a00151.pdf Graphic file (type pdf)
+ <use a00151.pdf>
+Package pdftex.def Info: a00151.pdf used on input line 19.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+
+<a00152.pdf, id=2298, 164.615pt x 156.585pt>
+File: a00152.pdf Graphic file (type pdf)
+ <use a00152.pdf>
+Package pdftex.def Info: a00152.pdf used on input line 29.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+ [40 <./a00151.pdf> <./a00152.pdf
+
+pdfTeX warning: pdflatex (file ./a00152.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 70.
+
+
+Underfull \hbox (badness 10000) detected at line 89
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 107
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+[41]) (./a00014.tex <a00154.pdf, id=2340, 164.615pt x 156.585pt>
+File: a00154.pdf Graphic file (type pdf)
+
+<use a00154.pdf>
+Package pdftex.def Info: a00154.pdf used on input line 19.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+ <a00155.pdf, id=2341, 164.615pt x 156.585pt>
+File: a00155.pdf Graphic file (type pdf)
+ <use a00155.pdf>
+Package pdftex.def Info: a00155.pdf used on input line 29.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+
+[42 <./a00154.pdf> <./a00155.pdf
+
+pdfTeX warning: pdflatex (file ./a00155.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 72.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 72.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 72.
+
+
+Underfull \hbox (badness 10000) detected at line 96
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 114
+[][][]
+ []
+
+[43] [44]
+Underfull \hbox (badness 10000) detected at line 171
+[][][]
+ []
+
+) (./a00015.tex <a00157.pdf, id=2389, 194.7275pt x 156.585pt>
+File: a00157.pdf Graphic file (type pdf)
+ <use a00157.pdf>
+Package pdftex.def Info: a00157.pdf used on input line 19.
+(pdftex.def)             Requested size: 194.0pt x 156.0064pt.
+
+[45 <./a00157.pdf>]) (./a00016.tex
+<a00159.pdf, id=2408, 194.7275pt x 156.585pt>
+File: a00159.pdf Graphic file (type pdf)
+ <use a00159.pdf>
+Package pdftex.def Info: a00159.pdf used on input line 19.
+(pdftex.def)             Requested size: 194.0pt x 156.0064pt.
+
+<a00160.pdf, id=2409, 194.7275pt x 156.585pt>
+File: a00160.pdf Graphic file (type pdf)
+ <use a00160.pdf>
+Package pdftex.def Info: a00160.pdf used on input line 29.
+(pdftex.def)             Requested size: 194.0pt x 156.0064pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./a00027.pdf>]
+ [46 <./a00159.pdf>]) (./a00017.tex <a00162.pdf, id=2428, 176.66pt x 156.585pt>
+File: a00162.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex (file ./a00014_a0ddf1224851353fc92bfbff6f499fa97_cgrap
-h.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allow
-ed
+<use a00162.pdf>
+Package pdftex.def Info: a00162.pdf used on input line 19.
+(pdftex.def)             Requested size: 176.0pt x 156.00162pt.
 
-<a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=743, 289.08pt x 146.54
-75pt>
-File: a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf Graphic file (type pd
-f)
- <use a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
-Package pdftex.def Info: a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf us
-ed on input line 53.
-(pdftex.def)             Requested size: 288.0pt x 146.00821pt.
-) (./a00015.tex
+Underfull \vbox (badness 1436) has occurred while \output is active []
 
-pdfTeX warning: pdflatex (file ./a00029.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00029.pdf, id=745, 264.99pt x 168.63pt>
-File: a00029.pdf Graphic file (type pdf)
- <use a00029.pdf>
-Package pdftex.def Info: a00029.pdf used on input line 16.
-(pdftex.def)             Requested size: 264.0pt x 168.01202pt.
- [19 <./a00028.pdf> <./a00014_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf
+ [47 <./a00160.pdf>] <a00163.pdf, id=2440, 181.67876pt x 168.63pt>
+File: a00163.pdf Graphic file (type pdf)
+ <use a00163.pdf>
+Package pdftex.def Info: a00163.pdf used on input line 29.
+(pdftex.def)             Requested size: 181.0pt x 168.00432pt.
 
-pdfTeX warning: pdflatex (file ./a00014_a0ddf1224851353fc92bfbff6f499fa97_cgrap
-h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]) (./a00016.tex
+[48 <./a00162.pdf> <./a00163.pdf
 
-pdfTeX warning: pdflatex (file ./a00030.pdf): PDF inclusion: found PDF version 
-<1.5>, but at most version <1.4> allowed
-<a00030.pdf, id=767, 313.17pt x 168.63pt>
-File: a00030.pdf Graphic file (type pdf)
- <use a00030.pdf>
-Package pdftex.def Info: a00030.pdf used on input line 13.
-(pdftex.def)             Requested size: 312.0pt x 168.00688pt.
-) [20 <./a00029.pdf> <./a00030.pdf
-
-pdfTeX warning: pdflatex (file ./a00030.pdf): PDF inclusion: multiple pdfs with
+pdfTeX warning: pdflatex (file ./a00163.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
->] (./refman.ind [21
+>] [49]) (./a00018.tex <a00165.pdf, id=2474, 164.615pt x 156.585pt>
+File: a00165.pdf Graphic file (type pdf)
+
+<use a00165.pdf>
+Package pdftex.def Info: a00165.pdf used on input line 19.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+ <a00166.pdf, id=2475, 164.615pt x 156.585pt>
+File: a00166.pdf Graphic file (type pdf)
+ <use a00166.pdf>
+Package pdftex.def Info: a00166.pdf used on input line 29.
+(pdftex.def)             Requested size: 164.0pt x 156.004pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50 <./a00165.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 70.
+
+[51 <./a00166.pdf>]
+Underfull \hbox (badness 10000) detected at line 89
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 107
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+) (./a00019.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[52]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 39.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sim' on input line 39.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 39.
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 81
+[][][]
+ []
+
+[53]
+Underfull \hbox (badness 10000) detected at line 119
+[][][]
+ []
+
+) [54]
+Chapter 5.
+(./a00020.tex <a00060.pdf, id=2569, 673.51625pt x 381.425pt>
+File: a00060.pdf Graphic file (type pdf)
+ <use a00060.pdf>
+Package pdftex.def Info: a00060.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 198.2141pt.
+)
+(./a00021.tex <a00061.pdf, id=2573, 673.51625pt x 325.215pt>
+File: a00061.pdf Graphic file (type pdf)
+ <use a00061.pdf>
+Package pdftex.def Info: a00061.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 169.0036pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55
+
+ <./a00060.pdf>] <a00062.pdf, id=2584, 291.0875pt x 212.795pt>
+File: a00062.pdf Graphic file (type pdf)
+ <use a00062.pdf>
+Package pdftex.def Info: a00062.pdf used on input line 22.
+(pdftex.def)             Requested size: 290.0pt x 212.01518pt.
+)
+(./a00022.tex <a00063.pdf, id=2590, 673.51625pt x 381.425pt>
+File: a00063.pdf Graphic file (type pdf)
+ <use a00063.pdf>
+Package pdftex.def Info: a00063.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 198.2141pt.
+
+[56 <./a00061.pdf> <./a00062.pdf
+
+pdfTeX warning: pdflatex (file ./a00062.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00023.tex <a00064.pdf, id=2611, 673.51625pt x 325.215pt>
+File: a00064.pdf Graphic file (type pdf)
+
+<use a00064.pdf>
+Package pdftex.def Info: a00064.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 169.0036pt.
+ <a00065.pdf, id=2612, 291.0875pt x 212.795pt>
+File: a00065.pdf Graphic file (type pdf)
+
+<use a00065.pdf>
+Package pdftex.def Info: a00065.pdf used on input line 22.
+(pdftex.def)             Requested size: 290.0pt x 212.01518pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57 <./a00063.pdf> <./a00064.pdf
+
+pdfTeX warning: pdflatex (file ./a00064.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00024.tex <a00066.pdf, id=2634, 673.51625pt x 381.425pt>
+File: a00066.pdf Graphic file (type pdf)
+
+<use a00066.pdf>
+Package pdftex.def Info: a00066.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 198.2141pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58 <./a00065.pdf>]) (./a00025.tex <a00067.pdf, id=2649, 673.51625pt x 325.215
+pt>
+File: a00067.pdf Graphic file (type pdf)
+
+<use a00067.pdf>
+Package pdftex.def Info: a00067.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 169.0036pt.
+ <a00068.pdf, id=2650, 291.0875pt x 212.795pt>
+File: a00068.pdf Graphic file (type pdf)
+
+<use a00068.pdf>
+Package pdftex.def Info: a00068.pdf used on input line 22.
+(pdftex.def)             Requested size: 290.0pt x 212.01518pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59 <./a00066.pdf> <./a00067.pdf
+
+pdfTeX warning: pdflatex (file ./a00067.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00026.tex <a00069.pdf, id=2671, 673.51625pt x 381.425pt>
+File: a00069.pdf Graphic file (type pdf)
+
+<use a00069.pdf>
+Package pdftex.def Info: a00069.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 198.2141pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60 <./a00068.pdf>]) (./a00027.tex <a00070.pdf, id=2686, 673.51625pt x 325.215
+pt>
+File: a00070.pdf Graphic file (type pdf)
+
+<use a00070.pdf>
+Package pdftex.def Info: a00070.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 169.0036pt.
+ <a00071.pdf, id=2687, 291.0875pt x 212.795pt>
+File: a00071.pdf Graphic file (type pdf)
+
+<use a00071.pdf>
+Package pdftex.def Info: a00071.pdf used on input line 22.
+(pdftex.def)             Requested size: 290.0pt x 212.01518pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61 <./a00069.pdf> <./a00070.pdf
+
+pdfTeX warning: pdflatex (file ./a00070.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00028.tex <a00072.pdf, id=2708, 673.51625pt x 381.425pt>
+File: a00072.pdf Graphic file (type pdf)
+
+<use a00072.pdf>
+Package pdftex.def Info: a00072.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 198.2141pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62 <./a00071.pdf>]) (./a00029.tex <a00073.pdf, id=2724, 673.51625pt x 325.215
+pt>
+File: a00073.pdf Graphic file (type pdf)
+
+<use a00073.pdf>
+Package pdftex.def Info: a00073.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 169.0036pt.
+ <a00074.pdf, id=2725, 291.0875pt x 212.795pt>
+File: a00074.pdf Graphic file (type pdf)
+
+<use a00074.pdf>
+Package pdftex.def Info: a00074.pdf used on input line 22.
+(pdftex.def)             Requested size: 290.0pt x 212.01518pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63 <./a00072.pdf> <./a00073.pdf
+
+pdfTeX warning: pdflatex (file ./a00073.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00030.tex <a00075.pdf, id=2747, 673.51625pt x 381.425pt>
+File: a00075.pdf Graphic file (type pdf)
+
+<use a00075.pdf>
+Package pdftex.def Info: a00075.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 198.2141pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64 <./a00074.pdf>]) (./a00031.tex <a00076.pdf, id=2762, 673.51625pt x 325.215
+pt>
+File: a00076.pdf Graphic file (type pdf)
+
+<use a00076.pdf>
+Package pdftex.def Info: a00076.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 169.0036pt.
+ <a00077.pdf, id=2763, 291.0875pt x 212.795pt>
+File: a00077.pdf Graphic file (type pdf)
+
+<use a00077.pdf>
+Package pdftex.def Info: a00077.pdf used on input line 22.
+(pdftex.def)             Requested size: 290.0pt x 212.01518pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65 <./a00075.pdf> <./a00076.pdf
+
+pdfTeX warning: pdflatex (file ./a00076.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00032.tex <a00078.pdf, id=2784, 673.51625pt x 269.005pt>
+File: a00078.pdf Graphic file (type pdf)
+
+<use a00078.pdf>
+Package pdftex.def Info: a00078.pdf used on input line 20.
+(pdftex.def)             Requested size: 350.0pt x 139.79309pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66 <./a00077.pdf>] <a00079.pdf, id=2796, 750.805pt x 269.005pt>
+File: a00079.pdf Graphic file (type pdf)
+ <use a00079.pdf>
+Package pdftex.def Info: a00079.pdf used on input line 28.
+(pdftex.def)             Requested size: 350.0pt x 125.40208pt.
+)
+(./a00033.tex <a00080.pdf, id=2802, 386.44376pt x 269.005pt>
+File: a00080.pdf Graphic file (type pdf)
+ <use a00080.pdf>
+Package pdftex.def Info: a00080.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 243.6374pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67 <./a00078.pdf> <./a00079.pdf
+
+pdfTeX warning: pdflatex (file ./a00079.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00034.tex <a00081.pdf, id=2823, 386.44376pt x 212.795pt>
+File: a00081.pdf Graphic file (type pdf)
+
+<use a00081.pdf>
+Package pdftex.def Info: a00081.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 192.72809pt.
+ <a00082.pdf, id=2824, 750.805pt x 325.215pt>
+File: a00082.pdf Graphic file (type pdf)
+ <use a00082.pdf>
+Package pdftex.def Info: a00082.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 151.60551pt.
+
+[68 <./a00080.pdf> <./a00081.pdf
+
+pdfTeX warning: pdflatex (file ./a00081.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00035.tex <a00083.pdf, id=2844, 920.43875pt x 437.635pt>
+File: a00083.pdf Graphic file (type pdf)
+
+<use a00083.pdf>
+Package pdftex.def Info: a00083.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 166.41655pt.
+) (./a00036.tex [69 <./a00082.pdf> <./a00083.pdf
+
+pdfTeX warning: pdflatex (file ./a00083.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] <a00084.pdf, id=2865, 920.43875pt x 381.425pt>
+File: a00084.pdf Graphic file (type pdf)
+ <use a00084.pdf>
+Package pdftex.def Info: a00084.pdf used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 145.04193pt.
+
+<a00085.pdf, id=2866, 239.89626pt x 156.585pt>
+File: a00085.pdf Graphic file (type pdf)
+ <use a00085.pdf>
+Package pdftex.def Info: a00085.pdf used on input line 29.
+(pdftex.def)             Requested size: 239.0pt x 156.00162pt.
+) (./a00037.tex
+[70 <./a00084.pdf> <./a00085.pdf
+
+pdfTeX warning: pdflatex (file ./a00085.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] <a00086.pdf, id=2888, 386.44376pt x 269.005pt>
+File: a00086.pdf Graphic file (type pdf)
+ <use a00086.pdf>
+Package pdftex.def Info: a00086.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 243.6374pt.
+)
+(./a00038.tex <a00087.pdf, id=2892, 386.44376pt x 212.795pt>
+File: a00087.pdf Graphic file (type pdf)
+ <use a00087.pdf>
+Package pdftex.def Info: a00087.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 192.72809pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71 <./a00086.pdf>] <a00088.pdf, id=2903, 750.805pt x 325.215pt>
+File: a00088.pdf Graphic file (type pdf)
+ <use a00088.pdf>
+Package pdftex.def Info: a00088.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 151.60551pt.
+)
+(./a00039.tex <a00089.pdf, id=2909, 386.44376pt x 269.005pt>
+File: a00089.pdf Graphic file (type pdf)
+ <use a00089.pdf>
+Package pdftex.def Info: a00089.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 243.6374pt.
+
+[72 <./a00087.pdf> <./a00088.pdf
+
+pdfTeX warning: pdflatex (file ./a00088.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00040.tex <a00090.pdf, id=2930, 386.44376pt x 212.795pt>
+File: a00090.pdf Graphic file (type pdf)
+
+<use a00090.pdf>
+Package pdftex.def Info: a00090.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 192.72809pt.
+ <a00091.pdf, id=2931, 750.805pt x 325.215pt>
+File: a00091.pdf Graphic file (type pdf)
+ <use a00091.pdf>
+Package pdftex.def Info: a00091.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 151.60551pt.
+
+[73 <./a00089.pdf> <./a00090.pdf
+
+pdfTeX warning: pdflatex (file ./a00090.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00041.tex <a00092.pdf, id=2951, 517.935pt x 156.585pt>
+File: a00092.pdf Graphic file (type pdf)
+
+<use a00092.pdf>
+Package pdftex.def Info: a00092.pdf used on input line 19.
+(pdftex.def)             Requested size: 350.0pt x 105.81932pt.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 25.
+ [74 <./a00091.pdf> <./a00092.pdf
+
+pdfTeX warning: pdflatex (file ./a00092.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 72
+[][][]
+ []
+
+) (./a00042.tex <a00093.pdf, id=2973, 272.01625pt x 156.585pt>
+File: a00093.pdf Graphic file (type pdf)
+
+<use a00093.pdf>
+Package pdftex.def Info: a00093.pdf used on input line 13.
+(pdftex.def)             Requested size: 271.0pt x 156.00879pt.
+ [75 <./a00093.pdf>]
+Underfull \hbox (badness 10000) detected at line 45
+[][][]
+ []
+
+) (./a00043.tex <a00094.pdf, id=2988, 386.44376pt x 269.005pt>
+File: a00094.pdf Graphic file (type pdf)
+
+<use a00094.pdf>
+Package pdftex.def Info: a00094.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 243.6374pt.
+ [76 <./a00094.pdf>]) (./a00044.tex
+<a00095.pdf, id=3004, 386.44376pt x 212.795pt>
+File: a00095.pdf Graphic file (type pdf)
+ <use a00095.pdf>
+Package pdftex.def Info: a00095.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 192.72809pt.
+
+<a00096.pdf, id=3005, 750.805pt x 325.215pt>
+File: a00096.pdf Graphic file (type pdf)
+ <use a00096.pdf>
+Package pdftex.def Info: a00096.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 151.60551pt.
+) (./a00045.tex
+[77 <./a00095.pdf> <./a00096.pdf
+
+pdfTeX warning: pdflatex (file ./a00096.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>] <a00097.pdf, id=3026, 386.44376pt x 269.005pt>
+File: a00097.pdf Graphic file (type pdf)
+ <use a00097.pdf>
+Package pdftex.def Info: a00097.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 243.6374pt.
+)
+(./a00046.tex <a00098.pdf, id=3030, 386.44376pt x 212.795pt>
+File: a00098.pdf Graphic file (type pdf)
+ <use a00098.pdf>
+Package pdftex.def Info: a00098.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 192.72809pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78 <./a00097.pdf>] <a00099.pdf, id=3042, 750.805pt x 325.215pt>
+File: a00099.pdf Graphic file (type pdf)
+ <use a00099.pdf>
+Package pdftex.def Info: a00099.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 151.60551pt.
+)
+(./a00047.tex <a00100.pdf, id=3048, 386.44376pt x 269.005pt>
+File: a00100.pdf Graphic file (type pdf)
+ <use a00100.pdf>
+Package pdftex.def Info: a00100.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 243.6374pt.
+
+[79 <./a00098.pdf> <./a00099.pdf
+
+pdfTeX warning: pdflatex (file ./a00099.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00048.tex <a00101.pdf, id=3068, 386.44376pt x 212.795pt>
+File: a00101.pdf Graphic file (type pdf)
+
+<use a00101.pdf>
+Package pdftex.def Info: a00101.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 192.72809pt.
+ <a00102.pdf, id=3069, 750.805pt x 325.215pt>
+File: a00102.pdf Graphic file (type pdf)
+ <use a00102.pdf>
+Package pdftex.def Info: a00102.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 151.60551pt.
+
+[80 <./a00100.pdf> <./a00101.pdf
+
+pdfTeX warning: pdflatex (file ./a00101.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00049.tex <a00103.pdf, id=3088, 921.4425pt x 437.635pt>
+File: a00103.pdf Graphic file (type pdf)
+
+<use a00103.pdf>
+Package pdftex.def Info: a00103.pdf used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 166.22957pt.
+ [81 <./a00102.pdf> <./a00103.pdf
+
+pdfTeX warning: pdflatex (file ./a00103.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00050.tex <a00104.pdf, id=3110, 166.6225pt x 156.585pt>
+File: a00104.pdf Graphic file (type pdf)
+
+<use a00104.pdf>
+Package pdftex.def Info: a00104.pdf used on input line 14.
+(pdftex.def)             Requested size: 166.0pt x 156.01117pt.
+) (./a00051.tex <a00105.pdf, id=3115, 447.6725pt x 269.005pt>
+File: a00105.pdf Graphic file (type pdf)
+
+<use a00105.pdf>
+Package pdftex.def Info: a00105.pdf used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 210.31972pt.
+ [82 <./a00104.pdf>]) (./a00052.tex
+<a00106.pdf, id=3134, 602.25pt x 212.795pt>
+File: a00106.pdf Graphic file (type pdf)
+ <use a00106.pdf>
+Package pdftex.def Info: a00106.pdf used on input line 20.
+(pdftex.def)             Requested size: 350.0pt x 123.67119pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83 <./a00105.pdf>]) (./a00053.tex <a00107.pdf, id=3149, 208.78pt x 156.585pt>
+File: a00107.pdf Graphic file (type pdf)
+
+<use a00107.pdf>
+Package pdftex.def Info: a00107.pdf used on input line 14.
+(pdftex.def)             Requested size: 208.0pt x 156.00879pt.
+ <a00108.pdf, id=3150, 344.28625pt x 212.795pt>
+File: a00108.pdf Graphic file (type pdf)
+
+<use a00108.pdf>
+Package pdftex.def Info: a00108.pdf used on input line 22.
+(pdftex.def)             Requested size: 343.0pt x 212.0022pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84 <./a00106.pdf> <./a00107.pdf
+
+pdfTeX warning: pdflatex (file ./a00107.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00054.tex <a00109.pdf, id=3171, 172.645pt x 156.585pt>
+File: a00109.pdf Graphic file (type pdf)
+
+<use a00109.pdf>
+Package pdftex.def Info: a00109.pdf used on input line 14.
+(pdftex.def)             Requested size: 172.0pt x 156.00162pt.
+ <a00110.pdf, id=3172, 239.89626pt x 212.795pt>
+File: a00110.pdf Graphic file (type pdf)
+
+<use a00110.pdf>
+Package pdftex.def Info: a00110.pdf used on input line 22.
+(pdftex.def)             Requested size: 239.0pt x 212.0022pt.
+ [85 <./a00108.pdf> <./a00109.pdf
+
+pdfTeX warning: pdflatex (file ./a00109.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00055.tex <a00111.pdf, id=3194, 386.44376pt x 269.005pt>
+File: a00111.pdf Graphic file (type pdf)
+
+<use a00111.pdf>
+Package pdftex.def Info: a00111.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 243.6374pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86 <./a00110.pdf>]) (./a00056.tex <a00112.pdf, id=3209, 386.44376pt x 212.795
+pt>
+File: a00112.pdf Graphic file (type pdf)
+
+<use a00112.pdf>
+Package pdftex.def Info: a00112.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 192.72809pt.
+ <a00113.pdf, id=3210, 750.805pt x 325.215pt>
+File: a00113.pdf Graphic file (type pdf)
+ <use a00113.pdf>
+Package pdftex.def Info: a00113.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 151.60551pt.
+
+[87 <./a00111.pdf> <./a00112.pdf
+
+pdfTeX warning: pdflatex (file ./a00112.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) (./a00057.tex <a00114.pdf, id=3232, 386.44376pt x 156.585pt>
+File: a00114.pdf Graphic file (type pdf)
+
+<use a00114.pdf>
+Package pdftex.def Info: a00114.pdf used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 141.81879pt.
+ <a00115.pdf, id=3233, 816.04875pt x 381.425pt>
+File: a00115.pdf Graphic file (type pdf)
+
+<use a00115.pdf>
+Package pdftex.def Info: a00115.pdf used on input line 26.
+(pdftex.def)             Requested size: 350.0pt x 163.5905pt.
+ [88 <./a00113.pdf> <./a00114.pdf
+
+pdfTeX warning: pdflatex (file ./a00114.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]) [89 <./a00115.pdf>] [90
+
+] (./refman.ind [91
+
+
+] [92] [93
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: E34AC4F1BAD0359CF71076ECAF9E6EBC;11654.
+(rerunfilecheck)             Checksum: C5330AA2377D8FA43F73B272A83AA133;50177.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
  ) 
 Here is how much of TeX's memory you used:
- 12426 strings out of 495032
- 172126 string characters out of 6181718
- 249684 words of memory out of 5000000
- 15235 multiletter control sequences out of 15000+600000
- 86427 words of font info for 121 fonts, out of 8000000 for 9000
+ 14659 strings out of 495028
+ 212250 string characters out of 6181497
+ 279476 words of memory out of 5000000
+ 16846 multiletter control sequences out of 15000+600000
+ 74368 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,13n,43p,428b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,16n,43p,517b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/
-public/tex-gyre/qhvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
-/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (27 pages, 366103 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (103 pages, 534647 bytes).
 PDF statistics:
- 920 PDF objects out of 1000 (max. 8388607)
- 157 named destinations out of 1000 (max. 500000)
- 690 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3672 PDF objects out of 4296 (max. 8388607)
+ 3299 compressed objects within 33 object streams
+ 550 named destinations out of 1000 (max. 500000)
+ 2596 words of extra memory for PDF output out of 10000 (max. 10000000)
 

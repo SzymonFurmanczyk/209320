@@ -1,8 +1,8 @@
 /*!
  *\file 
- *\brief Metody klasy .
+ *\brief Metody klasy Obserwator.
  *
- * Plik zawiera metody klasy .
+ * Plik zawiera metody klasy Obserwator.
  */
 
 #include "Obserwator.hh"

@@ -3,21 +3,23 @@
 
 /*!
  *\file 
- *\brief Definicja klasy Stos.
+ *\brief Definicja klasy ObserwatorZapisujacy.
  *
- * Plik zawiera definicje klasy Stos.
+ * Plik zawiera definicje klasy ObserwatorZapisujacy.
  */
+
+#include "Interfaces/Obserwator.hh"
 
 using namespace std;
 
 /*!
- *\brief Klasa .
+ *\brief Klasa ObserwatorZapisujacy.
  */
-class ObserwatorZapisujacy
+class ObserwatorZapisujacy : public Obserwator
 { 
 public:
-  ObserwatorZapisujacy();
-  void odswiez();
+  //~ObserwatorZapisujacy(){};
+  void odswiez(int,long int);
 };
 
 

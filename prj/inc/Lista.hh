@@ -1,14 +1,14 @@
 #ifndef LISTA_HH
 #define LISTA_HH
 
-#include "Interfaces/Zasobnik.hh"
-
 /*!
  *\file 
  *\brief Definicja klasy Lista.
  *
  * Plik zawiera definicje klasy modulujacej pojecie listy jednokierunkowej.
  */
+
+#include "Interfaces/Zasobnik.hh"
 
 using namespace std;
 
@@ -69,7 +69,7 @@ public:
    * wartosc - typu int, wartosc umieszczana na liscie.
    */
   void push(int wartosc)
-  {push(wartosc,1);};
+  {push(wartosc,0);};
   
   /*!
    *\brief Przeciazenie operacji pop dla listy. Pobiera domyslnie
@@ -78,7 +78,7 @@ public:
    * wartosc - typu int, wartosc zdejmowana z listy.
    */
   int pop()
-  {return pop(1);};
+  {return pop(0);};
   
   /*!
    *\brief Metoda zwracajaca wielkosc listy.
@@ -87,6 +87,7 @@ public:
    */
   int size();
   
+
 };
 
 

@@ -1,24 +1,307 @@
-\hypertarget{a00011}{\section{Kolejka.\-hh File Reference}
-\label{a00011}\index{Kolejka.\-hh@{Kolejka.\-hh}}
-}
+\hypertarget{a00011}{}\section{Drzewo\+R\+B Class Reference}
+\label{a00011}\index{Drzewo\+R\+B@{Drzewo\+R\+B}}
 
 
-Definicja klasy \hyperlink{a00003}{Kolejka}.  
+Klasa \hyperlink{a00011}{Drzewo\+R\+B}.  
 
 
-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+
+
+{\ttfamily \#include $<$Drzewo\+R\+B.\+hh$>$}
+
+
+
+Inheritance diagram for Drzewo\+R\+B\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=324pt]{a00025}
+\includegraphics[width=164pt]{a00145}
 \end{center}
 \end{figure}
-\subsection*{Classes}
+
+
+Collaboration diagram for Drzewo\+R\+B\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{a00146}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{a00003}{Kolejka}
-\begin{DoxyCompactList}\small\item\em Klasa \hyperlink{a00003}{Kolejka}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{a00011_a982a78031e87b68dba1684b279252363}{Drzewo\+R\+B} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy drzewo binarne. korzen -\/ inicjalizowany wartoscia N\+U\+L\+L rozmiar -\/ inicjalizowany wartoscia 0. \end{DoxyCompactList}\item 
+\hyperlink{a00011_a082ad9993da4e5049017fe3b1b6c365f}{$\sim$\+Drzewo\+R\+B} ()
+\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny drzewa R\+B. \end{DoxyCompactList}\item 
+void \hyperlink{a00011_adcc6a12645ded929e467c7feff5574c9}{push} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na drzewie R\+B. \end{DoxyCompactList}\item 
+int \hyperlink{a00011_af9d1c3f60b757b58077c650856574bac}{pop} ()
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element z drzewa R\+B. \end{DoxyCompactList}\item 
+int \hyperlink{a00011_ac7f83ae4239bfc9f4f9fee2d8aa9ef04}{pop} (int szukana)
+\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca dany element z drzewa R\+B. \end{DoxyCompactList}\item 
+int \hyperlink{a00011_a71abda671520f9ea42c1fb0a80888f79}{size} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca ilosc wezlow drzewa R\+B. \end{DoxyCompactList}\item 
+void \hyperlink{a00011_ac3374725a7a70d8bae28b7114c570563}{wypisz\+\_\+pelne} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisujaca cale drzewo. Wywoluje kolejne wypisz dla lewego oraz prawego subdrzewa korzenia. \end{DoxyCompactList}\item 
+void \hyperlink{a00011_a9737dfdb2090822ceed87e5377c99150}{wypisz} (element $\ast$iter, int a)
+\begin{DoxyCompactList}\small\item\em Metoda wypisujaca subdrzewo. \end{DoxyCompactList}\item 
+element $\ast$ \hyperlink{a00011_ae16809d09209b12a4e540e558c646b5a}{obroc\+\_\+l} (element $\ast$pivot)
+\begin{DoxyCompactList}\small\item\em Metoda obracajaca w lewo dla elementu. \end{DoxyCompactList}\item 
+element $\ast$ \hyperlink{a00011_a618e1cf637b21ebdf0ab30afb516ba31}{obroc\+\_\+p} (element $\ast$pivot)
+\begin{DoxyCompactList}\small\item\em Metoda obracajaca w prawo dla elementu. \end{DoxyCompactList}\item 
+element $\ast$ \hyperlink{a00011_aebe3db802b40e9cf6b056748d73164dd}{ukladaj} (element $\ast$pivot)
+\begin{DoxyCompactList}\small\item\em Metoda ukladajaca element na drzewie R\+B. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Definicja klasy \hyperlink{a00003}{Kolejka}. Plik zawiera definicje klasy \hyperlink{a00003}{Kolejka}. 
+Klasa \hyperlink{a00011}{Drzewo\+R\+B}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00011_a982a78031e87b68dba1684b279252363}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\index{Drzewo\+R\+B@{Drzewo\+R\+B}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{Drzewo\+R\+B}]{\setlength{\rightskip}{0pt plus 5cm}Drzewo\+R\+B\+::\+Drzewo\+R\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{a00011_a982a78031e87b68dba1684b279252363}
+
+
+Konstruktor bezparametryczny. Konstruktor inicjalizujacy drzewo binarne. korzen -\/ inicjalizowany wartoscia N\+U\+L\+L rozmiar -\/ inicjalizowany wartoscia 0. 
+
+\hypertarget{a00011_a082ad9993da4e5049017fe3b1b6c365f}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!````~Drzewo\+R\+B@{$\sim$\+Drzewo\+R\+B}}
+\index{````~Drzewo\+R\+B@{$\sim$\+Drzewo\+R\+B}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{$\sim$\+Drzewo\+R\+B}]{\setlength{\rightskip}{0pt plus 5cm}Drzewo\+R\+B\+::$\sim$\+Drzewo\+R\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{a00011_a082ad9993da4e5049017fe3b1b6c365f}
+
+
+Destruktor bezparametryczny drzewa R\+B. 
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{a00011_a082ad9993da4e5049017fe3b1b6c365f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00011_ae16809d09209b12a4e540e558c646b5a}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!obroc\+\_\+l@{obroc\+\_\+l}}
+\index{obroc\+\_\+l@{obroc\+\_\+l}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{obroc\+\_\+l}]{\setlength{\rightskip}{0pt plus 5cm}Drzewo\+R\+B\+::element $\ast$ Drzewo\+R\+B\+::obroc\+\_\+l (
+\begin{DoxyParamCaption}
+\item[{element $\ast$}]{pivot}
+\end{DoxyParamCaption}
+)}\label{a00011_ae16809d09209b12a4e540e558c646b5a}
+
+
+Metoda obracajaca w lewo dla elementu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pivot} & -\/ typu element$\ast$ , zadany wskaznik na element , dla ktorego wystapi obrocenie. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pivot -\/ typu element$\ast$, wskaznik na element , ktory wskoczyl za dany. 
+\end{DoxyReturn}
+\hypertarget{a00011_a618e1cf637b21ebdf0ab30afb516ba31}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!obroc\+\_\+p@{obroc\+\_\+p}}
+\index{obroc\+\_\+p@{obroc\+\_\+p}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{obroc\+\_\+p}]{\setlength{\rightskip}{0pt plus 5cm}Drzewo\+R\+B\+::element $\ast$ Drzewo\+R\+B\+::obroc\+\_\+p (
+\begin{DoxyParamCaption}
+\item[{element $\ast$}]{pivot}
+\end{DoxyParamCaption}
+)}\label{a00011_a618e1cf637b21ebdf0ab30afb516ba31}
+
+
+Metoda obracajaca w prawo dla elementu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pivot} & -\/ typu element$\ast$ , zadany wskaznik na element , dla ktorego wystapi obrocenie. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pivot -\/ typu element$\ast$, wskaznik na element , ktory wskoczyl za dany. 
+\end{DoxyReturn}
+\hypertarget{a00011_af9d1c3f60b757b58077c650856574bac}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!pop@{pop}}
+\index{pop@{pop}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Drzewo\+R\+B\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00011_af9d1c3f60b757b58077c650856574bac}
+
+
+Metoda zdejmujaca element z drzewa R\+B. 
+
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana z drzewa R\+B. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00019_a6c4f8b78dd20289be7d1625bcd48e899}{Zasobnik$<$ int $>$}.
+
+\hypertarget{a00011_ac7f83ae4239bfc9f4f9fee2d8aa9ef04}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!pop@{pop}}
+\index{pop@{pop}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Drzewo\+R\+B\+::pop (
+\begin{DoxyParamCaption}
+\item[{int}]{szukana}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00011_ac7f83ae4239bfc9f4f9fee2d8aa9ef04}
+
+
+Metoda zdejmujaca dany element z drzewa R\+B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em szukana} & -\/ typu int, wartosc szukana na drzewie R\+B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wartosc -\/ typu int, wartosc zdejmowana z drzewa R\+B. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00019_a13b917f6298d941d147e974ffd94f7d0}{Zasobnik$<$ int $>$}.
+
+\hypertarget{a00011_adcc6a12645ded929e467c7feff5574c9}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!push@{push}}
+\index{push@{push}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Drzewo\+R\+B\+::push (
+\begin{DoxyParamCaption}
+\item[{int}]{wartosc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00011_adcc6a12645ded929e467c7feff5574c9}
+
+
+Metoda umieszczajaca element na drzewie R\+B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & -\/ typu int, wartosc umieszczana na drzewie R\+B. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00019_a2d4e12285da6c0772a56d70cd90ca436}{Zasobnik$<$ int $>$}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00011_adcc6a12645ded929e467c7feff5574c9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00011_a71abda671520f9ea42c1fb0a80888f79}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!size@{size}}
+\index{size@{size}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Drzewo\+R\+B\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00011_a71abda671520f9ea42c1fb0a80888f79}
+
+
+Metoda zwracajaca ilosc wezlow drzewa R\+B. 
+
+\begin{DoxyReturn}{Returns}
+rozmiar -\/ typu int, ilosc wezlow drzewa R\+B. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{a00019_aeddc93b1e43aab6f59a60612bf42ed50}{Zasobnik$<$ int $>$}.
+
+\hypertarget{a00011_aebe3db802b40e9cf6b056748d73164dd}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!ukladaj@{ukladaj}}
+\index{ukladaj@{ukladaj}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{ukladaj}]{\setlength{\rightskip}{0pt plus 5cm}Drzewo\+R\+B\+::element $\ast$ Drzewo\+R\+B\+::ukladaj (
+\begin{DoxyParamCaption}
+\item[{element $\ast$}]{pivot}
+\end{DoxyParamCaption}
+)}\label{a00011_aebe3db802b40e9cf6b056748d73164dd}
+
+
+Metoda ukladajaca element na drzewie R\+B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pivot} & -\/ typu element$\ast$ , zadany wskaznik , najczesciej korzen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pivot -\/ typu element$\ast$, wskaznik na element. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{a00011_aebe3db802b40e9cf6b056748d73164dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00011_a9737dfdb2090822ceed87e5377c99150}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!wypisz@{wypisz}}
+\index{wypisz@{wypisz}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{wypisz}]{\setlength{\rightskip}{0pt plus 5cm}void Drzewo\+R\+B\+::wypisz (
+\begin{DoxyParamCaption}
+\item[{element $\ast$}]{iter, }
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}\label{a00011_a9737dfdb2090822ceed87e5377c99150}
+
+
+Metoda wypisujaca subdrzewo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iter} & -\/ typu element$\ast$ , zadany wskaznik na subdrzewo. \\
+\hline
+{\em a} & -\/ typu int, poziom wyisywanego subdrzewa. \\
+\hline
+\end{DoxyParams}
+\hypertarget{a00011_ac3374725a7a70d8bae28b7114c570563}{}\index{Drzewo\+R\+B@{Drzewo\+R\+B}!wypisz\+\_\+pelne@{wypisz\+\_\+pelne}}
+\index{wypisz\+\_\+pelne@{wypisz\+\_\+pelne}!Drzewo\+R\+B@{Drzewo\+R\+B}}
+\subsubsection[{wypisz\+\_\+pelne}]{\setlength{\rightskip}{0pt plus 5cm}void Drzewo\+R\+B\+::wypisz\+\_\+pelne (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{a00011_ac3374725a7a70d8bae28b7114c570563}
+
+
+Metoda wypisujaca cale drzewo. Wywoluje kolejne wypisz dla lewego oraz prawego subdrzewa korzenia. 
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{a00011_ac3374725a7a70d8bae28b7114c570563_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00040}{Drzewo\+R\+B.\+hh}\item 
+\hyperlink{a00039}{Drzewo\+R\+B.\+cpp}\end{DoxyCompactItemize}

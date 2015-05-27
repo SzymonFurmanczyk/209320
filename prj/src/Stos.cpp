@@ -7,9 +7,6 @@
 
 #include "Stos.hh"
 
-#include <cstdlib>
-#include <iostream>
-
 Stos::Stos()
 {
   straznik=NULL;

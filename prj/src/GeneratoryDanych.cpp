@@ -1,8 +1,8 @@
 /*!
  *\file 
- *\brief Metody klasy .
+ *\brief Funkcje generacji danych.
  *
- * Plik zawiera metody klasy .
+ * Plik zawiera funkcje generacji danych .
  */
 
 #include <cstdlib>
@@ -13,22 +13,20 @@
 
 #include "GeneratoryDanych.hh"
 
-class GeneratorInt :public Generatory<int>
-{
+template<>
 int* generujdane(int l_danych)
 {
   int *dane=new int[l_danych];
   srand(time(NULL));
   for(int i=0;i<=l_danych;i++)
     {
-      dane[i]=rand() %10000;
+      dane[i]=rand() %1000;
     }
   return dane;
 }
-};
 
-class GeneratorString :public Generatory<string>
-{
+
+template<>
 string* generujdane(int l_danych)
 {
   int l_liter=52;
@@ -58,4 +56,4 @@ string* generujdane(int l_danych)
 
   return dane;
 }
-};
+

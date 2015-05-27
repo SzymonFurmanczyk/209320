@@ -1,106 +1,173 @@
-\hypertarget{a00005}{\section{Stos Class Reference}
-\label{a00005}\index{Stos@{Stos}}
-}
+\hypertarget{a00005}{}\section{Algorytm4 Class Reference}
+\label{a00005}\index{Algorytm4@{Algorytm4}}
 
 
-Klasa \hyperlink{a00005}{Stos}.  
+Klasa \hyperlink{a00005}{Algorytm4}.  
 
 
 
 
-{\ttfamily \#include $<$Stos.\-hh$>$}
+{\ttfamily \#include $<$Algorytm4.\+hh$>$}
 
+
+
+Inheritance diagram for Algorytm4\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{a00127}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Algorytm4\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{a00128}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00005_a1de3b50386d5dfb56ddece17d0ea2389}{Stos} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika stosu wartoscia N\-U\-L\-L ,oraz rozmiar wartoscia 0. \end{DoxyCompactList}\item 
-\hyperlink{a00005_af9a198e2540e18adcc0b5259105fd78e}{$\sim$\-Stos} ()
-\begin{DoxyCompactList}\small\item\em Destruktor bezparametryczny stosu. \end{DoxyCompactList}\item 
-void \hyperlink{a00005_afe381df2afa35f3d122ca180300005dd}{push} (int)
-\begin{DoxyCompactList}\small\item\em Metoda umieszczajaca element na stosie Metoda inkrementuje rozmiar podczas umieszczania elementu na stosie. \end{DoxyCompactList}\item 
-int \hyperlink{a00005_aabb14b8a389c55da6e2b50fbb179ed56}{pop} ()
-\begin{DoxyCompactList}\small\item\em Metoda zdejmujaca element ze stosu. Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu. \end{DoxyCompactList}\item 
-int \hyperlink{a00005_a696195d5125d9bbe6b491bc5985f9461}{size} ()
-\begin{DoxyCompactList}\small\item\em Metoda zwracajaca wielkosc stosu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{a00005_a1a51f639f68a10e3aa2c817567dbb5f6}{$\sim$\+Algorytm4} ()
+\item 
+void \hyperlink{a00005_ae31683c8ce000d190e47c1d34321693f}{alokujdane} (\hyperlink{a00019}{Zasobnik}$<$ int $>$ $\ast$, int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Metoda alokujaca na zasobniku dane. \end{DoxyCompactList}\item 
+void \hyperlink{a00005_a199e6229de14ef39f945b253419ab410}{wykonajalgorytm} (\hyperlink{a00019}{Zasobnik}$<$ int $>$ $\ast$, int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Metoda wykonujaca konkretny algorytm. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{a00005_a5bf9477014686079e304cd2740fe1a70}{mergesort} (int $\ast$, int)
+\item 
+int $\ast$ \hyperlink{a00005_a220e95a8bb27fb664b42101e55f31be4}{scal} (int $\ast$, int $\ast$, int, int $\ast$, int)
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Klasa \hyperlink{a00005}{Stos}. 
+Klasa \hyperlink{a00005}{Algorytm4}. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{a00005_a1de3b50386d5dfb56ddece17d0ea2389}{\index{Stos@{Stos}!Stos@{Stos}}
-\index{Stos@{Stos}!Stos@{Stos}}
-\subsubsection[{Stos}]{\setlength{\rightskip}{0pt plus 5cm}Stos\-::\-Stos (
+\hypertarget{a00005_a1a51f639f68a10e3aa2c817567dbb5f6}{}\index{Algorytm4@{Algorytm4}!````~Algorytm4@{$\sim$\+Algorytm4}}
+\index{````~Algorytm4@{$\sim$\+Algorytm4}!Algorytm4@{Algorytm4}}
+\subsubsection[{$\sim$\+Algorytm4}]{\setlength{\rightskip}{0pt plus 5cm}Algorytm4\+::$\sim$\+Algorytm4 (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{a00005_a1de3b50386d5dfb56ddece17d0ea2389}
-
-
-Konstruktor bezparametryczny. Konstruktor inicjalizujacy straznika stosu wartoscia N\-U\-L\-L ,oraz rozmiar wartoscia 0. 
-
-\hypertarget{a00005_af9a198e2540e18adcc0b5259105fd78e}{\index{Stos@{Stos}!$\sim$\-Stos@{$\sim$\-Stos}}
-\index{$\sim$\-Stos@{$\sim$\-Stos}!Stos@{Stos}}
-\subsubsection[{$\sim$\-Stos}]{\setlength{\rightskip}{0pt plus 5cm}Stos\-::$\sim$\-Stos (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{a00005_af9a198e2540e18adcc0b5259105fd78e}
-
-
-Destruktor bezparametryczny stosu. 
-
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{a00005_a1a51f639f68a10e3aa2c817567dbb5f6}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{a00005_aabb14b8a389c55da6e2b50fbb179ed56}{\index{Stos@{Stos}!pop@{pop}}
-\index{pop@{pop}!Stos@{Stos}}
-\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int Stos\-::pop (
+\hypertarget{a00005_ae31683c8ce000d190e47c1d34321693f}{}\index{Algorytm4@{Algorytm4}!alokujdane@{alokujdane}}
+\index{alokujdane@{alokujdane}!Algorytm4@{Algorytm4}}
+\subsubsection[{alokujdane}]{\setlength{\rightskip}{0pt plus 5cm}void Algorytm4\+::alokujdane (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf Zasobnik}$<$ int $>$ $\ast$}]{Tab, }
+\item[{int $\ast$}]{dane, }
+\item[{int}]{liczba\+\_\+danych}
 \end{DoxyParamCaption}
-)}}\label{a00005_aabb14b8a389c55da6e2b50fbb179ed56}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00005_ae31683c8ce000d190e47c1d34321693f}
 
 
-Metoda zdejmujaca element ze stosu. Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu. 
-
-\begin{DoxyReturn}{Returns}
-wartosc -\/ typu int, wartosc zdejmowana ze stosu. 
-\end{DoxyReturn}
-\hypertarget{a00005_afe381df2afa35f3d122ca180300005dd}{\index{Stos@{Stos}!push@{push}}
-\index{push@{push}!Stos@{Stos}}
-\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Stos\-::push (
-\begin{DoxyParamCaption}
-\item[{int}]{wartosc}
-\end{DoxyParamCaption}
-)}}\label{a00005_afe381df2afa35f3d122ca180300005dd}
-
-
-Metoda umieszczajaca element na stosie Metoda inkrementuje rozmiar podczas umieszczania elementu na stosie. 
+Metoda alokujaca na zasobniku dane. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em wartosc} & -\/ typu int, wartosc umieszczana na stosie. \\
+{\em Tab} & -\/ typu Zasobnik$<$\+T$>$$\ast$, implementacja zasobnika \\
+\hline
+{\em dane} & -\/ typu T$\ast$, dane wygenerowane dla implementacji \\
+\hline
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych dla zasobnika \\
 \hline
 \end{DoxyParams}
-\hypertarget{a00005_a696195d5125d9bbe6b491bc5985f9461}{\index{Stos@{Stos}!size@{size}}
-\index{size@{size}!Stos@{Stos}}
-\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Stos\-::size (
+
+
+Implements \hyperlink{a00001_a1e83fd87a20fd0a13ebbf1c81e457b61}{Algorytm$<$ int $>$}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{a00005_ae31683c8ce000d190e47c1d34321693f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{a00005_a5bf9477014686079e304cd2740fe1a70}{}\index{Algorytm4@{Algorytm4}!mergesort@{mergesort}}
+\index{mergesort@{mergesort}!Algorytm4@{Algorytm4}}
+\subsubsection[{mergesort}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ Algorytm4\+::mergesort (
 \begin{DoxyParamCaption}
-{}
+\item[{int $\ast$}]{Tab, }
+\item[{int}]{wielkosc}
 \end{DoxyParamCaption}
-)}}\label{a00005_a696195d5125d9bbe6b491bc5985f9461}
+)}\label{a00005_a5bf9477014686079e304cd2740fe1a70}
 
 
-Metoda zwracajaca wielkosc stosu. 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{a00005_a5bf9477014686079e304cd2740fe1a70_cgraph}
+\end{center}
+\end{figure}
 
-\begin{DoxyReturn}{Returns}
-rozmiar -\/ typu int,rozmiar stosu. 
-\end{DoxyReturn}
+
+\hypertarget{a00005_a220e95a8bb27fb664b42101e55f31be4}{}\index{Algorytm4@{Algorytm4}!scal@{scal}}
+\index{scal@{scal}!Algorytm4@{Algorytm4}}
+\subsubsection[{scal}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ Algorytm4\+::scal (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{Tab, }
+\item[{int $\ast$}]{tab\+\_\+l, }
+\item[{int}]{size\+\_\+l, }
+\item[{int $\ast$}]{tab\+\_\+p, }
+\item[{int}]{size\+\_\+p}
+\end{DoxyParamCaption}
+)}\label{a00005_a220e95a8bb27fb664b42101e55f31be4}
+\hypertarget{a00005_a199e6229de14ef39f945b253419ab410}{}\index{Algorytm4@{Algorytm4}!wykonajalgorytm@{wykonajalgorytm}}
+\index{wykonajalgorytm@{wykonajalgorytm}!Algorytm4@{Algorytm4}}
+\subsubsection[{wykonajalgorytm}]{\setlength{\rightskip}{0pt plus 5cm}void Algorytm4\+::wykonajalgorytm (
+\begin{DoxyParamCaption}
+\item[{{\bf Zasobnik}$<$ int $>$ $\ast$}]{Tab, }
+\item[{int $\ast$}]{dane, }
+\item[{int}]{liczba\+\_\+danych}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{a00005_a199e6229de14ef39f945b253419ab410}
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+Metoda wykonujaca konkretny algorytm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tab} & -\/ typu Zasobnik$<$\+T$>$$\ast$, implementacja zasobnika \\
+\hline
+{\em dane} & -\/ typu T$\ast$, dane wygenerowane dla implementacji \\
+\hline
+{\em liczba\+\_\+danych} & -\/ typu int, liczba danych dla zasobnika \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{a00001_ae97a52b1a728be1a819c9e9815f424e7}{Algorytm$<$ int $>$}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{a00005_a199e6229de14ef39f945b253419ab410_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{a00016}{Stos.\-hh}\item 
-\hyperlink{a00015}{Stos.\-cpp}\end{DoxyCompactItemize}
+\hyperlink{a00027}{Algorytm4.\+hh}\item 
+\hyperlink{a00026}{Algorytm4.\+cpp}\end{DoxyCompactItemize}

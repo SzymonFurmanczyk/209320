@@ -5,88 +5,49 @@
  * Plik zawiera metody klasy Benchmarker.
  */
 
-#include "Interfaces/Zasobnik.hh"
-#include "Interfaces/ObserwatorAbs.hh"
 #include "Benchmark.hh"
-
-#include <cstdlib>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <ctime>
 
 template<typename T>
 void Benchmarker<T>::testuj(Zasobnik<T>* Tab,Algorytm<T>* Alg,T* dane,int liczba_przejsc,int liczba_danych)
 {
   long int czas_operacji=0;
-  long int czas_calkowity_usredniony=0; 
-  struct timespec start,stop;
+  long int czas_calkowity=0; 
+  long int czas_sredni=0;
+  struct timespec start;
+  struct timespec stop;
+
 
   for(int j=1;j<=liczba_przejsc;j++)
     {
+      start.tv_sec=0;
+      start.tv_nsec=0;
+      stop.tv_sec=0;
+      stop.tv_nsec=0;
 
-      /*
-      for(int i=0;i<=liczba_danych;i++)
-	{
-	  Tab->push(dane[i]);
-	}  
-      */
-
-      Alg.AlokujDane(Tab);
-
+      Alg->alokujdane(Tab,dane,liczba_danych);
 
       clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start);
-     
-
-      Alg.WykonajAlgorytm(Tab);
-      /*
-      Tab->mergesort();
-      */
-
+      Alg->wykonajalgorytm(Tab,dane,liczba_danych);
       clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &stop);
       
-      czas_operacji = (stop.tv_nsec - start.tv_nsec);
-
-      powiadom(czas_operacji);
-
-      /*
-      if(czas_operacji>0)
-	{
-	  czas_calkowity_usredniony+=czas_operacji;
-	}
-      else
-	{
-	  czas_calkowity_usredniony+=0;
-	}
-      */
-
+      czas_operacji=((stop.tv_sec * 1000000000) + (stop.tv_nsec))-((start.tv_sec * 1000000000) + (start.tv_nsec));
+     
+      czas_calkowity=czas_calkowity+czas_operacji;
     }
-  
-  //powiadom(czas_calkowity_usredniony/liczba_przejsc);
-  
+
+  czas_sredni=czas_calkowity/liczba_przejsc;
+  powiadom(liczba_danych,czas_sredni);
 }
 
 template<typename T>
-void Benchmarker<T>::dodaj(Obserwator *Obs)
+    void Benchmarker<T>::powiadom(int iteracja,long int czas_sredni)
 {
-}
-
-template<typename T>
-void Benchmarker<T>::usun(Obserwator *Obs)
-{
-}
-
-template<typename T>
-void Benchmarker<T>::powiadom()
-{
+  obserwatorzy->odswiez(iteracja,czas_sredni);
 }
 
 
-//template void Benchmarker::testuj<Lista,int>(Lista*,int*,int,int);
-//template void Benchmarker::testuj<Stos,int>(Stos*,int*,int,int);
-//template void Benchmarker::testuj<Kolejka,int>(Kolejka*,int*,int,int);
-//template void Benchmarker::testuj<ArrayLista,int>(ArrayLista*,int*,int,int);
-//template void Benchmarker::testuj<HaszTab,string>(HaszTab*,string*,int,int);
+template void Benchmarker<int>::testuj(Zasobnik<int>*,Algorytm<int>*,int*,int,int);
+template void Benchmarker<string>::testuj(Zasobnik<string>*,Algorytm<string>*,string*,int,int);
 
 
 
