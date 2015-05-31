@@ -1,9 +1,19 @@
 #
 #  To sa opcje dla kompilacji
 #
-APP=program3
+APP=projekt
 CPP2FLAGS= -g -Iinc -Wall -pedantic -lrt
-CPPFLAGS= -c -g -Iinc -Wall -pedantic -lrt
+CPPFLAGS= -std=c++1y -c -g -Iinc -Wall -pedantic -lrt
+vpath %.o obj
+
+DOXYGEN= doxygen
+DOXYWIZARD = doxywizard
+EVINCE= evince
+
+OBJECTS= obj/main.o obj/kontener.o
+
+INCLUDES= inc/kontener.hh
+
 
 __start__:  obj ./${APP}
 	rm -f core.* core; ./${APP}
@@ -11,36 +21,45 @@ __start__:  obj ./${APP}
 obj:
 	mkdir -p obj
 
-./${APP}: obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o
-	g++ ${CPP2FLAGS} -o ./${APP} obj/main.o obj/Benchmark.o obj/Lista.o obj/Stos.o obj/Kolejka.o obj/ArrayLista.o
+./${APP}: $(OBJECTS)
+	g++ ${CPP2FLAGS} -o ./${APP} $(OBJECTS)
 
-obj/main.o: src/main.cpp  inc/Benchmark.hh inc/Lista.hh inc/Stos.hh inc/Stos.hh inc/Kolejka.hh inc/ArrayLista.hh
-	g++ ${CPPFLAGS} -o obj/main.o src/main.cpp
+obj/main.o: main.cpp $(INCLUDES)
+	g++ ${CPPFLAGS} main.cpp -o obj/main.o
 
-obj/Benchmark.o: src/Benchmark.cpp inc/Benchmark.hh 
-	g++ ${CPPFLAGS} -o obj/Benchmark.o src/Benchmark.cpp
-
-obj/Lista.o: src/Lista.cpp inc/Lista.hh 
-	g++ ${CPPFLAGS} -o obj/Lista.o src/Lista.cpp
-
-obj/Stos.o: src/Stos.cpp inc/Stos.hh 
-	g++ ${CPPFLAGS} -o obj/Stos.o src/Stos.cpp
-
-obj/Kolejka.o: src/Kolejka.cpp inc/Kolejka.hh 
-	g++ ${CPPFLAGS} -o obj/Kolejka.o src/Kolejka.cpp
-
-obj/ArrayLista.o: src/ArrayLista.cpp inc/ArrayLista.hh
-	g++ ${CPPFLAGS} -o obj/ArrayLista.o src/ArrayLista.cpp
+obj/%.o: src/%.cpp inc/%.hh
+	g++ ${CPPFLAGS} $< -o $@
 
 clean:
-	rm -f obj/*.o program3
+	rm -f obj/*.o projekt
+
+
 dox:
+	cd .. && cd dox && $(DOXYGEN) Doxyfile
 	cd .. && cd dox/latex && $(MAKE)
+
+doxsetup:
+	cd .. && cd dox && $(DOXYWIZARD) Doxyfile &
+
+doxopen:
+	cd .. && cd dox/latex && $(EVINCE) refman.pdf &
+
 doxclean:
 	cd .. && cd dox/latex && $(MAKE) clean
+
+doxcleanall:
+	cd .. && cd dox/latex && rm -r *.*
+
 help:
 	@echo
-	@echo " make        - tworzenie i uruchomienie aplikacji"
-	@echo " make clean  - usuniecie produktow kompilacji i konsolidacji"
-	@echo " make help   - wyswietla niniejsza informacje"
+	@echo " make          - tworzenie i uruchomienie aplikacji"
+	@echo " make clean    - usuniecie produktow kompilacji i konsolidacji"
+	@echo
+	@echo " make dox      - tworzenie dokumentacji programu"
+	@echo " make doxopen  - otwieranie dokuentacji pdf "
+	@echo " make doxsetup - ustawienia dokumentacji "
+	@echo " make doxclean - czyszczenie katalogu dokumentacji "
+	@echo " make doxcleanall - usowanie wszystkiego w folderze latex "
+	@echo
+	@echo " make help     - wyswietla niniejsza informacje"
 	@echo
