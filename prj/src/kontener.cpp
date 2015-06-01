@@ -13,129 +13,96 @@
 #include <iostream>
 #include <fstream>
 
+#include "boost/tuple/tuple.hpp"
+
 #define DVD_SIZE 4707319808
- 
-// #include "boost/config.hpp"
-// #include "boost/tuple/tuple.hpp"
-
-// #define BOOST_USER_CONFIG <boost/config/user.hpp>
-
-// template<int M, template<typename> class F = std::less>
-// struct TupleCompare
-// {
-//     template<typename T>
-//     bool operator()(T const &t1, T const &t2)
-//     {
-//         return F<typename tuple_element<M, T>::type>()(std::get<M>(t1), std::get<M>(t2));
-//     }
-// };
-
-// std::sort(begin(files),end(files),
-// 	  [](files<int,std::string> const &t1, files<int,std::string> const &t2) {
-// 	    return get<0>(t1) < get<0>(t2);
-// 	  };
 
 
-
-struct plyta
-{
-  std::list<std::string> pliki;
-  int rozmiar=0;
+struct disk {
+  std::list<std::string> files;
+  long size = 0;
 };
 
 
 
-struct kontener {
-
-
-  //std::vector<boost::tuple<int ,std::string>> files;
-  std::list<int> files;
-  std::list<plyta*> discs; 
+struct container {
+  std::vector<boost::tuple<long ,std::string>> files_test;
+  std::list<disk*> disks; 
 
 
   void sort();
-  void splitter();
+  void partition();
   void load();
   void save();
 
-
 };
 
-// void kontener::sort()
-// {
+void container::sort() {
 
-//   std::sort(files.begin(), files.end(), TupleCompare<0>());
-
-// }
-
-
-void kontener::splitter()
+std::sort(files_test.begin(), files_test.end(),
+	    [](const boost::tuple<long, std::string>& a,
+		 const boost::tuple<long, std::string>& b) -> bool
 {
-  std::list<plyta*>::iterator it;
+return boost::get<0>(a) > boost::get<0>(b);
+});
+}
 
-  if(discs.empty())
-    {
-      plyta *tmp=new plyta();
-      discs.push_back(tmp);
+
+void container::partition() {
+  std::list<disk*>::iterator it;
+
+  if (disks.empty()) {
+    disk *tmp = new disk();
+    disks.push_back(tmp);
+  }
+
+  while (!files_test.empty()) {
+    for (it=disks.begin(); it!=disks.end(); ++it) {
+      if (boost::get<0>(files_test.front()) > DVD_SIZE) {
+        files_test.erase(files_test.begin());
+      }
+      else if ((*it)->size + boost::get<0>(files_test.front()) < DVD_SIZE) {
+	(*it) -> size += boost::get<0>(files_test.front());
+	(*it) -> files.push_back(boost::get<1>(files_test.front())); //wrzucanie nazwy pliku
+        files_test.erase(files_test.begin());
+      }
+      else {
+	disk *tmp = new disk();
+	disks.push_back(tmp);
+      }
     }
+  }
+}
 
-  while(!files.empty())
-    {
+void container::load() {
+  std::ifstream file_in;
+  file_in.open("zbior_danych.txt", std::ifstream::in);
+  while (!file_in.eof()) {
+      long tmp1;
+      std::string tmp2;
+      file_in >> tmp1;
+      file_in >> tmp2;
+      boost::tuple<long, std::string> tmp(tmp1, tmp2);
       
-      for(it=discs.begin();it!=discs.end();it++)
-	{
-	  if(files.front()>DVD_SIZE)
-	    {
-	      files.pop_front();
-	    }
-	  else if((*it)->rozmiar+files.front()<DVD_SIZE)
-	    {
-	      (*it)->rozmiar+=files.front();
-	      (*it)->pliki.push_back("string"); //wrzucanie nazwy pliku
-	      files.pop_front();
-	    }
-	  else
-	    {
-	      plyta *tmp=new plyta();
-	      discs.push_back(tmp);
-	    }
-	}
+      files_test.push_back(tmp);
     }
-  
-}
-
-void kontener::load()
-{
-  std::ifstream plik;
-  plik.open("zbior_danych.txt", std::ifstream::in);
-  while(!plik.eof())
-    {
-      int tmp;
-      plik>>tmp;
-      files.push_back(tmp);
-    }
-
-  plik.close();
+  file_in.close();
 }
 
 
 
-void kontener::save()
-{
-  std::ofstream plik;
-  plik.open("ulozenie.txt", std::ofstream::out | std::ofstream::trunc);
-  while(!discs.empty())
-    {
-      plyta *tmp=discs.front();
-      while(!(tmp->pliki.empty()))
-	{
-	  // plik<<(tmp->pliki.pop_front());
-
-	}
-      discs.pop_front();
+void container::save() {
+  std::ofstream file_out;
+  file_out.open("rozklad.txt", std::ofstream::out | std::ofstream::trunc);
+  while (!disks.empty()) {
+    file_out << "Plyta nr " << disks.size() << std::endl;
+    disk *tmp = disks.front();
+    while (!(tmp -> files.empty())) {
+      std::string tmpp = (tmp -> files.front());
+      file_out << (tmpp);
+      file_out << std::endl;
     }
-
-  plik.close();
-
-
+    disks.pop_front();
+  }
+  file_out.close();
 }
