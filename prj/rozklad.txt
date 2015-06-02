@@ -1,0 +1,13 @@
+Plyta nr 2
+Zajety rozmiar: 4700000000 B
+plik 1
+
+Plyta nr 1
+Zajety rozmiar: 4590000000 B
+plik 2
+plik 3
+plik 4
+
+Nierozmieszczone:
+plik 5
+

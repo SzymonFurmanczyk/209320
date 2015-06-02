@@ -2,7 +2,7 @@
 #  To sa opcje dla kompilacji
 #
 APP=projekt
-CPP2FLAGS= -g -Iinc -Wall -pedantic
+CPP2FLAGS= -std=c++1y -g -Iinc -Wall -pedantic
 CPPFLAGS= -std=c++1y -c -g -Iinc -Wall -pedantic
 vpath %.o obj
 
