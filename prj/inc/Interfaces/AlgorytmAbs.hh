@@ -13,6 +13,8 @@
 #include "Kolejka.hh"
 #include "ArrayLista.hh"
 #include "HaszTab.hh"
+#include "DrzewoBinarne.hh"
+#include "DrzewoRB.hh"
 #include "Graf.hh"
 
 using namespace std;

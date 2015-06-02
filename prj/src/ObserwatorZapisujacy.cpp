@@ -14,7 +14,7 @@
 
 #include "ObserwatorZapisujacy.hh"
 
-void ObserwatorZapisujacy::odswiez(int k, long int sredni_czas)
+void ObserwatorZapisujacy::odswiez(int k,long int sredni_czas)
 {
   ofstream plik;
   plik.open("benchmark.csv",ios::app);

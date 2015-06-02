@@ -58,6 +58,15 @@ public:
   int pop();
   
   /*!
+   *\brief Metoda zdejmujaca element ze stosu.
+   *       Metoda dekrementuje rozmiar przy zdejmowaniu ze stosu.
+   *\return
+   * wartosc - typu int, wartosc zdejmowana ze stosu.
+   */
+  int pop(int a)
+  {return pop();}
+
+  /*!
    *\brief Metoda zwracajaca wielkosc stosu.
    *\return
    * rozmiar - typu int,rozmiar stosu.

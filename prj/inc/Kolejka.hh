@@ -47,7 +47,7 @@ public:
    *\param
    * wartosc - typu int, wartosc umieszczana na koncu kolejki.
    */
-  void push(int);
+  void push(int wartosc);
   
   /*!
    *\brief Metoda zdejmujaca element z poczatku kolejki.
@@ -57,6 +57,15 @@ public:
  */
   int pop();
   
+  /*!
+   *\brief Metoda zdejmujaca element z poczatku kolejki.
+   *       Metoda dekrementuje rozmiar przy zdejmowaniu elementu.
+   *\return
+   * wartosc - typu int, wartosc zdejmowana z kolejki.
+   */
+  int pop(int a)
+  {return pop();}
+
   /*!
    *\brief Metoda zwracajaca wielkosc kolejki.
    *\return

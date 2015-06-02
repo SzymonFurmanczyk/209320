@@ -72,6 +72,8 @@ public:
    * wartosc - typu int, wartosc zdejmowana ze stosu.
    */
   int pop();
+
+  int pop(int);
   
   /*!
    *\brief Metoda zwracajaca rozmiar tablicy na ktorej oparta jest lista.

@@ -5,6 +5,7 @@
  * Plik zawiera metody klasy Graf.
  */
 
+
 #include "Graf.hh"
 
 Graf::Graf()
@@ -17,29 +18,15 @@ Graf::Graf()
 
 Graf::~Graf()
 {
-  /*
-  while(straznik!=NULL)
+  for(int i=0;i<rozmiar;i++)
     {
-      element * tmp = straznik->nastepny;
-      delete straznik;
-      straznik=tmp;
+      delete[] sasiedztwo[i];
     }
-  */
+  delete[] sasiedztwo;
 }
 
-void Graf::push(int wartosc)
-{
-  pushwierzcholek(wartosc);
-}
 
-void Graf::push(int wierzch_1,int wierzch_2,int waga)
-{
-  pushwierzcholek(wierzch_1);
-  pushwierzcholek(wierzch_2);
-  pushkrawedz(wierzch_1,wierzch_2,waga);
-}
-
-void Graf::pushwierzcholek(int wierzch)
+void Graf::push(int wierzch)
 {
   if(wierzcholki==NULL)
     {
@@ -52,60 +39,93 @@ void Graf::pushwierzcholek(int wierzch)
     }
   else
     {
-      wierzcholki=new int[rozmiar+1];
-      wierzcholki[rozmiar]=wierzch;
-      int **nowe_sasiedztwo;
+      int istnieje=0;
+      int *tmp=wierzcholki;
 
-      nowe_sasiedztwo=new int*[rozmiar+1];
       for(int i=0;i<rozmiar;i++)
 	{
-	  nowe_sasiedztwo[i]=new int[i+1];
-	  for(int j=0;j<rozmiar;j++)
+	  if(wierzch==wierzcholki[i])
 	    {
-	      nowe_sasiedztwo[i][j]=sasiedztwo[i][j];
+	      istnieje=1;
 	    }
 	}
-      //delete sasiedztwo;
-      sasiedztwo=nowe_sasiedztwo;
-      rozmiar++;
+
+      if(istnieje==0)
+	{
+	  rozmiar++;
+
+	  wierzcholki=new int[rozmiar];
+	  for(int i=0;i<rozmiar-1;i++)
+	    {
+	      wierzcholki[i]=tmp[i];
+	    }
+
+	  wierzcholki[rozmiar-1]=wierzch;
+
+
+	  int **nowe_sasiedztwo=new int*[rozmiar];
+
+	  for(int i=0;i<rozmiar;i++)
+	    {
+	      nowe_sasiedztwo[i]=new int[rozmiar];
+	      for(int j=0;j<rozmiar;j++)
+		{
+		  nowe_sasiedztwo[i][j]=0;
+		}
+	    }
+
+	  for(int i=0;i<rozmiar-1;i++)
+	    {
+	      for(int j=0;j<rozmiar-1;j++)
+		{
+		  nowe_sasiedztwo[i][j]=sasiedztwo[i][j];
+		}
+	    }
+
+	  for (int i = 0; i <rozmiar-1; i++)
+	    {
+	      delete[] sasiedztwo[i];
+	    } 
+	  delete [] sasiedztwo;
+
+	  sasiedztwo=nowe_sasiedztwo;	  
+	}
     }
 
 }
 
-void Graf::pushkrawedz(int wierzch_1,int wierzch_2,int waga)
+void Graf::push(int wierzch_1,int wierzch_2,int waga)
 {
   int indeks_1=0;
   int indeks_2=0;
   int znaleziono_1=0;
   int znaleziono_2=0;
   
-  for(int k=0;k<rozmiar;k++)
+  push(wierzch_1);
+  push(wierzch_2);
+
+  for(int k=0;k<rozmiar || (znaleziono_1!=1 && znaleziono_2!=1);k++)
     {
       if(wierzcholki[k]==wierzch_1 || wierzcholki[k]==wierzch_2)
 	{
 	  if(wierzcholki[k]==wierzch_1)
 	    {
-	      if( wierzcholki[k]==wierzch_2)
-		{
-		  indeks_2=k;
-		  znaleziono_2=1;
-		}
 	      indeks_1=k;
 	      znaleziono_1=1;
-	    } 
-	  else
+	    }
+	  if( wierzcholki[k]==wierzch_2)
 	    {
 	      indeks_2=k;
+	      znaleziono_2=1;
 	    }
-	}
-    } 
-
-
-
-
-
-  
-}
+	} 
+    }
+  if(znaleziono_1==1 && znaleziono_2==1)
+    {
+      sasiedztwo[indeks_1][indeks_2]=waga;
+      sasiedztwo[indeks_2][indeks_1]=waga;
+    }
+} 
 
 int Graf::pop()
 {
@@ -113,10 +133,18 @@ int Graf::pop()
   return zwracana;
 }
 
-int Graf::pop(int szukana)
+int Graf::pop(int indeks)
 {
-  int zwracana=0;
-  return zwracana;
+  return wierzcholki[indeks];
+}
+
+int Graf::pop(int indeks1,int indeks2)
+{
+  if(sasiedztwo!=NULL)
+    {
+      return sasiedztwo[indeks1][indeks2];
+    }
+  return 0;
 }
 
 

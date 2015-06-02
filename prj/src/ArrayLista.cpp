@@ -81,6 +81,9 @@ int ArrayLista::pop()
   return wartosc;
 }
 
+int ArrayLista::pop(int a)
+{return 0;}
+
 
 int ArrayLista::size()
 {

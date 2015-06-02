@@ -19,7 +19,7 @@ class ObserwatorZapisujacy : public Obserwator
 { 
 public:
   //~ObserwatorZapisujacy(){};
-  void odswiez(int, long int);
+  void odswiez(int,long int);
 };
 
 

@@ -20,4 +20,7 @@ using namespace std;
 template<typename T>
 T* generujdane(int l_danych);
 
+template<typename T>
+T* generujdane2(int l_danych);
+
 #endif

@@ -64,10 +64,32 @@ public:
    */
   void push(string wartosc,string klucz);
 
+  /*!
+   *\brief Metoda zdejmujaca element z tablicy haszujacej.
+   *\return
+   * klucz_szukany - typu string, klucz wartosci zdejmowanej z tablicy haszujacej.
+   */
   string pop(string klucz_szukany);
 
+  /*!
+   *\brief Metoda umieszczajaca element na tablicy haszujacej.
+   *\param
+   * wartosc - typu string, wartosc umieszczana na tablicy haszujacej.
+   */
   void push(string wartosc);
-  string pop();	  
+
+  /*!
+   *\brief Metoda zdejmujaca element z tablicy haszujacej.
+   *\return
+   * wartosc - typu string, wartosc zdejmowana z tablicy haszujacej.
+   */
+  string pop();
+
+  /*!
+   *\brief Metoda zwracajaca rozmiar Tablicy Haszujacej.
+   *\return
+   * rozmiar - typu int,rozmiar Tablicy Haszujacej.
+   */	  
   int size();
   
   /*!

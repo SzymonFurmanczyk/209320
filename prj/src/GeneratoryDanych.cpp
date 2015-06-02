@@ -16,15 +16,38 @@
 template<>
 int* generujdane(int l_danych)
 {
-  int *dane=new int[l_danych];
+  int *dane=new int[l_danych+1];
   srand(time(NULL));
+
   for(int i=0;i<=l_danych;i++)
     {
-      dane[i]=rand() %10;
+      dane[i]=rand() %1000;
     }
   return dane;
 }
 
+
+template<>
+int* generujdane2(int l_danych)
+{
+  int *dane=new int[l_danych*3+3];
+
+  srand(time(NULL));
+
+  dane[0]=rand() %2000;
+  dane[1]=rand() %2000;
+  dane[2]=1;
+
+
+    for(int i=3;i<=l_danych*3+3;i+=3)
+      {
+	dane[i]=dane[i-2];
+	dane[i+1]=rand() %2000;
+	dane[i+2]=1;
+      }
+  return dane;
+
+}
 
 template<>
 string* generujdane(int l_danych)

@@ -14,6 +14,8 @@
 #include "Algorytm4.hh"
 #include "Algorytm5.hh"
 #include "Algorytm6.hh"
+#include "Algorytm7.hh"
+#include "Algorytm8.hh"
 //#include "Interfaces/AlgorytmAbs.hh"
 #include "ObserwatorZapisujacy.hh"
 #include "Interfaces/Obserwowany.hh"
@@ -54,7 +56,7 @@ public:
    *\param
    * czas_sredni - typu long int, czas wykonania operacji
    */
-  void powiadom(int, long int);
+  void powiadom(int,long int);
 };
 
 

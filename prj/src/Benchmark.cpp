@@ -10,9 +10,9 @@
 template<typename T>
 void Benchmarker<T>::testuj(Zasobnik<T>* Tab,Algorytm<T>* Alg,T* dane,int liczba_przejsc,int liczba_danych)
 {
-  long czas_operacji=0;
-  long czas_calkowity=0; 
-  long czas_sredni=0;
+  long int czas_operacji=0;
+  long int czas_calkowity=0; 
+  long int czas_sredni=0;
   struct timespec start;
   struct timespec stop;
 
