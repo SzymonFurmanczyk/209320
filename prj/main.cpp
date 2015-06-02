@@ -17,10 +17,9 @@ int main(int argc, char *argv[])
 
   container Test;
   Test.load();
+  Test.sort();
   Test.partition();
   Test.save();
-    
-  
   
   return 0;
 }
