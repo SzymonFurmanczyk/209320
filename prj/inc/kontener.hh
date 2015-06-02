@@ -10,19 +10,22 @@
 
 #include "boost/tuple/tuple.hpp"
 
-struct disk {
+struct disk
+{
   std::list<std::string> files;
   long size = 0;
 };
 
-struct container {
+struct container
+{
   std::vector<boost::tuple<long ,std::string>> files_test;
-  std::list<disk*> disks; 
+  std::list<disk*> disks;
+  std::list<std::string> litter;
 
 
+  void load();
   void sort();
   void partition();
-  void load();
   void save();
 
 };
