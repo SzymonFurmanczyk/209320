@@ -6,36 +6,8 @@
  */
 
 #include "kontener.hh"
-#include <algorithm>
-#include <string>
-#include <vector>
-#include <list>
-#include <iostream>
-#include <fstream>
-
-#include "boost/tuple/tuple.hpp"
 
 #define DVD_SIZE 4707319808
-
-
-struct disk {
-  std::list<std::string> files;
-  long size = 0;
-};
-
-
-
-struct container {
-  std::vector<boost::tuple<long ,std::string>> files_test;
-  std::list<disk*> disks; 
-
-
-  void sort();
-  void partition();
-  void load();
-  void save();
-
-};
 
 void container::sort() {
 
@@ -75,18 +47,19 @@ void container::partition() {
 }
 
 void container::load() {
-  std::ifstream file_in;
+  std::fstream file_in;
   file_in.open("zbior_danych.txt", std::ifstream::in);
-  while (!file_in.eof()) {
+  while (file_in.peek()!=EOF) {
       long tmp1;
       std::string tmp2;
       file_in >> tmp1;
-      file_in >> tmp2;
+      getline(file_in,tmp2);
+      tmp2.front()='\0';
       boost::tuple<long, std::string> tmp(tmp1, tmp2);
-      
       files_test.push_back(tmp);
     }
   file_in.close();
+  std::cout<<"Wczytano rozmiary plikow"<<std::endl;
 }
 
 
@@ -98,6 +71,7 @@ void container::save() {
     file_out << "Plyta nr " << disks.size() << std::endl;
     disk *tmp = disks.front();
     while (!(tmp -> files.empty())) {
+      std::cout<<tmp->files.front();
       std::string tmpp = (tmp -> files.front());
       file_out << (tmpp);
       file_out << std::endl;
@@ -105,4 +79,5 @@ void container::save() {
     disks.pop_front();
   }
   file_out.close();
+  std::cout<<"Zapisano konfiguracje ulozenia danych na dyski"<<std::endl;
 }

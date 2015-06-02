@@ -15,6 +15,10 @@
 int main(int argc, char *argv[])
 {
 
+  container Test;
+  Test.load();
+  Test.partition();
+  Test.save();
     
   
   
