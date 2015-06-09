@@ -7,8 +7,11 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 #include "boost/tuple/tuple.hpp"
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
 
 struct disk
 {
@@ -27,6 +30,7 @@ struct container
   void sort();
   void partition();
   void save();
+  void show();
 
 };
 
