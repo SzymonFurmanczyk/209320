@@ -19,9 +19,8 @@ int main(int argc, char *argv[])
   Test.load();
   Test.sort();
   Test.partition();
+  Test.show();
   Test.save();
-    
-  
   
   return 0;
 }
