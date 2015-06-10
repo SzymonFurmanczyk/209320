@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 {
 
   container Test;
+  Test.execute_cmd(R"( du > zbior_danych_test.txt )");
   Test.load();
   Test.sort();
   Test.partition();

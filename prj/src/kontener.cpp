@@ -9,6 +9,22 @@
 
 #define DVD_SIZE 4707319808
 
+std::string container::execute_cmd(const std::string& _string)
+{
+  std::string result, file;
+  FILE* pipe{popen(_string.c_str(), "r")};
+  char buffer[256];
+
+  while(fgets(buffer, sizeof(buffer), pipe) != nullptr)
+    {
+      file = buffer;
+      result += file.substr(0, file.size() - 1);
+    }
+
+  pclose(pipe);
+  return result;
+}
+
 void container::sort()
 {
   std::sort(files_test.begin(), files_test.end(),
@@ -209,7 +225,7 @@ void container::show()
 			      window.draw(shape);
 			  
 			      std::stringstream ss;
-			      ss<<"Dysk: "<<i<<" pozostalo miejsca: " <<DVD_SIZE-(*it)->size;
+			      ss<<"Dysk: "<<i<<" pozostalo miejsca: " <<DVD_SIZE-(*it)->size << " B";
 			      std::string str = ss.str();
 
 			      text.setString(str);
@@ -217,7 +233,7 @@ void container::show()
 			      window.draw(text);
 
 			    }
-			  i++;
+			  ++i;
 			}
 		    }
 		}

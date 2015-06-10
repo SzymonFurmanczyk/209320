@@ -8,6 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <cstdio>
 
 #include "boost/tuple/tuple.hpp"
 #include <SFML/Graphics.hpp>
@@ -25,7 +26,7 @@ struct container
   std::list<disk*> disks;
   std::list<std::string> litter;
 
-
+  std::string execute_cmd(const std::string& _string);
   void load();
   void sort();
   void partition();
