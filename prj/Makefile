@@ -22,7 +22,7 @@ obj:
 	mkdir -p obj
 
 ./${APP}: $(OBJECTS)
-	g++ ${CPP2FLAGS} -o ./${APP} $(OBJECTS)  -lsfml-graphics -lsfml-window -lsfml-system
+	g++ ${CPP2FLAGS} -o ./${APP} $(OBJECTS) -lsfml-graphics -lsfml-window -lsfml-system
 
 obj/main.o: main.cpp $(INCLUDES)
 	g++ ${CPPFLAGS} main.cpp -o obj/main.o

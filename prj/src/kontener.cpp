@@ -7,7 +7,7 @@
 
 #include "kontener.hh"
 
-#define DVD_SIZE 4707319808
+#define DVD_SIZE 4707319808 //B
 
 std::string container::execute_cmd(const std::string& _string)
 {
@@ -96,7 +96,6 @@ void container::load()
 }
 
 
-
 void container::save()
 {
   std::ofstream file_out;
@@ -133,12 +132,8 @@ void container::save()
 
 void container::show()
 {
-
-  sf::ContextSettings settings;
-  settings.antialiasingLevel = 2;
   
-  sf::RenderWindow window(sf::VideoMode(1024, 800), "Ulozenie plikow:",sf::Style::Close,settings);
-  window.setFramerateLimit(60);
+  sf::RenderWindow window(sf::VideoMode(1024, 800), "Ulozenie plikow:",sf::Style::Close);
 
   sf::RectangleShape shape(sf::Vector2f(0, 50));
   shape.setFillColor(sf::Color(0, 150, 0));
@@ -149,6 +144,7 @@ void container::show()
   sf::Font font;
   font.loadFromFile("DejaVuSans.ttf");
   sf::Text text("", font, 30);
+  sf::Text text2("", font, 20);
 
   sf::View view(sf::FloatRect(0, 0, 1024, 800));
   window.setView(view);
@@ -165,33 +161,12 @@ void container::show()
 	      window.close();
 	      break;
 
-	    case  sf::Event::MouseButtonPressed:
-	      if (event.mouseButton.button == sf::Mouse::Left)
-		{
-		  sf::Vector2i pixel_pos = sf::Mouse::getPosition(window);
-		  sf::Vector2f coord_pos = window.mapPixelToCoords(pixel_pos);
-		  std::cout << "mouse x: " << coord_pos.x << std::endl;
-		  std::cout << "mouse y: " << coord_pos.y << std::endl;
-		}
-	      else if (event.mouseButton.button == sf::Mouse::Right)
-		{
-		  sf::Vector2i pixel_pos = sf::Mouse::getPosition(window);
-		  sf::Vector2f coord_pos = window.mapPixelToCoords(pixel_pos);
-		  std::cout << "mouse x: " << coord_pos.x << std::endl;
-		  std::cout << "mouse y: " << coord_pos.y << std::endl;
-		}
-	      break;
-
+	    default:
 	    case sf::Event::MouseWheelMoved:
-
-	      if(view.getCenter().y+event.mouseWheel.delta*-20 < 400)
-		{
-		  
-		}
-	      else
+	      if(view.getCenter().y+event.mouseWheel.delta*-20 >= 400)
 		{
 		  view.move(0,event.mouseWheel.delta*-20);
-	      
+
 		  if(view.getCenter().y>=400)
 		    {
 		      window.setView(view);
@@ -206,6 +181,17 @@ void container::show()
 			      text.setString("Nieumieszczone:");
 			      text.setPosition(sf::Vector2f(0,i*55));
 			      window.draw(text);
+			      std::list<std::string>::iterator iter=litter.begin();
+			      int j=i;
+			      while(iter!=litter.end())
+				{
+				  text2.setString(*iter);
+				  text2.setPosition(sf::Vector2f(0,i*55+j*25));
+				  window.draw(text2);
+				  iter++;
+				  j++;
+				}
+			      
 			      koniec=1;
 			    }
 			  else
@@ -213,7 +199,7 @@ void container::show()
 			      shape.setPosition(0,i*55);
 			      shape.setSize(sf::Vector2f(((*it)->size*1024)/DVD_SIZE, 50));
 
-			      if((*it)->size>=DVD_SIZE-12)
+			      if((*it)->size>=DVD_SIZE-19)
 				{
 				  shape.setFillColor(sf::Color(0, 150, 0));
 				}
@@ -221,29 +207,190 @@ void container::show()
 				{
 				  shape.setFillColor(sf::Color(150, 0, 0));
 				}
-
 			      window.draw(shape);
-			  
-			      std::stringstream ss;
-			      ss<<"Dysk: "<<i<<" pozostalo miejsca: " <<DVD_SIZE-(*it)->size << " B";
-			      std::string str = ss.str();
 
+			      std::stringstream ss;
+			      ss<<"Dysk: " <<i<<" pozostalo miejsca: "<<DVD_SIZE-(*it)->size << "B";
+			      std::string str = ss.str();
 			      text.setString(str);
 			      text.setPosition(sf::Vector2f(0,i*55));
 			      window.draw(text);
-
 			    }
-			  ++i;
+			  i++;
 			}
 		    }
 		}
-	      break;
-	      
-	    default:
-	      break;
+	      break; 
 	    }
         }
       window.display();
+    }   
+}
+
+
+void container::pack()
+{
+  disks.clear();
+
+  //wyrzucenie zbyt duzych plikow
+  while (boost::get<0>(files_test.front()) > DVD_SIZE)
+    { //jesli sie nie zmiesci to do kosza
+      litter.push_back(boost::get<1>(files_test.front())); //nazwa
+      files_test.erase(files_test.begin());
     }
-    
+
+  while (boost::get<0>(files_test.back()) ==0)
+    { //jesli sie nie zmiesci to do kosza
+      litter.push_back(boost::get<1>(files_test.back())); //nazwa
+      files_test.erase(files_test.end());
+    }
+
+  std::list<node*> decision;
+  std::vector<boost::tuple<long,std::string>>::iterator it=files_test.begin();
+  long f_value=0;
+  int found=0;
+  
+  while(!files_test.empty())
+    {
+      choosetree tree;
+      tree.root=NULL;
+      tree.size=0;
+      
+      it=files_test.begin();
+
+      node *tmp=new node;
+      tmp->value=boost::get<0>(*it);
+      tmp->position=1;
+      tmp->left=NULL;
+      tmp->right=NULL;
+      tmp->up=NULL;
+      tree.root=tmp;
+      tree.size++;
+     
+      decision.push_back(tree.root);
+      it++;
+      while(found!=1 && it!=files_test.end())
+	{
+	  f_value=boost::get<0>(*it);
+	  found=tree.split(decision,f_value);
+	  it++;
+	}
+      std::list<node*>::iterator it3=decision.begin();
+      if(found!=1)
+      	{
+      	  std::list<node*>::iterator it2=decision.begin();
+      	  if(decision.size()!=1)
+      	    {
+      	      it2++;
+      	      while(it2!=decision.end())
+      		{
+      		  if((*it2)->value > (*it3)->value)
+      		    {
+      		      it3=it2;
+      		    }
+      		  it2++;
+      		}
+      	    }
+      	}
+
+      disk *label = new disk();
+      disks.push_back(label);
+
+      std::list<node*>::iterator road=it3;
+      it--;
+      while(*road!=NULL)
+	{
+	  if((*road)->position==1)
+	    {
+	      label -> size += boost::get<0>(*it); //rozmiar
+	      label -> files.push_back(boost::get<1>(*it)); //nazwa
+	      files_test.erase(it);
+	    }
+	  it--;
+	  *road=(*road)->up;
+	}
+      decision.clear();
+      tree.deleteroot();      
+    }
+  std::cerr << "Wykonano partycjonowanie drugie." << std::endl;
+}
+
+void choosetree::deleteroot()
+{
+  if(root!=NULL)
+    {
+      if(root->right!=NULL || root->left!=NULL)
+	{
+	  if(root->left!=NULL)
+	    {deletenode(root->left);}
+	  if(root->right!=NULL)
+	    {deletenode(root->right);}
+	}
+      delete[] root;
+      root=NULL;
+      size=0;
+    }
+}
+
+
+void choosetree::deletenode(node *iter)
+{
+  if(iter->right!=NULL || iter->left!=NULL)
+    {
+      if(iter->left!=NULL)
+	{deletenode(iter->left);}
+      if(iter->right!=NULL)
+	{deletenode(iter->right);}
+    }
+  node* tmp;
+  tmp=iter;
+  delete[] tmp;
+}
+
+
+
+bool choosetree::split(std::list<node*> &decision,long f_value)
+{
+  std::list<node*>::iterator it=decision.begin();
+  std::list<node*>::iterator it2=decision.end();
+  std::list<node*> choices;
+  while(it!=decision.end())
+    {
+      //lewe
+      node *tmp=new node;
+      tmp->value=(*it)->value;
+      tmp->position=0;
+      (*it)->left=tmp;
+      tmp->up=*it;
+      tmp->left=NULL;
+      tmp->right=NULL;
+      size++;
+      if((*it)->value+f_value > (DVD_SIZE-150))
+	choices.push_back(tmp);
+      //prawe
+      node *tmp2=new node;
+      if((*it)->value+f_value <= DVD_SIZE)
+	{
+	  tmp2->value=(*it)->value+f_value;
+	  tmp2->position=1;
+	  (*it)->right=tmp2;
+	  tmp2->up=*it;
+	  tmp2->left=NULL;
+	  tmp2->right=NULL;
+	  tmp2->up=*it;
+	  size++;
+	  choices.push_back(tmp2);
+	}
+      else if((*it)->value+f_value == DVD_SIZE)
+	{
+	  choices.clear();
+	  decision=choices;
+	  decision.push_front(tmp2);
+	  return 1;
+	}
+      it++;
+    }
+  decision.clear();
+  decision=choices;
+  return 0;
 }

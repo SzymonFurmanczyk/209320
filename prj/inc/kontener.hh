@@ -30,9 +30,31 @@ struct container
   void load();
   void sort();
   void partition();
+  void pack();
   void save();
   void show();
 
+};
+
+
+struct node
+{
+  long value;
+  int position; //0-left  1-right
+  node *up;
+  node *left;
+  node *right;
+};
+
+
+struct choosetree
+{
+  node *root;
+  int size;
+  
+  bool split(std::list<node*> &,long);
+  void deleteroot();
+  void deletenode(node *iter);
 };
 
 
